@@ -179,9 +179,7 @@
             <div class="news-meta">
               <span><strong>Published:</strong> ${item.pubDate.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}</span>
               <span><strong>Source:</strong> ${item.source}</span>   
-            </div>
             <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
-            </div>
             ${isEnhanced ? '<span class="ai-badge">⚛ Prompt Engineered Summary</span>' : ''}
             ${summary ? `<p class="news-excerpt">${summary}</p>` : ''}
             ${keywords.length > 0 ? `
