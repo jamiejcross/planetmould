@@ -44,9 +44,14 @@ class ContentEnhancer:
         return text.strip()
 
     def generate_research_summary(self, article: Article) -> str:
-        """The core anthropological summary engine"""
+def generate_research_summary(self, article: Article) -> str:
+        """The core anthropological summary engine with safety fallbacks"""
         sanitized_text = self._sanitize_for_ai(article)
         
+        # --- FALLBACK 1: If the article is too short to summarize, return the excerpt ---
+        if len(sanitized_text) < 50:
+            return sanitized_text if len(sanitized_text) > 0 else article.title
+
         # Construct the specialized research prompt
         prompt = f"<s>[INST] Task: Provide a 5-7 sentence summary for an anthropologist tracking infrastructure and fungal life.\n\n" \
                  f"Article: {article.title}. {sanitized_text[:1500]}\n\n" \
@@ -58,6 +63,22 @@ class ContentEnhancer:
             payload = {
                 "inputs": prompt,
                 "parameters": {"max_new_tokens": 500, "temperature": 0.7, "return_full_text": False}
+            }
+            
+            try:
+                response = requests.post(api_url, headers=headers, json=payload, timeout=45)
+                if response.status_code == 200:
+                    result = response.json()
+                    summary = result[0].get("generated_text", "") if isinstance(result, list) else ""
+                    if summary.strip():
+                        return summary.strip().capitalize()
+            except Exception as e:
+                print(f"AI Error: {e}")
+
+            # --- FALLBACK 2: If AI fails/timeouts, return the original sanitized text ---
+            return sanitized_text[:500] + "..."
+        
+        return sanitized_text[:300] + "..."
             }
             
             response = requests.post(api_url, headers=headers, json=payload)
