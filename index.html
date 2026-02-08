@@ -107,7 +107,7 @@
     let combinedNews = [];
     const activeCats = currentFilter === "all" ? Object.keys(allNews) : [currentFilter];
     activeCats.forEach(cat => combinedNews.push(...allNews[cat]));
-
+    
     // Filter by search query and sort by date
     const filtered = combinedNews
       .filter(item => (item.title + item.source + item.excerpt).toLowerCase().includes(query))
@@ -117,15 +117,21 @@
 
     if (resultsToShow.length > 0) {
       let html = `<div class="news-list">`;
+
       resultsToShow.forEach(item => {
+
         html += `
           <div class="news-item">
-            <p class="news-meta"><strong>${item.source}</strong> • ${item.pubDate.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</p>
+            <div class="news-meta">
+              <span><strong>Published:</strong> ${item.pubDate.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
+              <span><strong>Source:</strong> ${item.source}</span>
+            </div>
             <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
             <p class="news-excerpt">${item.excerpt}...</p>
             <a href="${item.url}" target="_blank" class="read-more">Read Full Report →</a>
           </div>`;
       });
+        
       html += `</div>`;
       container.innerHTML = html;
 
