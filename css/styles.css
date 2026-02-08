@@ -63,11 +63,25 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 }
 
 .news-meta {
-  font-size: 14px; line-height: 1.35; color: rgba(0,0,0,.75); 
-  margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.05em;
-  font-weight: 500; display: block; /* Removed white-space:nowrap to allow wrapping on small screens */
+  font-size: 14px;
+  line-height: 1.5; /* Increased for better legibility */
+  color: rgba(0,0,0,.75);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  
+  /* The Magic Fix */
+  display: flex;
+  flex-wrap: wrap; /* Allows items to drop to a new line instead of squashing */
+  gap: 8px 16px;   /* Adds a gap between Date and Source */
 }
 
+/* Ensures the labels don't merge with the values */
+.news-meta span {
+  display: inline-block;
+  white-space: nowrap; 
+}
 .news-title { font-size: 24px; font-weight: 700; line-height: 1.25; margin: 0 0 12px 0; }
 .news-title a { color: #000; text-decoration: none; }
 .news-title a:hover { text-decoration: underline; }
