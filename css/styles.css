@@ -80,7 +80,13 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 /* Ensures the labels don't merge with the values */
 .news-meta span {
   display: inline-block;
-  white-space: nowrap; 
+  white-space: nowrap;
+  margin-right: 15px; /* This creates the physical gap between Date and Source */
+}
+
+/* Remove margin from the last span so it doesn't push against the edge */
+.news-meta span:last-child {
+  margin-right: 0;
 }
 .news-title { font-size: 24px; font-weight: 700; line-height: 1.25; margin: 0 0 12px 0; }
 .news-title a { color: #000; text-decoration: none; }
