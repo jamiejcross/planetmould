@@ -47,14 +47,28 @@ def main():
     print("=" * 60)
 
     hf_token = os.getenv('HF_TOKEN')
-    # Switching to Llama-3 for better 'Chat' task support
+    # Stable model for Chat API
     model_id = "meta-llama/Meta-Llama-3-8B-Instruct" 
     client = InferenceClient(model=model_id, token=hf_token)
 
-    # ... (rest of your loading code)
+    # 1. Initialize the variable FIRST to avoid NameError
+    articles_data = [] 
 
+    try:
+        with open('mould_news.json', 'r', encoding='utf-8') as f:
+            articles_data = json.load(f)
+        print(f"✅ Loaded {len(articles_data)} articles.")
+    except Exception as e:
+        print(f"❌ Error loading mould_news.json: {e}")
+        # Exit gracefully if there is no data to process
+        return 
+
+    enhanced_articles = []
+
+    # 2. Now the loop will safely find 'articles_data'
     for i, article in enumerate(articles_data, 1):
-        # ... (cleaning code)
+        title = article.get('title', '')
+        # ... rest of your loop logic
 
         messages = [
             {"role": "system", "content": "You are a social anthropologist. Summarize in 5 sentences focusing on infrastructure and toxicity."},
