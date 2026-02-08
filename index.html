@@ -84,21 +84,35 @@
   async function fetchNews() {
     const container = document.getElementById("newsContainer");
     try {
-      // Try to load enhanced articles first
-      let response = await fetch('articles_enhanced.json?v=' + new Date().getTime());
-      let data;
-      let isEnhanced = false;
-      
-      if (response.ok) {
-        data = await response.json();
-        isEnhanced = true;
-        console.log('✓ Loaded enhanced articles');
-      } else {
-        // Fallback to regular articles
-        response = await fetch('mould_news.json?v=' + new Date().getTime());
-        data = await response.json();
-        console.log('⚠ Loaded regular articles (enhanced not available)');
-      }
+        // 1. Try to load enhanced articles first
+        let response = await fetch('articles_enhanced.json?v=' + new Date().getTime());
+        let data;
+        
+        if (response.ok) {
+            data = await response.json();
+            console.log('✓ Loaded enhanced articles');
+        } else {
+            // Fallback to regular articles
+            response = await fetch('mould_news.json?v=' + new Date().getTime());
+            if (!response.ok) throw new Error("Could not load any news files.");
+            data = await response.json();
+            console.log('⚠ Loaded regular articles (enhanced not available)');
+        }
+
+        // 2. CRITICAL FIX: Assign 'data' to the global 'allNews' variable
+        // This is what displayNews() uses to build the list.
+        allNews = data; 
+
+        // 3. Trigger the display
+        displayNews();
+
+    } catch (error) {
+        console.error("Error loading news:", error);
+        if (container) {
+            container.innerHTML = `<p class="error-state">Error loading news feed. Please try again later.</p>`;
+        }
+    }
+}
       
       // Clear previous data
       allNews = { science: [], media: [], health: [], indoor: [], clinical: [] };
