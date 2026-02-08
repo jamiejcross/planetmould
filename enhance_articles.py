@@ -65,15 +65,32 @@ def main():
 
     enhanced_articles = []
 
-    # 2. Now the loop will safely find 'articles_data'
-    for i, article in enumerate(articles_data, 1):
-        title = article.get('title', '')
-        # ... rest of your loop logic
+   for i, article in enumerate(articles_data, 1):
+        title = article.get('title', 'Untitled Research')
+        
+        # 1. ALWAYS initialize the variable with a fallback first
+        excerpt = "No abstract available for this entry." 
+        
+        # 2. Safely extract and clean the actual content
+        raw_excerpt = article.get('excerpt', '')
+        if raw_excerpt:
+            excerpt = clean_text(raw_excerpt, title)
+        
+        print(f"[{i}/{len(articles_data)}] Researching: {title[:50]}...")
 
+        # Now 'excerpt' is GUARANTEED to exist, even if clean_text fails
         messages = [
-            {"role": "system", "content": "You are a social anthropologist. Summarize in 5 sentences focusing on infrastructure and toxicity."},
-            {"role": "user", "content": f"Title: {title}\nSnippet: {excerpt}"}
+            {
+                "role": "system", 
+                "content": "You are a social anthropologist. Summarize in 5 sentences. Focus on infrastructure, fungal sociality, and material toxicity."
+            },
+            {
+                "role": "user", 
+                "content": f"Title: {title}\nSnippet: {excerpt}"
+            }
         ]
+        
+        # ... (rest of your chat_completion logic)
 
         try:
             response = client.chat_completion(
