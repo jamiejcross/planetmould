@@ -26,70 +26,70 @@ CONTEXTS = ['resistance', 'amr', 'famr', 'infection', 'clinical', 'indoor air', 
 Mouldwire uses RSS feeds from a mixed ecology of sources: including primary research journals (MDPI, Frontiers, ASM, ACS, Elsevier); high-impact general science journals (Nature, PLOS), public health organisations and science journalism.
 
 _Nature Portfolio_
-Scientific Reports
+Scientific Reports,
 Nature Communications
 
 _PLOS_
-PLOS ONE
+PLOS ONE,
 PLOS Pathogens
 
 _American Society for Microbiology (ASM)_
-mBio
-Microbiology Spectrum
-Applied and Environmental Microbiology
-Antimicrobial Agents and Chemotherapy
-Journal of Clinical Microbiology
+mBio,
+Microbiology Spectrum,
+Applied and Environmental Microbiology,
+Antimicrobial Agents and Chemotherapy,
+Journal of Clinical Microbiology,
 
 _Frontiers_
-Frontiers in Microbiology
-Frontiers in Plant Science
-Frontiers in Veterinary Science
-Frontiers in Cellular and Infection Microbiology
-Frontiers in Medicine
-Frontiers in Immunology
+Frontiers in Microbiology,
+Frontiers in Plant Science,
+Frontiers in Veterinary Science,
+Frontiers in Cellular and Infection Microbiology,
+Frontiers in Medicine,
+Frontiers in Immunology,
 Frontiers in Pharmacology
 
 _American Chemical Society (ACS)_
-ACS Omega
-Journal of the American Chemical Society
-Journal of Agricultural and Food Chemistry
+ACS Omega,
+Journal of the American Chemical Society,
+Journal of Agricultural and Food Chemistry,
 Journal of Natural Products
 
 _Elsevier / ScienceDirect (by ISSN)_
-Food Control 
-Bioresource Technology 
-Food Research International
-Science of the Total Environment
-Environmental Pollution 
-Journal of Biotechnology 
-Chemical Engineering Journal 
-Process Biochemistry 
+Food Control ,
+Bioresource Technology ,
+Food Research International,
+Science of the Total Environment,
+Environmental Pollution ,
+Journal of Biotechnology ,
+Chemical Engineering Journal ,
+Process Biochemistry
 
 _MDPI_
-Journal of Fungi
-Microorganisms
-Molecules
-Biomolecules
-International Journal of Molecular Sciences
-Toxins
-Animals
-Plants
-Agronomy
-Foods
-Marine Drugs
-Fermentation
-Catalysts
-Applied Sciences
-Antibiotics
-Pathogens
-Pharmaceuticals
+Journal of Fungi,
+Microorganisms,
+Molecules,
+Biomolecules,
+International Journal of Molecular Sciences,
+Toxins,
+Animals,
+Plants,
+Agronomy,
+Foods,
+Marine Drugs,
+Fermentation,
+Catalysts,
+Applied Sciences,
+Antibiotics,
+Pathogens,
+Pharmaceuticals,
 Diagnostics
 
 _News & Public Science Feeds_
 
-ScienceDaily – Fungi
-Phys.org – Microbiology
-CDC – Fungal Diseases
-American Society of Heating, Refrigerating and Air-Conditioning Engineers - Newsfeed
+ScienceDaily – Fungi,
+Phys.org – Microbiology,
+CDC – Fungal Diseases,
+American Society of Heating, Refrigerating and Air-Conditioning Engineers - Newsfeed,
 UK Government Department for Levelling Up, Housing and Communities - Newsfeed
 
