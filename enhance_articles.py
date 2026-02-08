@@ -13,27 +13,63 @@ from collections import Counter
 from huggingface_hub import InferenceClient
 
 def clean_text(text):
-    """Remove metadata patterns from text"""
+    """Aggressively remove metadata patterns from text"""
     if not text:
         return ""
     
-    # Remove publication date patterns
-    text = re.sub(r'Publication date:.*?\.', '', text, flags=re.IGNORECASE)
-    text = re.sub(r'Published:.*?\.', '', text, flags=re.IGNORECASE)
-    text = re.sub(r'\d{1,2}\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4}', '', text)
+    # Remove common metadata patterns
+    patterns_to_remove = [
+        r'Publication date:.*?(?:\.|$)',
+        r'Published:.*?(?:\.|$)',
+        r'Source:.*?(?:\.|$)',
+        r'Author\(s\):.*?(?:\.|$)',
+        r'Journal of [^,\.]+(?:,\s*Volume\s+\d+)?',
+        r'Volume\s+\d+(?:,\s*Issue\s+\d+)?',
+        r'Page\s+\d+[-–]\d+',
+        r'\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4}',
+        r'The study was published in.*?(?:\.|$)',
+        r'For more information.*?(?:\.|$)',
+        r'Back to .*?(?:\.|$)',
+        r'Click here.*?(?:\.|$)',
+        r'For confidential support.*?(?:\.|$)',
+        r'Ahead of Print',
+        r'Table of Contents',
+    ]
     
-    # Remove journal names (common pattern: Journal of X, Volume Y)
-    text = re.sub(r',\s*Volume\s+\d+.*?\.', '.', text)
-    text = re.sub(r'Journal of [^,\.]+,', '', text)
+    for pattern in patterns_to_remove:
+        text = re.sub(pattern, '', text, flags=re.IGNORECASE)
     
-    # Remove author lists (names with commas)
-    # Pattern: ", Name Name, Name Name." at end
-    text = re.sub(r',\s+[A-Z][a-z]+\s+[A-Z][a-z]+(?:,\s+[A-Z][a-z]+\s+[A-Z][a-z]+)*\.?\s*$', '.', text)
+    # Remove author name patterns (names after commas at end)
+    # Pattern: comma followed by capitalized names
+    text = re.sub(r',\s+[A-Z][a-z]+(?:\.\s*)?(?:[A-Z][a-z]*\.?\s*)*(?:,\s+[A-Z][a-z]+(?:\.\s*)?(?:[A-Z][a-z]*\.?\s*)*)*\.?\s*$', '.', text)
     
-    # Clean up extra spaces and periods
+    # Remove single letter fragments (like "S," "A,")
+    text = re.sub(r'\b[A-Z]\.\s*(?=[A-Z,\.])', '', text)
+    text = re.sub(r',\s*[A-Z]\b', '', text)
+    
+    # Clean up whitespace and punctuation
     text = re.sub(r'\s+', ' ', text)
     text = re.sub(r'\.+', '.', text)
+    text = re.sub(r'\s+\.', '.', text)
+    text = re.sub(r',\s*,', ',', text)
     text = text.strip()
+    
+    # If text starts with just fragments, get the actual content
+    # Remove leading fragments like "Aspergillus bridgerii. S, Philip."
+    sentences = text.split('.')
+    clean_sentences = []
+    for sentence in sentences:
+        sentence = sentence.strip()
+        # Skip if sentence is just names/letters
+        if len(sentence) < 20 or re.match(r'^[A-Z][a-z]*(?:\s+[A-Z][a-z]*)*$', sentence):
+            continue
+        # Skip if sentence has too many single letters
+        if sentence.count(',') > 3 and len(sentence) < 50:
+            continue
+        clean_sentences.append(sentence)
+    
+    if clean_sentences:
+        text = '. '.join(clean_sentences) + '.'
     
     return text
 
