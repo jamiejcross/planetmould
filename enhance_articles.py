@@ -22,6 +22,26 @@ def clean_text(text, title=""):
     if title and text.lower().startswith(title.lower()[:30]):
         text = text[len(title):].strip()
 
+def formalize_voice(text):
+    """Post-processes the AI response to ensure a clinical, observational tone."""
+    # List of 'subjective' or 'introductory' phrases to strip
+    disallowed = [
+        "In this study,", "The researchers found that", "I find it", 
+        "It is interesting to note", "As an anthropologist,", "This research suggests",
+        "The authors observe", "I observe", "In my view,"
+    ]
+
+    # Remove AI artifacts
+    text = re.sub(r'\[/?INST\]|<s>|</s>', '', text).strip()
+    
+    for phrase in disallowed:
+        # Case-insensitive replacement
+        reg = re.compile(re.escape(phrase), re.IGNORECASE)
+        text = reg.sub('', text)
+    
+    return to_sentence_case(text.strip())
+    
+    
     patterns = [
         r'Publication date:.*?(?:\.|$)',
         r'Source:.*?(?:\.|$)',
@@ -66,14 +86,23 @@ def main():
         
         print(f"[{i}/{len(articles_data)}] Researching: {title[:50]}...")
 
+        #THIS IS A CRITICAL SECTION WHERE YOU DEFINE THE AI'S VOICE. It explicitly forbids first-person language and focuses on the "Patchy Anthropocene" vocabulary.  
         messages = [
             {
                 "role": "system", 
-                "content": "You are a social anthropologist. Summarize the research in 5 sentences. Focus on infrastructure, fungal sociality, and material toxicity. Do not use bullet points or mention authors."
+                "content": (
+                    "You are a detached field researcher documenting the 'Patchy Anthropocene.' "
+                    "Summarize research in 5 concise sentences. Focus on 'feral effects'—nonhuman responses "
+                    "to human infrastructure that exceed human design. Analyze how multispecies assemblages "
+                    "(fungi, bacteria, toxins) interact with industrial materials or landscapes. "
+                    "Maintain a clinical, observational tone. DO NOT use the first person ('I', 'me', 'my'). "
+                    "DO NOT describe your role as an anthropologist or use phrases like 'it is intriguing to observe.' "
+                    "Treat the research as a site of environmental rupture or unexpected coordination."
+                )
             },
             {
                 "role": "user", 
-                "content": f"Title: {title}\nAbstract Snippet: {excerpt}"
+                "content": f"Title: {title}\nAbstract: {excerpt}"
             }
         ]
 
@@ -84,6 +113,9 @@ def main():
                 temperature=0.7
             )
             ai_summary = response.choices[0].message.content.strip()
+
+        # CALL THE NEW FORMALIZER HERE
+            ai_summary = formalize_voice(raw_ai_summary)
             
         except Exception as e:
             print(f"  ⚠ AI error: {e}. Using fallback.")
