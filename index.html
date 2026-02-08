@@ -66,12 +66,12 @@
   </div>
 
 <script>
-  // 1. GLOBAL STATE
-  let allNews = { science: [], media: [], health: [], indoor: [], clinical: [] };
+ // 1. GLOBAL STATE
+  let allNews = []; // Changed to Array to support .filter()
   let currentFilter = "all";
   let visibleCount = 20;
 
-  // 2. CATEGORY MAPPING (AI categories to your filter names)
+  // 2. CATEGORY MAPPING
   const categoryMap = {
     'Scientific Research': 'science',
     'Popular Media': 'media',
@@ -80,74 +80,37 @@
     'Clinical': 'clinical'
   };
 
-  // 3. FETCH ENGINE - Now loads articles_enhanced.json with fallback
+  // 3. FETCH ENGINE
   async function fetchNews() {
     const container = document.getElementById("newsContainer");
     try {
-        // 1. Try to load enhanced articles first
-        let response = await fetch('articles_enhanced.json?v=' + new Date().getTime());
-        let data;
-        
-        if (response.ok) {
-            data = await response.json();
-            console.log('✓ Loaded enhanced articles');
-        } else {
-            // Fallback to regular articles
-            response = await fetch('mould_news.json?v=' + new Date().getTime());
-            if (!response.ok) throw new Error("Could not load any news files.");
-            data = await response.json();
-            console.log('⚠ Loaded regular articles (enhanced not available)');
-        }
+      let response = await fetch('articles_enhanced.json?v=' + new Date().getTime());
+      let data;
+      
+      if (response.ok) {
+          data = await response.json();
+          console.log('✓ Loaded enhanced articles');
+      } else {
+          response = await fetch('mould_news.json?v=' + new Date().getTime());
+          if (!response.ok) throw new Error("Could not load any news files.");
+          data = await response.json();
+          console.log('⚠ Loaded regular articles');
+      }
 
-        // 2. CRITICAL FIX: Assign 'data' to the global 'allNews' variable
-        // This is what displayNews() uses to build the list.
-        allNews = data; 
-
-        // 3. Trigger the display
-        displayNews();
+      // Assign to global state
+      allNews = data; 
+      displayNews();
 
     } catch (error) {
-        console.error("Error loading news:", error);
-        if (container) {
-            container.innerHTML = `<p class="error-state">Error loading news feed. Please try again later.</p>`;
-        }
-    }
-}
-      
-      // Clear previous data
-      allNews = { science: [], media: [], health: [], indoor: [], clinical: [] };
-      
-      // Process and categorize articles
-      data.forEach(item => {
-        item.pubDate = new Date(item.pubDate || item.published);
-        
-        // Determine category
-        let category;
-        if (isEnhanced && item.primary_category) {
-          // Map AI category to filter category
-          category = categoryMap[item.primary_category] || 'science';
-        } else if (item.category) {
-          // Use existing category
-          category = item.category;
-        } else {
-          category = 'science';
-        }
-        
-        // Add to appropriate category
-        if (allNews[category]) {
-          allNews[category].push(item);
-        }
-      });
-      
-      displayNews();
-    } catch (e) {
-      console.error("Fetch error:", e);
-      container.innerHTML = `<p class="empty-state" style="padding:40px; text-align:center;">The biosphere archive is currently updating. Please refresh in a moment.</p>`;
+      console.error("Error loading news:", error);
+      if (container) {
+        container.innerHTML = `<p class="error-state" style="padding:40px; text-align:center;">The biosphere archive is currently updating. Please refresh in a moment.</p>`;
+      }
     }
   }
 
-// 4. UI ENGINE - Now displays AI summaries and keywords
- function displayNews() {
+  // 4. UI ENGINE
+  function displayNews() {
     const container = document.getElementById("newsContainer");
     const loadMoreContainer = document.getElementById("loadMoreContainer");
     if (!container) return;
@@ -155,14 +118,20 @@
     // Filter logic
     let filtered = allNews;
     if (currentFilter !== 'all') {
-      filtered = allNews.filter(item => item.category === currentFilter || item.primary_category === currentFilter);
+      filtered = allNews.filter(item => {
+        // Check both the raw category and the AI primary_category
+        const aiMappedCat = categoryMap[item.primary_category];
+        return item.category === currentFilter || aiMappedCat === currentFilter;
+      });
     }
 
+    // Search logic
     const searchTerm = document.getElementById("newsSearch")?.value.toLowerCase();
     if (searchTerm) {
       filtered = filtered.filter(item => 
         item.title.toLowerCase().includes(searchTerm) || 
-        (item.summary && item.summary.toLowerCase().includes(searchTerm))
+        (item.summary && item.summary.toLowerCase().includes(searchTerm)) ||
+        (item.excerpt && item.excerpt.toLowerCase().includes(searchTerm))
       );
     }
 
@@ -172,14 +141,13 @@
       filtered.slice(0, visibleCount).forEach(item => {
           const isEnhanced = item.enhanced === true;
           
-          // FIX: Sentence Case formatting in JavaScript
+          // Sentence Case formatting
           let rawSummary = item.summary || item.excerpt || "";
           const summary = rawSummary
             .toLowerCase()
             .replace(/(^\s*\w|[\.\!\?]\s*\w)/g, c => c.toUpperCase());
 
           const keywords = item.keywords || [];
-          // Ensure valid date
           const displayDate = item.pubDate ? new Date(item.pubDate).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : 'Recent';
 
           html += `
@@ -191,21 +159,21 @@
               
               <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
               
-              ${isEnhanced ? '<span class="ai-badge">⚛ Prompt Engineered Summary</span>' : ''}
+              ${isEnhanced ? '<span class="ai-badge" style="background:#eee; padding:2px 8px; font-size:10px; border-radius:4px; border:1px solid #ddd;">⚛ AI Summarized</span>' : ''}
               
-              ${summary ? `<p class="news-excerpt">${summary}</p>` : ''}
+              ${summary ? `<p class="news-excerpt" style="font-size: 0.95rem; line-height: 1.6; margin: 12px 0;">${summary}</p>` : ''}
               
               ${keywords.length > 0 ? `
-                <div class="news-keywords">
-                  ${keywords.slice(0, 3).map(k => `<span class="keyword-tag">${k}</span>`).join('')}
+                <div class="news-keywords" style="margin-top:10px;">
+                  ${keywords.slice(0, 3).map(k => `<span class="keyword-tag" style="background:#f0f0f0; padding:2px 8px; margin-right:5px; font-size:11px; border-radius:12px;">${k}</span>`).join('')}
                 </div>
               ` : ''}
               
-              <div class="source-link-container" style="margin-top: 10px;">
-                <a href="${item.url}" target="_blank" class="read-more">View original source online →</a>
+              <div class="source-link-container" style="margin-top: 15px;">
+                <a href="${item.url}" target="_blank" class="read-more" style="text-decoration:none; font-weight:bold; color:#000; font-size:13px;">View original source online →</a>
               </div>
               
-              <hr class="news-divider" style="border: 0; border-top: 1px solid #000; margin: 25px 0; opacity: 0.2;">
+              <hr class="news-divider" style="border: 0; border-top: 1px solid #000; margin: 30px 0; opacity: 0.1;">
             </div>`;
       });
       
@@ -213,10 +181,10 @@
       container.innerHTML = html;
       if (loadMoreContainer) loadMoreContainer.style.display = (filtered.length > visibleCount) ? "block" : "none";
     } else {
-      container.innerHTML = `<p class="empty-state">No matching mould wires found.</p>`;
+      container.innerHTML = `<p class="empty-state" style="padding:40px; text-align:center;">No matching mould wires found.</p>`;
       if (loadMoreContainer) loadMoreContainer.style.display = "none";
     }
-}
+  }
 
   // 5. INITIALIZE
   window.onload = () => {
