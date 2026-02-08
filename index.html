@@ -123,8 +123,8 @@
         html += `
           <div class="news-item">
             <div class="news-meta">
-  <span><strong>Published:</strong> ${item.pubDate}</span>
-  <span style="margin: 0 10px;"> | </span> <span><strong>Source:</strong> ${item.source}</span>
+              <span><strong>Published:</strong> ${item.pubDate.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}</span>
+                <span style="margin: 0 10px;"> | </span> <span><strong>Source:</strong> ${item.source}</span>
 </div>
             <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
             <p class="news-excerpt">${item.excerpt}...</p>
