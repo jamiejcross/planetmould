@@ -50,6 +50,15 @@ def enhance_articles():
     print("🤖 Initializing AI enhancer...")
     enhancer = ContentEnhancer(ai_provider="huggingface")
     
+    # Define categories to match Mouldwire's existing filter system
+    categories = [
+        "Scientific Research",
+        "Popular Media", 
+        "Health & Environment",
+        "Housing & Indoor Air",
+        "Clinical"
+    ]
+    
     # Check for Hugging Face token
     hf_token = os.getenv('HF_TOKEN')
     if hf_token:
@@ -123,11 +132,11 @@ def enhance_articles():
                 print(f"[{i}/{len(new_articles)}] Enhancing: {article.title[:50]}...")
                 
                 summary = enhancer.summarize(article)
-                categories = enhancer.categorize(article)
+                category_scores = enhancer.categorize(article, categories)
                 keywords = enhancer.extract_keywords(article)
                 
                 # Get primary category
-                primary_category = max(categories.items(), key=lambda x: x[1])[0] if categories else "Uncategorized"
+                primary_category = max(category_scores.items(), key=lambda x: x[1])[0] if category_scores else "Uncategorized"
                 
                 # Create enhanced article
                 enhanced = {
@@ -135,7 +144,7 @@ def enhance_articles():
                     'summary': summary,
                     'ai_summary': summary,  # Alias for clarity
                     'primary_category': primary_category,
-                    'categories': categories,
+                    'categories': category_scores,
                     'keywords': keywords,
                     'enhanced': True,
                     'enhanced_at': datetime.utcnow().isoformat()
