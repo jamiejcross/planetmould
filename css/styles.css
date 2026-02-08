@@ -64,8 +64,12 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 #newsContainer { display: flex; flex-direction: column; gap: 40px; margin-bottom: 64px; }
 
 .news-item {
-  background: #fff; padding-bottom: 32px; border-bottom: 1px solid var(--border);
+  background: #fff; padding-bottom: 32px; border-top:none !important; border-bottom: 1px solid var(--border);
   display: flex; flex-direction: column;
+}
+
+.news-item:last-child {
+    border-bottom: none !important; /* Removes the line after the final article */
 }
 
 .news-meta {
