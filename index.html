@@ -123,9 +123,9 @@
         html += `
           <div class="news-item">
             <div class="news-meta">
-              <span><strong>Published:</strong> ${item.pubDate.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
-              <span class="meta-sep"> | </span> <span><strong>Source:</strong> ${item.source}</span>
-            </div>
+  <span><strong>Published:</strong> ${item.pubDate}</span>
+  <span style="margin: 0 10px;"> | </span> <span><strong>Source:</strong> ${item.source}</span>
+</div>
             <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
             <p class="news-excerpt">${item.excerpt}...</p>
             <a href="${item.url}" target="_blank" class="read-more">Read Full Report →</a>
