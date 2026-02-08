@@ -42,7 +42,7 @@ class ContentEnhancer:
             ai_provider: 'huggingface', 'ollama', or 'openai'
         """
         self.ai_provider = ai_provider
-        self.hf_api_url = "https://router.huggingface.co/models/"
+        self.hf_api_url = "https://api-inference.huggingface.co/models/"
         self.hf_token = None  # Set via set_api_key()
         self.ollama_url = "http://localhost:11434/api/generate"
         self.openai_key = None
@@ -64,7 +64,14 @@ class ContentEnhancer:
         Model: facebook/bart-large-cnn (excellent for news summarization)
         """
         model = "facebook/bart-large-cnn"
-        headers = {"Authorization": f"Bearer {self.hf_token}"} if self.hf_token else {}
+        
+        # Updated API URL format
+        api_url = f"https://api-inference.huggingface.co/models/{model}"
+        
+        headers = {
+            "Authorization": f"Bearer {self.hf_token}",
+            "Content-Type": "application/json"
+        } if self.hf_token else {"Content-Type": "application/json"}
         
         # Truncate input to avoid API limits (1024 tokens max for BART)
         words = text.split()
@@ -81,16 +88,19 @@ class ContentEnhancer:
         }
         
         response = requests.post(
-            self.hf_api_url + model,
+            api_url,
             headers=headers,
-            json=payload
+            json=payload,
+            timeout=30
         )
         
         if response.status_code == 200:
             result = response.json()
-            return result[0]["summary_text"]
+            if isinstance(result, list) and len(result) > 0:
+                return result[0].get("summary_text", text[:200])
+            return text[:200]  # Fallback
         else:
-            raise Exception(f"HF API Error: {response.text}")
+            raise Exception(f"HF API Error: {response.status_code} - {response.text}")
     
     def summarize_article_ollama(self, text: str, max_length: int = 150) -> str:
         """
@@ -172,7 +182,12 @@ Summary:"""
         Model: facebook/bart-large-mnli
         """
         model = "facebook/bart-large-mnli"
-        headers = {"Authorization": f"Bearer {self.hf_token}"} if self.hf_token else {}
+        api_url = f"https://api-inference.huggingface.co/models/{model}"
+        
+        headers = {
+            "Authorization": f"Bearer {self.hf_token}",
+            "Content-Type": "application/json"
+        } if self.hf_token else {"Content-Type": "application/json"}
         
         payload = {
             "inputs": text[:500],  # Limit for faster processing
@@ -182,16 +197,17 @@ Summary:"""
         }
         
         response = requests.post(
-            self.hf_api_url + model,
+            api_url,
             headers=headers,
-            json=payload
+            json=payload,
+            timeout=30
         )
         
         if response.status_code == 200:
             result = response.json()
             return dict(zip(result["labels"], result["scores"]))
         else:
-            raise Exception(f"HF API Error: {response.text}")
+            raise Exception(f"HF API Error: {response.status_code} - {response.text}")
     
     def categorize_article_ollama(self, text: str, categories: List[str]) -> Dict[str, float]:
         """Categorize using Ollama (FREE, local)"""
@@ -523,4 +539,3 @@ if __name__ == "__main__":
         example_batch_processing()
     else:
         print("Invalid choice")
-
