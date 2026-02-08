@@ -119,12 +119,12 @@
       let html = `<div class="news-list">`;
       
       // THIS IS THE LOOP WHERE THE FORMATTING GOES
-      resultsToShow.forEach(item => {
+    resultsToShow.forEach(item => {
         html += `
           <div class="news-item">
             <div class="news-meta">
               <span><strong>Published:</strong> ${item.pubDate.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
-              <span><strong>Source:</strong> ${item.source}</span>
+              <span class="meta-sep"> | </span> <span><strong>Source:</strong> ${item.source}</span>
             </div>
             <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
             <p class="news-excerpt">${item.excerpt}...</p>
