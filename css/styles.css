@@ -85,7 +85,7 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 
 /* Ensure both spans look identical */
 .news-meta span {
-    display: flex;
+    display: inline-block; /* Ensures they act as separate blocks if wrapping */
     align-items: center;
     white-space: nowrap;   /* Keeps "Published: Date" on one line if possible */
 }
@@ -94,11 +94,17 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 .news-meta strong {
     font-weight: 700;
     color: #333;
-    margin-right: 5px;
+    margin-right: 4px;
 }
 
 .news-meta span:last-child {
   margin-right: 0;
+}
+
+* Ensure no borders linger on the news item by default */
+.news-item {
+    border: none !important;
+    border-bottom: 1px solid rgba(0,0,0,0.1) !important;
 }
 
 /* AI Enhancement Badge - WHITE VERSION */
