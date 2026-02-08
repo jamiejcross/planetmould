@@ -49,6 +49,12 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 }
 .filter-btn.active { background: #000; color: #fff; border-color: #000; }
 
+.refresh-btn {
+  padding: 8px 16px; border: 1px solid var(--border); background: #fff; border-radius: 4px;
+  cursor: pointer; font-family: var(--font); font-size: 16px; transition: all 0.2s; font-weight: 500;
+}
+.refresh-btn:hover { background: #000; color: #fff; border-color: #000; }
+
 #newsSearch {
   width: 100%; padding: 12px 15px; border: 1px solid var(--border); border-radius: 8px;
   font-size: 16px; background: #f9f9f9; font-family: var(--font); margin-bottom: 32px;
@@ -73,7 +79,7 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
   display: flex;
   flex-wrap: wrap;
   gap: 8px 16px;
-  align-items: center; /* NEW: Aligns AI badge with text */
+  align-items: center;
 }
 
 .news-meta span {
@@ -97,7 +103,7 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 0 !important; /* Override the span margin */
+  margin-right: 0 !important;
 }
 
 .news-title { font-size: 24px; font-weight: 700; line-height: 1.25; margin: 0 0 12px 0; }
@@ -156,24 +162,6 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 }
 @keyframes spin { 100% { transform: rotate(360deg); } }
 
-.refresh-btn {
-  padding: 8px 16px;
-  border: 1px solid var(--border);
-  background: #fff;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: var(--font);
-  font-size: 16px;
-  transition: all 0.2s;
-  font-weight: 500;
-}
-
-.refresh-btn:hover {
-  background: #000;
-  color: #fff;
-  border-color: #000;
-}
-
 /* 8. MOBILE RESPONSIVENESS */
 @media (max-width: 700px) {
   .banner { font-size: 16px; position: relative; }
@@ -192,7 +180,7 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
   .news-title { font-size: 20px; }
   .news-excerpt { font-size: 16px; }
   
-  /* Mobile: Stack meta items vertically for better readability */
+  /* Mobile: Stack meta items vertically */
   .news-meta {
     flex-direction: column;
     align-items: flex-start;
