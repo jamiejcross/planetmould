@@ -97,7 +97,7 @@
     }
   }
 
-  // 3. UI ENGINE
+// 3. UI ENGINE
   function displayNews() {
     const container = document.getElementById("newsContainer");
     const searchInput = document.getElementById("newsSearch");
@@ -107,7 +107,7 @@
     let combinedNews = [];
     const activeCats = currentFilter === "all" ? Object.keys(allNews) : [currentFilter];
     activeCats.forEach(cat => combinedNews.push(...allNews[cat]));
-    
+
     // Filter by search query and sort by date
     const filtered = combinedNews
       .filter(item => (item.title + item.source + item.excerpt).toLowerCase().includes(query))
@@ -117,9 +117,9 @@
 
     if (resultsToShow.length > 0) {
       let html = `<div class="news-list">`;
-
+      
+      // THIS IS THE LOOP WHERE THE FORMATTING GOES
       resultsToShow.forEach(item => {
-
         html += `
           <div class="news-item">
             <div class="news-meta">
@@ -131,7 +131,7 @@
             <a href="${item.url}" target="_blank" class="read-more">Read Full Report →</a>
           </div>`;
       });
-        
+      
       html += `</div>`;
       container.innerHTML = html;
 
