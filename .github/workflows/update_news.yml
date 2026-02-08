@@ -45,24 +45,31 @@ jobs:
         if [ -f mould_news.json ]; then
           echo "✅ mould_news.json exists"
           echo "Size: $(wc -c < mould_news.json) bytes"
-          echo "First few lines:"
-          head -20 mould_news.json
+          echo "Articles found: $(grep -o '"title"' mould_news.json | wc -l)"
         else
           echo "❌ mould_news.json NOT FOUND"
-          echo "fetch_news.py may have failed"
           exit 1
         fi
     
-    - name: Test Enhancement (Debug)
+    - name: Enhance articles with AI
       env:
         HF_TOKEN: ${{ secrets.HF_TOKEN }}
       run: |
-        echo "Running test script..."
-        python test_enhancement.py
+        echo "Enhancing articles with AI summaries, categories, and keywords..."
+        python enhance_articles.py
         
         echo ""
-        echo "Files created:"
+        echo "Files after enhancement:"
         ls -la *.json
+        
+        if [ -f articles_enhanced.json ]; then
+          echo ""
+          echo "✅ articles_enhanced.json created successfully!"
+          echo "File size: $(wc -c < articles_enhanced.json) bytes"
+          echo "Enhanced articles: $(grep -o '"enhanced": true' articles_enhanced.json | wc -l)"
+        else
+          echo "❌ Enhancement failed - articles_enhanced.json not created"
+        fi
     
     - name: Check for changes
       id: check_changes
@@ -84,8 +91,11 @@ jobs:
         echo "## Workflow Summary" >> $GITHUB_STEP_SUMMARY
         echo "" >> $GITHUB_STEP_SUMMARY
         if [ -f articles_enhanced.json ]; then
-          ARTICLE_COUNT=$(cat articles_enhanced.json | grep -o '"title"' | wc -l)
-          echo "✅ Enhanced $ARTICLE_COUNT articles" >> $GITHUB_STEP_SUMMARY
+          ARTICLE_COUNT=$(grep -o '"title"' articles_enhanced.json | wc -l)
+          ENHANCED_COUNT=$(grep -o '"enhanced": true' articles_enhanced.json | wc -l)
+          echo "✅ Created articles_enhanced.json" >> $GITHUB_STEP_SUMMARY
+          echo "📊 Total articles: $ARTICLE_COUNT" >> $GITHUB_STEP_SUMMARY
+          echo "✨ Successfully enhanced: $ENHANCED_COUNT" >> $GITHUB_STEP_SUMMARY
         else
           echo "⚠️ No enhanced articles file found" >> $GITHUB_STEP_SUMMARY
         fi
