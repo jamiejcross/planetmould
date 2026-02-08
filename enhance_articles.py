@@ -11,7 +11,6 @@ def to_sentence_case(text):
     if not text: return ""
     # Remove AI artifacts like [INST] or <s>
     text = re.sub(r'\[/?INST\]|<s>|</s>', '', text).strip()
-    # Basic cleanup
     text = text.replace('\n', ' ').strip()
     if not text: return ""
     text = text[0].upper() + text[1:]
@@ -20,16 +19,13 @@ def to_sentence_case(text):
 def clean_text(text, title=""):
     """Aggressively removes author lists and journal metadata."""
     if not text: return ""
-    
-    # Remove the title if it's repeated in the excerpt
     if title and text.lower().startswith(title.lower()[:30]):
         text = text[len(title):].strip()
 
-    # List of patterns to wipe out (Authors, Dates, Volumes)
     patterns = [
         r'Publication date:.*?(?:\.|$)',
         r'Source:.*?(?:\.|$)',
-        r'Author\(s\):.*', # Usually authors are the end of the metadata block
+        r'Author\(s\):.*', 
         r'Volume \d+.*?(?:\.|$)',
         r'https?://\S+',
         r'Journal of .*',
@@ -38,59 +34,48 @@ def clean_text(text, title=""):
     for p in patterns:
         text = re.sub(p, '', text, flags=re.IGNORECASE)
     
-    # If we stripped everything, return a placeholder so the AI has context
-    return text.strip() if len(text.strip()) > 20 else "Research focused on the themes of the title."
+    return text.strip() if len(text.strip()) > 20 else "Research focusing on the themes of the title."
 
 def main():
     print("=" * 60)
-    print("Mouldwire Research Enhancement System (v0.3 Chat)")
+    print("Mouldwire Research Enhancement System (Llama-3 Chat)")
     print("=" * 60)
 
     hf_token = os.getenv('HF_TOKEN')
-    # Stable model for Chat API
+    # meta-llama/Meta-Llama-3-8B-Instruct is highly stable for Chat API tasks
     model_id = "meta-llama/Meta-Llama-3-8B-Instruct" 
     client = InferenceClient(model=model_id, token=hf_token)
 
-    # 1. Initialize the variable FIRST to avoid NameError
-    articles_data = [] 
-
+    articles_data = []
     try:
         with open('mould_news.json', 'r', encoding='utf-8') as f:
             articles_data = json.load(f)
         print(f"✅ Loaded {len(articles_data)} articles.")
     except Exception as e:
         print(f"❌ Error loading mould_news.json: {e}")
-        # Exit gracefully if there is no data to process
-        return 
+        return
 
     enhanced_articles = []
 
-   for i, article in enumerate(articles_data, 1):
+    for i, article in enumerate(articles_data, 1):
         title = article.get('title', 'Untitled Research')
-        
-        # 1. ALWAYS initialize the variable with a fallback first
-        excerpt = "No abstract available for this entry." 
-        
-        # 2. Safely extract and clean the actual content
         raw_excerpt = article.get('excerpt', '')
-        if raw_excerpt:
-            excerpt = clean_text(raw_excerpt, title)
+        
+        # Ensure 'excerpt' is defined before the AI call
+        excerpt = clean_text(raw_excerpt, title)
         
         print(f"[{i}/{len(articles_data)}] Researching: {title[:50]}...")
 
-        # Now 'excerpt' is GUARANTEED to exist, even if clean_text fails
         messages = [
             {
                 "role": "system", 
-                "content": "You are a social anthropologist. Summarize in 5 sentences. Focus on infrastructure, fungal sociality, and material toxicity."
+                "content": "You are a social anthropologist. Summarize the research in 5 sentences. Focus on infrastructure, fungal sociality, and material toxicity. Do not use bullet points or mention authors."
             },
             {
                 "role": "user", 
-                "content": f"Title: {title}\nSnippet: {excerpt}"
+                "content": f"Title: {title}\nAbstract Snippet: {excerpt}"
             }
         ]
-        
-        # ... (rest of your chat_completion logic)
 
         try:
             response = client.chat_completion(
@@ -99,12 +84,11 @@ def main():
                 temperature=0.7
             )
             ai_summary = response.choices[0].message.content.strip()
+            
         except Exception as e:
-            # Check if it's a model error and suggest a fix in logs
-            print(f"  ⚠ AI error: {e}")
-            ai_summary = f"Summary currently unavailable for: {title}. Focus on fungal degradation and material safety."
+            print(f"  ⚠ AI error: {e}. Using fallback.")
+            ai_summary = f"Analysis of {title}. {excerpt[:200]}..."
 
-        # ... (save code)
         enhanced = {
             **article,
             'summary': to_sentence_case(ai_summary),
