@@ -174,22 +174,37 @@
         // Check if AI-enhanced
         const isEnhanced = !!(item.summary || item.keywords);
         
-        html += `
-          <div class="news-item">
-            <div class="news-meta">
-              <span><strong>Published:</strong> ${item.pubDate.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}</span>
-              <span><strong>Source:</strong> ${item.source}</span>   
-            <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
-            ${isEnhanced ? '<span class="ai-badge">⚛ Prompt Engineered Summary</span>' : ''}
-            ${summary ? `<p class="news-excerpt">${summary}</p>` : ''}
-            ${keywords.length > 0 ? `
-              <div class="news-keywords">
-                ${keywords.slice(0, 3).map(k => `<span class="keyword-tag">${k}</span>`).join('')}
-              </div>
-            ` : ''}
-            <a href="${item.url}" target="_blank" class="read-more">View original source online →</a>
-          </div>`;
-      });
+        html += filtered.slice(0, visibleCount).map(item => {
+    const isEnhanced = item.enhanced === true;
+    const summary = item.summary || item.excerpt;
+    const keywords = item.keywords || [];
+
+    return `
+      <div class="news-item">
+        <div class="news-meta">
+          <span><strong>Published:</strong> ${new Date(item.pubDate).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}</span>
+          <span><strong>Source:</strong> ${item.source}</span>
+        </div>
+        
+        <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
+        
+        ${isEnhanced ? '<span class="ai-badge">⚛ Prompt Engineered Summary</span>' : ''}
+        
+        ${summary ? `<p class="news-excerpt">${summary}</p>` : ''}
+        
+        ${keywords.length > 0 ? `
+          <div class="news-keywords">
+            ${keywords.slice(0, 3).map(k => `<span class="keyword-tag">${k}</span>`).join('')}
+          </div>
+        ` : ''}
+        
+        <div class="source-link-container">
+          <a href="${item.url}" target="_blank" class="read-more">View original source online →</a>
+        </div>
+        
+        <hr class="news-divider">
+      </div>`;
+}).join('');
       
       html += `</div>`;
       container.innerHTML = html;
