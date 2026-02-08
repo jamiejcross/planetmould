@@ -16,6 +16,7 @@ A full list of RSS Feeds and keywords used in Mouldwire can be found below.
 **Keywords**
 
 SUBJECTS = ['mould', 'mold', 'mycotoxin', 'aflatoxin', 'aspergillus', 'penicillium', 'stachybotrys', 'cladosporium', 'alternaria', 'fusarium', 'mucor', 'filamentous']
+
 CONTEXTS = ['resistance', 'amr', 'famr', 'infection', 'clinical', 'indoor air', 'housing', 'home', 'building', 'hvac', 'ventilation', 'azole', 'pathogen', 'humidity', 'condensation', 'iaq', 'antifungal', 'mask', 'surgical', 'degradation', 'environmental', 'fabric', 'damp', 'bioaerosol', 'environment', 'bioremediation', 'exposure', 'public health', 'study', 'analysis', 'climate', 'heat', 'metabolic', 'metabolise', 'metabolize', 'infrastructure', 'materiality', 'biopolitics', 'labor', 'urban', 'decay', 'toxicity', 'assemblage', 'sociality', 'precarity', 'policy', 'regulation', 'governance', 'justice', 'inequality', 'tenure']
 
 **RSS FEEDS**
