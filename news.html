@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>News - Planet Mould</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="banner">
+    <a href="index.html" class="brand">The Future is Mouldy</a>
+    <input type="checkbox" class="nav-toggle" id="navToggle" />
+    <label for="navToggle" class="hamburger">☰</label>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="news.html">Mouldwire</a>
+      <a href="publications.html">Publications</a>
+      <a href="collaborations.html">Collaborations</a>
+    </div>
+  </div>
+
+  <div class="page-header">
+    <h1>Mouldwire</h1>
+    <p>Mouldwire is a bespoke search engine that aggregates mould related news from ~50 peer reviewed scientific journals, as well as public health agencies, environmental bodies, and standards organisations.</p>
+  </div>
+
+  <div class="controls">
+    <div class="filter-row">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All News</button>
+        <button class="filter-btn" data-filter="science">Scientific Research</button>
+        <button class="filter-btn" data-filter="media">Popular Media</button>
+        <button class="filter-btn" data-filter="health">Health & Environment</button>
+        <button class="filter-btn" data-filter="indoor">Housing & Indoor Air</button>
+        <button class="filter-btn" data-filter="clinical">Clinical</button>
+      </div>
+      <button id="refreshBtn" class="refresh-btn">Refresh Feed</button>
+    </div>
+    
+    <div class="search-container">
+      <input type="text" id="newsSearch" placeholder="Search filtered news (e.g. 'Glasgow', 'Resistance', 'Ventilation')..." />
+    </div>
+  </div>
+
+  <div id="newsContainer">
+    <div class="loading">
+      <div class="spinner"></div>
+      <p>Scanning the biosphere archive...</p>
+    </div>
+  </div>
+
+  <div id="loadMoreContainer" style="text-align: center; margin: 40px 0; display: none;">
+      <button id="loadMoreBtn" class="refresh-btn">Load More Results</button>
+  </div>
+
+  <div class="footer-banner">
+    <div class="footer-left">
+      <div class="footer-credit">
+        <p>Planet Mould is supported by the University of Glasgow.</p>
+        <p>Website, Photographs + Design: delacroix@edinburghpress.com</p>
+      </div>
+      <a href="mailto:jamie.cross@glasgow.ac.uk" class="email">jamie.cross@glasgow.ac.uk</a>
+    </div>
+    <img src="images/glasgow logo.png" alt="University of Glasgow" class="uni-logo" />
+  </div>
+
+<script>
+  // 1. GLOBAL STATE
+  let allNews = { science: [], media: [], health: [], indoor: [], clinical: [] };
+  let currentFilter = "all";
+  let visibleCount = 20;
+
+  // 2. FETCH ENGINE (Reading the JSON file created by GitHub Actions)
+  async function fetchNews() {
+    const container = document.getElementById("newsContainer");
+    try {
+      // Use a timestamp to prevent the browser from caching an old version of the news
+      const response = await fetch('mould_news.json?v=' + new Date().getTime());
+      const data = await response.json();
+      
+      // Clear previous data
+      allNews = { science: [], media: [], health: [], indoor: [], clinical: [] };
+      
+      // Categorize the pre-filtered items from Python
+      data.forEach(item => {
+        item.pubDate = new Date(item.pubDate);
+        if (allNews[item.category]) {
+          allNews[item.category].push(item);
+        }
+      });
+      
+      displayNews();
+    } catch (e) {
+      console.error("Fetch error:", e);
+      container.innerHTML = `<p class="empty-state" style="padding:40px; text-align:center;">The biosphere archive is currently updating. Please refresh in a moment.</p>`;
+    }
+  }
+
+  // 3. UI ENGINE
+  function displayNews() {
+    const container = document.getElementById("newsContainer");
+    const searchInput = document.getElementById("newsSearch");
+    const loadMoreContainer = document.getElementById("loadMoreContainer");
+    const query = searchInput ? searchInput.value.toLowerCase() : "";
+    
+    let combinedNews = [];
+    const activeCats = currentFilter === "all" ? Object.keys(allNews) : [currentFilter];
+    activeCats.forEach(cat => combinedNews.push(...allNews[cat]));
+
+    // Filter by search query and sort by date
+    const filtered = combinedNews
+      .filter(item => (item.title + item.source + item.excerpt).toLowerCase().includes(query))
+      .sort((a, b) => b.pubDate - a.pubDate);
+
+    const resultsToShow = filtered.slice(0, visibleCount);
+
+    if (resultsToShow.length > 0) {
+      let html = `<div class="news-list">`;
+      resultsToShow.forEach(item => {
+        html += `
+          <div class="news-item">
+            <p class="news-meta"><strong>${item.source}</strong> • ${item.pubDate.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</p>
+            <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
+            <p class="news-excerpt">${item.excerpt}...</p>
+            <a href="${item.url}" target="_blank" class="read-more">Read Full Report →</a>
+          </div>`;
+      });
+      html += `</div>`;
+      container.innerHTML = html;
+
+      if (loadMoreContainer) {
+        loadMoreContainer.style.display = (filtered.length > visibleCount) ? "block" : "none";
+      }
+    } else {
+      container.innerHTML = `<p class="empty-state" style="padding:40px; text-align:center;">No matching mould wires found in the archive.</p>`;
+      if (loadMoreContainer) loadMoreContainer.style.display = "none";
+    }
+  }
+
+  // 4. INITIALIZE
+  window.onload = () => {
+    fetchNews();
+
+    document.getElementById("newsSearch")?.addEventListener("input", () => {
+      visibleCount = 20; 
+      displayNews();
+    });
+
+    document.getElementById("refreshBtn")?.addEventListener("click", () => {
+      visibleCount = 20;
+      fetchNews();
+    });
+
+    document.getElementById("loadMoreBtn")?.addEventListener("click", () => {
+      visibleCount += 20;
+      displayNews();
+    });
+
+    document.querySelectorAll(".filter-btn").forEach(btn => {
+      btn.addEventListener("click", (e) => {
+        document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+        e.target.classList.add("active");
+        currentFilter = e.target.dataset.filter;
+        visibleCount = 20; 
+        displayNews();
+      });
+    });
+  };
+</script>
+</body>
+</html>
