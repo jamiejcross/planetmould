@@ -32,53 +32,70 @@ class ContentEnhancer:
     def set_api_key(self, key: str):
         self.hf_token = key
 
-    def _sanitize_for_ai(self, article: Article) -> str:
+def _sanitize_for_ai(self, article: Article) -> str:
         text = article.content
+        
+        # 1. Strip Title
         if text.lower().startswith(article.title.lower()):
             text = text[len(article.title):].strip()
         
-        # Strip metadata noise
-        patterns = [r'Publication date:.*?(?:\.|$)', r'Source:.*?(?:\.|$)', r'https?://\S+']
-        for pattern in patterns:
+        # 2. Aggressively strip Journal Metadata (Volume, Issue, Pages)
+        metadata_patterns = [
+            r'Journal of.*?,? vol\w*\.? \d+.*?(?:\.|$)',
+            r'Volume \d+, Issue \d+.*?(?:\.|$)',
+            r'https?://\S+',
+            r'Page \d+-\d+',
+            r'Published: \d{1,2} \w+ \d{4}'
+        ]
+        for pattern in metadata_patterns:
             text = re.sub(pattern, '', text, flags=re.IGNORECASE)
+            
         return text.strip()
 
-    def generate_research_summary(self, article: Article) -> str:
-def generate_research_summary(self, article: Article) -> str:
-        """The core anthropological summary engine with safety fallbacks"""
+   def generate_research_summary(self, article: Article) -> str:
         sanitized_text = self._sanitize_for_ai(article)
         
-        # --- FALLBACK 1: If the article is too short to summarize, return the excerpt ---
         if len(sanitized_text) < 50:
             return sanitized_text if len(sanitized_text) > 0 else article.title
 
-        # Construct the specialized research prompt
-        prompt = f"<s>[INST] Task: Provide a 5-7 sentence summary for an anthropologist tracking infrastructure and fungal life.\n\n" \
-                 f"Article: {article.title}. {sanitized_text[:1500]}\n\n" \
-                 f"Focus on: 1. Core summary 2. Built environment/infrastructure 3. Fungal sociality 4. Anthropological hooks. [/INST]</s>"
+        # REFINED PROMPT: More aggressive instructions to skip citations
+        prompt = f"<s>[INST] You are an expert anthropologist. Summarize the following news in 5 to 7 detailed sentences. 
+        Focus on infrastructure, fungal sociality, and the built environment. 
+        IGNORE all journal volume numbers, dates, and citations. 
+        Start your summary immediately.
+        
+        Article Content: {article.title}. {sanitized_text[:1200]} [/INST]</s>"
 
         if self.ai_provider == "huggingface":
             api_url = f"https://api-inference.huggingface.co/models/{self.hf_model}"
             headers = {"Authorization": f"Bearer {self.hf_token}"}
             payload = {
                 "inputs": prompt,
-                "parameters": {"max_new_tokens": 500, "temperature": 0.7, "return_full_text": False}
+                "parameters": {
+                    "max_new_tokens": 400, # Increased for longer summaries
+                    "temperature": 0.7,
+                    "repetition_penalty": 1.2, # Prevents the AI from repeating the input
+                    "return_full_text": False
+                },
+                "options": {
+                    "wait_for_model": True, # CRITICAL: Prevents "cold start" failures
+                    "use_cache": False
+                }
             }
             
             try:
-                response = requests.post(api_url, headers=headers, json=payload, timeout=45)
+                response = requests.post(api_url, headers=headers, json=payload, timeout=60)
                 if response.status_code == 200:
                     result = response.json()
-                    summary = result[0].get("generated_text", "") if isinstance(result, list) else ""
-                    if summary.strip():
-                        return summary.strip().capitalize()
+                    summary = result[0].get("generated_text", "")
+                    if len(summary.strip()) > 100: # Ensure we got a real summary
+                        return summary.strip()
             except Exception as e:
-                print(f"AI Error: {e}")
+                print(f"Connection error: {e}")
 
-            # --- FALLBACK 2: If AI fails/timeouts, return the original sanitized text ---
-            return sanitized_text[:500] + "..."
-        
-        return sanitized_text[:300] + "..."
+            # Fallback if AI fails: show first 300 chars of the actual content
+            return sanitized_text[:300] + "..."
+            
             }
             
             response = requests.post(api_url, headers=headers, json=payload)
