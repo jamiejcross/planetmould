@@ -151,8 +151,7 @@ Summary:"""
             model="gpt-3.5-turbo",  # Cheapest option
             messages=[
                 {"role": "system", "content": "You are a public science communicator with interests in mycology and social science."},
-                {"role": "user", "content": f"Provide a concise summary of this article in 3-4 sentences. 
-Focus on key findings, methods, and implications. Suggest why this is useful for tracking infrastructural or material conditions that intersect with fillamentous fungi.:\n\n{text[:2000]}"}
+                {"role": "user", "content": f"Provide a concise summary of this article in 3-4 sentences:\n\n{text[:2000]}"}
             ],
             max_tokens=max_length,
             temperature=0.3
