@@ -1,5 +1,4 @@
 name: Fetch and Enhance Mouldwire News
-
 on:
   schedule:
     # Run every 6 hours
@@ -40,7 +39,7 @@ jobs:
       run: |
         echo "Fetching latest articles from RSS feeds..."
         python fetch_news.py
-
+    
     - name: Verify mould_news.json was created
       run: |
         if [ -f mould_news.json ]; then
@@ -53,45 +52,17 @@ jobs:
           echo "fetch_news.py may have failed"
           exit 1
         fi
+    
+    - name: Test Enhancement (Debug)
+      env:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      run: |
+        echo "Running test script..."
+        python test_enhancement.py
         
-      - name: Test Enhancement (Debug)
-    env:
-      HF_TOKEN: ${{ secrets.HF_TOKEN }}
-    run: |
-      echo "Running test script..."
-      python test_enhancement.py
-      
-      echo ""
-      echo "Files created:"
-      ls -la *.json
-```
-
-5. Commit the changes
-
-## Step 3: Run the Workflow
-
-1. Go to **Actions** tab
-2. Click **"Fetch and Enhance Mouldwire News"**
-3. Click **"Run workflow"**
-4. Wait for it to finish
-5. Click on the run → Click on "Test Enhancement (Debug)"
-6. **Read the output**
-
-## What You'll See
-
-If it works, you should see:
-```
-Script started
-✓ json imported
-✓ os imported
-✓ mould_news.json found
-✓ Loaded 50 articles
-✓ articles_enhanced.json created
-✅ SUCCESS - File creation works!
-
-Files created:
--rw-r--r-- 1 runner docker  12345 Feb  8 10:00 articles_enhanced.json
--rw-r--r-- 1 runner docker  54321 Feb  8 09:59 mould_news.json
+        echo ""
+        echo "Files created:"
+        ls -la *.json
     
     - name: Check for changes
       id: check_changes
