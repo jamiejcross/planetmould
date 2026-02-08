@@ -40,17 +40,17 @@ jobs:
       run: |
         echo "Fetching latest articles from RSS feeds..."
         python fetch_news.py
-    
-- name: Enhance articles with AI
-  env:
-    HF_TOKEN: ${{ secrets.HF_TOKEN }}
-  run: |
-    echo "Enhancing articles with AI summaries, categories, and keywords..."
-    python enhance_articles.py 2>&1 | tee enhancement.log
-    
-    # Show what files exist after enhancement
-    echo "Files in directory:"
-    ls -la *.json
+        
+    - name: Enhance articles with AI
+      env:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      run: |
+        echo "Enhancing articles with AI summaries, categories, and keywords..."
+        python enhance_articles.py 2>&1 | tee enhancement.log
+        
+        # Show what files exist after enhancement
+        echo "Files in directory:"
+        ls -la *.json
     
     - name: Check for changes
       id: check_changes
