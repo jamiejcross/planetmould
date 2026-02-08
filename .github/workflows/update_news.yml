@@ -1,0 +1,21 @@
+name: Update Mouldwire News
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - run: pip install feedparser
+      - run: python fetch_news.py
+      - run: |
+          git config --global user.name "Mouldwire-Bot"
+          git config --global user.email "bot@planetmould.com"
+          git add mould_news.json
+          git commit -m "Automated news update" || exit 0
+          git push
