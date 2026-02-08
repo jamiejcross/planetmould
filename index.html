@@ -153,17 +153,17 @@
 
           // Add item HTML
           html += `
-            <div class="news-item" style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid rgba(0,0,0,0.1);">
+            <div class="news-item" style="padding-bottom: 40px; margin-bottom: 40px; border: none; border-bottom: 1px solid rgba(0,0,0,0.1);">
               <div class="news-meta">
                 <span><strong>Published:</strong> ${displayDate}</span>
                 <span><strong>Source:</strong> ${item.source}</span>
               </div>
               
-              <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
+              <h3 class="news-title" style="margin-top: 5px;"><a href="${item.url}" target="_blank">${item.title}</a></h3>
               
-              ${isEnhanced ? '<span class="ai-badge" style="background:#FFFFFF; padding:2px 8px; font-size:10px; border-radius:4px; border:none; color: #666;">⚛ SIMPLE SUMMARY</span>' : ''}
+              ${isEnhanced ? '<span class="ai-badge" style="background:#FFFFFF; padding:2px 8px; font-size:10px; border-radius:4px; border:none; color: #666;">⚛ What is this all about?</span>' : ''}
               
-              ${summary ? `<p class="news-excerpt" style="font-size: 0.95rem; line-height: 1.6; margin: 15px 0; color: #333;">${summary}</p>` : ''}
+              ${summary ? `<p class="news-excerpt" style="font-size: 0.95rem; line-height: 1.7; margin: 15px 0; color: #333; max-width: 75ch;">${summary}</p>` : ''}
               
               ${keywords.length > 0 ? `
                 <div class="news-keywords" style="margin-top:10px;">
@@ -171,7 +171,7 @@
                 </div>
               ` : ''}
               
-              <div class="source-link-container" style="margin-top: 20px;">
+              <div class="source-link-container" style="margin-top: 25px;">
                 <a href="${item.url}" target="_blank" class="read-more" style="text-decoration:none; font-weight:bold; color:#000; font-size:13px; text-transform: uppercase; letter-spacing: 1px;">View original source online →</a>
               </div>
             </div>`;
