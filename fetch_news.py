@@ -54,11 +54,21 @@ BROAD_JOURNALS = ['Scientific Reports', 'Nature Communications', 'PLOS ONE', 'AC
 def clean_text(text):
     return re.sub('<[^<]+?>', '', text).strip()
 
+THEORY_KEYWORDS = ['anthropology', 'sociology', 'ethnography', 'material culture', 'political economy']
+
 def is_relevant(title, excerpt, source):
     text = (title + " " + excerpt).lower()
+    
+    # Priority 1: If it's a theory-heavy article, keep it regardless of source
+    if any(t in text for t in THEORY_KEYWORDS): return True
+    
+    # Priority 2: Standard Mould/Subject check
     if not any(s in text for s in SUBJECTS): return False
+    
+    # Priority 3: Context check for broad journals
     if any(bj.lower() in source.lower() for bj in BROAD_JOURNALS):
         return any(c in text for c in CONTEXTS)
+        
     return True
 
 def run_fetcher():
@@ -80,7 +90,7 @@ def run_fetcher():
                         output.append({
                             "title": clean_text(entry.title),
                             "source": source_name,
-                            "excerpt": clean_desc[:600],
+                            "excerpt": clean_desc[:1200],
                             "url": entry.link,
                             "pubDate": iso_date,
                             "category": category
