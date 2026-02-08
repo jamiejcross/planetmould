@@ -13,7 +13,9 @@ Mouldwire launched in Jan 2026 and is currently under active development.
 A full list of RSS Feeds and keywords used in Mouldwire can be found below.
 
 
-**Keywords**
+
+
+**KEYWORDS**
 
 SUBJECTS = ['mould', 'mold', 'mycotoxin', 'aflatoxin', 'aspergillus', 'penicillium', 'stachybotrys', 'cladosporium', 'alternaria', 'fusarium', 'mucor', 'filamentous']
 
