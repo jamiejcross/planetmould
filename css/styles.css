@@ -92,11 +92,12 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
   margin-right: 0;
 }
 
-/* NEW: AI Enhancement Badge */
+/* AI Enhancement Badge - WHITE VERSION */
 .ai-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: #fff;
+  background: #fff;
+  color: #000;
+  border: 1px solid var(--border);
   padding: 3px 8px;
   border-radius: 3px;
   font-size: 11px;
