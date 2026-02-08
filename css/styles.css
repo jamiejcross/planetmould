@@ -121,10 +121,12 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 .news-title a:hover { text-decoration: underline; }
 
 .news-excerpt {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #333;
-  margin-bottom: 14px;
+    font-size: 1rem;
+    line-height: 1.7; /* Increased spacing for longer text */
+    color: #333;
+    max-width: 75ch;  /* Prevents lines from getting too long/straining the eye */
+    text-align: justify;
+    hyphens: auto;
 }
 
 /* Ensure the source link has some breathing room */
