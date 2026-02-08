@@ -1,0 +1,10 @@
+============================================================
+Mouldwire AI Enhancement System
+============================================================
+
+🤖 Initializing AI enhancer...
+   ✓ Using Hugging Face token for higher rate limits
+
+📥 Loading articles...
+❌ Error: articles.json not found. Run fetch_news.py first.
+❌ No articles to process. Exiting.
