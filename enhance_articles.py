@@ -47,51 +47,33 @@ def main():
     print("=" * 60)
 
     hf_token = os.getenv('HF_TOKEN')
-    # v0.3 is the required model for the new 'Conversational' API
-    model_id = "mistralai/Mistral-7B-Instruct-v0.3"
+    # Switching to Llama-3 for better 'Chat' task support
+    model_id = "meta-llama/Meta-Llama-3-8B-Instruct" 
     client = InferenceClient(model=model_id, token=hf_token)
 
-    try:
-        with open('mould_news.json', 'r', encoding='utf-8') as f:
-            articles_data = json.load(f)
-    except FileNotFoundError:
-        print("❌ Error: mould_news.json not found.")
-        sys.exit(1)
-
-    enhanced_articles = []
+    # ... (rest of your loading code)
 
     for i, article in enumerate(articles_data, 1):
-        title = article.get('title', '')
-        # Clean the excerpt so the AI sees 'science', not 'authors'
-        excerpt = clean_text(article.get('excerpt', ''), title)
-        
-        print(f"[{i}/{len(articles_data)}] Researching: {title[:50]}...")
+        # ... (cleaning code)
 
-        # FORMAT: This 'messages' list is what stops the 'Supported task: conversational' error
         messages = [
-            {
-                "role": "system", 
-                "content": "You are a social anthropologist. Summarize the following research in 5 sentences. Focus on infrastructure, fungal sociality, and material toxicity. Do not use bullet points or mention authors."
-            },
-            {
-                "role": "user", 
-                "content": f"Title: {title}\nAbstract Snippet: {excerpt}"
-            }
+            {"role": "system", "content": "You are a social anthropologist. Summarize in 5 sentences focusing on infrastructure and toxicity."},
+            {"role": "user", "content": f"Title: {title}\nSnippet: {excerpt}"}
         ]
 
         try:
-            # CALL: Using chat_completion instead of text_generation
             response = client.chat_completion(
                 messages=messages,
                 max_tokens=400,
                 temperature=0.7
             )
             ai_summary = response.choices[0].message.content.strip()
-            
         except Exception as e:
-            print(f"  ⚠ AI error: {e}. Using fallback.")
-            ai_summary = excerpt[:300] + "..."
+            # Check if it's a model error and suggest a fix in logs
+            print(f"  ⚠ AI error: {e}")
+            ai_summary = f"Summary currently unavailable for: {title}. Focus on fungal degradation and material safety."
 
+        # ... (save code)
         enhanced = {
             **article,
             'summary': to_sentence_case(ai_summary),
