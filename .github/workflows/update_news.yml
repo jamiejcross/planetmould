@@ -1,34 +1,29 @@
 name: Fetch and Enhance Mouldwire News
+
 on:
   schedule:
-    # Run every 6 hours
     - cron: '0 */6 * * *'
-  
-  # Allow manual triggers
   workflow_dispatch:
+
+permissions:
+  contents: write  # Crucial for pushing JSON updates
 
 jobs:
   fetch-and-enhance:
     runs-on: ubuntu-latest
+    timeout-minutes: 15  # Mistral-7B generation takes longer than BART
     
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4 # Updated to v4
       with:
         fetch-depth: 0
     
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5 # Updated to v5
       with:
         python-version: '3.10'
-    
-    - name: Cache pip packages
-      uses: actions/cache@v3
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
+        cache: 'pip' # Built-in caching is more reliable than manual steps
     
     - name: Install dependencies
       run: |
@@ -36,68 +31,28 @@ jobs:
         pip install -r requirements.txt
     
     - name: Fetch RSS feeds
-      run: |
-        echo "Fetching latest articles from RSS feeds..."
-        python fetch_news.py
-    
-    - name: Verify mould_news.json was created
-      run: |
-        if [ -f mould_news.json ]; then
-          echo "✅ mould_news.json exists"
-          echo "Size: $(wc -c < mould_news.json) bytes"
-          echo "Articles found: $(grep -o '"title"' mould_news.json | wc -l)"
-        else
-          echo "❌ mould_news.json NOT FOUND"
-          exit 1
-        fi
+      run: python fetch_news.py
     
     - name: Enhance articles with AI
       env:
         HF_TOKEN: ${{ secrets.HF_TOKEN }}
-      run: |
-        echo "Enhancing articles with AI summaries, categories, and keywords..."
-        python enhance_articles.py
-        
-        echo ""
-        echo "Files after enhancement:"
-        ls -la *.json
-        
-        if [ -f articles_enhanced.json ]; then
-          echo ""
-          echo "✅ articles_enhanced.json created successfully!"
-          echo "File size: $(wc -c < articles_enhanced.json) bytes"
-          echo "Enhanced articles: $(grep -o '"enhanced": true' articles_enhanced.json | wc -l)"
-        else
-          echo "❌ Enhancement failed - articles_enhanced.json not created"
-        fi
-    
-    - name: Check for changes
-      id: check_changes
-      run: |
-        git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+      run: python enhance_articles.py
     
     - name: Commit and push changes
-      if: steps.check_changes.outputs.changed == 'true'
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add -A
-        git commit -m "Update news: $(date '+%Y-%m-%d %H:%M UTC')"
-        git push
+        git add mould_news.json articles_enhanced.json
+        # Only commit if there are actual changes in the data
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update research feed: $(date '+%Y-%m-%d %H:%M UTC')" && git pull --rebase && git push)
     
     - name: Summary
       if: always()
       run: |
-        echo "## Workflow Summary" >> $GITHUB_STEP_SUMMARY
-        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "## Mouldwire Research Summary" >> $GITHUB_STEP_SUMMARY
         if [ -f articles_enhanced.json ]; then
-          ARTICLE_COUNT=$(grep -o '"title"' articles_enhanced.json | wc -l)
-          ENHANCED_COUNT=$(grep -o '"enhanced": true' articles_enhanced.json | wc -l)
-          echo "✅ Created articles_enhanced.json" >> $GITHUB_STEP_SUMMARY
-          echo "📊 Total articles: $ARTICLE_COUNT" >> $GITHUB_STEP_SUMMARY
-          echo "✨ Successfully enhanced: $ENHANCED_COUNT" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Anthropological enhancement complete." >> $GITHUB_STEP_SUMMARY
+          echo "✨ Articles processed: $(grep -o '"title"' articles_enhanced.json | wc -l)" >> $GITHUB_STEP_SUMMARY
         else
-          echo "⚠️ No enhanced articles file found" >> $GITHUB_STEP_SUMMARY
+          echo "❌ Enhancement failed." >> $GITHUB_STEP_SUMMARY
         fi
-        echo "" >> $GITHUB_STEP_SUMMARY
-        echo "📅 Last run: $(date)" >> $GITHUB_STEP_SUMMARY
