@@ -42,7 +42,6 @@ class ContentEnhancer:
             ai_provider: 'huggingface', 'ollama', or 'openai'
         """
         self.ai_provider = ai_provider
-        self.hf_api_url = "https://api-inference.huggingface.co/models/"
         self.hf_token = None  # Set via set_api_key()
         self.ollama_url = "http://localhost:11434/api/generate"
         self.openai_key = None
@@ -65,8 +64,8 @@ class ContentEnhancer:
         """
         model = "facebook/bart-large-cnn"
         
-        # Updated API URL format
-        api_url = f"https://api-inference.huggingface.co/models/{model}"
+        # NEW API URL - router instead of api-inference
+        api_url = f"https://router.huggingface.co/models/{model}"
         
         headers = {
             "Authorization": f"Bearer {self.hf_token}",
@@ -114,8 +113,8 @@ class ContentEnhancer:
         Install: curl -fsSL https://ollama.com/install.sh | sh
         Then: ollama pull llama3.2
         """
-        prompt = f"""Summarize this scientific article about mould/fungi in 2-3 sentences. 
-Focus on the key findings, methodology, or health implications.
+        prompt = f"""Provide a concise summary of this article in 3-4 sentences. 
+Focus on key findings, methods, and implications. Suggest why this is useful for tracking infrastructural or material conditions that intersect with fillamentous fungi." 
 
 Article: {text[:1500]}
 
@@ -151,8 +150,9 @@ Summary:"""
         response = openai.chat.completions.create(
             model="gpt-3.5-turbo",  # Cheapest option
             messages=[
-                {"role": "system", "content": "You are a scientific summarizer specializing in mycology and mould research."},
-                {"role": "user", "content": f"Summarize this article in 2-3 sentences:\n\n{text[:2000]}"}
+                {"role": "system", "content": "You are a public science communicator with interests in mycology and social science."},
+                {"role": "user", "content": f"Provide a concise summary of this article in 3-4 sentences. 
+Focus on key findings, methods, and implications. Suggest why this is useful for tracking infrastructural or material conditions that intersect with fillamentous fungi.:\n\n{text[:2000]}"}
             ],
             max_tokens=max_length,
             temperature=0.3
@@ -182,7 +182,8 @@ Summary:"""
         Model: facebook/bart-large-mnli
         """
         model = "facebook/bart-large-mnli"
-        api_url = f"https://api-inference.huggingface.co/models/{model}"
+        # NEW API URL - router instead of api-inference
+        api_url = f"https://router.huggingface.co/models/{model}"
         
         headers = {
             "Authorization": f"Bearer {self.hf_token}",
@@ -426,116 +427,3 @@ class RSSProcessor:
             enhanced_articles.append(enhanced)
         
         return enhanced_articles
-
-
-# ============= USAGE EXAMPLES =============
-
-def example_huggingface():
-    """Example using Hugging Face (FREE but may have rate limits)"""
-    
-    print("\n=== Using Hugging Face ===\n")
-    
-    enhancer = ContentEnhancer(ai_provider="huggingface")
-    # Optional: set API key for faster processing
-    # enhancer.set_api_key("your_hf_token_here")
-    
-    # Test article
-    test_article = Article(
-        title="Aspergillus fumigatus in Indoor Environments",
-        content="A recent study found that Aspergillus fumigatus spores were present in 78% of water-damaged buildings tested. The research team from the University of Helsinki analyzed air samples from 150 homes and found correlations between moisture levels and fungal concentrations. Residents of affected homes showed higher rates of respiratory symptoms.",
-        url="https://example.com/article1",
-        source="Journal of Mycology"
-    )
-    
-    result = enhancer.process_article(test_article)
-    
-    print(f"Title: {result['original'].title}")
-    print(f"\nSummary: {result['summary']}")
-    print(f"\nPrimary Category: {result['primary_category']}")
-    print(f"\nAll Categories: {result['categories']}")
-    print(f"\nKeywords: {', '.join(result['keywords'])}")
-
-
-def example_ollama():
-    """Example using Ollama (COMPLETELY FREE, requires local installation)"""
-    
-    print("\n=== Using Ollama (Local) ===\n")
-    print("Make sure Ollama is installed and running:")
-    print("  curl -fsSL https://ollama.com/install.sh | sh")
-    print("  ollama pull llama3.2")
-    print()
-    
-    enhancer = ContentEnhancer(ai_provider="ollama")
-    
-    test_article = Article(
-        title="Mycotoxin Detection in Agricultural Settings",
-        content="This study presents a novel biosensor for detecting aflatoxins in grain storage facilities. The device uses immunoassay technology and can detect contamination levels as low as 2 ppb. Field tests in corn silos showed 95% accuracy compared to laboratory methods.",
-        url="https://example.com/article2",
-        source="Agricultural Research"
-    )
-    
-    result = enhancer.process_article(test_article)
-    
-    print(f"Title: {result['original'].title}")
-    print(f"\nSummary: {result['summary']}")
-    print(f"\nPrimary Category: {result['primary_category']}")
-    print(f"\nAll Categories: {result['categories']}")
-    print(f"\nKeywords: {', '.join(result['keywords'])}")
-
-
-def example_batch_processing():
-    """Example processing multiple RSS feeds"""
-    
-    print("\n=== Batch Processing RSS Feeds ===\n")
-    
-    enhancer = ContentEnhancer(ai_provider="ollama")  # Change as needed
-    processor = RSSProcessor(enhancer)
-    
-    # Example feeds (replace with your actual feeds)
-    feeds = [
-        "https://www.sciencedaily.com/rss/plants_animals/fungi.xml",
-        # Add your ~50 feeds here
-    ]
-    
-    all_enhanced = []
-    for feed_url in feeds:
-        print(f"\nProcessing feed: {feed_url}")
-        try:
-            enhanced_articles = processor.process_feed(feed_url)
-            all_enhanced.extend(enhanced_articles)
-            print(f"  ✓ Processed {len(enhanced_articles)} articles")
-        except Exception as e:
-            print(f"  ✗ Error: {e}")
-    
-    # Save to JSON for your website
-    with open("enhanced_articles.json", "w") as f:
-        json.dump([{
-            "title": a["original"].title,
-            "url": a["original"].url,
-            "source": a["original"].source,
-            "summary": a.get("summary", ""),
-            "category": a.get("primary_category", ""),
-            "keywords": a.get("keywords", [])
-        } for a in all_enhanced if a["enhanced"]], f, indent=2)
-    
-    print(f"\n✓ Saved {len(all_enhanced)} enhanced articles to enhanced_articles.json")
-
-
-if __name__ == "__main__":
-    print("Content Enhancement System for Mouldwire")
-    print("=" * 50)
-    print("\nChoose an example to run:")
-    print("1. Hugging Face (free, cloud)")
-    print("2. Ollama (free, local)")
-    print("3. Batch process RSS feeds")
-    
-    choice = input("\nEnter choice (1-3): ")
-    
-    if choice == "1":
-        example_huggingface()
-    elif choice == "2":
-        example_ollama()
-    elif choice == "3":
-        example_batch_processing()
-    else:
-        print("Invalid choice")
