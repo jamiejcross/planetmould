@@ -55,32 +55,32 @@ jobs:
         fi
         
     - name: Enhance articles with AI
-  env:
-    HF_TOKEN: ${{ secrets.HF_TOKEN }}
-  run: |
-    echo "=== Starting Enhancement ==="
-    echo "Current directory: $(pwd)"
-    echo "Files before enhancement:"
-    ls -la *.json 2>&1 || echo "No JSON files found"
-    
-    echo ""
-    echo "Running enhance_articles.py..."
-    python enhance_articles.py
-    
-    echo ""
-    echo "=== After Enhancement ==="
-    echo "Files after enhancement:"
-    ls -la *.json 2>&1 || echo "No JSON files found"
-    
-    echo ""
-    if [ -f articles_enhanced.json ]; then
-      echo "✅ articles_enhanced.json created successfully!"
-      echo "File size: $(wc -c < articles_enhanced.json) bytes"
-      echo "Number of articles: $(grep -o '"title"' articles_enhanced.json | wc -l)"
-    else
-      echo "❌ articles_enhanced.json was NOT created"
-      echo "Script may have failed silently"
-    fi
+      env:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      run: |
+        echo "=== Starting Enhancement ==="
+        echo "Current directory: $(pwd)"
+        echo "Files before enhancement:"
+        ls -la *.json 2>&1 || echo "No JSON files found"
+        
+        echo ""
+        echo "Running enhance_articles.py..."
+        python enhance_articles.py
+        
+        echo ""
+        echo "=== After Enhancement ==="
+        echo "Files after enhancement:"
+        ls -la *.json 2>&1 || echo "No JSON files found"
+        
+        echo ""
+        if [ -f articles_enhanced.json ]; then
+          echo "✅ articles_enhanced.json created successfully!"
+          echo "File size: $(wc -c < articles_enhanced.json) bytes"
+          echo "Number of articles: $(grep -o '"title"' articles_enhanced.json | wc -l)"
+        else
+          echo "❌ articles_enhanced.json was NOT created"
+          echo "Script may have failed silently"
+        fi
         
         # Show what files exist after enhancement
         echo "Files in directory:"
