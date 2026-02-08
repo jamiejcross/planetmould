@@ -6,7 +6,9 @@ The search engine is based on RSS feeds for ~50 international peer reviewed scie
 
 Mouldwire launched in Jan 2026 and is currently under active development.
 
-**Mouldwire is a Planet Mould project. 
-**
+**PLANET MOULD**
+
+Mouldwire is a Planet Mould project.
+
 Planet Mould is a programme of research, design and public engagement that explores how we will live with Filamentous microfungi - or moulds - in a climate changed world.
 For more information, www.planetmould.com
