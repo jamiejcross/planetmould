@@ -110,6 +110,7 @@
   }
 
   // 4. UI ENGINE
+ // 4. UI ENGINE
   function displayNews() {
     const container = document.getElementById("newsContainer");
     const loadMoreContainer = document.getElementById("loadMoreContainer");
@@ -119,7 +120,6 @@
     let filtered = allNews;
     if (currentFilter !== 'all') {
       filtered = allNews.filter(item => {
-        // Check both the raw category and the AI primary_category
         const aiMappedCat = categoryMap[item.primary_category];
         return item.category === currentFilter || aiMappedCat === currentFilter;
       });
@@ -138,7 +138,8 @@
     if (filtered.length > 0) {
       let html = `<div class="news-list">`;
       
-      filtered.slice(0, visibleCount).forEach(item => {
+      // Map through the items to build the list
+      filtered.slice(0, visibleCount).forEach((item, index) => {
           const isEnhanced = item.enhanced === true;
           
           // Sentence Case formatting
@@ -150,7 +151,7 @@
           const keywords = item.keywords || [];
           const displayDate = item.pubDate ? new Date(item.pubDate).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : 'Recent';
 
-          // Replace the bottom part of your template literal with this:
+          // Add item HTML
           html += `
             <div class="news-item" style="padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid rgba(0,0,0,0.1);">
               <div class="news-meta">
@@ -160,7 +161,7 @@
               
               <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
               
-              ${isEnhanced ? '<span class="ai-badge" style="background:#f8f9fa; padding:2px 8px; font-size:10px; border-radius:4px; border:1px solid #ddd; color: #666;">⚛ SUMMARY</span>' : ''}
+              ${isEnhanced ? '<span class="ai-badge" style="background:#f8f9fa; padding:2px 8px; font-size:10px; border-radius:4px; border:1px solid #ddd; color: #666;">⚛ AI SUMMARY</span>' : ''}
               
               ${summary ? `<p class="news-excerpt" style="font-size: 0.95rem; line-height: 1.6; margin: 15px 0; color: #333;">${summary}</p>` : ''}
               
@@ -174,10 +175,22 @@
                 <a href="${item.url}" target="_blank" class="read-more" style="text-decoration:none; font-weight:bold; color:#000; font-size:13px; text-transform: uppercase; letter-spacing: 1px;">View original source online →</a>
               </div>
             </div>`;
+      });
       
-      html += `</div>`;
+      html += `</div>`; // Close news-list ONLY ONCE here
       container.innerHTML = html;
-      if (loadMoreContainer) loadMoreContainer.style.display = (filtered.length > visibleCount) ? "block" : "none";
+
+      // Handle "Load More" visibility
+      if (loadMoreContainer) {
+        loadMoreContainer.style.display = (filtered.length > visibleCount) ? "block" : "none";
+      }
+
+      // Final styling touch: Remove border from last item
+      const items = container.querySelectorAll('.news-item');
+      if (items.length > 0) {
+        items[items.length - 1].style.borderBottom = 'none';
+      }
+
     } else {
       container.innerHTML = `<p class="empty-state" style="padding:40px; text-align:center;">No matching mould wires found.</p>`;
       if (loadMoreContainer) loadMoreContainer.style.display = "none";
