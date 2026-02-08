@@ -12,32 +12,32 @@ from collections import Counter
 
 from huggingface_hub import InferenceClient
 
-def clean_text(text):
-    """Aggressively remove metadata patterns from text"""
+def clean_text(text, title=""):
+    """Enhanced: Specifically strips the title and source headers"""
     if not text:
         return ""
     
-    # Remove common metadata patterns
+    # NEW: If the excerpt starts with the title, delete it. 
+    # This prevents the AI from thinking the title IS the story.
+    if title and text.lower().startswith(title.lower()):
+        text = text[len(title):].strip()
+
+    # Your existing patterns + a few more aggressive ones
     patterns_to_remove = [
-        r'Publication date:.*?(?:\.|$)',
-        r'Published:.*?(?:\.|$)',
-        r'Source:.*?(?:\.|$)',
-        r'Author\(s\):.*?(?:\.|$)',
-        r'Journal of [^,\.]+(?:,\s*Volume\s+\d+)?',
-        r'Volume\s+\d+(?:,\s*Issue\s+\d+)?',
-        r'Page\s+\d+[-–]\d+',
-        r'\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4}',
-        r'The study was published in.*?(?:\.|$)',
-        r'For more information.*?(?:\.|$)',
-        r'Back to .*?(?:\.|$)',
-        r'Click here.*?(?:\.|$)',
-        r'For confidential support.*?(?:\.|$)',
+        r'Publication date:.*?(?:\\.|$)',
+        r'Published:.*?(?:\\.|$)',
+        r'Source:.*?(?:\\.|$)',
+        r'Author\(s\):.*?(?:\\.|$)',
+        r'Journal of [^,\\.]+',
+        r'https?://\S+', 
+        r'Click here.*?(?:\\.|$)',
         r'Ahead of Print',
-        r'Table of Contents',
     ]
     
     for pattern in patterns_to_remove:
         text = re.sub(pattern, '', text, flags=re.IGNORECASE)
+    
+    return text.strip()
     
     # Remove author name patterns (names after commas at end)
     # Pattern: comma followed by capitalized names
