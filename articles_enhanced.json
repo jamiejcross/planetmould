@@ -4,70 +4,224 @@
     "source": "ScienceDirect Publication: Journal of Hazardous Materials",
     "excerpt": "Publication date: 15 February 2026Source: Journal of Hazardous Materials, Volume 504Author(s): Ramya Duraisamy, Bhuvaneshwari. S, Philip. A, VM Vishnu, P. Sribalaji, Agnieszka Saei",
     "url": "https://www.sciencedirect.com/science/article/pii/S0304389426003018?dgcid=rss_sd_all",
-    "pubDate": "2026-02-08T15:59:29Z",
+    "pubDate": "2026-02-08T16:11:32Z",
     "category": "indoor",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
+    "summary": "Microcosm-dependent degradation of nonwoven fabric in surgical masks by endophytic fungi Aspergillus bridgerii. Publication date: 15 February 2026. Journal of Hazardous Materials, Volume 504, Ramya Duraisamy, Bhuvaneshwari.",
+    "ai_summary": "Microcosm-dependent degradation of nonwoven fabric in surgical masks by endophytic fungi Aspergillus bridgerii. Publication date: 15 February 2026. Journal of Hazardous Materials, Volume 504, Ramya Duraisamy, Bhuvaneshwari.",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.0,
+      "Health & Environment": 0.125,
+      "Housing & Indoor Air": 0.0,
+      "Popular Media": 0.0
+    },
+    "keywords": [
+      "fungi",
+      "aspergillus",
+      "microcosm",
+      "dependent",
+      "degradation",
+      "nonwoven",
+      "fabric",
+      "surgical",
+      "masks",
+      "endophytic"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:11:41.630844"
   },
   {
     "title": "Toxicological interactions between biotic and abiotic components of indoor air: Mold and air fresheners",
     "source": "ScienceDirect Publication: Journal of Hazardous Materials",
     "excerpt": "Publication date: 15 February 2026Source: Journal of Hazardous Materials, Volume 504Author(s): Sudheer Salana, Avraham Moshe Friedman, Jess Austin, Preyasha Shrestha, Kiran Kurmi, ",
     "url": "https://www.sciencedirect.com/science/article/pii/S0304389426002979?dgcid=rss_sd_all",
-    "pubDate": "2026-02-08T15:59:29Z",
+    "pubDate": "2026-02-08T16:11:32Z",
     "category": "indoor",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
+    "summary": "Toxicological interactions between biotic and abiotic components of indoor air: Mold and air fresheners. Publication date: 15 February 2026. Source: Journal of Hazardous Materials, Volume 504, Sudheer Salana, Avraham Moshe Friedman, Jess Austin, Preyasha Shrestha.",
+    "ai_summary": "Toxicological interactions between biotic and abiotic components of indoor air: Mold and air fresheners. Publication date: 15 February 2026. Source: Journal of Hazardous Materials, Volume 504, Sudheer Salana, Avraham Moshe Friedman, Jess Austin, Preyasha Shrestha.",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.0,
+      "Health & Environment": 0.125,
+      "Housing & Indoor Air": 0.125,
+      "Popular Media": 0.0
+    },
+    "keywords": [
+      "mold",
+      "indoor",
+      "toxicological",
+      "interactions",
+      "between",
+      "biotic",
+      "abiotic",
+      "components",
+      "fresheners",
+      "publication"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:11:43.161332"
   },
   {
     "title": "Aqueous phase-stable perovskite quantum dot nanospheres: Synthesis and application for “OFF-ON” fluorescent aptasensing detection of aflatoxin B1",
     "source": "ScienceDirect Publication: Chemical Engineering Journal",
     "excerpt": "Publication date: 15 February 2026Source: Chemical Engineering Journal, Volume 530Author(s): Xiaochun Hu, Huilin Li, Sujuan Zhang, Mengmeng Gao, Yuan Zhuang, Shuo Wang, Mingfei Pan",
     "url": "https://www.sciencedirect.com/science/article/pii/S1385894726012246?dgcid=rss_sd_all",
-    "pubDate": "2026-02-08T15:59:29Z",
+    "pubDate": "2026-02-08T16:11:32Z",
     "category": "indoor",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
-  },
-  {
-    "title": "Screening, risk assessment, and rapid detection of mycotoxins in edible herbs based on UPLC-MS/MS and FT-NIR",
-    "source": "ScienceDirect Publication: Food Research International",
-    "excerpt": "Publication date: 30 April 2026Source: Food Research International, Volume 230Author(s): Kangnan Liu, Ling Fang, Yaling An, Zijun Tang, Wenjie Zhao, Chunqian Song, Lin Feng, Xiaoka",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926002188?dgcid=rss_sd_all",
-    "pubDate": "2026-02-08T15:59:26Z",
-    "category": "health",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
-  },
-  {
-    "title": "Hyperglycemic conditions modulate the response of colon cancer cells to the mycotoxins alternariol and deoxynivalenol in vitro",
-    "source": "ScienceDirect Publication: Food Research International",
-    "excerpt": "Publication date: 1 April 2026Source: Food Research International, Volume 229Author(s): Karolina Kowalska, Eszter Borsos, Elisabeth Varga, Doris Marko",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926000244?dgcid=rss_sd_all",
-    "pubDate": "2026-02-08T15:59:26Z",
-    "category": "health",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
+    "summary": "Aqueous phase-stable perovskite quantum dot nanospheres. Synthesis and application for “off-ON’ fluorescent aptasensing detection of aflatoxin B1. Publication date: 15 February 2026. Chemical Engineering Journal, Volume 530.",
+    "ai_summary": "Aqueous phase-stable perovskite quantum dot nanospheres. Synthesis and application for “off-ON’ fluorescent aptasensing detection of aflatoxin B1. Publication date: 15 February 2026. Chemical Engineering Journal, Volume 530.",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.0,
+      "Health & Environment": 0.125,
+      "Housing & Indoor Air": 0.0,
+      "Popular Media": 0.0
+    },
+    "keywords": [
+      "aqueous",
+      "phase",
+      "stable",
+      "perovskite",
+      "quantum",
+      "nanospheres",
+      "synthesis",
+      "application",
+      "“off",
+      "fluorescent"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:11:45.555909"
   },
   {
     "title": "Antifungal mechanism and mycotoxin control of Ligusticum jeholense essential oil against Alternaria alternata in postharvest tomato",
     "source": "ScienceDirect Publication: Food Chemistry",
     "excerpt": "Publication date: 1 April 2026Source: Food Chemistry, Volume 507Author(s): Quan-Shui Wang, Sen Pang, Xiao-Yi Tong, Du-Qiang Luo, Jian Wang, Fei Cao",
     "url": "https://www.sciencedirect.com/science/article/pii/S0308814626004231?dgcid=rss_sd_all",
-    "pubDate": "2026-02-08T15:59:25Z",
+    "pubDate": "2026-02-08T16:11:29Z",
     "category": "health",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
+    "summary": "Antifungal mechanism and mycotoxin control of Ligusticum jeholense essential oil against Alternaria alternata in postharvest tomato. Publication date: 1 April 2026Source: Food Chemistry, Volume 507Author(s): Quan-Shui Wang, Sen Pang, Xiao-Yi Tong, Du-Qiang Luo.",
+    "ai_summary": "Antifungal mechanism and mycotoxin control of Ligusticum jeholense essential oil against Alternaria alternata in postharvest tomato. Publication date: 1 April 2026Source: Food Chemistry, Volume 507Author(s): Quan-Shui Wang, Sen Pang, Xiao-Yi Tong, Du-Qiang Luo.",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.0,
+      "Health & Environment": 0.125,
+      "Housing & Indoor Air": 0.0,
+      "Popular Media": 0.0
+    },
+    "keywords": [
+      "mycotoxin",
+      "wang",
+      "antifungal",
+      "mechanism",
+      "control",
+      "ligusticum",
+      "jeholense",
+      "essential",
+      "against",
+      "alternaria"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:11:48.005443"
   },
   {
     "title": "Advancements in nanomaterial-enabled catalytic degradation of mycotoxins: Critical analysis of nanozymes, peroxymonosulfate catalysts, and photocatalysts",
     "source": "ScienceDirect Publication: Food Chemistry",
     "excerpt": "Publication date: 1 April 2026Source: Food Chemistry, Volume 507Author(s): Ling Huang, Jian Lei, Huicheng Nong, Lintao Zeng, Hongxia Tan",
     "url": "https://www.sciencedirect.com/science/article/pii/S0308814626002724?dgcid=rss_sd_all",
-    "pubDate": "2026-02-08T15:59:25Z",
+    "pubDate": "2026-02-08T16:11:29Z",
     "category": "health",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
+    "summary": "Nanomaterial-enabled catalytic degradation of mycotoxins. Critical analysis of nanozymes, peroxymonosulfate catalysts, and photocatalysts. Publication date: 1 April 2026. Food Chemistry, Volume 507, Ling Huang, Jian Lei, Huicheng Nong.",
+    "ai_summary": "Nanomaterial-enabled catalytic degradation of mycotoxins. Critical analysis of nanozymes, peroxymonosulfate catalysts, and photocatalysts. Publication date: 1 April 2026. Food Chemistry, Volume 507, Ling Huang, Jian Lei, Huicheng Nong.",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.0,
+      "Health & Environment": 0.125,
+      "Housing & Indoor Air": 0.0,
+      "Popular Media": 0.0
+    },
+    "keywords": [
+      "advancements",
+      "nanomaterial",
+      "enabled",
+      "catalytic",
+      "degradation",
+      "mycotoxins",
+      "critical",
+      "analysis",
+      "nanozymes",
+      "peroxymonosulfate"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:11:49.609276"
+  },
+  {
+    "title": "Screening, risk assessment, and rapid detection of mycotoxins in edible herbs based on UPLC-MS/MS and FT-NIR",
+    "source": "ScienceDirect Publication: Food Research International",
+    "excerpt": "Publication date: 30 April 2026Source: Food Research International, Volume 230Author(s): Kangnan Liu, Ling Fang, Yaling An, Zijun Tang, Wenjie Zhao, Chunqian Song, Lin Feng, Xiaoka",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926002188?dgcid=rss_sd_all",
+    "pubDate": "2026-02-08T16:11:29Z",
+    "category": "health",
+    "summary": "Screening, risk assessment, and rapid detection of mycotoxins in edible herbs based on UPLC-MS/MS and FT-NIR. Publication date: 30 April 2026. Food Research International, Volume 230, Kangnan Liu, Ling Fang, Yaling An, Zijun Tang, Wenjie Zhao.",
+    "ai_summary": "Screening, risk assessment, and rapid detection of mycotoxins in edible herbs based on UPLC-MS/MS and FT-NIR. Publication date: 30 April 2026. Food Research International, Volume 230, Kangnan Liu, Ling Fang, Yaling An, Zijun Tang, Wenjie Zhao.",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.0,
+      "Health & Environment": 0.25,
+      "Housing & Indoor Air": 0.0,
+      "Popular Media": 0.0
+    },
+    "keywords": [
+      "screening",
+      "risk",
+      "assessment",
+      "rapid",
+      "detection",
+      "mycotoxins",
+      "edible",
+      "herbs",
+      "based",
+      "uplc"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:11:54.525915"
+  },
+  {
+    "title": "Hyperglycemic conditions modulate the response of colon cancer cells to the mycotoxins alternariol and deoxynivalenol in vitro",
+    "source": "ScienceDirect Publication: Food Research International",
+    "excerpt": "Publication date: 1 April 2026Source: Food Research International, Volume 229Author(s): Karolina Kowalska, Eszter Borsos, Elisabeth Varga, Doris Marko",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926000244?dgcid=rss_sd_all",
+    "pubDate": "2026-02-08T16:11:29Z",
+    "category": "health",
+    "summary": " Hyperglycemic conditions modulate the response of colon cancer cells to the mycotoxins alternariol and deoxynivalenol in vitro. The study was published in Food Research International, Volume 229. Publication date: 1 April 2026. For confidential support call the Samaritans on 08457 90 90 90, visit a local Samaritans branch or see www.samaritans.org.",
+    "ai_summary": " Hyperglycemic conditions modulate the response of colon cancer cells to the mycotoxins alternariol and deoxynivalenol in vitro. The study was published in Food Research International, Volume 229. Publication date: 1 April 2026. For confidential support call the Samaritans on 08457 90 90 90, visit a local Samaritans branch or see www.samaritans.org.",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.0,
+      "Health & Environment": 0.125,
+      "Housing & Indoor Air": 0.0,
+      "Popular Media": 0.0
+    },
+    "keywords": [
+      "hyperglycemic",
+      "conditions",
+      "modulate",
+      "response",
+      "colon",
+      "cancer",
+      "cells",
+      "mycotoxins",
+      "alternariol",
+      "deoxynivalenol"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:12:00.915123"
   },
   {
     "title": "Micro-nanobubble oxygenation irrigation ameliorates saline-alkali soil properties, cotton physiology, and yield under different salt stress levels",
@@ -76,8 +230,30 @@
     "url": "https://www.frontiersin.org/articles/10.3389/fpls.2026.1727907",
     "pubDate": "2026-02-06T00:00:00Z",
     "category": "health",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
+    "summary": "Micro-nanobubble oxygenation irrigation ameliorates saline-alkali soil properties, cotton physiology, and yield under different salt stress levels. This study investigates the efficacy of Micro-Nanobubbles. It is crucial for sustaining cotton production in the arid regions of Xinjiang.",
+    "ai_summary": "Micro-nanobubble oxygenation irrigation ameliorates saline-alkali soil properties, cotton physiology, and yield under different salt stress levels. This study investigates the efficacy of Micro-Nanobubbles. It is crucial for sustaining cotton production in the arid regions of Xinjiang.",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.0,
+      "Health & Environment": 0.0,
+      "Housing & Indoor Air": 0.0,
+      "Popular Media": 0.0
+    },
+    "keywords": [
+      "micro",
+      "nanobubble",
+      "saline",
+      "soil",
+      "cotton",
+      "oxygenation",
+      "irrigation",
+      "ameliorates",
+      "alkali",
+      "properties"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:12:09.653726"
   },
   {
     "title": "Characteristics of mycological criteria for the diagnosis of invasive mold infections in patients with severe burn injury",
@@ -86,8 +262,30 @@
     "url": "https://journals.asm.org/doi/abs/10.1128/jcm.00950-25?af=R",
     "pubDate": "2026-02-05T08:00:00Z",
     "category": "clinical",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
+    "summary": "Mold infections in patients with severe burn injury. Characteristics of mycological criteria for the diagnosis of invasive mold infections. Journal of Clinical Microbiology, Ahead of Print. For confidential support call the Samaritans on 08457 90 90 90, visit a local Samaritans branch or see www.samaritans.org.",
+    "ai_summary": "Mold infections in patients with severe burn injury. Characteristics of mycological criteria for the diagnosis of invasive mold infections. Journal of Clinical Microbiology, Ahead of Print. For confidential support call the Samaritans on 08457 90 90 90, visit a local Samaritans branch or see www.samaritans.org.",
+    "primary_category": "Clinical",
+    "categories": {
+      "Scientific Research": 0.125,
+      "Clinical": 0.5,
+      "Health & Environment": 0.0,
+      "Housing & Indoor Air": 0.0,
+      "Popular Media": 0.0
+    },
+    "keywords": [
+      "mold",
+      "characteristics",
+      "mycological",
+      "criteria",
+      "diagnosis",
+      "invasive",
+      "infections",
+      "patients",
+      "severe",
+      "burn"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:12:16.111589"
   },
   {
     "title": "Characteristics of individual cyp51A SNPs and combinations thereof impacting the azole phenotype in TR34-mediated resistance genotypes of Aspergillus fumigatus",
@@ -96,8 +294,30 @@
     "url": "https://journals.asm.org/doi/abs/10.1128/aac.01528-25?af=R",
     "pubDate": "2026-02-03T08:00:00Z",
     "category": "clinical",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
+    "summary": "Aspergillus fumigatus. Characteristics of individual cyp51A SNPs and combinations thereof impacting the azole phenotype in TR34-mediated resistance genotypes. Antimicrobial Agents and Chemotherapy, Ahead of Print. For confidential support call the Samaritans on 08457 90 90 90, visit a local Samaritans branch or click here for details.",
+    "ai_summary": "Aspergillus fumigatus. Characteristics of individual cyp51A SNPs and combinations thereof impacting the azole phenotype in TR34-mediated resistance genotypes. Antimicrobial Agents and Chemotherapy, Ahead of Print. For confidential support call the Samaritans on 08457 90 90 90, visit a local Samaritans branch or click here for details.",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.125,
+      "Health & Environment": 0.0,
+      "Housing & Indoor Air": 0.0,
+      "Popular Media": 0.125
+    },
+    "keywords": [
+      "aspergillus",
+      "characteristics",
+      "individual",
+      "cyp51a",
+      "snps",
+      "combinations",
+      "thereof",
+      "impacting",
+      "azole",
+      "phenotype"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:12:21.799153"
   },
   {
     "title": "Identification and characterization of a novel broad-spectrum antifungal compound targeting the Aspergillus fumigatus cell wall and cell membrane and inducing oxidative stress",
@@ -106,8 +326,30 @@
     "url": "https://journals.asm.org/doi/abs/10.1128/spectrum.03143-25?af=R",
     "pubDate": "2026-01-28T08:00:00Z",
     "category": "science",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
+    "summary": "A new broad-spectrum antifungal compound targeting the Aspergillus fumigatus cell wall and cell membrane and inducing oxidative stress. Microbiology Spectrum, Ahead of Print. Back to Mail Online home. back to the page you came from..",
+    "ai_summary": "A new broad-spectrum antifungal compound targeting the Aspergillus fumigatus cell wall and cell membrane and inducing oxidative stress. Microbiology Spectrum, Ahead of Print. Back to Mail Online home. back to the page you came from..",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.0,
+      "Health & Environment": 0.0,
+      "Housing & Indoor Air": 0.125,
+      "Popular Media": 0.0
+    },
+    "keywords": [
+      "aspergillus",
+      "spectrum",
+      "cell",
+      "identification",
+      "characterization",
+      "novel",
+      "broad",
+      "antifungal",
+      "compound",
+      "targeting"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:12:26.740373"
   },
   {
     "title": "Nano-Stimulated Immunity: Synthesis and Functionalization of CuS Induce Multilevel Defense Responses against Fusarium in Tomato (Solanum lycopersicum)",
@@ -116,8 +358,30 @@
     "url": "https://pubs.acs.org/doi/10.1021/acs.jafc.5c13527?af=R",
     "pubDate": "2026-01-24T08:00:00Z",
     "category": "health",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
+    "summary": "Nano-Stimulated Immunity: Synthesis and Functionalization of CuS Induce Multilevel Defense Responses against Fusarium in Tomato. Journal of Agricultural and Food Chemistry, Volume 74, Issue 4, Page 3474-3484, February 4, 2026.",
+    "ai_summary": "Nano-Stimulated Immunity: Synthesis and Functionalization of CuS Induce Multilevel Defense Responses against Fusarium in Tomato. Journal of Agricultural and Food Chemistry, Volume 74, Issue 4, Page 3474-3484, February 4, 2026.",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.0,
+      "Health & Environment": 0.0,
+      "Housing & Indoor Air": 0.0,
+      "Popular Media": 0.0
+    },
+    "keywords": [
+      "nano",
+      "stimulated",
+      "immunity",
+      "synthesis",
+      "functionalization",
+      "induce",
+      "multilevel",
+      "defense",
+      "responses",
+      "against"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:12:30.554774"
   },
   {
     "title": "A combined genetic and chemical approach for identifying novel antifungal compounds against Fusarium graminearum",
@@ -126,8 +390,30 @@
     "url": "https://journals.asm.org/doi/abs/10.1128/spectrum.02961-25?af=R",
     "pubDate": "2026-01-22T08:00:00Z",
     "category": "science",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
+    "summary": "A combined genetic and chemical approach for identifying novel antifungal compounds against Fusarium graminearum. Microbiology Spectrum, Ahead of Print. Back to the page you came from. Click here to read the rest of the article. Back To the page where you camefrom.",
+    "ai_summary": "A combined genetic and chemical approach for identifying novel antifungal compounds against Fusarium graminearum. Microbiology Spectrum, Ahead of Print. Back to the page you came from. Click here to read the rest of the article. Back To the page where you camefrom.",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.0,
+      "Health & Environment": 0.0,
+      "Housing & Indoor Air": 0.0,
+      "Popular Media": 0.0
+    },
+    "keywords": [
+      "combined",
+      "genetic",
+      "chemical",
+      "approach",
+      "identifying",
+      "novel",
+      "antifungal",
+      "compounds",
+      "against",
+      "fusarium"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:12:34.888301"
   },
   {
     "title": "Homologous Overexpression of Phosphatidate Phosphatase (Lipin) in the Oleaginous Fungus Mucor circinelloides WJ11 Enhances Lipid Accumulation under Static Solid Cultivation and Submerged Fermentation",
@@ -136,8 +422,30 @@
     "url": "https://pubs.acs.org/doi/10.1021/acs.jafc.5c11518?af=R",
     "pubDate": "2026-01-21T08:00:00Z",
     "category": "health",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
+    "summary": "Oleaginous Fungus Mucor circinelloides WJ11 Enhances Lipid Accumulation under Static Solid Cultivation and Submerged Fermentation. Journal of Agricultural and Food Chemistry, Volume 74, Issue 4, Page 3795-3806, February 4, 2026.",
+    "ai_summary": "Oleaginous Fungus Mucor circinelloides WJ11 Enhances Lipid Accumulation under Static Solid Cultivation and Submerged Fermentation. Journal of Agricultural and Food Chemistry, Volume 74, Issue 4, Page 3795-3806, February 4, 2026.",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.0,
+      "Health & Environment": 0.0,
+      "Housing & Indoor Air": 0.0,
+      "Popular Media": 0.125
+    },
+    "keywords": [
+      "homologous",
+      "overexpression",
+      "phosphatidate",
+      "phosphatase",
+      "lipin",
+      "oleaginous",
+      "fungus",
+      "mucor",
+      "circinelloides",
+      "wj11"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:12:40.861421"
   },
   {
     "title": "Photonic Crystal Microsphere-Based SERS Biosensor for Ultrasensitive Detection of Aflatoxin B1 in Feed",
@@ -146,8 +454,30 @@
     "url": "https://pubs.acs.org/doi/10.1021/acsomega.5c10723?af=R",
     "pubDate": "2026-01-20T08:00:00Z",
     "category": "science",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
+    "summary": "Photonic Crystal Microsphere-Based SERS Biosensor for Ultrasensitive Detection of Aflatoxin B1 in Feed. ACS Omega, Volume 11, Issue 4, Page 6123-6132, February 3, 2026. For confidential support call the Samaritans on 08457 90 90 90, visit a local Samaritans branch or see www.samaritans.org.",
+    "ai_summary": "Photonic Crystal Microsphere-Based SERS Biosensor for Ultrasensitive Detection of Aflatoxin B1 in Feed. ACS Omega, Volume 11, Issue 4, Page 6123-6132, February 3, 2026. For confidential support call the Samaritans on 08457 90 90 90, visit a local Samaritans branch or see www.samaritans.org.",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.0,
+      "Health & Environment": 0.0,
+      "Housing & Indoor Air": 0.0,
+      "Popular Media": 0.0
+    },
+    "keywords": [
+      "photonic",
+      "crystal",
+      "microsphere",
+      "based",
+      "sers",
+      "biosensor",
+      "ultrasensitive",
+      "detection",
+      "aflatoxin",
+      "feed"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:12:50.948833"
   },
   {
     "title": "Beyond Fumigatus: a molecular portrait of clinical Aspergillus diversity, pathogenicity, and antifungal resistance",
@@ -156,8 +486,30 @@
     "url": "https://journals.asm.org/doi/abs/10.1128/aac.01184-25?af=R",
     "pubDate": "2026-01-13T08:00:00Z",
     "category": "clinical",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
+    "summary": "Beyond Fumigatus: A molecular portrait of clinical Aspergillus diversity, pathogenicity, and antifungal resistance. Antimicrobial Agents and Chemotherapy, Volume 70, Issue 2, February 2026. For confidential support call the Samaritans on 08457 90 90 90 or visit a local Samaritans branch, see www.samaritans.org for details.",
+    "ai_summary": "Beyond Fumigatus: A molecular portrait of clinical Aspergillus diversity, pathogenicity, and antifungal resistance. Antimicrobial Agents and Chemotherapy, Volume 70, Issue 2, February 2026. For confidential support call the Samaritans on 08457 90 90 90 or visit a local Samaritans branch, see www.samaritans.org for details.",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.25,
+      "Health & Environment": 0.0,
+      "Housing & Indoor Air": 0.0,
+      "Popular Media": 0.0
+    },
+    "keywords": [
+      "aspergillus",
+      "beyond",
+      "fumigatus",
+      "molecular",
+      "portrait",
+      "clinical",
+      "diversity",
+      "pathogenicity",
+      "antifungal",
+      "resistance"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:12:56.270989"
   },
   {
     "title": "Production of ETP-Type (Epipolythiodioxopiperazine) Mycotoxins in Clinical Fungal Isolates",
@@ -166,8 +518,30 @@
     "url": "https://pubs.acs.org/doi/10.1021/acs.jnatprod.5c01151?af=R",
     "pubDate": "2026-01-04T08:00:00Z",
     "category": "indoor",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
+    "summary": "Production of ETP-Type (Epipolythiodioxopiperazine) Mycotoxins in Clinical Fungal Isolates. Journal of Natural Products, Volume 89, Issue 1, Page 322-328, January 23, 2026. For confidential support call the Samaritans on 08457 90 90 90 or visit a local Samaritans branch, see www.samaritans.org for details.",
+    "ai_summary": "Production of ETP-Type (Epipolythiodioxopiperazine) Mycotoxins in Clinical Fungal Isolates. Journal of Natural Products, Volume 89, Issue 1, Page 322-328, January 23, 2026. For confidential support call the Samaritans on 08457 90 90 90 or visit a local Samaritans branch, see www.samaritans.org for details.",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.125,
+      "Health & Environment": 0.0,
+      "Housing & Indoor Air": 0.0,
+      "Popular Media": 0.0
+    },
+    "keywords": [
+      "fungal",
+      "production",
+      "type",
+      "epipolythiodioxopiperazine",
+      "mycotoxins",
+      "clinical",
+      "isolates",
+      "journal",
+      "natural",
+      "products"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:13:02.344238"
   },
   {
     "title": "Antibacterial and Cytotoxic Decahydrofluorene-Class Alkaloids from the Marine-Derived Fungus Penicillium sp. SCSIO 41512",
@@ -176,8 +550,30 @@
     "url": "https://pubs.acs.org/doi/10.1021/acs.jnatprod.5c01203?af=R",
     "pubDate": "2025-12-17T08:00:00Z",
     "category": "indoor",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
+    "summary": "Fungus Penicillium sp. sp. is a marine-Derived Fungus. Journal of Natural Products, Volume 89, Issue 1, Page 128-138, January 23, 2026. Antibacterial and Cytotoxic Decahydrofluorene-Class Alkaloids.",
+    "ai_summary": "Fungus Penicillium sp. sp. is a marine-Derived Fungus. Journal of Natural Products, Volume 89, Issue 1, Page 128-138, January 23, 2026. Antibacterial and Cytotoxic Decahydrofluorene-Class Alkaloids.",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.0,
+      "Health & Environment": 0.0,
+      "Housing & Indoor Air": 0.0,
+      "Popular Media": 0.0
+    },
+    "keywords": [
+      "penicillium",
+      "antibacterial",
+      "cytotoxic",
+      "decahydrofluorene",
+      "class",
+      "alkaloids",
+      "marine",
+      "derived",
+      "fungus",
+      "scsio"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:13:05.111744"
   },
   {
     "title": "Advancing mold identification in the routine laboratory, performance of smartphone-based imaging and a newly developed convolutional neural network",
@@ -186,8 +582,30 @@
     "url": "https://journals.asm.org/doi/abs/10.1128/spectrum.02924-25?af=R",
     "pubDate": "2025-12-16T08:00:00Z",
     "category": "science",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
+    "summary": "A newly developed convolutional neural network. Advancing mold identification in the routine laboratory, performance of smartphone-based imaging. Microbiology Spectrum, Volume 14, Issue 2, February 2026. For more information, visit www.microbiospectrum.org or go to the Microbio Spectrum website.",
+    "ai_summary": "A newly developed convolutional neural network. Advancing mold identification in the routine laboratory, performance of smartphone-based imaging. Microbiology Spectrum, Volume 14, Issue 2, February 2026. For more information, visit www.microbiospectrum.org or go to the Microbio Spectrum website.",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.0,
+      "Health & Environment": 0.0,
+      "Housing & Indoor Air": 0.0,
+      "Popular Media": 0.0
+    },
+    "keywords": [
+      "mold",
+      "advancing",
+      "identification",
+      "routine",
+      "laboratory",
+      "performance",
+      "smartphone",
+      "based",
+      "imaging",
+      "newly"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:13:07.848825"
   },
   {
     "title": "GSNOR is essential for nitric oxide homeostasis and involved in aflatoxin biosynthesis and pathogenicity in Aspergillus flavus",
@@ -196,7 +614,29 @@
     "url": "https://journals.asm.org/doi/abs/10.1128/aem.01408-25?af=R",
     "pubDate": "2025-12-16T08:00:00Z",
     "category": "indoor",
-    "enhanced": false,
-    "error": "HF API Error: 404 - Not Found"
+    "summary": "GSNOR is essential for nitric oxide homeostasis and involved in aflatoxin biosynthesis and pathogenicity in Aspergillus flavus. Applied and Environmental Microbiology, Volume 92, Issue 1, January 2026. GSNOR can also be used to study other bacteria.",
+    "ai_summary": "GSNOR is essential for nitric oxide homeostasis and involved in aflatoxin biosynthesis and pathogenicity in Aspergillus flavus. Applied and Environmental Microbiology, Volume 92, Issue 1, January 2026. GSNOR can also be used to study other bacteria.",
+    "primary_category": "Scientific Research",
+    "categories": {
+      "Scientific Research": 0.7,
+      "Clinical": 0.0,
+      "Health & Environment": 0.125,
+      "Housing & Indoor Air": 0.125,
+      "Popular Media": 0.0
+    },
+    "keywords": [
+      "aspergillus",
+      "gsnor",
+      "essential",
+      "nitric",
+      "oxide",
+      "homeostasis",
+      "involved",
+      "aflatoxin",
+      "biosynthesis",
+      "pathogenicity"
+    ],
+    "enhanced": true,
+    "enhanced_at": "2026-02-08T16:13:09.236725"
   }
 ]
