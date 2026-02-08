@@ -3,6 +3,30 @@
 Enhance Mouldwire articles with AI-generated summaries, categories, and keywords.
 This script reads articles from fetch_news.py output and enhances them.
 """
+#!/usr/bin/env python3
+import sys
+import traceback
+
+# Add this wrapper to catch ALL errors
+def main():
+    try:
+        from content_enhancement_system import ContentEnhancer, Article
+        import json
+        import os
+        from datetime import datetime
+        
+        print("✓ All imports successful")
+        print(f"✓ Python version: {sys.version}")
+        
+        # ... rest of your code here ...
+        
+    except Exception as e:
+        print(f"\n❌ FATAL ERROR: {e}", file=sys.stderr)
+        traceback.print_exc()
+        sys.exit(1)  # Exit with error code
+
+if __name__ == '__main__':
+    main()
 
 from content_enhancement_system import ContentEnhancer, Article
 import json
