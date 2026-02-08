@@ -112,10 +112,36 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 .news-title a:hover { text-decoration: underline; }
 
 .news-excerpt {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.6;
   color: #333;
   margin-bottom: 14px;
+}
+
+/* Ensure the source link has some breathing room */
+.source-link-container {
+  margin-top: 12px;
+  display: block; /* Forces the block level */
+}
+
+.read-more {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000; /* Matching your theme */
+}
+
+/* The thin black dividing line */
+.news-divider {
+  border: 0;
+  border-top: 1px solid #000; /* Solid thin black line */
+  margin: 30px 0;
+  opacity: 0.2; /* Softens the black to a dark grey, remove if you want jet black */
+}
+
+/* Remove the line from the very last item in the list */
+.news-item:last-child .news-divider {
+  display: none;
 }
 
 /* NEW: Keywords Section */
