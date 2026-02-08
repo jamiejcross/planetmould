@@ -40,6 +40,19 @@ jobs:
       run: |
         echo "Fetching latest articles from RSS feeds..."
         python fetch_news.py
+
+    - name: Verify mould_news.json was created
+      run: |
+        if [ -f mould_news.json ]; then
+          echo "✅ mould_news.json exists"
+          echo "Size: $(wc -c < mould_news.json) bytes"
+          echo "First few lines:"
+          head -20 mould_news.json
+        else
+          echo "❌ mould_news.json NOT FOUND"
+          echo "fetch_news.py may have failed"
+          exit 1
+        fi
         
     - name: Enhance articles with AI
   env:
