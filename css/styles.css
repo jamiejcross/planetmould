@@ -72,24 +72,29 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
     border-bottom: none !important; /* Removes the line after the final article */
 }
 
+/* Container for the date and source */
 .news-meta {
-  font-size: 14px;
-  line-height: 1.5;
-  color: rgba(0,0,0,.75);
-  margin-bottom: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: 500;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 16px;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;       /* Allows wrapping on mobile */
+    gap: 15px;             /* Space between Date and Source */
+    margin-bottom: 10px;
+    font-size: 0.85rem;    /* Shared font size */
+    font-family: inherit;  /* Ensures they use the same font stack */
+    color: #666;           /* Professional grey */
 }
 
+/* Ensure both spans look identical */
 .news-meta span {
-  display: inline-block;
-  white-space: nowrap;
-  margin-right: 15px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;   /* Keeps "Published: Date" on one line if possible */
+}
+
+/* Bold labels for consistency */
+.news-meta strong {
+    font-weight: 700;
+    color: #333;
+    margin-right: 5px;
 }
 
 .news-meta span:last-child {
