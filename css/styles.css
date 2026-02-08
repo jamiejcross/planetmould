@@ -80,7 +80,7 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
     margin-bottom: 10px;
     font-size: 0.85rem;    /* Shared font size */
     font-family: inherit;  /* Ensures they use the same font stack */
-    color: #666;           /* Professional grey */
+    color: #1a1919;           /* Professional greyish black */
 }
 
 /* Ensure both spans look identical */
@@ -112,7 +112,7 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
   display: inline-block;
   background: #fff;
   color: #000;
-  border: 1px solid var(--border);
+  border: none;
   padding: 3px 8px;
   border-radius: 3px;
   font-size: 11px;
@@ -129,10 +129,10 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 .news-excerpt {
     font-size: 1rem;
     line-height: 1.7; /* Increased spacing for longer text */
-    color: #333;
+    color: #1a1919;
     max-width: 75ch;  /* Prevents lines from getting too long/straining the eye */
-    text-align: justify;
-    hyphens: auto;
+    text-align: left;
+    hyphens: none;
 }
 
 /* Ensure the source link has some breathing room */
