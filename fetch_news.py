@@ -48,7 +48,7 @@ RSS_FEEDS = {
 }
 
 SUBJECTS = ['mould', 'mold', 'mycotoxin', 'aflatoxin', 'aspergillus', 'penicillium', 'stachybotrys', 'cladosporium', 'alternaria', 'fusarium', 'mucor', 'filamentous']
-CONTEXTS = ['resistance', 'amr', 'famr', 'infection', 'clinical', 'indoor air', 'housing', 'home', 'building', 'hvac', 'ventilation', 'azole', 'pathogen', 'humidity', 'condensation', 'iaq', 'antifungal', 'mask', 'surgical', 'degradation', 'environmental', 'fabric', 'damp', 'bioaerosol', 'environment', 'bioremediation', 'detection', 'exposure', 'public health', 'study', 'analysis', 'climate', 'heat', 'metabolic', 'metabolise', 'metabolize']
+CONTEXTS = ['resistance', 'amr', 'famr', 'infection', 'clinical', 'indoor air', 'housing', 'home', 'building', 'hvac', 'ventilation', 'azole', 'pathogen', 'humidity', 'condensation', 'iaq', 'antifungal', 'mask', 'surgical', 'degradation', 'environmental', 'fabric', 'damp', 'bioaerosol', 'environment', 'bioremediation', 'exposure', 'public health', 'study', 'analysis', 'climate', 'heat', 'metabolic', 'metabolise', 'metabolize', 'infrastructure', 'materiality', 'biopolitics', 'labor', 'urban', 'decay', 'toxicity', 'assemblage', 'sociality', 'precarity', 'policy', 'regulation', 'governance', 'justice', 'inequality', 'tenure']
 BROAD_JOURNALS = ['Scientific Reports', 'Nature Communications', 'PLOS ONE', 'ACS Omega', 'JACS', 'Chemical Engineering Journal', 'Science of the Total Environment']
 
 def clean_text(text):
