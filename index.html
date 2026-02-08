@@ -158,19 +158,23 @@
       filtered.slice(0, visibleCount).forEach((item) => {
           const isEnhanced = item.enhanced === true;
           const displayDate = item.pubDate ? new Date(item.pubDate).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : 'Recent';
-          const summary = item.summary || item.excerpt || "";
+          // 1. Grab text from any available field (summary is AI-generated, excerpt is from RSS)
+let rawSummary = item.summary || item.excerpt || "";
 
-          html += `
-            <div class="news-item" style="padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid rgba(0,0,0,0.1);">
-              <div class="news-meta">
-                <span><strong>Published:</strong> ${displayDate}</span>
-                <span><strong>Source:</strong> ${item.source}</span>
-              </div>
-              <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
-              
-              ${isEnhanced ? '<span class="ai-badge">✨ What does this mean for Planet Mould?</span>' : ''}
-              
-              <p class="news-excerpt" style="font-size: 0.95rem; line-height: 1.7; margin: 15px 0; color: #333; max-width: 75ch;">${summary}</p>
+// 2. Safety Fallback: If AI hasn't processed it yet, ensure we show SOMETHING
+let formattedSummary = rawSummary.length > 0 ? rawSummary : "No summary available for this wire.";
+
+html += `
+  <div class="news-item" style="padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid rgba(0,0,0,0.1);">
+    <div class="news-meta">
+      <span><strong>Published:</strong> ${displayDate}</span>
+      <span><strong>Source:</strong> ${item.source}</span>
+    </div>
+    <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
+    
+    ${isEnhanced ? '<span class="ai-badge">✨ What does this mean for Planet Mould?</span>' : ''}
+    
+    <p class="news-excerpt" style="font-size: 0.95rem; line-height: 1.7; margin: 15px 0; color: #333; max-width: 75ch;">${formattedSummary}</p>
               
               <div class="news-keywords">
                 ${(item.keywords || []).slice(0, 3).map(k => `<span class="keyword-tag" style="background:#eee; padding:3px 10px; margin-right:8px; font-size:11px; border-radius:4px; color: #444; text-transform: uppercase;">${k}</span>`).join('')}
