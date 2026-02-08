@@ -5,6 +5,36 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>News - Planet Mould</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* Responsive Metadata Styling */
+    .news-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 12px;
+      font-size: 0.85rem;
+      line-height: 1.4;
+      color: #666;
+    }
+    .news-meta strong {
+      font-weight: 700;
+      color: #333;
+    }
+    /* Simple AI Badge Styling */
+    .ai-badge {
+      display: inline-block;
+      background: #fff;
+      border: 1px solid #000;
+      color: #000;
+      padding: 2px 10px;
+      font-size: 10px;
+      font-weight: 800;
+      border-radius: 0px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+  </style>
 </head>
 <body>
 <div class="banner">
@@ -19,27 +49,28 @@
   </div>
 </div>
 
-  
   <div class="page-header">
     <h1>Mouldwire</h1>
-    <p>Mouldwire is a bespoke science and media news service designed to collect and distribute the latest mould related research, news and stories. Mouldwire scans ~50 international peer reviewed scientific journals; public health agencies, environmental bodies, and standards organisations, news organisations; and social media platforms. The engine uses a unique list of RSS feeds and a set of extensive keywords developed solely for this website. Mouldwire provides brief summaries that flag their relevance for social scientists interested in planetary health and human/non-human sociality.This beta version was launched in Jan 2026 and is currently in development.</p>
+    <p>Mouldwire is a bespoke science and media news service designed to collect and distribute the latest mould related research, news and stories. This version is optimised for social scientists interested in planetary health, infrastructure, and human/non-human sociality. Mouldwire scans ~50 international peer reviewed scientific journals; public health agencies, environmental bodies, and standards organisations, news organisations; and social media platforms. Mouldwire uses a unique list of RSS feeds and keywords, and provides brief summaries. Mouldwire is open source and is currently-under development
+
+</p>
   </div>
 
   <div class="controls">
     <div class="filter-row">
       <div class="filter-buttons">
         <button class="filter-btn active" data-filter="all">All News</button>
+        <button class="filter-btn" data-filter="theory">Theory & Ethnography</button>
         <button class="filter-btn" data-filter="science">Scientific Research</button>
-        <button class="filter-btn" data-filter="media">Popular Media</button>
         <button class="filter-btn" data-filter="health">Health & Environment</button>
         <button class="filter-btn" data-filter="indoor">Housing & Indoor Air</button>
-        <button class="filter-btn" data-filter="clinical">Clinical</button>
+        <button class="filter-btn" data-filter="media">Media</button>
       </div>
       <button id="refreshBtn" class="refresh-btn">Refresh Feed</button>
     </div>
     
     <div class="search-container">
-      <input type="text" id="newsSearch" placeholder="Search filtered news (e.g. 'Glasgow', 'Resistance', 'Ventilation')..." />
+      <input type="text" id="newsSearch" placeholder="Search (e.g. 'Infrastructure', 'Materiality', 'Tsing')..." />
     </div>
   </div>
 
@@ -66,60 +97,48 @@
   </div>
 
 <script>
- // 1. GLOBAL STATE
-  let allNews = []; // Changed to Array to support .filter()
+  let allNews = []; 
   let currentFilter = "all";
   let visibleCount = 20;
 
-  // 2. CATEGORY MAPPING
   const categoryMap = {
     'Scientific Research': 'science',
     'Popular Media': 'media',
     'Health & Environment': 'health',
     'Housing & Indoor Air': 'indoor',
-    'Clinical': 'clinical'
+    'Clinical': 'science' // Merged for simplicity
   };
 
-  // 3. FETCH ENGINE
+  const theoryKeywords = ['anthropology', 'sociology', 'ethnography', 'material culture', 'political economy', 'infrastructure', 'sociality', 'biopolitics'];
+
   async function fetchNews() {
     const container = document.getElementById("newsContainer");
     try {
       let response = await fetch('articles_enhanced.json?v=' + new Date().getTime());
-      let data;
+      if (!response.ok) response = await fetch('mould_news.json?v=' + new Date().getTime());
       
-      if (response.ok) {
-          data = await response.json();
-          console.log('✓ Loaded enhanced articles');
-      } else {
-          response = await fetch('mould_news.json?v=' + new Date().getTime());
-          if (!response.ok) throw new Error("Could not load any news files.");
-          data = await response.json();
-          console.log('⚠ Loaded regular articles');
-      }
-
-      // Assign to global state
-      allNews = data; 
+      allNews = await response.json(); 
       displayNews();
-
     } catch (error) {
-      console.error("Error loading news:", error);
-      if (container) {
-        container.innerHTML = `<p class="error-state" style="padding:40px; text-align:center;">The biosphere archive is currently updating. Please refresh in a moment.</p>`;
-      }
+      container.innerHTML = `<p class="error-state" style="padding:40px; text-align:center;">The biosphere archive is currently updating.</p>`;
     }
   }
 
-  // 4. UI ENGINE
- // 4. UI ENGINE
   function displayNews() {
     const container = document.getElementById("newsContainer");
     const loadMoreContainer = document.getElementById("loadMoreContainer");
     if (!container) return;
 
-    // Filter logic
     let filtered = allNews;
+
+    // Filter logic
     if (currentFilter !== 'all') {
       filtered = allNews.filter(item => {
+        const text = (item.title + " " + (item.summary || "")).toLowerCase();
+        const isTheory = theoryKeywords.some(k => text.includes(k));
+        
+        if (currentFilter === 'theory') return isTheory;
+        
         const aiMappedCat = categoryMap[item.primary_category];
         return item.category === currentFilter || aiMappedCat === currentFilter;
       });
@@ -130,92 +149,51 @@
     if (searchTerm) {
       filtered = filtered.filter(item => 
         item.title.toLowerCase().includes(searchTerm) || 
-        (item.summary && item.summary.toLowerCase().includes(searchTerm)) ||
-        (item.excerpt && item.excerpt.toLowerCase().includes(searchTerm))
+        (item.summary && item.summary.toLowerCase().includes(searchTerm))
       );
     }
 
     if (filtered.length > 0) {
       let html = `<div class="news-list">`;
-      
-      // Map through the items to build the list
-      filtered.slice(0, visibleCount).forEach((item, index) => {
+      filtered.slice(0, visibleCount).forEach((item) => {
           const isEnhanced = item.enhanced === true;
-          
-          // Sentence Case formatting
-          let rawSummary = item.summary || item.excerpt || "";
-          const summary = rawSummary
-            .toLowerCase()
-            .replace(/(^\s*\w|[\.\!\?]\s*\w)/g, c => c.toUpperCase());
-
-          const keywords = item.keywords || [];
           const displayDate = item.pubDate ? new Date(item.pubDate).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : 'Recent';
+          const summary = item.summary || item.excerpt || "";
 
-          // Add item HTML
           html += `
-            <div class="news-item" style="padding-bottom: 40px; margin-bottom: 40px; border: none; border-bottom: 1px solid rgba(0,0,0,0.1);">
+            <div class="news-item" style="padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid rgba(0,0,0,0.1);">
               <div class="news-meta">
                 <span><strong>Published:</strong> ${displayDate}</span>
                 <span><strong>Source:</strong> ${item.source}</span>
               </div>
+              <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
               
-              <h3 class="news-title" style="margin-top: 5px;"><a href="${item.url}" target="_blank">${item.title}</a></h3>
+              ${isEnhanced ? '<span class="ai-badge">✨ What does this mean for Planet Mould?</span>' : ''}
               
-              ${isEnhanced ? '<span class="ai-badge" style="background:#FFFFFF; padding:2px 8px; font-size:10px; border-radius:4px; border:none; color: #666;">⚛ What is this all about?</span>' : ''}
+              <p class="news-excerpt" style="font-size: 0.95rem; line-height: 1.7; margin: 15px 0; color: #333; max-width: 75ch;">${summary}</p>
               
-              ${summary ? `<p class="news-excerpt" style="font-size: 0.95rem; line-height: 1.7; margin: 15px 0; color: #333; max-width: 75ch;">${summary}</p>` : ''}
+              <div class="news-keywords">
+                ${(item.keywords || []).slice(0, 3).map(k => `<span class="keyword-tag" style="background:#eee; padding:3px 10px; margin-right:8px; font-size:11px; border-radius:4px; color: #444; text-transform: uppercase;">${k}</span>`).join('')}
+              </div>
               
-              ${keywords.length > 0 ? `
-                <div class="news-keywords" style="margin-top:10px;">
-                  ${keywords.slice(0, 3).map(k => `<span class="keyword-tag" style="background:#eee; padding:3px 10px; margin-right:8px; font-size:11px; border-radius:4px; color: #444; text-transform: uppercase; letter-spacing: 0.5px;">${k}</span>`).join('')}
-                </div>
-              ` : ''}
-              
-              <div class="source-link-container" style="margin-top: 25px;">
-                <a href="${item.url}" target="_blank" class="read-more" style="text-decoration:none; font-weight:bold; color:#000; font-size:13px; text-transform: uppercase; letter-spacing: 1px;">View original source online →</a>
+              <div style="margin-top: 25px;">
+                <a href="${item.url}" target="_blank" style="text-decoration:none; font-weight:bold; color:#000; font-size:13px; text-transform: uppercase; letter-spacing: 1px;">View source online →</a>
               </div>
             </div>`;
       });
-      
-      html += `</div>`; // Close news-list ONLY ONCE here
+      html += `</div>`;
       container.innerHTML = html;
-
-      // Handle "Load More" visibility
-      if (loadMoreContainer) {
-        loadMoreContainer.style.display = (filtered.length > visibleCount) ? "block" : "none";
-      }
-
-      // Final styling touch: Remove border from last item
-      const items = container.querySelectorAll('.news-item');
-      if (items.length > 0) {
-        items[items.length - 1].style.borderBottom = 'none';
-      }
-
+      if (loadMoreContainer) loadMoreContainer.style.display = (filtered.length > visibleCount) ? "block" : "none";
     } else {
-      container.innerHTML = `<p class="empty-state" style="padding:40px; text-align:center;">No matching mould wires found.</p>`;
-      if (loadMoreContainer) loadMoreContainer.style.display = "none";
+      container.innerHTML = `<p style="padding:40px; text-align:center;">No matching mould wires found.</p>`;
     }
   }
 
-  // 5. INITIALIZE
   window.onload = () => {
     fetchNews();
-
-    document.getElementById("newsSearch")?.addEventListener("input", () => {
-      visibleCount = 20; 
-      displayNews();
-    });
-
-    document.getElementById("refreshBtn")?.addEventListener("click", () => {
-      visibleCount = 20;
-      fetchNews();
-    });
-
-    document.getElementById("loadMoreBtn")?.addEventListener("click", () => {
-      visibleCount += 20;
-      displayNews();
-    });
-
+    document.getElementById("newsSearch")?.addEventListener("input", () => { visibleCount = 20; displayNews(); });
+    document.getElementById("refreshBtn")?.addEventListener("click", () => { visibleCount = 20; fetchNews(); });
+    document.getElementById("loadMoreBtn")?.addEventListener("click", () => { visibleCount += 20; displayNews(); });
     document.querySelectorAll(".filter-btn").forEach(btn => {
       btn.addEventListener("click", (e) => {
         document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
