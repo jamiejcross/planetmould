@@ -54,56 +54,88 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
   font-size: 16px; background: #f9f9f9; font-family: var(--font); margin-bottom: 32px;
 }
 
-/* 5. INDIVIDUAL NEWS ITEMS (FIXED) */
+/* 5. INDIVIDUAL NEWS ITEMS */
 #newsContainer { display: flex; flex-direction: column; gap: 40px; margin-bottom: 64px; }
 
 .news-item {
   background: #fff; padding-bottom: 32px; border-bottom: 1px solid var(--border);
-  display: flex; flex-direction: column; /* Vertical stack prevents squashing */
+  display: flex; flex-direction: column;
 }
 
 .news-meta {
   font-size: 14px;
-  line-height: 1.5; /* Increased for better legibility */
+  line-height: 1.5;
   color: rgba(0,0,0,.75);
   margin-bottom: 12px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: 500;
-  
-  /* The Magic Fix */
   display: flex;
-  flex-wrap: wrap; /* Allows items to drop to a new line instead of squashing */
-  gap: 8px 16px;   /* Adds a gap between Date and Source */
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center; /* NEW: Aligns AI badge with text */
 }
 
-/* Ensures the labels don't merge with the values */
 .news-meta span {
   display: inline-block;
   white-space: nowrap;
-  margin-right: 15px; /* This creates the physical gap between Date and Source */
+  margin-right: 15px;
 }
 
-/* Remove margin from the last span so it doesn't push against the edge */
 .news-meta span:last-child {
   margin-right: 0;
 }
+
+/* NEW: AI Enhancement Badge */
+.ai-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 0 !important; /* Override the span margin */
+}
+
 .news-title { font-size: 24px; font-weight: 700; line-height: 1.25; margin: 0 0 12px 0; }
 .news-title a { color: #000; text-decoration: none; }
 .news-title a:hover { text-decoration: underline; }
 
 .news-excerpt {
-  display: -webkit-box;
-  -webkit-line-clamp: 3; /* Show exactly 3 lines of text */
-  -webkit-box-orient: vertical;  
-  overflow: hidden; /* Hide anything beyond those 3 lines */
-  
   font-size: 18px;
   line-height: 1.6;
   color: #333;
   margin-bottom: 14px;
-  min-height: 4.8em; /* Ensures boxes are roughly the same height even with short text */
 }
+
+/* NEW: Keywords Section */
+.news-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.keyword-tag {
+  display: inline-block;
+  background: #f5f5f5;
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  color: rgba(0,0,0,.65);
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.keyword-tag:hover {
+  background: #e8e8e8;
+  border-color: rgba(0,0,0,.25);
+}
+
 .read-more { font-size: 14px; color: var(--link-blue); text-decoration: none; font-weight: 500; }
 .read-more:hover { text-decoration: underline; }
 
@@ -124,6 +156,24 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 }
 @keyframes spin { 100% { transform: rotate(360deg); } }
 
+.refresh-btn {
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 16px;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.refresh-btn:hover {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
 /* 8. MOBILE RESPONSIVENESS */
 @media (max-width: 700px) {
   .banner { font-size: 16px; position: relative; }
@@ -141,6 +191,22 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
   .page-header h1 { font-size: 24px; }
   .news-title { font-size: 20px; }
   .news-excerpt { font-size: 16px; }
+  
+  /* Mobile: Stack meta items vertically for better readability */
+  .news-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  
+  .news-meta span {
+    margin-right: 0;
+  }
+  
+  .keyword-tag {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
   
   .footer-banner { flex-direction: column; align-items: flex-start; }
   .footer-banner .uni-logo { height: 60px; margin-left: 0; }
