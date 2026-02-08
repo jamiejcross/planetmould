@@ -80,7 +80,7 @@ def run_fetcher():
                         output.append({
                             "title": clean_text(entry.title),
                             "source": source_name,
-                            "excerpt": clean_desc[:180],
+                            "excerpt": clean_desc[:600],
                             "url": entry.link,
                             "pubDate": iso_date,
                             "category": category
