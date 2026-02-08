@@ -133,90 +133,76 @@
   }
 
 // 4. UI ENGINE - Now displays AI summaries and keywords
-  function displayNews() {
+ function displayNews() {
     const container = document.getElementById("newsContainer");
-    const searchInput = document.getElementById("newsSearch");
     const loadMoreContainer = document.getElementById("loadMoreContainer");
-    const query = searchInput ? searchInput.value.toLowerCase() : "";
-    
-    let combinedNews = [];
-    const activeCats = currentFilter === "all" ? Object.keys(allNews) : [currentFilter];
-    activeCats.forEach(cat => combinedNews.push(...allNews[cat]));
+    if (!container) return;
 
-    // Filter by search query (now includes summary and keywords)
-    const filtered = combinedNews
-      .filter(item => {
-        const searchableText = [
-          item.title,
-          item.source,
-          item.excerpt,
-          item.summary,
-          item.ai_summary,
-          (item.keywords || []).join(' ')
-        ].join(' ').toLowerCase();
-        return searchableText.includes(query);
-      })
-      .sort((a, b) => b.pubDate - a.pubDate);
+    // Filter logic
+    let filtered = allNews;
+    if (currentFilter !== 'all') {
+      filtered = allNews.filter(item => item.category === currentFilter || item.primary_category === currentFilter);
+    }
 
-    const resultsToShow = filtered.slice(0, visibleCount);
+    const searchTerm = document.getElementById("newsSearch")?.value.toLowerCase();
+    if (searchTerm) {
+      filtered = filtered.filter(item => 
+        item.title.toLowerCase().includes(searchTerm) || 
+        (item.summary && item.summary.toLowerCase().includes(searchTerm))
+      );
+    }
 
-    if (resultsToShow.length > 0) {
+    if (filtered.length > 0) {
       let html = `<div class="news-list">`;
       
-      // BUILD EACH ARTICLE
-      resultsToShow.forEach(item => {
-        // Get summary (AI-generated if available, otherwise excerpt)
-        const summary = item.summary || item.ai_summary || item.excerpt || '';
-        
-        // Get keywords
-        const keywords = item.keywords || [];
-        
-        // Check if AI-enhanced
-        const isEnhanced = !!(item.summary || item.keywords);
-        
-        html += filtered.slice(0, visibleCount).map(item => {
-    const isEnhanced = item.enhanced === true;
-    const summary = item.summary || item.excerpt;
-    const keywords = item.keywords || [];
+      filtered.slice(0, visibleCount).forEach(item => {
+          const isEnhanced = item.enhanced === true;
+          
+          // FIX: Sentence Case formatting in JavaScript
+          let rawSummary = item.summary || item.excerpt || "";
+          const summary = rawSummary
+            .toLowerCase()
+            .replace(/(^\s*\w|[\.\!\?]\s*\w)/g, c => c.toUpperCase());
 
-    return `
-      <div class="news-item">
-        <div class="news-meta">
-          <span><strong>Published:</strong> ${new Date(item.pubDate).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}</span>
-          <span><strong>Source:</strong> ${item.source}</span>
-        </div>
-        
-        <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
-        
-        ${isEnhanced ? '<span class="ai-badge">⚛ Prompt Engineered Summary</span>' : ''}
-        
-        ${summary ? `<p class="news-excerpt">${summary}</p>` : ''}
-        
-        ${keywords.length > 0 ? `
-          <div class="news-keywords">
-            ${keywords.slice(0, 3).map(k => `<span class="keyword-tag">${k}</span>`).join('')}
-          </div>
-        ` : ''}
-        
-        <div class="source-link-container">
-          <a href="${item.url}" target="_blank" class="read-more">View original source online →</a>
-        </div>
-        
-        <hr class="news-divider">
-      </div>`;
-}).join('');
+          const keywords = item.keywords || [];
+          // Ensure valid date
+          const displayDate = item.pubDate ? new Date(item.pubDate).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : 'Recent';
+
+          html += `
+            <div class="news-item">
+              <div class="news-meta">
+                <span><strong>Published:</strong> ${displayDate}</span>
+                <span><strong>Source:</strong> ${item.source}</span>
+              </div>
+              
+              <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
+              
+              ${isEnhanced ? '<span class="ai-badge">⚛ Prompt Engineered Summary</span>' : ''}
+              
+              ${summary ? `<p class="news-excerpt">${summary}</p>` : ''}
+              
+              ${keywords.length > 0 ? `
+                <div class="news-keywords">
+                  ${keywords.slice(0, 3).map(k => `<span class="keyword-tag">${k}</span>`).join('')}
+                </div>
+              ` : ''}
+              
+              <div class="source-link-container" style="margin-top: 10px;">
+                <a href="${item.url}" target="_blank" class="read-more">View original source online →</a>
+              </div>
+              
+              <hr class="news-divider" style="border: 0; border-top: 1px solid #000; margin: 25px 0; opacity: 0.2;">
+            </div>`;
+      });
       
       html += `</div>`;
       container.innerHTML = html;
-
-      if (loadMoreContainer) {
-        loadMoreContainer.style.display = (filtered.length > visibleCount) ? "block" : "none";
-      }
+      if (loadMoreContainer) loadMoreContainer.style.display = (filtered.length > visibleCount) ? "block" : "none";
     } else {
-      container.innerHTML = `<p class="empty-state" style="padding:40px; text-align:center;">No matching mould wires found in the archive.</p>`;
+      container.innerHTML = `<p class="empty-state">No matching mould wires found.</p>`;
       if (loadMoreContainer) loadMoreContainer.style.display = "none";
     }
-  }
+}
 
   // 5. INITIALIZE
   window.onload = () => {
