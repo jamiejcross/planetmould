@@ -53,48 +53,50 @@ def _sanitize_for_ai(self, article: Article) -> str:
         return text.strip()
 
    def generate_research_summary(self, article: Article) -> str:
+        """The core anthropological summary engine adjusted for Conversational API"""
         sanitized_text = self._sanitize_for_ai(article)
         
         if len(sanitized_text) < 50:
             return sanitized_text if len(sanitized_text) > 0 else article.title
 
-        # REFINED PROMPT: More aggressive instructions to skip citations
-        prompt = f"<s>[INST] You are an expert anthropologist. Summarize the following news in 5 to 7 detailed sentences. 
-        Focus on infrastructure, fungal sociality, and the built environment. 
-        IGNORE all journal volume numbers, dates, and citations. 
-        Start your summary immediately.
-        
-        Article Content: {article.title}. {sanitized_text[:1200]} [/INST]</s>"
+        # This is the "Conversational" format the log says is required
+        messages = [
+            {
+                "role": "user", 
+                "content": f"You are an expert anthropologist. Summarize this in 5 to 7 detailed sentences focusing on infrastructure and fungal sociality. Ignore citations: {article.title}. {sanitized_text[:1200]}"
+            }
+        ]
 
         if self.ai_provider == "huggingface":
-            api_url = f"https://api-inference.huggingface.co/models/{self.hf_model}"
-            headers = {"Authorization": f"Bearer {self.hf_token}"}
+            api_url = f"https://api-inference.huggingface.co/models/{self.hf_model}/v1/chat/completions"
+            headers = {
+                "Authorization": f"Bearer {self.hf_token}",
+                "Content-Type": "application/json"
+            }
             payload = {
-                "inputs": prompt,
-                "parameters": {
-                    "max_new_tokens": 400, # Increased for longer summaries
-                    "temperature": 0.7,
-                    "repetition_penalty": 1.2, # Prevents the AI from repeating the input
-                    "return_full_text": False
-                },
-                "options": {
-                    "wait_for_model": True, # CRITICAL: Prevents "cold start" failures
-                    "use_cache": False
-                }
+                "model": self.hf_model,
+                "messages": messages,
+                "max_tokens": 500,
+                "temperature": 0.7
             }
             
             try:
+                # Use the 'v1/chat/completions' endpoint
                 response = requests.post(api_url, headers=headers, json=payload, timeout=60)
                 if response.status_code == 200:
                     result = response.json()
-                    summary = result[0].get("generated_text", "")
-                    if len(summary.strip()) > 100: # Ensure we got a real summary
+                    # The response format changes for chat:
+                    summary = result['choices'][0]['message']['content']
+                    if summary.strip():
                         return summary.strip()
+                else:
+                    print(f"API Debug: {response.status_code} - {response.text}")
             except Exception as e:
                 print(f"Connection error: {e}")
 
-            # Fallback if AI fails: show first 300 chars of the actual content
-            return sanitized_text[:300] + "..."
+            return sanitized_text[:350] + "..."
+        
+        return sanitized_text[:300] + "..."
             
             }
             
