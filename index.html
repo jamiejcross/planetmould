@@ -71,7 +71,7 @@
   let currentFilter = "all";
   let visibleCount = 20;
 
-  // 2. CATEGORY MAPPING (maps AI categories to your filter categories)
+  // 2. CATEGORY MAPPING (AI categories to your filter names)
   const categoryMap = {
     'Scientific Research': 'science',
     'Popular Media': 'media',
@@ -80,44 +80,43 @@
     'Clinical': 'clinical'
   };
 
-  // 3. FETCH ENGINE (Now supports BOTH mould_news.json AND articles_enhanced.json)
+  // 3. FETCH ENGINE - Now loads articles_enhanced.json with fallback
   async function fetchNews() {
     const container = document.getElementById("newsContainer");
     try {
-      // Try loading AI-enhanced articles first
+      // Try to load enhanced articles first
       let response = await fetch('articles_enhanced.json?v=' + new Date().getTime());
       let data;
       let isEnhanced = false;
       
       if (response.ok) {
-        // We have enhanced articles!
         data = await response.json();
         isEnhanced = true;
-        console.log('✨ Loaded AI-enhanced articles');
+        console.log('✓ Loaded enhanced articles');
       } else {
-        // Fall back to original mould_news.json
+        // Fallback to regular articles
         response = await fetch('mould_news.json?v=' + new Date().getTime());
         data = await response.json();
-        console.log('Loaded regular articles');
+        console.log('⚠ Loaded regular articles (enhanced not available)');
       }
       
       // Clear previous data
       allNews = { science: [], media: [], health: [], indoor: [], clinical: [] };
       
-      // Process articles
+      // Process and categorize articles
       data.forEach(item => {
-        // Handle date
-        item.pubDate = new Date(item.published || item.pubDate || item.published_date);
+        item.pubDate = new Date(item.pubDate || item.published);
         
         // Determine category
         let category;
-        if (isEnhanced) {
-          // Map AI category to your filter category
-          const aiCategory = item.primary_category || item.category;
-          category = categoryMap[aiCategory] || 'science'; // default to science if unknown
-        } else {
+        if (isEnhanced && item.primary_category) {
+          // Map AI category to filter category
+          category = categoryMap[item.primary_category] || 'science';
+        } else if (item.category) {
           // Use existing category
           category = item.category;
+        } else {
+          category = 'science';
         }
         
         // Add to appropriate category
@@ -133,7 +132,7 @@
     }
   }
 
-  // 4. UI ENGINE (Updated to show AI summaries and keywords)
+// 4. UI ENGINE - Now displays AI summaries and keywords
   function displayNews() {
     const container = document.getElementById("newsContainer");
     const searchInput = document.getElementById("newsSearch");
@@ -144,10 +143,10 @@
     const activeCats = currentFilter === "all" ? Object.keys(allNews) : [currentFilter];
     activeCats.forEach(cat => combinedNews.push(...allNews[cat]));
 
-    // Filter by search query (now includes AI summary and keywords!)
+    // Filter by search query (now includes summary and keywords)
     const filtered = combinedNews
       .filter(item => {
-        const searchText = [
+        const searchableText = [
           item.title,
           item.source,
           item.excerpt,
@@ -155,7 +154,7 @@
           item.ai_summary,
           (item.keywords || []).join(' ')
         ].join(' ').toLowerCase();
-        return searchText.includes(query);
+        return searchableText.includes(query);
       })
       .sort((a, b) => b.pubDate - a.pubDate);
 
@@ -164,7 +163,7 @@
     if (resultsToShow.length > 0) {
       let html = `<div class="news-list">`;
       
-      // BUILD EACH ARTICLE CARD
+      // BUILD EACH ARTICLE
       resultsToShow.forEach(item => {
         // Get summary (AI-generated if available, otherwise excerpt)
         const summary = item.summary || item.ai_summary || item.excerpt || '';
@@ -180,16 +179,16 @@
             <div class="news-meta">
               <span><strong>Published:</strong> ${item.pubDate.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}</span>
               <span><strong>Source:</strong> ${item.source}</span>
-              ${isEnhanced ? '<span class="ai-badge">𖡎 Prompt Engineered AI Summary</span>' : ''}
+              ${isEnhanced ? '<span class="ai-badge">✨ AI Enhanced</span>' : ''}
             </div>
-            <h3 class="news-title"><a href="${item.url || item.link}" target="_blank">${item.title}</a></h3>
+            <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
             ${summary ? `<p class="news-excerpt">${summary}</p>` : ''}
             ${keywords.length > 0 ? `
               <div class="news-keywords">
-                ${keywords.slice(0, 5).map(k => `<span class="keyword-tag">${k}</span>`).join('')}
+                ${keywords.slice(0, 6).map(k => `<span class="keyword-tag">${k}</span>`).join('')}
               </div>
             ` : ''}
-            <a href="${item.url || item.link}" target="_blank" class="read-more">View original source online →</a>
+            <a href="${item.url}" target="_blank" class="read-more">View original source online →</a>
           </div>`;
       });
       
