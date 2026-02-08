@@ -42,7 +42,7 @@ class ContentEnhancer:
             ai_provider: 'huggingface', 'ollama', or 'openai'
         """
         self.ai_provider = ai_provider
-        self.hf_api_url = "https://api-inference.huggingface.co/models/"
+        self.hf_api_url = "https://router.huggingface.co/models/"
         self.hf_token = None  # Set via set_api_key()
         self.ollama_url = "http://localhost:11434/api/generate"
         self.openai_key = None
