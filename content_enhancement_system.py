@@ -27,7 +27,8 @@ class ContentEnhancer:
     def __init__(self, ai_provider: str = "huggingface"):
         self.ai_provider = ai_provider
         self.hf_token = None  
-        self.hf_model = "mistralai/Mistral-7B-Instruct-v0.2" # Upgraded for better reasoning
+      # Change v0.2 to v0.3 here:
+        self.hf_model = "mistralai/Mistral-7B-Instruct-v0.3"
         
     def set_api_key(self, key: str):
         self.hf_token = key
@@ -53,21 +54,26 @@ def _sanitize_for_ai(self, article: Article) -> str:
         return text.strip()
 
    def generate_research_summary(self, article: Article) -> str:
-        """The core anthropological summary engine adjusted for Conversational API"""
+        """Updated for v0.3 and the Chat Completions requirement"""
         sanitized_text = self._sanitize_for_ai(article)
         
         if len(sanitized_text) < 50:
             return sanitized_text if len(sanitized_text) > 0 else article.title
 
-        # This is the "Conversational" format the log says is required
+        # We must use the 'messages' format for conversational models
         messages = [
             {
-                "role": "user", 
-                "content": f"You are an expert anthropologist. Summarize this in 5 to 7 detailed sentences focusing on infrastructure and fungal sociality. Ignore citations: {article.title}. {sanitized_text[:1200]}"
+                "role": "system",
+                "content": "You are a research assistant for an anthropologist. Provide a 5-7 sentence summary focusing on infrastructure, materiality, and fungal sociality. Skip citations."
+            },
+            {
+                "role": "user",
+                "content": f"Summarize this: {article.title}. {sanitized_text[:1200]}"
             }
         ]
 
         if self.ai_provider == "huggingface":
+            # NOTE: The URL changes to include '/v1/chat/completions'
             api_url = f"https://api-inference.huggingface.co/models/{self.hf_model}/v1/chat/completions"
             headers = {
                 "Authorization": f"Bearer {self.hf_token}",
@@ -81,20 +87,23 @@ def _sanitize_for_ai(self, article: Article) -> str:
             }
             
             try:
-                # Use the 'v1/chat/completions' endpoint
-                response = requests.post(api_url, headers=headers, json=payload, timeout=60)
+                # Increased timeout for the v0.3 model 'wake up' time
+                response = requests.post(api_url, headers=headers, json=payload, timeout=90)
+                
                 if response.status_code == 200:
                     result = response.json()
-                    # The response format changes for chat:
+                    # The response path is different for Chat!
                     summary = result['choices'][0]['message']['content']
                     if summary.strip():
                         return summary.strip()
                 else:
-                    print(f"API Debug: {response.status_code} - {response.text}")
+                    print(f"API Error ({response.status_code}): {response.text}")
+
             except Exception as e:
                 print(f"Connection error: {e}")
 
-            return sanitized_text[:350] + "..."
+            # Fallback to snippet if AI is sleeping
+            return sanitized_text[:400] + "..."
         
         return sanitized_text[:300] + "..."
             
