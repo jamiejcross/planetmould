@@ -11,32 +11,61 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 }
 
 /* 2. NAVIGATION & HEADER */
+/* 2. NAVIGATION & HEADER */
 .banner {
   width: 100%;
   background: #fff;
   color: #000;
-  padding: 16px 20px;
-  border-bottom: 2px solid #000; /* Unified 2px border */
-
-  /* Font Unification */
+  padding: 14px 18px;
+  border-bottom: 2px solid #000; /* Matching your clinical 2px line */
   font-family: var(--font);
-  font-size: 20px; 
+  font-size: 20px;
+  line-height: 1.2;
   font-weight: 700;
-  text-transform: uppercase; /* Matching the button style */
-  letter-spacing: 1px;
-
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .brand {
-  color: #000 !important; /* Removed var(--blue) to match site */
+  color: #000; /* Changed from var(--blue) to match your news feed */
   text-decoration: none;
   white-space: nowrap;
-  order: 1; /* Moves brand to the second position */
-  margin-right: auto;
-  text-transform: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Links (desktop) */
+.links {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+  justify-content: flex-end;
+}
+
+.links a {
+  color: #000; /* Changed from var(--blue) to keep the clinical aesthetic */
+  text-decoration: none;
+  font-size: 14px;
+  padding-left: 12px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.links a:hover { 
+  text-decoration: underline; 
+}
+
+/* THE BULLETS YOU WANT TO KEEP */
+.links a + a::before {
+  content: "•";
+  display: inline-block;
+  margin: 0 12px 0 0;
+  color: #000; /* Black bullets to match the news wire */
 }
 
 
@@ -46,15 +75,6 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
   display: none; 
 }
 
-
-.links {
-  order: 2; /* Keeps links to the right */
-  list-style-type: none; /* Extra insurance against bullets */
-  display: flex;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-}
 
 .footer-left {
   display: flex;
@@ -182,6 +202,11 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 .page-header { margin-top: 48px; margin-bottom: 32px; }
 .page-header h1 { font-size: 32px; font-weight: 700; margin: 0 0 12px 0; }
 .page-header p { font-size: 20px; line-height: 1.6; color: rgba(0,0,0,.75); }
+
+.filter-btn, #refreshBtn, #loadMoreBtn {
+  color: #000 !important;
+  border-radius: 4 !important;
+}
 
 .filter-buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
 .filter-btn {
