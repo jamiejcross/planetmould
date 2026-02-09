@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>News - Planet Mould</title>
   <link rel="stylesheet" href="css/styles.css" />
+
   <style>
     /* Responsive Metadata Styling */
     .news-meta {
@@ -35,6 +36,7 @@
       margin: 10px 0;
     }
   </style>
+  
 </head>
 <body>
 <div class="banner">
@@ -78,10 +80,9 @@
         <button class="filter-btn" data-filter="health">Health & Environment</button>
         <button class="filter-btn" data-filter="indoor">Housing & Indoor Air</button>
         <button class="filter-btn" data-filter="media">Media</button>
-        <button class="filter-btn active" data-filter="all">Show All</button>
-     <-- </div>
+     </div>
       <button id="refreshBtn" class="refresh-btn">Refresh Feed</button>
-    </div> -->  
+      </div>
 
     <div class="search-container">
       <input type="text" id="newsSearch" placeholder="Search (e.g. 'Infrastructure', 'Materiality', 'Tsing')..." />
@@ -201,7 +202,7 @@
             <div class="news-keywords">
               ${(item.keywords || []).slice(0, 3).map(k => `<span class="keyword-tag">${k}</span>`).join('')}
             </div>
-            ${isEnhanced ? '<span class="ai-badge">✨ What does this mean for Planet Mould?</span>' : ''}
+            ${isEnhanced ? '<span class="ai-badge"🌏 What does an AI think this means for Planet Mould?</span>' : ''}
             <p class="news-excerpt">${formattedSummary}</p>
             <div class="source-link-container">
               <a href="${item.url}" target="_blank" class="read-more">View source online →</a>
