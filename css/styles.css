@@ -192,18 +192,29 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 #newsContainer { display: flex; flex-direction: column; gap: 40px; margin-bottom: 64px; }
 
 .news-item {
-  background: #fff; 
-  padding-bottom: 32px; 
+  background: #fff;
+  padding-top: 40px; 
+  padding-bottom: 60px; 
   border: none !important;
   border-bottom: 2px solid #000 !important; /* DOUBLED WEIGHT DIVIDING LINE */
   display: flex; 
   flex-direction: column;
 }
 
+/* Ensure the very first item doesn't have a massive gap at the top */
+#newsContainer .news-item:first-child {
+    padding-top: 10px;
+
 .news-item:last-child {
     border-bottom: none !important; 
 }
 
+.controls {
+    border-bottom: 2px solid #000; /* Matches your article dividers */
+    padding-bottom: 40px;          /* Space between search bar and the line */
+    margin-bottom: 50px;          /* Space between the line and the first article */
+
+  
 /* Metadata & Badge: Unified size, 2pt smaller than standard (approx 0.9rem) */
 .news-meta {
     display: flex;
@@ -309,7 +320,7 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
     border-left: none;
 }
   
-  .nav-toggle:checked ~ .links{
+  #nav-toggle:checked ~ .links{
     display: flex;
     position: absolute;
     top: 100%;
