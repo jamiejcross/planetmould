@@ -255,12 +255,13 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
   background: #fff;
   color: #000;
   border: 1px solid #000;
-  padding: 2px 6px;
+  border-radius: 4px;
+  padding: 4px 6px;
   border-radius: 3px;
-  font-size: 0.9rem !important; /* Matches news-meta */
-  font-weight: 700;
+  font-size: 1.0rem !important; /* Matches news-meta */
+  font-weight: 400;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
+  text-transform: none;
   margin-bottom: 8px;
 }
 
