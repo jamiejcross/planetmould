@@ -65,6 +65,7 @@
         GitHub Repository
     </a>.
 </p>
+
     
     
   </div>
@@ -132,14 +133,14 @@
 <script>
   let allNews = []; 
   let currentFilter = "all";
-  let visibleCount = 5;
+  let visibleCount = 10; // Increased to 20 for better initial load
 
   const categoryMap = {
     'Microbiology': 'science',
     'Social Media': 'media',
     'Health & Environment': 'health',
     'Housing & Indoor Air': 'indoor',
-    'Clinical': 'science' // Merged for simplicity
+    'Clinical': 'science'
   };
 
   const theoryKeywords = ['anthropology', 'sociology', 'ethnography', 'material culture', 'political economy', 'infrastructure', 'sociality', 'biopolitics'];
@@ -149,7 +150,6 @@
     try {
       let response = await fetch('articles_enhanced.json?v=' + new Date().getTime());
       if (!response.ok) response = await fetch('mould_news.json?v=' + new Date().getTime());
-      
       allNews = await response.json(); 
       displayNews();
     } catch (error) {
@@ -169,9 +169,7 @@
       filtered = allNews.filter(item => {
         const text = (item.title + " " + (item.summary || "")).toLowerCase();
         const isTheory = theoryKeywords.some(k => text.includes(k));
-        
         if (currentFilter === 'theory') return isTheory;
-        
         const aiMappedCat = categoryMap[item.primary_category];
         return item.category === currentFilter || aiMappedCat === currentFilter;
       });
@@ -189,39 +187,41 @@
     if (filtered.length > 0) {
       let html = `<div class="news-list">`;
       filtered.slice(0, visibleCount).forEach((item) => {
-          const isEnhanced = item.enhanced === true;
-          const displayDate = item.pubDate ? new Date(item.pubDate).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : 'Recent';
-          // 1. Grab text from any available field (summary is AI-generated, excerpt is from RSS)
-let rawSummary = item.summary || item.excerpt || "";
+        const isEnhanced = item.enhanced === true;
+        const displayDate = item.pubDate ? new Date(item.pubDate).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : 'Recent';
+        let rawSummary = item.summary || item.excerpt || "";
+        let formattedSummary = rawSummary.length > 0 ? rawSummary : "No summary available for this wire.";
 
-// 2. Safety Fallback: If AI hasn't processed it yet, ensure we show SOMETHING
-let formattedSummary = rawSummary.length > 0 ? rawSummary : "No summary available for this wire.";
+        html += `
+          <div class="news-item">
+            <div class="news-meta">
+              <span><strong>Published:</strong> ${displayDate}</span>
+              <span><strong>Source:</strong> ${item.source}</span>
+            </div>
+            <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
+            <div class="news-keywords">
+              ${(item.keywords || []).slice(0, 3).map(k => `<span class="keyword-tag">${k}</span>`).join('')}
+            </div>
+            ${isEnhanced ? '<span class="ai-badge">✨ What does this mean for Planet Mould?</span>' : ''}
+            <p class="news-excerpt">${formattedSummary}</p>
+            <div class="source-link-container">
+              <a href="${item.url}" target="_blank" class="read-more">View source online →</a>
+            </div>
+          </div>`;
+      });
+      html += `</div>`;
+      container.innerHTML = html;
 
-html += `
-  <div class="news-item">
-    <div class="news-meta">
-      <span><strong>Published:</strong> ${displayDate}</span>
-      <span><strong>Source:</strong> ${item.source}</span>
-    </div>
-    
-    <h3 class="news-title">
-      <a href="${item.url}" target="_blank">${item.title}</a>
-    </h3>
+      // LOAD MORE LOGIC
+      if (loadMoreContainer) {
+          loadMoreContainer.style.display = (filtered.length > visibleCount) ? "block" : "none";
+      }
 
-    <div class="news-keywords">
-      ${(item.keywords || []).slice(0, 3).map(k => `
-        <span class="keyword-tag">${k}</span>
-      `).join('')}
-    </div>
-    
-    ${isEnhanced ? '<span class="ai-badge">✨ What does this mean for Planet Mould?</span>' : ''}
-    
-    <p class="news-excerpt">${formattedSummary}</p>
-    
-    <div class="source-link-container">
-      <a href="${item.url}" target="_blank" class="read-more">View source online →</a>
-    </div>
-  </div>`;
+    } else {
+      container.innerHTML = `<p style="padding:40px; text-align:center;">No matching mould wires found.</p>`;
+      if (loadMoreContainer) loadMoreContainer.style.display = "none";
+    }
+  }
 
   window.onload = () => {
     fetchNews();
