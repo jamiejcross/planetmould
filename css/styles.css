@@ -27,14 +27,50 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 .nav-toggle, .hamburger { display: none; }
 
 /* 2.5 FOOTER */
-.footer-banner {
-  width: 100%; background: #fff; border-top: 1px solid var(--border); padding: 18px;
-  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+
+.footer-banner{
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid var(--border);
+  padding: 18px 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
-.footer-left { display: flex; flex-direction: column; gap: 10px; }
-.footer-credit, .footer-banner .email { font-family: var(--font); font-size: 14px; }
-.footer-banner .email { color: var(--link-blue); text-decoration: none; }
-.footer-banner .uni-logo { height: 100px; width: auto; }
+
+.footer-left{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 68ch;
+}
+
+.footer-credit,
+.footer-banner .email{
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.footer-credit{ color: #000; font-weight: 400; }
+.footer-credit p{ margin: 0; }
+.footer-credit p + p{ margin-top: 6px; }
+
+.footer-banner .email{
+  color: #014da1;
+  text-decoration: none;
+  font-weight: 400;
+}
+.footer-banner .email:hover{ text-decoration: underline; }
+
+.footer-banner .uni-logo{
+  height: 100px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+}
 
 /* 3. LAYOUT COMPONENTS */
 .spacer { height: 48px; background: #fff; }
@@ -135,9 +171,9 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
     word-wrap: break-word;
 }
 
-/* Keep news.meta strong and news.excerpt the same size (1.2rem) */
+/* Keep news.meta strong and news.excerpt the same size (1.0rem) */
 .news-meta strong, .news-excerpt {
-    font-size: 1.2rem !important;
+    font-size: 1.0rem !important;
     font-weight: 700;
     color: #333;
 }
