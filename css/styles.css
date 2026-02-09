@@ -1,23 +1,21 @@
-/* 1. GLOBAL RESET & VARIABLES */
+/* 1. GLOBAL RESET & VARIABLES (MATCHED TO MAIN SITE) */
 * { box-sizing: border-box; }
-html, body { height: 100%; }
-body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+html, body { height: 100%; margin: 0; background: #fff; }
 
 :root {
   --blue: #000000;
-  --link-blue: #014da1;
   --border: rgba(0,0,0,.12);
-  --font: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display",
+          "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* 2. NAVIGATION & HEADER */
-/* 2. NAVIGATION & HEADER */
+/* 2. NAVIGATION & HEADER (EXACT MATCH TO MAIN SITE) */
 .banner {
   width: 100%;
   background: #fff;
   color: #000;
   padding: 14px 18px;
-  border-bottom: 2px solid #000; /* Matching your clinical 2px line */
+  border-bottom: 1px solid var(--border);
   font-family: var(--font);
   font-size: 20px;
   line-height: 1.2;
@@ -29,14 +27,11 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 }
 
 .brand {
-  color: #000; /* Changed from var(--blue) to match your news feed */
+  color: var(--blue);
   text-decoration: none;
   white-space: nowrap;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
-/* Links (desktop) */
 .links {
   margin-left: auto;
   display: flex;
@@ -47,362 +42,141 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 }
 
 .links a {
-  color: #000; /* Changed from var(--blue) to keep the clinical aesthetic */
+  color: var(--blue);
   text-decoration: none;
-  font-size: 14px;
+  font: inherit;
   padding-left: 12px;
   white-space: nowrap;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
-.links a:hover { 
-  text-decoration: underline; 
-}
+.links a:hover { text-decoration: underline; }
 
-/* THE BULLETS YOU WANT TO KEEP */
 .links a + a::before {
   content: "•";
   display: inline-block;
   margin: 0 12px 0 0;
-  color: #000; /* Black bullets to match the news wire */
+  color: #000;
 }
 
-
-/* 1. HAMBURGER STATE and POSITIONING (Desktop) */
-/* Hide the hamburger and show the links normally */
-.hamburger {
-  display: none; 
-}
-
-
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  /* Keeping this constrained to your standard article width */
-  max-width: 68ch; 
-  text-align: left;
-}
-
-/* ... keep your email/credit styles ... */
-.footer-credit, .footer-banner .email { font-family: var(--font); font-size: 14px; }
-.footer-banner .email { color: var(--link-blue); text-decoration: none; }
-
-.footer-banner .uni-logo {
-  height: 100px;
-  width: auto;
-  display: block;
-  /* Remove margin-left: auto; as justify-content handles the positioning */
-  margin-left: 0; 
-  flex-shrink: 0; /* Prevents the logo from squishing on smaller screens */
-}
-
-/* Ensure mobile overrides don't break the alignment */
-@media (max-width: 700px) {
-  .footer-banner {
-    flex-direction: column;
-    align-items: flex-start; /* Stacks them naturally on mobile */
-  }
-  .footer-banner .uni-logo {
-    height: 60px;
-    margin-top: 10px;
-  }
-}
+.nav-toggle { display: none; }
+.hamburger { display: none; }
 
 /* 3. LAYOUT COMPONENTS */
-.spacer { height: 48px; background: #fff; }
-.hero img { display: block; width: 100%; height: auto; }
-
-.article, .page-header, .controls, #newsContainer, .loading, .empty-state, .error, .system-logs {
-  max-width: 68ch; margin-left: auto; margin-right: auto; padding: 0 18px; font-family: var(--font);
+.article, .page-header, .controls, #newsContainer, .system-logs {
+  max-width: 68ch; 
+  margin-left: auto; 
+  margin-right: auto; 
+  padding: 0 18px; 
+  font-family: var(--font);
 }
 
-.read-more {
-    display: inline-block;
-    font-size: 14px;
-    color: #000 !important; /* Forces the link to be black */
-    text-decoration: none;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 5px;
-}
-
-.read-more:hover {
-    text-decoration: underline;
-    color: #333; /* Slight shift to grey on hover */
-}
-
-/* CLINICAL LOAD MORE BUTTON */
-#loadMoreBtn {
-    display: block;
-    width: 100%;
-    max-width: 68ch; /* Matches your article width */
-    margin: 40px auto;
-    padding: 16px;
-    background: #fff;
-    color: #000;
-    border: 2px solid #000; /* Matching the news-item divider weight */
-    font-family: var(--font);
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-#loadMoreBtn:hover {
-    background: #000;
-    color: #fff;
-}
-
-/* Container for the button to ensure proper spacing */
-#loadMoreContainer {
-    padding: 0 18px;
-    margin-bottom: 80px;
-}
-
-/* CHANGELOG / SYSTEM NOTES */
-.system-logs {
-    margin: 48px auto;
-    padding: 20px 18px;
-    background: #f9f9f9;
-    border-left: 3px solid #000;
-}
-
-.system-logs h4 {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin: 0 0 15px 0;
-    color: #666;
-}
-
-.log-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display", "Helvetica Neue", Helvetica;
-    font-size: 0.85rem;
-    line-height: 1.5;
-}
-
-.log-list li {
-    margin-bottom: 8px;
-    display: flex;
-    gap: 15px;
-}
-
-.log-date { color: #999; flex-shrink: 0; }
-.log-event { color: #333; }
-
-/* 4. NEWS PAGE SPECIFICS */
 .page-header { margin-top: 48px; margin-bottom: 32px; }
 .page-header h1 { font-size: 32px; font-weight: 700; margin: 0 0 12px 0; }
 .page-header p { font-size: 20px; line-height: 1.6; color: rgba(0,0,0,.75); }
 
-.filter-btn, #refreshBtn, #loadMoreBtn {
-  color: #c4c2c2 !important;
-  border-radius: 4 !important;
+/* 4. CONTROLS & SEARCH */
+.controls {
+  border-bottom: 2px solid #000;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+}
+
+/* Search is visible but styled clinically */
+#newsSearch {
+  width: 100%; 
+  padding: 12px 15px; 
+  border: 1px solid var(--border); 
+  border-radius: 0; /* Clinical sharp corners */
+  font-size: 16px; 
+  background: #f9f9f9; 
+  font-family: var(--font); 
+  margin-top: 20px;
 }
 
 .filter-buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
-.filter-btn {
-  padding: 8px 16px; border: 1px solid var(--border); background: #fff; border-radius: 4px;
-  cursor: pointer; font-family: var(--font); font-size: 16px; transition: all 0.2s;
-}
-.filter-btn.active { background: #c4c2c2; color: #fff; border-color: #000; }
 
-.refresh-btn {
-  padding: 8px 16px; border: 1px solid var(--border); background: #fff; border-radius: 4px;
-  cursor: pointer; font-family: var(--font); font-size: 16px; transition: all 0.2s; font-weight: 500;
-}
-.refresh-btn:hover { background: #c4c2c2; color: #fff; border-color: #000; }
-
-#newsSearch {
-  width: 100%; padding: 12px 15px; border: 1px solid var(--border); border-radius: 8px;
-  font-size: 16px; background: #f9f9f9; font-family: var(--font); margin-bottom: 32px;
+.filter-btn, .refresh-btn {
+  padding: 8px 16px; 
+  border: 1px solid #000; 
+  background: #fff; 
+  color: #000 !important;
+  border-radius: 0;
+  cursor: pointer; 
+  font-family: var(--font); 
+  font-size: 16px; 
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.search-container {
-    display: none !important;
-}
+.filter-btn.active { background: #000; color: #fff !important; }
 
-/* 5. INDIVIDUAL NEWS ITEMS */
+/* 5. NEWS WIRE ITEMS */
 #newsContainer { display: flex; flex-direction: column; gap: 40px; margin-bottom: 64px; }
 
 .news-item {
-  background: #fff;
-  padding-top: 40px; 
-  padding-bottom: 60px; 
-  border: none !important;
-  border-bottom: 2px solid #000 !important; /* DOUBLED WEIGHT DIVIDING LINE */
-  display: flex; 
+  padding-top: 40px;
+  padding-bottom: 60px;
+  border-bottom: 2px solid #000;
+  display: flex;
   flex-direction: column;
 }
 
-/* Ensure the very first item doesn't have a massive gap at the top */
-#newsContainer .news-item:first-child {
-    padding-top: 10px;
+.news-title { font-size: 20pt !important; font-weight: 700; margin-bottom: 12px; }
+.news-title a { color: #000; text-decoration: none; }
 
-.news-item:last-child {
-    border-bottom: none !important; 
-}
-
-.controls {
-    border-bottom: 2px solid #000; /* Matches your article dividers */
-    padding-bottom: 40px;          /* Space between search bar and the line */
-    margin-bottom: 50px;          /* Space between the line and the first article */
-
-  
-/* Metadata & Badge: Unified size, 2pt smaller than standard (approx 0.9rem) */
 .news-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px 15px;
-    margin-bottom: 12px;
-    font-size: 1.0rem !important; /* 2pt smaller equivalent */
-    color: #1a1919;
-    line-height: 1.4;
-    text-align: left;
-}
-
-.news-meta span {
-    display: inline;
-    white-space: normal; /* Fixed: allows wrapping on mobile */
-    word-wrap: break-word;
-}
-
-/* Keep news.meta strong and news.excerpt the same size (1.0rem) */
-.news-meta strong, .news-excerpt {
-    font-size: 1.0rem !important;
-    font-weight: 700;
-    color: #333;
+  display: flex; gap: 15px; margin-bottom: 12px;
+  font-size: 1.0rem; color: #333;
 }
 
 .news-excerpt {
-    font-weight: 400; /* Excerpt remains 1.2rem but not bold */
-    line-height: 1.7;
-    color: #1a1919;
-    max-width: 75ch;
-    text-align: left !important;
-    hyphens: none;
+  font-size: 1.0rem; line-height: 1.7; color: #1a1919;
+  max-width: 75ch; margin-bottom: 20px;
 }
 
-/* AI Enhancement Badge: matches news-meta size */
+/* Blockquote for your AI direct quotes */
+.news-excerpt blockquote {
+  border-left: 3px solid #000;
+  margin: 15px 0;
+  padding-left: 15px;
+  font-style: italic;
+}
+
 .ai-badge {
-  display: inline-block;
-  background: #fff;
-  color: #000;
-  border: 1px solid #000;
-  border-radius: 4px;
-  padding: 4px 6px;
-  border-radius: 3px;
-  font-size: 1.0rem !important; /* Matches news-meta */
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  text-transform: none;
-  margin-bottom: 8px;
+  display: inline-block; border: 1px solid #000; padding: 4px 8px;
+  font-size: 0.9rem; font-weight: 700; text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
-.news-title { 
-    font-size: 20pt !important; 
-    font-weight: 700; 
-    line-height: 1.25; 
-    margin: 0 0 12px 0; 
-    text-align: left !important;
-    word-wrap: break-word;      /* Fix for scientific words */
-    overflow-wrap: break-word;  /* Fix for scientific words */
+/* 6. FOOTER (EXACT MATCH TO MAIN SITE) */
+.footer-banner {
+  width: 100%; background: #fff; color: #000;
+  padding: 40px 18px; border-top: 1px solid var(--border);
+  display: flex; align-items: flex-start; justify-content: space-between;
+  font-family: var(--font);
 }
 
-.news-title a { color: #000; text-decoration: none; }
-.news-title a:hover { text-decoration: underline; }
+.footer-left { display: flex; flex-direction: column; gap: 10px; }
+.footer-credit p { margin: 0; font-size: 14px; }
+.email { color: #000; text-decoration: none; font-weight: 700; }
 
-/* ... (Keywords, Spinner, etc.) ... */
+.uni-logo { height: 80px; width: auto; }
 
-/* 6. SOCIAL & REPO LINKS */
-.social-links { margin-top: 20px; padding: 10px 0; }
-.github-link {
-    display: inline-flex; align-items: center; text-decoration: none;
-    color: #1a1919; font-size: 0.9rem; font-weight: 600;
-}
-.github-link-inline {
-    font-weight: 700; color: #000; text-decoration: underline;
-    text-decoration-thickness: 1px; text-underline-offset: 2px;
-}
-
-
-/* 8. MOBILE RESPONSIVENESS */
+/* 7. MOBILE RESPONSIVENESS (700PX BREAKPOINT) */
 @media (max-width: 700px) {
-  .banner { font-size: 16px; }
+  .banner { font-size: 16px; padding: 12px 14px; flex-wrap: nowrap; position: relative; }
   .links { display: none; }
-  .article { font-size: 16px; }
-  .page-header h1 { font-size: 24px; }
-  .padding: 12px 14px;
-  
-  .news-title { font-size: 18pt !important; }
+  .hamburger { display: inline-block; margin-left: auto; cursor: pointer; font-size: 24px; }
 
-  .links{ display: none; }
-
-  /* Show the hamburger icon */
-  .hamburger {
-    display: block;
-    order: 2; /* Keeps it on the right */
+  .nav-toggle:checked ~ .links {
+    display: flex; position: absolute; top: 100%; left: 0; right: 0;
+    background: #fff; border-bottom: 1px solid var(--border);
+    padding: 10px 14px; flex-direction: column; gap: 10px; z-index: 100;
   }
 
-  /* Hide the links until the checkbox is toggled */
-  .links {
-    display: none;
-    order: 3;
-    width: 100%;
-  }
+  .links a { padding-left: 0; }
+  .links a + a::before { content: none; }
 
-  /* Show links when checkbox is checked */
-  #navToggle:checked ~ .links {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background: #fff;
-    width: 100%;
-    padding: 20px;
-    border-bottom: 2px solid #000;
-  }
-
-  .system-logs {
-    border-left: none;
+  .footer-banner { flex-direction: column; gap: 30px; }
+  .news-title { font-size: 1.5rem !important; }
 }
-  
-  #nav-toggle:checked ~ .links{
-    display: flex;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #fff;
-    border-bottom: 1px solid var(--border);
-    padding: 10px 14px;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-
-    .links a{ padding-left: 0; }
-    .links a + a::before{ content: none; }
-
-  /* Critical Mobile Fix: Ensure text wraps and doesn't push screen width */
-  .news-meta {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    font-size: 0.85rem !important;
-  }
-
-  .news-excerpt {
-    font-size: 1.1rem !important; /* Slightly smaller for mobile comfort */
-  }
-}
-
