@@ -150,21 +150,51 @@ html, body { height: 100%; margin: 0; background: #fff; }
 
 .uni-logo { height: 80px; width: auto; }
 
-/* 7. MOBILE RESPONSIVENESS (700PX BREAKPOINT) */
 @media (max-width: 700px) {
-  .banner { font-size: 16px; padding: 12px 14px; flex-wrap: nowrap; position: relative; }
-  .links { display: none; }
-  .hamburger { display: inline-block; margin-left: auto; cursor: pointer; font-size: 24px; }
+  /* 1. Ensure banner font-size and padding match master exactly */
+  .banner {
+    font-size: 16px;
+    padding: 12px 14px;
+    flex-wrap: nowrap; /* Prevents brand and hamburger from stacking vertically */
+    position: relative;
+    justify-content: flex-start; /* Aligns Brand to the left */
+  }
+
+  /* 2. Brand stays on the left */
+  .brand {
+    margin-right: auto; /* Pushes the hamburger to the far right */
+  }
+
+  /* 3. Hamburger size and style from Master */
+  .hamburger {
+    display: inline-block;
+    margin-left: auto;
+    font: inherit;
+    color: #000;
+    cursor: pointer;
+    user-select: none;
+    padding: 6px 10px;
+    border: none;
+    line-height: 1;
+  }
+
+  /* 4. Navigation Links (The Dropdown) */
+  .links { display: none; } /* Hidden until toggled */
 
   .nav-toggle:checked ~ .links {
-    display: flex; position: absolute; top: 100%; left: 0; right: 0;
-    background: #fff; border-bottom: 1px solid var(--border);
-    padding: 10px 14px; flex-direction: column; gap: 10px; z-index: 100;
+    display: flex;
+    position: absolute;
+    top: 100%; /* Sits directly below the banner line */
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 10px 14px;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
   }
 
   .links a { padding-left: 0; }
-  .links a + a::before { content: none; }
-
-  .footer-banner { flex-direction: column; gap: 30px; }
-  .news-title { font-size: 1.5rem !important; }
+  .links a + a::before { content: none; } /* Bullets removed for vertical mobile list */
 }
