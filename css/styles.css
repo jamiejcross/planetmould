@@ -26,6 +26,16 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 
 .nav-toggle, .hamburger { display: none; }
 
+/* 2.5 FOOTER */
+.footer-banner {
+  width: 100%; background: #fff; border-top: 1px solid var(--border); padding: 18px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.footer-left { display: flex; flex-direction: column; gap: 10px; }
+.footer-credit, .footer-banner .email { font-family: var(--font); font-size: 14px; }
+.footer-banner .email { color: var(--link-blue); text-decoration: none; }
+.footer-banner .uni-logo { height: 100px; width: auto; }
+
 /* 3. LAYOUT COMPONENTS */
 .spacer { height: 48px; background: #fff; }
 .hero img { display: block; width: 100%; height: auto; }
