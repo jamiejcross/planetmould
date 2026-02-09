@@ -49,6 +49,8 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 }
 
 /* ... keep your email/credit styles ... */
+.footer-credit, .footer-banner .email { font-family: var(--font); font-size: 14px; }
+.footer-banner .email { color: var(--link-blue); text-decoration: none; }
 
 .footer-banner .uni-logo {
   height: 100px;
