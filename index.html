@@ -94,6 +94,49 @@
     color: #444;
     text-transform: uppercase;
   }
+
+    /* --- MOBILE NAVIGATION LOGIC --- */
+
+/* 1. Hide the checkbox and the links by default on mobile */
+#navToggle, .links {
+    display: none;
+}
+
+/* 2. Show the hamburger icon only on mobile */
+.hamburger {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: #000;
+}
+
+/* 3. THE MAGIC: When checkbox is checked, show the links */
+#navToggle:checked ~ .links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 60px; /* Adjust based on your banner height */
+    left: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #000;
+    padding: 20px;
+}
+
+/* 4. Desktop View: Hide hamburger and show links horizontally */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+    .links {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        padding: 0;
+        border: none;
+    }
+}
 </style>
   
 </head>
