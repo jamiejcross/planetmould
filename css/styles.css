@@ -218,15 +218,64 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 
 /* ... (Keywords, Spinner, etc.) ... */
 
+/* 6. SOCIAL & REPO LINKS */
+.social-links { margin-top: 20px; padding: 10px 0; }
+.github-link {
+    display: inline-flex; align-items: center; text-decoration: none;
+    color: #1a1919; font-size: 0.9rem; font-weight: 600;
+}
+.github-link-inline {
+    font-weight: 700; color: #000; text-decoration: underline;
+    text-decoration-thickness: 1px; text-underline-offset: 2px;
+}
+
+
 /* 8. MOBILE RESPONSIVENESS */
 @media (max-width: 700px) {
   .banner { font-size: 16px; }
   .links { display: none; }
   .article { font-size: 16px; }
   .page-header h1 { font-size: 24px; }
+  .padding: 12px 14px;
   
   .news-title { font-size: 18pt !important; }
+
+  .links{ display: none; }
+
+  .hamburger{
+    display: inline-block;
+    margin-left: auto;
+    font: inherit;
+    color: #000;
+    cursor: pointer;
+    user-select: none;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 8px;
+    line-height: 1;
+  }
+
+  .system-logs {
+    border-left: none;
+}
   
+  .nav-toggle:checked ~ .links{
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 10px 14px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+    .links a{ padding-left: 0; }
+    .links a + a::before{ content: none; }
+
   /* Critical Mobile Fix: Ensure text wraps and doesn't push screen width */
   .news-meta {
     flex-direction: column;
@@ -240,13 +289,3 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
   }
 }
 
-/* 6. SOCIAL & REPO LINKS */
-.social-links { margin-top: 20px; padding: 10px 0; }
-.github-link {
-    display: inline-flex; align-items: center; text-decoration: none;
-    color: #1a1919; font-size: 0.9rem; font-weight: 600;
-}
-.github-link-inline {
-    font-weight: 700; color: #000; text-decoration: underline;
-    text-decoration-thickness: 1px; text-underline-offset: 2px;
-}
