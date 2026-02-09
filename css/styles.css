@@ -81,6 +81,36 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
   max-width: 68ch; margin-left: auto; margin-right: auto; padding: 0 18px; font-family: var(--font);
 }
 
+/* CLINICAL LOAD MORE BUTTON */
+#loadMoreBtn {
+    display: block;
+    width: 100%;
+    max-width: 68ch; /* Matches your article width */
+    margin: 40px auto;
+    padding: 16px;
+    background: #fff;
+    color: #000;
+    border: 2px solid #000; /* Matching the news-item divider weight */
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#loadMoreBtn:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* Container for the button to ensure proper spacing */
+#loadMoreContainer {
+    padding: 0 18px;
+    margin-bottom: 80px;
+}
+
 /* CHANGELOG / SYSTEM NOTES */
 .system-logs {
     margin: 48px auto;
