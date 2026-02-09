@@ -138,6 +138,10 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
   font-size: 16px; background: #f9f9f9; font-family: var(--font); margin-bottom: 32px;
 }
 
+.search-container {
+    display: none !important;
+}
+
 /* 5. INDIVIDUAL NEWS ITEMS */
 #newsContainer { display: flex; flex-direction: column; gap: 40px; margin-bottom: 64px; }
 
