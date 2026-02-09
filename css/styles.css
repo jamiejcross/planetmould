@@ -34,27 +34,24 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
   color: #000 !important; /* Removed var(--blue) to match site */
   text-decoration: none;
   white-space: nowrap;
-  order: 2; /* Moves brand to the second position */
+  order: 1; /* Moves brand to the second position */
+  margin-right: auto;
+  text-transform: none;
 }
 
-/* 2. HAMBURGER POSITIONING & CLEANUP */
+
+/* 1. HAMBURGER STATE and POSITIONING (Desktop) */
+/* Hide the hamburger and show the links normally */
 .hamburger {
-  order: 1; /* Moves hamburger to the far left */
-  display: block;
-  cursor: pointer;
-  font-size: 24px;
-  list-style: none; /* Removes bullet points if it's in a list */
-  text-decoration: none;
-  user-select: none;
+  display: none; 
 }
 
-.nav-toggle {
-  display: none; /* Keep the checkbox hidden */
-}
 
 .links {
-  order: 3; /* Keeps links to the right */
+  order: 2; /* Keeps links to the right */
   list-style-type: none; /* Extra insurance against bullets */
+  display: flex;
+  gap: 20px;
   padding: 0;
   margin: 0;
 }
@@ -324,17 +321,30 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 
   .links{ display: none; }
 
-  .hamburger{
-    display: inline-block;
-    margin-left: auto;
-    font: inherit;
-    color: #000;
-    cursor: pointer;
-    user-select: none;
-    padding: 6px 10px;
-    border: none;
-    border-radius: 8px;
-    line-height: 1;
+  /* Show the hamburger icon */
+  .hamburger {
+    display: block;
+    order: 2; /* Keeps it on the right */
+  }
+
+  /* Hide the links until the checkbox is toggled */
+  .links {
+    display: none;
+    order: 3;
+    width: 100%;
+  }
+
+  /* Show links when checkbox is checked */
+  #navToggle:checked ~ .links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 2px solid #000;
   }
 
   .system-logs {
