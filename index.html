@@ -144,9 +144,11 @@
 </head>
 <body>
 <div class="banner">
+  <a href="https://planetmould.com" class="brand">The Future is Mouldy</a>
+
   <input type="checkbox" id="navToggle" class="nav-toggle">
   <label for="navToggle" class="hamburger">☰</label>
-  <a href="https://planetmould.com" class="brand">The Future is Mouldy</a>
+
   <div class="links">
     <a href="https://planetmould.com">Home</a>
     <a href="https://news.planetmould.com/">Mouldwire</a>
@@ -155,78 +157,64 @@
   </div>
 </div>
 
-  <div class="page-header">
+<div class="page-header">
     <h1>Mouldwire</h1>
-    <p>Mouldwire is a bespoke science/media news service designed to collect the latest mould related research stories from around the world and provide a prompt engineered summary using AI. This version is specially calibrated for social science, arts and humanities researchers interested in planetary health, infrastructure, and human/non-human sociality in the Anthropocene.</p>
-    <p>Mouldwire scans ~50 international peer reviewed scientific journals; public health agencies, environmental bodies, and standards organisations, news organisations; and social media platforms.</p>
+    <p>Mouldwire is a bespoke science/media news service...</p>
+    <p>Mouldwire scans ~50 international peer reviewed scientific journals...</p>
 
     <p class="repo-callout">
-    Mouldwire is an open source project. You can follow the development, 
-    view the summaries in raw format, or contribute to the 
-    code on Github. 
-    <p><a href="https://github.com/jamiejcross/planetmould" target="_blank" class="github-link-inline"></p>
-        <svg height="16" width="16" viewBox="0 0 16 16" style="fill: currentColor; vertical-align: middle; margin-bottom: 2px;">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-        </svg>
-        GitHub Repository
-    </a>.
-</p>
+        Mouldwire is an open source project. You can follow the development, 
+        view the summaries in raw format, or contribute to the code on 
+        <a href="https://github.com/jamiejcross/planetmould" target="_blank" class="github-link-inline">
+            <svg height="16" width="16" viewBox="0 0 16 16" style="fill: currentColor; vertical-align: middle; margin-bottom: 2px;">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+            </svg>
+            GitHub Repository
+        </a>.
+    </p>
+</div>
 
-    
-    
-  </div>
-
-  <div class="controls">
+<div class="controls">
     <div class="filter-row">
-      <div class="filter-buttons">
-        <button class="filter-btn active" data-filter="all">Show All</button>
-        <button class="filter-btn" data-filter="science">Microbiology</button>
-        <button class="filter-btn" data-filter="health">Health & Environment</button>
-        <button class="filter-btn" data-filter="indoor">Housing & Indoor Air</button>
-        <button class="filter-btn" data-filter="media">Media</button>
-     </div>
-      <button id="refreshBtn" class="refresh-btn">Refresh Feed</button>
-      </div>
-
-  <div id="newsContainer">
-    <div class="loading">
-      <div class="spinner"></div>
-      <p>Scanning the biosphere...</p>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Show All</button>
+            <button class="filter-btn" data-filter="science">Microbiology</button>
+            <button class="filter-btn" data-filter="health">Health & Environment</button>
+            <button class="filter-btn" data-filter="indoor">Housing & Indoor Air</button>
+            <button class="filter-btn" data-filter="media">Media</button>
+        </div>
+        <button id="refreshBtn" class="refresh-btn">Refresh Feed</button>
     </div>
-  </div>
+</div>
 
-  <div id="loadMoreContainer" style="text-align: center; margin: 40px 0; display: none;">
-      <button id="loadMoreBtn" class="refresh-btn">Load More Results</button>
-  </div>
+<div id="newsContainer">
+    <div class="loading">
+        <div class="spinner"></div>
+        <p>Scanning the biosphere...</p>
+    </div>
+</div>
+
+<div id="loadMoreContainer" style="text-align: center; margin: 40px 0; display: none;">
+    <button id="loadMoreBtn" class="refresh-btn">Load More Results</button>
+</div>
     
 <div class="system-logs">
     <h4>Mouldwire System Log</h4>
     <ul class="log-list">
-        <li>
-            <span class="log-date">2026-02-09</span>
-            <span class="log-event">Inference Engine upgraded to <strong>Llama-3.3-70B</strong></span>
-        </li>
-        <li>
-            <span class="log-date">2026-02-07</span>
-            <span class="log-event">Calibration: "Patchy Anthropocene" field guide logic implemented.</span>
-        </li>
-        <li>
-            <span class="log-date">2026-02-01</span>
-            <span class="log-event">Mouldwire v0.3 active: 50+ journals integrated.</span>
-        </li>
+        <li>...</li>
     </ul>
 </div>
 
-    <footer class="footer-banner">
+<footer class="footer-banner">
     <div class="footer-left">
-      <div class="footer-credit">
-        <p>Planet Mould is supported by the University of Glasgow.</p>
-        <p>Website, Photographs + Design: delacroix@edinburghpress.com</p>
-      </div>
-      <a class="email" href="mailto:jamie.cross@glasgow.ac.uk">jamie.cross@glasgow.ac.uk</a>
+        <div class="footer-credit">
+            <p>Planet Mould is supported by the University of Glasgow.</p>
+            <p>Website, Photographs + Design: delacroix@edinburghpress.com</p>
+        </div>
+        <a class="email" href="mailto:jamie.cross@glasgow.ac.uk">jamie.cross@glasgow.ac.uk</a>
     </div>
     <img src="glasgow logo.png" alt="University of Glasgow Logo" class="uni-logo">
-  </footer>
+</footer>
 </body>
 
     
