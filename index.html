@@ -38,7 +38,7 @@
 </head>
 <body>
 <div class="banner">
-  <a href="https://planetmould.com" class="brand">The Future is Mouldy</a>
+  <a href="https://planetmould.com" class="brand">Planet Mould</a>
   <input type="checkbox" class="nav-toggle" id="navToggle" />
   <label for="navToggle" class="hamburger">☰</label>
   <div class="links">
@@ -51,7 +51,7 @@
 
   <div class="page-header">
     <h1>Mouldwire</h1>
-    <p>Mouldwire is a bespoke science and media news service designed to collect and distribute the latest mould related research, news and stories. This version is optimised for anthropologists interested in planetary health, infrastructure, and human/non-human sociality.</p>
+    <p>Mouldwire is a bespoke science and media news service designed to collect and summarise the latest mould related research stories. This version is optimised for social science, arts and humanities researchers interested in planetary health, infrastructure, or human/non-human sociality.</p>
     <p>Mouldwire scans ~50 international peer reviewed scientific journals; public health agencies, environmental bodies, and standards organisations, news organisations; and social media platforms.</p>
 
     <p class="repo-callout">
@@ -72,20 +72,22 @@
   <div class="controls">
     <div class="filter-row">
       <div class="filter-buttons">
-        <button class="filter-btn active" data-filter="all">All News</button>
-        <button class="filter-btn" data-filter="theory">Theory & Ethnography</button>
-        <button class="filter-btn" data-filter="science">Scientific Research</button>
+        <button class="filter-btn" data-filter="science">Microbiology</button>
         <button class="filter-btn" data-filter="health">Health & Environment</button>
         <button class="filter-btn" data-filter="indoor">Housing & Indoor Air</button>
         <button class="filter-btn" data-filter="media">Media</button>
+        <button class="filter-btn active" data-filter="all">Show All</button>
       </div>
       <button id="refreshBtn" class="refresh-btn">Refresh Feed</button>
     </div>
-    
+
+    //ADD MORE BUTTONS FOR ETHNOGRAPHY USING BUTTON CLASS, THE DATA FILTER FOR THEORY, AND ADDING NEW SOURCES
+
     <div class="search-container">
       <input type="text" id="newsSearch" placeholder="Search (e.g. 'Infrastructure', 'Materiality', 'Tsing')..." />
     </div>
   </div>
+
 
   <div id="newsContainer">
     <div class="loading">
