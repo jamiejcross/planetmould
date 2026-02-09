@@ -76,16 +76,19 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 .news-meta {
     display: flex;
     flex-wrap: wrap;       /* Allows wrapping on mobile */
-    gap: 15px;             /* Space between Date and Source */
-    margin-bottom: 10px;
-    font-size: 1.1rem !important;    /* Shared font size */
+    gap: 8px 15px;             /* Space between Date and Source */
+    margin-bottom: 12px;
+    font-size: 1.0rem !important;    /* Shared font size */
     font-family: inherit;  /* Ensures they use the same font stack */
     color: #1a1919;           /* Professional greyish black */
+    line-height: 1.4;
 }
 
 /* Ensure both spans look identical */
 .news-meta span {
-    display: inline-block; /* Ensures they act as separate blocks if wrapping */
+    display: inline; /* Ensures they act as separate blocks if wrapping */
+    white-space: normal; /* Changed from nowrap to allow wrapping */
+    word-wrap: break-word; /* Safety for very long source names */
     align-items: center;
     white-space: nowrap;   /* Keeps "Published: Date" on one line if possible */
 }
@@ -154,7 +157,6 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
   border: 0;
   border-top: 2px solid #000; /* Solid thin black line */
   margin: 30px 0;
-  opacity: 0.2; /* Softens the black to a dark grey, remove if you want jet black */
 }
 
 /* Remove the line from the very last item in the list */
@@ -243,6 +245,13 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
   
   .footer-banner { flex-direction: column; align-items: flex-start; }
   .footer-banner .uni-logo { height: 60px; margin-left: 0; }
+}
+
+/* 3. Mobile Adjustment */
+@media (max-width: 480px) {
+    .news-meta {
+        font-size: 1rem;   /* Slightly smaller on very small phones to prevent clutter */
+    }
 }
 
 /* 6. SOCIAL & PROJECT LINKS */
