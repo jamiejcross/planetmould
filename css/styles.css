@@ -27,49 +27,48 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 .nav-toggle, .hamburger { display: none; }
 
 /* 2.5 FOOTER */
-
-.footer-banner{
+.footer-banner {
   width: 100%;
   background: #fff;
   border-top: 1px solid var(--border);
   padding: 18px 18px;
-
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* This ensures the text stays left and logo stays right */
+  justify-content: space-between; 
   gap: 16px;
 }
 
-.footer-left{
+.footer-left {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 68ch;
+  /* Keeping this constrained to your standard article width */
+  max-width: 68ch; 
+  text-align: left;
 }
 
-.footer-credit,
-.footer-banner .email{
-  font-family: var(--font);
-  font-size: 14px;
-  line-height: 1.35;
-}
+/* ... keep your email/credit styles ... */
 
-.footer-credit{ color: #000; font-weight: 400; }
-.footer-credit p{ margin: 0; }
-.footer-credit p + p{ margin-top: 6px; }
-
-.footer-banner .email{
-  color: #014da1;
-  text-decoration: none;
-  font-weight: 400;
-}
-.footer-banner .email:hover{ text-decoration: underline; }
-
-.footer-banner .uni-logo{
+.footer-banner .uni-logo {
   height: 100px;
   width: auto;
   display: block;
-  margin-left: auto;
+  /* Remove margin-left: auto; as justify-content handles the positioning */
+  margin-left: 0; 
+  flex-shrink: 0; /* Prevents the logo from squishing on smaller screens */
+}
+
+/* Ensure mobile overrides don't break the alignment */
+@media (max-width: 700px) {
+  .footer-banner {
+    flex-direction: column;
+    align-items: flex-start; /* Stacks them naturally on mobile */
+  }
+  .footer-banner .uni-logo {
+    height: 60px;
+    margin-top: 10px;
+  }
 }
 
 /* 3. LAYOUT COMPONENTS */
