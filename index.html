@@ -7,35 +7,94 @@
   <link rel="stylesheet" href="css/styles.css" />
 
   <style>
-    /* Responsive Metadata Styling */
-    .news-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-bottom: 12px;
-      font-size: 0.85rem;
-      line-height: 1.4;
-      color: #666;
-    }
-    .news-meta strong {
-      font-weight: 700;
-      color: #333;
-    }
-    /* Simple AI Badge Styling */
-    .ai-badge {
-      display: inline-block;
-      background: #fff;
-      border: 1px solid #000;
-      color: #000;
-      padding: 2px 10px;
-      font-size: 10px;
-      font-weight: 800;
-      border-radius: 0px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin: 10px 0;
-    }
-  </style>
+  /* GLOBAL AESTHETIC FIXES */
+  :root {
+    --black: #000;
+    --grey: #666;
+    --border: #000;
+  }
+
+  /* Reset all links to black */
+  a {
+    color: var(--black) !important;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* 2px CLINICAL DIVIDER BELOW SEARCH */
+  .search-container {
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--black);
+    margin-bottom: 50px;
+  }
+
+  /* NEWS ITEM STYLING (The Field Guide Look) */
+  .news-item {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid var(--black) !important;
+    background: transparent; /* Removes any "box" look */
+  }
+
+  .news-title {
+    font-size: 20pt; /* Large Clinical Header */
+    margin: 10px 0;
+    line-height: 1.2;
+  }
+
+  .news-excerpt {
+    font-size: 1.2rem; /* Larger, readable text */
+    line-height: 1.7;
+    color: #333;
+    max-width: 75ch;
+    margin: 20px 0;
+  }
+
+  .news-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.85rem;
+    color: var(--grey);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .read-more {
+    font-weight: 800;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  /* AI BADGE RESTORATION */
+  .ai-badge {
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #000;
+    color: #000;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 15px 0;
+  }
+
+  .keyword-tag {
+    background: #eee;
+    padding: 3px 10px;
+    margin-right: 8px;
+    font-size: 11px;
+    border-radius: 4px;
+    color: #444;
+    text-transform: uppercase;
+  }
+</style>
   
 </head>
 <body>
@@ -53,7 +112,7 @@
 
   <div class="page-header">
     <h1>Mouldwire</h1>
-    <p>Mouldwire is a bespoke science and media news service designed to collect and summarise the latest mould related research stories. This version is optimised for social science, arts and humanities researchers interested in planetary health, infrastructure, or human/non-human sociality.</p>
+    <p>Mouldwire is a bespoke science/media news service designed to collect the latest mould related research stories from around the world and provide a prompt engineered summary using AI. This version is specially calibrated for social science, arts and humanities researchers interested in planetary health, infrastructure, and human/non-human sociality in the Anthropocene.</p>
     <p>Mouldwire scans ~50 international peer reviewed scientific journals; public health agencies, environmental bodies, and standards organisations, news organisations; and social media platforms.</p>
 
     <p class="repo-callout">
@@ -202,7 +261,7 @@
             <div class="news-keywords">
               ${(item.keywords || []).slice(0, 3).map(k => `<span class="keyword-tag">${k}</span>`).join('')}
             </div>
-            ${isEnhanced ? '<span class="ai-badge"🌏 What does an AI think this means for Planet Mould?</span>' : ''}
+            ${isEnhanced ? '<span class="ai-badge">🌏 Prompt Engineered Summary: What could this mean for Planet Mould?</span>' : ''}
             <p class="news-excerpt">${formattedSummary}</p>
             <div class="source-link-container">
               <a href="${item.url}" target="_blank" class="read-more">View source online →</a>
