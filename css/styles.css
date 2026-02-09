@@ -204,7 +204,7 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 .page-header p { font-size: 20px; line-height: 1.6; color: rgba(0,0,0,.75); }
 
 .filter-btn, #refreshBtn, #loadMoreBtn {
-  color: #000 !important;
+  color: #c4c2c2 !important;
   border-radius: 4 !important;
 }
 
@@ -213,13 +213,13 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
   padding: 8px 16px; border: 1px solid var(--border); background: #fff; border-radius: 4px;
   cursor: pointer; font-family: var(--font); font-size: 16px; transition: all 0.2s;
 }
-.filter-btn.active { background: #000; color: #fff; border-color: #000; }
+.filter-btn.active { background: #c4c2c2; color: #fff; border-color: #000; }
 
 .refresh-btn {
   padding: 8px 16px; border: 1px solid var(--border); background: #fff; border-radius: 4px;
   cursor: pointer; font-family: var(--font); font-size: 16px; transition: all 0.2s; font-weight: 500;
 }
-.refresh-btn:hover { background: #000; color: #fff; border-color: #000; }
+.refresh-btn:hover { background: #c4c2c2; color: #fff; border-color: #000; }
 
 #newsSearch {
   width: 100%; padding: 12px 15px; border: 1px solid var(--border); border-radius: 8px;
