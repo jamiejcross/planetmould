@@ -141,7 +141,7 @@ html, body { height: 100%; margin: 0; background: #fff; }
   width: 100%;
   background: #fff;
   color: #000;
-  padding: 40px 18px; /* Standard master padding */
+  padding: 18px 18px; /* Standard master padding */
   border-top: 1px solid var(--border);
   display: flex;
   align-items: flex-start;
