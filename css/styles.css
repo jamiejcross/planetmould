@@ -78,7 +78,7 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
     flex-wrap: wrap;       /* Allows wrapping on mobile */
     gap: 15px;             /* Space between Date and Source */
     margin-bottom: 10px;
-    font-size: 0.85rem;    /* Shared font size */
+    font-size: 1.1rem !important;    /* Shared font size */
     font-family: inherit;  /* Ensures they use the same font stack */
     color: #1a1919;           /* Professional greyish black */
 }
@@ -92,6 +92,7 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 
 /* Bold labels for consistency */
 .news-meta strong {
+    font-size: 1.2rem !important;
     font-weight: 700;
     color: #333;
     margin-right: 4px;
@@ -127,7 +128,7 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 .news-title a:hover { text-decoration: underline; }
 
 .news-excerpt {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.7; /* Increased spacing for longer text */
     color: #1a1919;
     max-width: 75ch;  /* Prevents lines from getting too long/straining the eye */
@@ -151,7 +152,7 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
 /* The thin black dividing line */
 .news-divider {
   border: 0;
-  border-top: 1px solid #000; /* Solid thin black line */
+  border-top: 2px solid #000; /* Solid thin black line */
   margin: 30px 0;
   opacity: 0.2; /* Softens the black to a dark grey, remove if you want jet black */
 }
@@ -222,8 +223,8 @@ body { margin: 0; background: #fff; -webkit-font-smoothing: antialiased; -moz-os
   .article { font-size: 16px; }
   .page-header h1 { font-size: 24px; }
   .news-title { font-size: 20px; }
-  .news-excerpt { font-size: 16px; }
-  
+  .news-excerpt { font-size: 1.1rem !important; }
+
   /* Mobile: Stack meta items vertically */
   .news-meta {
     flex-direction: column;
