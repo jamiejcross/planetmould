@@ -176,6 +176,7 @@
             <button class="filter-btn" data-filter="media">Media</button>
         </div>
         <button id="refreshBtn" class="refresh-btn">Refresh Feed</button>
+        <input type="text" id="newsSearch" class="search-input" placeholder="Use keywords to search for reports since Feb 10th 2026" />
     </div>
 </div>
 
@@ -217,6 +218,13 @@
         <a class="email" href="mailto:jamie.cross@glasgow.ac.uk">jamie.cross@glasgow.ac.uk</a>
       </div>
     </div>
+
+    <div class="footer-attribution">
+      <p>Text, Website, Photographs, and Design: Jamie Cross</p>
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">
+        <img class="cc-icon" src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" alt="CC BY-NC-SA 4.0" />
+      </a>
+    </div>
   </div>
   <img class="uni-logo" src="glasgow logo.png" alt="University logo" />
 </footer>
@@ -226,7 +234,7 @@
 <script>
   let allNews = []; 
   let currentFilter = "all";
-  let visibleCount = 10; // Increased to 20 for better initial load
+  let visibleCount = 5;
 
   const categoryMap = {
     'Microbiology': 'science',
@@ -318,15 +326,15 @@
 
   window.onload = () => {
     fetchNews();
-    document.getElementById("newsSearch")?.addEventListener("input", () => { visibleCount = 20; displayNews(); });
-    document.getElementById("refreshBtn")?.addEventListener("click", () => { visibleCount = 20; fetchNews(); });
-    document.getElementById("loadMoreBtn")?.addEventListener("click", () => { visibleCount += 20; displayNews(); });
+    document.getElementById("newsSearch")?.addEventListener("input", () => { visibleCount = 5; displayNews(); });
+    document.getElementById("refreshBtn")?.addEventListener("click", () => { visibleCount = 5; fetchNews(); });
+    document.getElementById("loadMoreBtn")?.addEventListener("click", () => { visibleCount += 5; displayNews(); });
     document.querySelectorAll(".filter-btn").forEach(btn => {
       btn.addEventListener("click", (e) => {
         document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
         e.target.classList.add("active");
         currentFilter = e.target.dataset.filter;
-        visibleCount = 20; 
+        visibleCount = 5;
         displayNews();
       });
     });
