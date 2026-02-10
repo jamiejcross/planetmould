@@ -32,6 +32,7 @@ jobs:
     
     - name: Fetch RSS feeds and enrich abstracts
       env:
+        SS2_KEY: ${{ secrets.SS2_KEY }}
         OPENALEX_KEY: ${{ secrets.OPENALEX_KEY }}
         ELSEVIER_KEY: ${{ secrets.ELSEVIER_KEY }}
       run: python fetch_news.py
