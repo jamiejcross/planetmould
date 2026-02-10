@@ -71,7 +71,7 @@ html, body { height: 100%; margin: 0; background: #fff; }
 }
 
 .page-header { margin-top: 48px; margin-bottom: 32px; }
-.page-header h1 { font-size: 32px; font-weight: 700; margin: 0 0 12px 0; }
+.page-header h1 { font-size: 2em; font-weight: 700; margin: 0 0 12px 0; }
 .page-header p { font-size: 20px; line-height: 1.6; color: rgba(0,0,0,.75); }
 
 /* 4. CONTROLS & SEARCH */
