@@ -1,3 +1,6 @@
+Here's the full file — replace the entire contents of `enhance_articles.py`:
+
+```python
 #!/usr/bin/env python3
 import sys
 import json
@@ -41,9 +44,11 @@ def clean_text(text, title=""):
 def formalize_voice(text):
     """Ensures a clinical, observational 'Patchy Anthropocene' tone."""
     disallowed = [
-        "In this study,", "The researchers found that", "I find it", 
+        "In this study,", "The researchers found that", "I find it",
         "It is interesting to note", "As an anthropologist,", "This research suggests",
-        "The authors observe", "I observe", "In my view,"
+        "The authors observe", "I observe", "In my view,",
+        "This study highlights", "Notably,", "Interestingly,",
+        "It is worth noting", "It should be noted", "Importantly,",
     ]
     
     # Initial cleanup
@@ -89,19 +94,29 @@ def main():
             {
                 "role": "system", 
                 "content": (
-                    "You are a detached field researcher documenting human-nonhuman interactions in the Anthropocene.' "
+                    "You are a detached field researcher documenting human-nonhuman interactions in the Anthropocene. "
                     "Summarize research in 5 concise sentences. Focus on the effects or nonhuman responses "
                     "to human infrastructure that exceed human design. Analyze how multispecies assemblages "
                     "(fungi, bacteria, toxins) interact with industrial materials or landscapes. "
-                    "Maintain a clinical, observational tone. DO NOT use the first person ('I', 'me', 'my'). "
-                    "DO NOT describe your role as an anthropologist. "
-                    "DO NOT give a Title or Abstract for you summary. "
-                    "Treat the research as a site of environmental rupture."
+                    "Maintain a clinical, observational tone. Treat the research as a site of environmental rupture.\n\n"
+                    "STRICT CONSTRAINTS:\n"
+                    "1. NO HALLUCINATION: Do not invent findings, organisms, locations, or materials not present in the source text. "
+                    "If the source lacks detail, acknowledge the limitation rather than fabricating an analysis.\n"
+                    "2. WEAK SIGNAL PROTOCOL: If the source text contains only metadata (author names, journal info) with no substantive abstract, "
+                    "produce a brief contextual note based solely on the title. State that the source data is limited.\n"
+                    "3. NO ACRONYMS: Do not use acronyms or abbreviations. Write out all terms in full.\n"
+                    "4. DIRECT REFERENCE: Always refer to the source directly as 'this paper', 'this study', or 'this report'. "
+                    "Never use indefinite references like 'a paper', 'a study', or 'research has shown'.\n"
+                    "5. MATERIAL SPECIFICITY: Do not use vague terms like 'infrastructure' or 'environment' in isolation. "
+                    "Name the specific material, organism, or site described in the source (e.g. 'polypropylene mask fabric', 'postharvest tomato storage').\n"
+                    "6. DO NOT use the first person ('I', 'me', 'my'). DO NOT describe your role. "
+                    "DO NOT give a Title or Abstract heading for your summary.\n"
+                    "7. DO NOT repeat the title of the article in your summary."
                 )
             },
             {
                 "role": "user", 
-                "content": f"Title: {title}\nAbstract: {excerpt}"
+                "content": f"Analyze this research signal.\n\nTitle: {title}\nSource abstract: {excerpt}"
             }
         ]
 
@@ -112,7 +127,7 @@ def main():
             response = client.chat_completion(
                 messages=messages,
                 max_tokens=400,
-                temperature=0.7
+                temperature=0.5
             )
             raw_ai_summary = response.choices[0].message.content.strip()
             ai_summary = formalize_voice(raw_ai_summary)
@@ -136,3 +151,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+```
+
+That's the complete file — just paste it over the entire contents of `enhance_articles.py` in your repo.
