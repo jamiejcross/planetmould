@@ -72,7 +72,7 @@ html, body { height: 100%; margin: 0; background: #fff; }
 
 .page-header { margin-top: 48px; margin-bottom: 32px; }
 .page-header h1 { font-size: 2em; font-weight: 700; margin: 0 0 12px 0; }
-.page-header p { font-size: 20px; line-height: 1.6; color: rgba(0,0,0,.75); }
+.page-header p { font-size: 2em; line-height: 1.6; color: rgba(0,0,0,.75); }
 
 /* 4. CONTROLS & SEARCH */
 .controls {
@@ -109,7 +109,7 @@ html, body { height: 100%; margin: 0; background: #fff; }
   flex-direction: column;
 }
 
-.news-title { font-size: 20pt !important; font-weight: 700; margin-bottom: 12px; }
+.news-title { font-size: 1.0rem !important; font-weight: 700; margin-bottom: 12px; }
 .news-title a { color: #000; text-decoration: none; }
 
 .news-meta {
@@ -120,6 +120,21 @@ html, body { height: 100%; margin: 0; background: #fff; }
 .news-excerpt {
   font-size: 1.0rem; line-height: 1.7; color: #1a1919;
   max-width: 75ch; margin-bottom: 20px;
+}
+
+.field-metadata {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+    background: #f0f0f0;
+    padding: 8px 12px;
+    border-left: 2px solid #000;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.field-metadata strong {
+    color: #666;
 }
 
 /* Blockquote for your AI direct quotes */
