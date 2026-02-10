@@ -132,11 +132,12 @@ def resolve_pii_to_doi(pii, elsevier_key):
         print(f"  Elsevier API error for PII {pii}: {e}")
     return None
 
-def fetch_abstract_semantic_scholar(doi):
-    """Fetch abstract from Semantic Scholar (free, no key required)."""
+def fetch_abstract_semantic_scholar(doi, api_key=None):
+    """Fetch abstract from Semantic Scholar. Authenticated calls get higher rate limits."""
     try:
         url = f"https://api.semanticscholar.org/graph/v1/paper/DOI:{doi}?fields=abstract"
-        resp = requests.get(url, timeout=10)
+        headers = {'x-api-key': api_key} if api_key else {}
+        resp = requests.get(url, headers=headers, timeout=10)
         if resp.status_code == 200:
             data = resp.json()
             abstract = data.get('abstract')
@@ -192,6 +193,7 @@ def is_thin_excerpt(excerpt):
 
 def enrich_abstracts(articles):
     """Enrich articles that have thin excerpts with real abstracts from academic APIs."""
+    ss_key = os.getenv('SS2_KEY')
     openalex_key = os.getenv('OPENALEX_KEY')
     elsevier_key = os.getenv('ELSEVIER_KEY')
     enriched_count = 0
@@ -221,7 +223,7 @@ def enrich_abstracts(articles):
             continue
 
         # Try Semantic Scholar first, then OpenAlex
-        abstract = fetch_abstract_semantic_scholar(doi)
+        abstract = fetch_abstract_semantic_scholar(doi, ss_key)
         source = 'semantic_scholar'
         if not abstract:
             abstract = fetch_abstract_openalex(doi, openalex_key)
