@@ -3,46 +3,74 @@ import json
 import datetime
 import re
 import time
+import os
+import requests
 
-# CATEGORIES AND FEEDS
+# CATEGORIES AND FEEDS (Updated with Biotechnology, Food Science, and Vascular Review)
 RSS_FEEDS = {
     "science": [
-        "https://www.nature.com/srep.rss", "https://www.nature.com/ncomms.rss",
-        "https://journals.plos.org/plosone/feed/atom", "https://www.mdpi.com/rss/journal/jof",
-        "https://www.mdpi.com/rss/journal/microorganisms", "https://www.mdpi.com/rss/journal/molecules",
-        "https://www.mdpi.com/rss/journal/biomolecules", "https://journals.asm.org/action/showFeed?feed=rss&jc=MBIO&type=etoc",
-        "https://journals.asm.org/action/showFeed?feed=rss&jc=SPECTRUM&type=etoc", "https://www.frontiersin.org/journals/microbiology/rss",
-        "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=acsodf", "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=jacsat",
-        "https://rss.sciencedirect.com/publication/science/01418130", "https://www.mdpi.com/rss/journal/ijms"
+        "https://www.nature.com/srep.rss", 
+        "https://www.nature.com/ncomms.rss",
+        "https://journals.plos.org/plosone/feed/atom", 
+        "https://www.mdpi.com/rss/journal/jof",
+        "https://www.mdpi.com/rss/journal/microorganisms", 
+        "https://www.mdpi.com/rss/journal/molecules",
+        "https://onlinelibrary.wiley.com/action/showFeed?jc=10970010&type=etoc&feed=rss", # J. Sci Food Agric
+        "https://www.mdpi.com/rss/journal/biomolecules", 
+        "https://www.mdpi.com/rss/journal/ijms",
+        "https://journals.asm.org/action/showFeed?feed=rss&jc=MBIO&type=etoc",
+        "https://journals.asm.org/action/showFeed?feed=rss&jc=SPECTRUM&type=etoc", 
+        "https://www.frontiersin.org/journals/microbiology/rss",
+        "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=acsodf", 
+        "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=jacsat",
+        "https://rss.sciencedirect.com/publication/science/01418130"
     ],
     "media": [
         "https://www.sciencedaily.com/rss/plants_animals/fungi.xml",
         "https://phys.org/rss-feed/biology-news/microbiology/"
     ],
     "health": [
-        "https://www.mdpi.com/rss/journal/toxins", "https://www.cdc.gov/media/rss/topic/fungal.xml",
-        "https://www.mdpi.com/rss/journal/animals", "https://www.mdpi.com/rss/journal/plants",
-        "https://www.mdpi.com/rss/journal/agronomy", "https://www.frontiersin.org/journals/plant-science/rss",
-        "https://www.frontiersin.org/journals/veterinary-science/rss", "https://www.mdpi.com/rss/journal/foods",
-        "https://rss.sciencedirect.com/publication/science/03088146", "https://rss.sciencedirect.com/publication/science/09639969",
-        "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=jafcau", "https://www.mdpi.com/rss/journal/marinedrugs"
+        "https://www.mdpi.com/rss/journal/toxins", 
+        "https://www.cdc.gov/media/rss/topic/fungal.xml",
+        "https://www.mdpi.com/rss/journal/animals", 
+        "https://www.mdpi.com/rss/journal/plants",
+        "https://www.mdpi.com/rss/journal/agronomy", 
+        "https://www.frontiersin.org/journals/plant-science/rss",
+        "https://www.frontiersin.org/journals/veterinary-science/rss", 
+        "https://www.mdpi.com/rss/journal/foods",
+        "https://rss.sciencedirect.com/publication/science/03088146", 
+        "https://rss.sciencedirect.com/publication/science/09639969",
+        "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=jafcau", 
+        "https://www.mdpi.com/rss/journal/marinedrugs"
     ],
     "indoor": [
-        "https://journals.asm.org/action/showFeed?feed=rss&jc=AEM&type=etoc", "https://www.ashrae.org/RssFeeds/news-feed.xml",
+        "https://journals.asm.org/action/showFeed?feed=rss&jc=AEM&type=etoc", 
+        "https://www.ashrae.org/RssFeeds/news-feed.xml",
         "https://www.gov.uk/search/news-and-communications.atom?content_store_document_type=news_story&organisations[]=department-for-levelling-up-housing-and-communities",
-        "https://www.mdpi.com/rss/journal/fermentation", "https://www.mdpi.com/rss/journal/catalysts",
-        "https://www.mdpi.com/rss/journal/applsci", "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=jnprdf",
-        "https://rss.sciencedirect.com/publication/science/09608524", "https://rss.sciencedirect.com/publication/science/00489697",
-        "https://rss.sciencedirect.com/publication/science/02697491", "https://rss.sciencedirect.com/publication/science/09608524",
-        "https://rss.sciencedirect.com/publication/science/03043894", "https://rss.sciencedirect.com/publication/science/13858947",
+        "https://www.mdpi.com/rss/journal/fermentation", 
+        "https://www.mdpi.com/rss/journal/catalysts",
+        "https://www.mdpi.com/rss/journal/applsci", 
+        "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=jnprdf",
+        "https://rss.sciencedirect.com/publication/science/09608524", 
+        "https://rss.sciencedirect.com/publication/science/00489697",
+        "https://rss.sciencedirect.com/publication/science/02697491", 
+        "https://rss.sciencedirect.com/publication/science/03043894", 
+        "https://rss.sciencedirect.com/publication/science/13858947",
         "https://rss.sciencedirect.com/publication/science/09619534"
     ],
     "clinical": [
-        "https://journals.plos.org/plospathogens/feed/atom", "https://www.mdpi.com/rss/journal/antibiotics",
-        "https://www.mdpi.com/rss/journal/pathogens", "https://www.mdpi.com/rss/journal/pharmaceuticals",
-        "https://www.mdpi.com/rss/journal/diagnostics", "https://journals.asm.org/action/showFeed?feed=rss&jc=AAC&type=etoc",
-        "https://journals.asm.org/action/showFeed?feed=rss&jc=JCM&type=etoc", "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/rss",
-        "https://www.frontiersin.org/journals/medicine/rss", "https://www.frontiersin.org/journals/immunology/rss",
+        "https://journals.plos.org/plospathogens/feed/atom", 
+        "https://www.benthamdirect.com/content/journals/cpb/fasttrack?feed=rss", # Current Pharm. Biotech
+        "https://verjournal.com/index.php/ver/gateway/plugin/WebFeedGatewayPlugin/rss2", # Vascular & Endo Review
+        "https://www.mdpi.com/rss/journal/antibiotics",
+        "https://www.mdpi.com/rss/journal/pathogens", 
+        "https://www.mdpi.com/rss/journal/pharmaceuticals",
+        "https://www.mdpi.com/rss/journal/diagnostics", 
+        "https://journals.asm.org/action/showFeed?feed=rss&jc=AAC&type=etoc",
+        "https://journals.asm.org/action/showFeed?feed=rss&jc=JCM&type=etoc", 
+        "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/rss",
+        "https://www.frontiersin.org/journals/medicine/rss", 
+        "https://www.frontiersin.org/journals/immunology/rss",
         "https://www.frontiersin.org/journals/pharmacology/rss"
     ]
 }
@@ -71,7 +99,158 @@ def is_relevant(title, excerpt, source):
         
     return True
 
+# --- ABSTRACT ENRICHMENT ---
+
+def extract_doi(url):
+    """Extract DOI from article URL. Works for Frontiers, ASM, Wiley, ACS, Nature, MDPI, PLOS."""
+    match = re.search(r'(10\.\d{4,9}/[^\s?#&]+)', url)
+    if match:
+        return match.group(1).rstrip('.')
+    return None
+
+def extract_pii(url):
+    """Extract PII from ScienceDirect URLs."""
+    match = re.search(r'/pii/([A-Z0-9]+)', url)
+    if match:
+        return match.group(1)
+    return None
+
+def resolve_pii_to_doi(pii, elsevier_key):
+    """Resolve a ScienceDirect PII to a DOI via the Elsevier API."""
+    if not elsevier_key:
+        return None
+    try:
+        url = f"https://api.elsevier.com/content/article/pii/{pii}"
+        headers = {'X-ELS-APIKey': elsevier_key, 'Accept': 'application/json'}
+        resp = requests.get(url, headers=headers, timeout=10)
+        if resp.status_code == 200:
+            data = resp.json()
+            doi = data.get('full-text-retrieval-response', {}).get('coredata', {}).get('prism:doi')
+            if doi:
+                return doi
+    except Exception as e:
+        print(f"  Elsevier API error for PII {pii}: {e}")
+    return None
+
+def fetch_abstract_semantic_scholar(doi):
+    """Fetch abstract from Semantic Scholar (free, no key required)."""
+    try:
+        url = f"https://api.semanticscholar.org/graph/v1/paper/DOI:{doi}?fields=abstract"
+        resp = requests.get(url, timeout=10)
+        if resp.status_code == 200:
+            data = resp.json()
+            abstract = data.get('abstract')
+            if abstract and len(abstract) > 50:
+                return abstract
+    except Exception as e:
+        print(f"  Semantic Scholar error for {doi}: {e}")
+    return None
+
+def reconstruct_abstract(inverted_index):
+    """Reconstruct plaintext from OpenAlex inverted index format."""
+    if not inverted_index:
+        return None
+    words = []
+    for word, positions in inverted_index.items():
+        for pos in positions:
+            words.append((pos, word))
+    words.sort(key=lambda x: x[0])
+    return ' '.join(w for _, w in words)
+
+def fetch_abstract_openalex(doi, api_key):
+    """Fetch abstract from OpenAlex (requires free API key)."""
+    if not api_key:
+        return None
+    try:
+        url = f"https://api.openalex.org/works/doi:{doi}?api_key={api_key}"
+        resp = requests.get(url, timeout=10)
+        if resp.status_code == 200:
+            data = resp.json()
+            inverted = data.get('abstract_inverted_index')
+            if inverted:
+                return reconstruct_abstract(inverted)
+    except Exception as e:
+        print(f"  OpenAlex error for {doi}: {e}")
+    return None
+
+def is_thin_excerpt(excerpt):
+    """Check if an excerpt is metadata-only and lacks real abstract content."""
+    if not excerpt or len(excerpt) < 100:
+        return True
+    # Common metadata-only patterns from ScienceDirect, Wiley, ASM
+    metadata_indicators = [
+        r'^Publication date:',
+        r'^Source:.*Volume \d+',
+        r'^Author\(s\):',
+        r'^Journal of .*, (Volume|Ahead)',
+        r', Volume \d+, Issue \d+, Page',
+    ]
+    for pattern in metadata_indicators:
+        if re.search(pattern, excerpt, re.IGNORECASE):
+            return True
+    return False
+
+def enrich_abstracts(articles):
+    """Enrich articles that have thin excerpts with real abstracts from academic APIs."""
+    openalex_key = os.getenv('OPENALEX_KEY')
+    elsevier_key = os.getenv('ELSEVIER_KEY')
+    enriched_count = 0
+    skipped_count = 0
+
+    for article in articles:
+        # Skip articles that already have good excerpts
+        if not is_thin_excerpt(article.get('excerpt', '')):
+            continue
+        # Skip articles already enriched in a previous run
+        if article.get('abstract_source'):
+            skipped_count += 1
+            continue
+
+        url = article.get('url', '')
+        doi = extract_doi(url)
+
+        # For ScienceDirect, resolve PII to DOI via Elsevier API
+        if not doi and 'sciencedirect.com' in url:
+            pii = extract_pii(url)
+            if pii:
+                doi = resolve_pii_to_doi(pii, elsevier_key)
+                if doi:
+                    print(f"  Resolved PII {pii} → DOI {doi}")
+
+        if not doi:
+            continue
+
+        # Try Semantic Scholar first, then OpenAlex
+        abstract = fetch_abstract_semantic_scholar(doi)
+        source = 'semantic_scholar'
+        if not abstract:
+            abstract = fetch_abstract_openalex(doi, openalex_key)
+            source = 'openalex'
+
+        if abstract:
+            article['excerpt'] = abstract[:2000]
+            article['abstract_source'] = source
+            enriched_count += 1
+            print(f"  ✅ Enriched: {article['title'][:50]}... ({source})")
+
+        # Polite delay between API calls
+        time.sleep(0.2)
+
+    print(f"Abstract enrichment: {enriched_count} enriched, {skipped_count} already enriched, {len(articles) - enriched_count - skipped_count} unchanged.")
+
+
 def run_fetcher():
+    # Load existing articles for rolling archive
+    existing_articles = []
+    if os.path.exists('mould_news.json'):
+        try:
+            with open('mould_news.json', 'r', encoding='utf-8') as f:
+                existing_articles = json.load(f)
+            print(f"Loaded {len(existing_articles)} existing articles from archive.")
+        except (json.JSONDecodeError, Exception) as e:
+            print(f"Warning: Could not load existing archive: {e}")
+            existing_articles = []
+
     output = []
     for category, urls in RSS_FEEDS.items():
         for url in urls:
@@ -96,10 +275,19 @@ def run_fetcher():
                             "category": category
                         })
             except: continue
-    unique_output = {v['url']: v for v in output}.values()
-    sorted_output = sorted(unique_output, key=lambda x: x['pubDate'], reverse=True)
+    # Merge: existing articles first, new articles overwrite (fresher metadata)
+    merged = {article['url']: article for article in existing_articles}
+    for article in output:
+        merged[article['url']] = article
+    sorted_output = list(sorted(merged.values(), key=lambda x: x['pubDate'], reverse=True))
+    print(f"Archive now contains {len(sorted_output)} total articles ({len(sorted_output) - len(existing_articles)} new).")
+
+    # Enrich thin excerpts with real abstracts from academic APIs
+    print("\n--- Abstract Enrichment ---")
+    enrich_abstracts(sorted_output)
+
     with open('mould_news.json', 'w', encoding='utf-8') as f:
-        json.dump(list(sorted_output), f, indent=2)
+        json.dump(sorted_output, f, indent=2)
 
 if __name__ == "__main__":
     run_fetcher()
