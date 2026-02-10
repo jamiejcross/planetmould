@@ -70,10 +70,11 @@ def _sanitize_for_ai(self, article: Article) -> str:
                     "STRICT CONSTRAINTS:\n"
                     "1. NO HALLUCINATION: Do not invent details, dates, or scientific findings not present in the source.\n"
                     "2. WEAK SIGNAL PROTOCOL: If the source text is sparse, ambiguous, or lacks depth, "
-                    "output the [SUMMARY] as a 'Weak Signal Report' noting the data's limitations.\n"
+                    "note the data's limitations and do not output a [SUMMARY]' .\n"
                     "3. LINGUISTIC FIDELITY: If a sentence in the source is clear, evocative, and academically "
                     "significant, reuse it verbatim in the summary rather than paraphrasing.\n"
                     "4. NO TITLE REPETITION: Do not mention the title of the article or phrases like 'This article discusses' in your output.\n"
+                    "4.1 NO ACRONYMS: Do not use acronyms in the summary. Only use the full form of a name or organisation once."\n
                     "5. REASONING STEP: Before generating the final HTML, identify the three most significant material-social interactions" 
                     "in the text. Do not output this list, but use it to inform your analysis."\n
                     "6. MATERIAL SPECIFICITY: Do not use words like 'infrastructure' or 'environment' without "
