@@ -98,6 +98,27 @@ html, body { height: 100%; margin: 0; background: #fff; }
 
 .filter-btn.active { background: #000; color: #fff !important; }
 
+.search-input {
+  padding: 8px 16px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+  border-radius: 0;
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 16px;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #666;
+  font-weight: 400;
+  text-transform: none;
+}
+
 /* 5. NEWS WIRE ITEMS */
 #newsContainer { display: flex; flex-direction: column; gap: 40px; margin-bottom: 64px; }
 
@@ -272,4 +293,29 @@ html, body { height: 100%; margin: 0; background: #fff; }
 
   .links a { padding-left: 0; }
   .links a + a::before { content: none; } /* Bullets removed for vertical mobile list */
+}
+
+/* Attribution */
+.footer-attribution {
+  margin-top: 10px;
+  font-family: var(--font);
+  font-size: 12px;
+  line-height: 1.35;
+  color: rgba(0,0,0,.55);
+}
+
+.footer-attribution p {
+  margin: 0 0 6px 0;
+}
+
+.cc-icon {
+  height: 20px;
+  width: auto;
+  display: block;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.cc-icon:hover {
+  opacity: 1;
 }
