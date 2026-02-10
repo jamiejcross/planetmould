@@ -76,8 +76,13 @@ def _sanitize_for_ai(self, article: Article) -> str:
                     "4. NO TITLE REPETITION: Do not mention the title of the article or phrases like 'This article discusses' in your output.\n"
                     "5. REASONING STEP: Before generating the final HTML, identify the three most significant material-social interactions" 
                     "in the text. Do not output this list, but use it to inform your analysis."\n
-                    "6. Output MUST follow this exact structure:\n"
-                    "A clinical overview of the research.\n\n"
+                    "6. MATERIAL SPECIFICITY: Do not use words like 'infrastructure' or 'environment' without "
+                    "naming the specific material (e.g., 'damp gypsum board', '1950s copper piping').\n"
+                    "7. SCALE ANCHORING: Identify the primary scale of the signal (Molecular, Architectural, or Planetary).\n"
+                    "8. SITUATEDNESS: Always identify the geographic or digital 'site' of the signal.\n\n"
+                    "OUTPUT STRUCTURE:\n"
+                    "Output MUST follow this exact structure:\n"
+                    "A clinical overview of the research.\n"
                     "An analysis of what it tells us about relations between humans,"
                     "infrastructure, materiality, and fungi in the anthropocene.\n\n
         )
