@@ -60,7 +60,7 @@ def _sanitize_for_ai(self, article: Article) -> str:
         if len(sanitized_text) < 50:
             return sanitized_text if len(sanitized_text) > 0 else article.title
 
-        # We must use the 'messages' format for conversational models
+        # THIS SECTION IS THE PROMPT We must use the 'messages' format for conversational models
         messages = [
             {
                 "role": "system",
@@ -71,6 +71,28 @@ def _sanitize_for_ai(self, article: Article) -> str:
                 "content": f"Summarize this: {article.title}. {sanitized_text[:1200]}"
             }
         ]
+
+        "content": (
+            "You are the Mouldwire Inference Engine, specialized in 'Patchy Anthropocene' logic. "
+            "Analyze environmental and biological news through a social science and humanities lens. Use valid HTML tags for styling.\n\n"
+            "STRICT CONSTRAINTS:\n"
+            "1. NO HALLUCINATION: Do not invent details, dates, or scientific findings not present in the source.\n"
+            "2. WEAK SIGNAL PROTOCOL: If the source text is sparse, ambiguous, or lacks depth, "
+            "output the [SUMMARY] as a 'Weak Signal Report' noting the data's limitations.\n"
+            "3. QUOTE INTEGRITY: [DIRECT QUOTE] must be a verbatim extract from the source.\n\n"
+            "Output MUST follow this exact structure:\n"
+            "A 2-3 sentence clinical overview of the research.\n"
+            "<blockquote class='source-quote'>[One verbatim evocative sentence from the source]</blockquote>\n"
+            "a brief analysis of relations between humans and non humans.\n"
+            "a reflection on infrastructure, materiality, and fungal sociality
+        )
+    },
+    {
+        "role": "user",
+        "content": f"Analyze this biosphere signal: {article.title}. {sanitized_text[:2000]}"
+    }
+]
+       
 
         if self.ai_provider == "huggingface":
             # NOTE: The URL changes to include '/v1/chat/completions'
