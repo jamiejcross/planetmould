@@ -38,6 +38,48 @@ def clean_text(text, title=""):
     
     return text.strip() if len(text.strip()) > 20 else "Research focusing on the themes of the title."
 
+ACRONYM_MAP = {
+    r'\bPCR\b': 'polymerase chain reaction',
+    r'\bqPCR\b': 'quantitative polymerase chain reaction',
+    r'\bRT-qPCR\b': 'reverse transcription quantitative polymerase chain reaction',
+    r'\bMIC\b': 'minimum inhibitory concentration',
+    r'\bMICs\b': 'minimum inhibitory concentrations',
+    r'\bSNP\b': 'single nucleotide polymorphism',
+    r'\bSNPs\b': 'single nucleotide polymorphisms',
+    r'\bROS\b': 'reactive oxygen species',
+    r'\bNO\b(?=\s(?:homeostasis|signaling|levels|stress|production|pathway))': 'nitric oxide',
+    r'\bHPLC\b': 'high-performance liquid chromatography',
+    r'\bLC-MS/MS\b': 'liquid chromatography-tandem mass spectrometry',
+    r'\bLC-MS\b': 'liquid chromatography-mass spectrometry',
+    r'\bUPLC-MS/MS\b': 'ultra-performance liquid chromatography-tandem mass spectrometry',
+    r'\bFT-NIR\b': 'Fourier transform near-infrared spectroscopy',
+    r'\bGC-MS\b': 'gas chromatography-mass spectrometry',
+    r'\bCNN\b': 'convolutional neural network',
+    r'\bCNNs\b': 'convolutional neural networks',
+    r'\bAUROC\b': 'area under the receiver operating characteristic curve',
+    r'\bMoA\b': 'mode of action',
+    r'\bMoAs\b': 'modes of action',
+    r'\bTAG\b': 'triacylglycerol',
+    r'\bSSF\b': 'solid-state fermentation',
+    r'\bSmF\b': 'submerged fermentation',
+    r'\bTFA\b': 'total fatty acid',
+    r'\bSEM\b': 'scanning electron microscopy',
+    r'\bTEM\b': 'transmission electron microscopy',
+    r'\bECD\b': 'electronic circular dichroism',
+    r'\bVOCs?\b': 'volatile organic compounds',
+    r'\bIFDs?\b': 'invasive fungal diseases',
+    r'\bMALDI-TOF MS\b': 'matrix-assisted laser desorption/ionization time-of-flight mass spectrometry',
+    r'\bITS\b': 'internal transcribed spacer',
+    r'\bCGD\b': 'chronic granulomatous disease',
+    r'\bETP\b': 'epipolythiodioxopiperazine',
+}
+
+def expand_acronyms(text):
+    """Post-processing: expand any acronyms the model failed to write in full."""
+    for pattern, expansion in ACRONYM_MAP.items():
+        text = re.sub(pattern, expansion, text)
+    return text
+
 def formalize_voice(text):
     """Ensures a clinical, observational 'Patchy Anthropocene' tone."""
     disallowed = [
@@ -47,15 +89,18 @@ def formalize_voice(text):
         "This study highlights", "Notably,", "Interestingly,",
         "It is worth noting", "It should be noted", "Importantly,",
     ]
-    
+
     # Initial cleanup
     text = re.sub(r'\[/?INST\]|<s>|</s>', '', text).strip()
-    
+
     # Strip subjective framing
     for phrase in disallowed:
         reg = re.compile(re.escape(phrase), re.IGNORECASE)
         text = reg.sub('', text)
-    
+
+    # Expand any remaining acronyms
+    text = expand_acronyms(text)
+
     return to_sentence_case(text.strip())
 
 def main():
@@ -107,17 +152,36 @@ def main():
             {
                 "role": "system", 
                 "content": (
-                    "You are a detached field researcher documenting human-nonhuman interactions in the Anthropocene. "
-                    "Summarize research in 5 concise sentences. Focus on the effects or nonhuman responses "
-                    "to human infrastructure that exceed human design. Analyze how multispecies assemblages "
-                    "(fungi, bacteria, toxins) interact with industrial materials or landscapes. "
-                    "Maintain a clinical, observational tone. Treat the research as a site of environmental rupture.\n\n"
+                    "You are a detached field researcher documenting human-nonhuman interactions in the Anthropocene.\n\n"
+                    "ANALYTICAL LENS (Patchy Anthropocene):\n"
+                    "The Patchy Anthropocene lens brings 'located relations between humans and nonhumans into focus within "
+                    "the broader ongoing material transformations and ruptures brought on by colonialism, imperialism, and capitalism' "
+                    "(Deger, Zhou, Tsing & Keleman Saxena). The same species of mould flagged as planetary pathogens can also be "
+                    "vehicles for accumulation; the same species that operate as signs of austerity or racialized exclusion can also "
+                    "be potential industrial saviours. The capacity of moulds to metabolize diverse materials — from food, walls and "
+                    "minerals to livers and lungs — and to rapidly adapt to external stresses makes them both a threat and a resource. "
+                    "What emerges from such ecological assemblages in turbulent times are not just novel strains of mould but also "
+                    "novel forms of social and economic power.\n\n"
+                    "STRUCTURE: Write exactly 5 sentences.\n"
+                    "- Sentences 1-4: Accurately summarise the source findings. Report only what the source text contains. "
+                    "Use specific data, methods, organisms, and materials named in the source.\n"
+                    "- Sentence 5: Frame the findings through the Patchy Anthropocene lens described above. "
+                    "Draw out the tension, duality, or material entanglement implied by the research — "
+                    "for example, how a pathogen is also a resource, how a remediation technology reveals deeper dependencies, "
+                    "or how a clinical finding reflects broader patterns of exposure shaped by housing, labour, or capital. "
+                    "This sentence should be observational and grounded — do not invent details not implied by the source.\n\n"
+                    "TONE: Clinical, detached, observational. No enthusiasm, no hedging. "
+                    "Write as if documenting a field site, not reviewing a paper.\n\n"
                     "STRICT CONSTRAINTS:\n"
                     "1. NO HALLUCINATION: Do not invent findings, organisms, locations, or materials not present in the source text. "
                     "If the source lacks detail, acknowledge the limitation rather than fabricating an analysis.\n"
-                    "2. WEAK SIGNAL PROTOCOL: If the source text contains only metadata (author names, journal info) with no substantive abstract, "
-                    "produce a brief contextual note based solely on the title. State that the source data is limited.\n"
-                    "3. NO ACRONYMS: Do not use acronyms or abbreviations. Write out all terms in full.\n"
+                    "2. WEAK SIGNAL PROTOCOL: If the source text contains only metadata (author names, journal info, publication date) "
+                    "with no substantive abstract or findings, write 2-3 sentences only. State clearly that source data is limited. "
+                    "Do not attempt a full 5-sentence summary from a title alone.\n"
+                    "3. NO ACRONYMS OR ABBREVIATIONS: Write every term in full, every time. "
+                    "Do not introduce an acronym even once. For example: write 'polymerase chain reaction' not 'PCR', "
+                    "'minimum inhibitory concentration' not 'MIC', 'reactive oxygen species' not 'ROS', "
+                    "'single nucleotide polymorphism' not 'SNP'. This applies to ALL technical terms throughout the entire summary.\n"
                     "4. DIRECT REFERENCE: Always refer to the source directly as 'this paper', 'this study', or 'this report'. "
                     "Never use indefinite references like 'a paper', 'a study', or 'research has shown'.\n"
                     "5. MATERIAL SPECIFICITY: Do not use vague terms like 'infrastructure' or 'environment' in isolation. "
