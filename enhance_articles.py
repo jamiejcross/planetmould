@@ -1,5 +1,3 @@
-Here's the full file — replace the entire contents of `enhance_articles.py`:
-
 ```python
 #!/usr/bin/env python3
 import sys
