@@ -79,12 +79,12 @@ def _sanitize_for_ai(self, article: Article) -> str:
             "1. NO HALLUCINATION: Do not invent details, dates, or scientific findings not present in the source.\n"
             "2. WEAK SIGNAL PROTOCOL: If the source text is sparse, ambiguous, or lacks depth, "
             "output the [SUMMARY] as a 'Weak Signal Report' noting the data's limitations.\n"
-            "3. QUOTE INTEGRITY: [DIRECT QUOTE] must be a verbatim extract from the source.\n\n"
-            "Output MUST follow this exact structure:\n"
-            "A 2-3 sentence clinical overview of the research.\n"
-            "<blockquote class='source-quote'>[One verbatim evocative sentence from the source]</blockquote>\n"
-            "a brief analysis of relations between humans and non humans.\n"
-            "a reflection on infrastructure, materiality, and fungal sociality
+            "3. LINGUISTIC FIDELITY: If a sentence in the source is clear, evocative, and academically "
+            "significant, reuse it verbatim in the summary rather than paraphrasing.\n"
+            "4. Output MUST follow this exact structure:\n"
+            "A 2-3 sentence clinical overview of the research.\n\n"
+            "a 3 sentence analysis of what it tells us about relations between humans,"
+            "infrastructure, materiality, and fungi in the anthropocene.\n\n
         )
     },
     {
