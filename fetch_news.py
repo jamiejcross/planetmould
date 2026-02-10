@@ -3,6 +3,7 @@ import json
 import datetime
 import re
 import time
+import os
 
 # CATEGORIES AND FEEDS (Updated with Biotechnology, Food Science, and Vascular Review)
 RSS_FEEDS = {
@@ -98,6 +99,17 @@ def is_relevant(title, excerpt, source):
     return True
 
 def run_fetcher():
+    # Load existing articles for rolling archive
+    existing_articles = []
+    if os.path.exists('mould_news.json'):
+        try:
+            with open('mould_news.json', 'r', encoding='utf-8') as f:
+                existing_articles = json.load(f)
+            print(f"Loaded {len(existing_articles)} existing articles from archive.")
+        except (json.JSONDecodeError, Exception) as e:
+            print(f"Warning: Could not load existing archive: {e}")
+            existing_articles = []
+
     output = []
     for category, urls in RSS_FEEDS.items():
         for url in urls:
@@ -122,8 +134,12 @@ def run_fetcher():
                             "category": category
                         })
             except: continue
-    unique_output = {v['url']: v for v in output}.values()
-    sorted_output = sorted(unique_output, key=lambda x: x['pubDate'], reverse=True)
+    # Merge: existing articles first, new articles overwrite (fresher metadata)
+    merged = {article['url']: article for article in existing_articles}
+    for article in output:
+        merged[article['url']] = article
+    sorted_output = sorted(merged.values(), key=lambda x: x['pubDate'], reverse=True)
+    print(f"Archive now contains {len(sorted_output)} total articles ({len(sorted_output) - len(existing_articles)} new).")
     with open('mould_news.json', 'w', encoding='utf-8') as f:
         json.dump(list(sorted_output), f, indent=2)
 
