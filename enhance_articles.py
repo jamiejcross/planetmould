@@ -150,5 +150,3 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-
-That's the complete file — just paste it over the entire contents of `enhance_articles.py` in your repo.
