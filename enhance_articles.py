@@ -76,16 +76,32 @@ def main():
         print(f"❌ Error loading mould_news.json: {e}")
         return
 
+    # Load existing enhanced articles for rolling archive
+    existing_enhanced = {}
+    if os.path.exists('articles_enhanced.json'):
+        try:
+            with open('articles_enhanced.json', 'r', encoding='utf-8') as f:
+                existing_enhanced_list = json.load(f)
+                existing_enhanced = {a['url']: a for a in existing_enhanced_list}
+            print(f"Loaded {len(existing_enhanced)} previously enhanced articles.")
+        except (json.JSONDecodeError, Exception) as e:
+            print(f"Warning: Could not load existing enhanced articles: {e}")
+            existing_enhanced = {}
+
+    # Only enhance articles not already in the archive
+    new_articles = [a for a in articles_data if a['url'] not in existing_enhanced]
+    print(f"Found {len(new_articles)} new articles to enhance ({len(articles_data) - len(new_articles)} already in archive).")
+
     enhanced_articles = []
 
-    for i, article in enumerate(articles_data, 1):
+    for i, article in enumerate(new_articles, 1):
         title = article.get('title', 'Untitled Research')
         raw_excerpt = article.get('excerpt', '')
         
         # 1. Clean the raw ScienceDirect text
         excerpt = clean_text(raw_excerpt, title)
         
-        print(f"[{i}/{len(articles_data)}] Researching: {title[:50]}...")
+        print(f"[{i}/{len(new_articles)}] Researching: {title[:50]}...")
 
         messages = [
             {
@@ -141,10 +157,17 @@ def main():
         }
         enhanced_articles.append(enhanced)
 
+    # Merge newly enhanced articles into existing archive
+    for article in enhanced_articles:
+        existing_enhanced[article['url']] = article
+
+    # Sort all enhanced articles by pubDate descending
+    all_enhanced = sorted(existing_enhanced.values(), key=lambda x: x.get('pubDate', ''), reverse=True)
+
     with open('articles_enhanced.json', 'w', encoding='utf-8') as f:
-        json.dump(enhanced_articles, f, indent=2, ensure_ascii=False)
-    
-    print("\n✅ Success! Saved to articles_enhanced.json")
+        json.dump(all_enhanced, f, indent=2, ensure_ascii=False)
+
+    print(f"\n✅ Archive now contains {len(all_enhanced)} enhanced articles ({len(enhanced_articles)} newly enhanced).")
 
 if __name__ == '__main__':
     main()
