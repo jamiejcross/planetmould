@@ -131,7 +131,7 @@ html, body { height: 100%; margin: 0; background: #fff; }
 }
 
 .ai-badge {
-  display: inline-block; border: 1px solid #000; padding: 4px 8px;
+  display: inline-block; border: none; padding: 4px 8px;
   font-size: 0.9rem; font-weight: 700; text-transform: uppercase;
   margin-bottom: 15px;
 }
@@ -155,21 +155,29 @@ html, body { height: 100%; margin: 0; background: #fff; }
   gap: 10px;
 }
 
-.footer-credit p {
-  margin: 0;
+.footer-credit,
+.footer-banner .email{
+  font-family: var(--font);
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.35;
 }
 
-.footer-banner .email {
-  color: #000; /* Matching your black-and-white clinical look */
+.footer-credit{ color: #000; font-weight: 400; }
+.footer-credit p{ margin: 0; }
+.footer-credit p + p{ margin-top: 6px; }
+
+.footer-banner .email{
+  color: #000;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
 }
+.footer-banner .email:hover{ text-decoration: underline; }
 
-.footer-banner .email:hover {
-  text-decoration: underline;
+.footer-banner .uni-logo{
+  height: 100px;
+  width: auto;
+  display: block;
+  margin-left: auto;
 }
 
 .uni-logo {

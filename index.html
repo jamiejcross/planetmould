@@ -11,7 +11,7 @@
   :root {
     --black: #000;
     --grey: #666;
-    --border: #000;
+    --border: rgba(0,0,0,.12);
   }
 
   /* Reset all links to black */
@@ -69,8 +69,8 @@
   .ai-badge {
     display: inline-block;
     background: #fff;
-    border: 1px solid #000;
-    color: #000;
+    border: none;
+    color: #000000;
     padding: 4px 12px;
     font-size: 11px;
     font-weight: 800;
@@ -208,17 +208,18 @@
     </ul>
 </div>
 
-<footer class="footer-banner">
-    <div class="footer-left">
-        <div class="footer-credit">
-            <p>Planet Mould is supported by the University of Glasgow.</p>
-            <p>For further information contact:</p>
-        </div>
+  <footer class="footer-banner">
+  <div class="footer-left">
+    <div class="footer-credit">
+      <p>Planet Mould is supported by the University of Glasgow.</p>
+      <div class="contact-info">
+        <p>For further information, contact:</p>
         <a class="email" href="mailto:jamie.cross@glasgow.ac.uk">jamie.cross@glasgow.ac.uk</a>
+      </div>
     </div>
-    <img src="glasgow logo.png" alt="University of Glasgow Logo" class="uni-logo">
+  </div>
+  <img class="uni-logo" src="glasgow logo.png" alt="University logo" />
 </footer>
-</body>
 
     
     
