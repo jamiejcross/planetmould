@@ -144,11 +144,11 @@ html, body { height: 100%; margin: 0; background: #fff; }
 }
 
 .field-metadata {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display",
+          "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.75rem;
     background: #f0f0f0;
     padding: 8px 12px;
-    border-left: 2px solid #000;
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -178,7 +178,7 @@ html, body { height: 100%; margin: 0; background: #fff; }
 
 .ai-badge {
   display: inline-block; border: none; padding: 4px 8px;
-  font-size: 0.9rem; font-weight: 700; text-transform: uppercase;
+  font-size: 0.9rem; font-weight: 700; text-transform: none;
   margin-bottom: 15px;
 }
 
