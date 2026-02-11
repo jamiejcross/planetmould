@@ -126,6 +126,66 @@
       "event": "8 new articles collected today."
     },
     {
+      "date": "2026-02-11",
+      "type": "engine",
+      "event": "Inference engine updated to Meta-Llama-3-8B-Instruct.",
+      "_meta": {
+        "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-11",
+      "type": "engine",
+      "event": "Summary structure updated to 5 to 7 sentences.",
+      "_meta": {
+        "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-11",
+      "type": "engine",
+      "event": "Readability layer added: specialist jargon mapped to plain language.",
+      "_meta": {
+        "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-11",
+      "type": "engine",
+      "event": "Acronym expansion dictionary updated (100 patterns).",
+      "_meta": {
+        "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-11",
+      "type": "engine",
+      "event": "Readability instructions embedded in inference prompt for non-specialist audiences.",
+      "_meta": {
+        "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
       "date": "2026-02-10",
       "type": "engine",
       "event": "Updated instruction set for Llama-3-8B-Instruct inference engine to maintain scientific register."
@@ -167,16 +227,29 @@
         "openalex": 3,
         "none": 9
       }
+    },
+    {
+      "timestamp": "2026-02-11T18:46:20.319486+00:00",
+      "date": "2026-02-11",
+      "total_articles": 26,
+      "new_today": 9,
+      "total_enhanced": 26,
+      "new_enhanced": 26,
+      "enrichment_sources": {
+        "semantic_scholar": 13,
+        "openalex": 3,
+        "none": 10
+      }
     }
   ],
   "summary": {
-    "total_articles": 25,
-    "total_enhanced": 25,
-    "last_updated": "2026-02-11T14:52:39.519139+00:00",
+    "total_articles": 26,
+    "total_enhanced": 26,
+    "last_updated": "2026-02-11T18:46:20.318859+00:00",
     "enrichment_sources": {
       "semantic_scholar": 13,
       "openalex": 3,
-      "none": 9
+      "none": 10
     }
   }
 }
