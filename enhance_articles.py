@@ -74,10 +74,92 @@ ACRONYM_MAP = {
     r'\bETP\b': 'epipolythiodioxopiperazine',
 }
 
+def strip_parenthetical_acronyms(text):
+    """Remove parenthetical acronyms like 'scanning electron microscopy (SEM)' → keep the full term.
+    Also handles reverse: 'SEM (scanning electron microscopy)' → keep the full term.
+    Also handles identical: 'SEM (SEM)' → keep one copy.
+    Prevents stutter after expand_acronyms() runs."""
+    # Pattern 0: "ACRONYM (ACRONYM)" — identical duplication, keep one
+    text = re.sub(r'\b([A-Z][A-Z0-9/-]{1,12})\s*\(\1\)', r'\1', text)
+    # Pattern 1: "full term (ACRONYM)" — strip the parenthetical
+    text = re.sub(r'(\b[A-Za-z][\w\s/-]{4,}?)\s*\(([A-Z][A-Z0-9/-]{1,12})\)', r'\1', text)
+    # Pattern 2: "ACRONYM (full term)" — keep the full term in parens, drop the acronym
+    text = re.sub(r'\b([A-Z][A-Z0-9/-]{1,12})\s*\(([A-Za-z][\w\s/-]{4,}?)\)', r'\2', text)
+    return text
+
+JARGON_MAP = {
+    # Cell biology
+    r'\bapoptosis\b': 'programmed cell death',
+    r'\bapoptotic\b': 'cell-death',
+    r'\bnecros(?:is|ed)\b': 'tissue death',
+    r'\bnecrotic\b': 'dead-tissue',
+    r'\blipid peroxidation\b': 'cell membrane damage caused by oxidation',
+    r'\bcytotoxicity\b': 'toxicity to cells',
+    r'\bcytotoxic\b': 'cell-damaging',
+    r'\bgenotoxic(?:ity)?\b': 'DNA-damaging',
+    r'\bhepatotoxic(?:ity)?\b': 'liver-damaging',
+    r'\bnephrotoxic(?:ity)?\b': 'kidney-damaging',
+    r'\bpathogenesis\b': 'disease development',
+    r'\bvirulence factors?\b': 'infection-enabling traits',
+    r'\bvirulence\b': 'disease-causing ability',
+    r'\bbiofilm formation\b': 'surface-colonising microbial communities',
+    r'\bbiofilms?\b': 'surface-bound microbial communities',
+    # Genetics / molecular
+    r'\bphylogenetic(?:ally)?\b': 'evolutionary-relationship',
+    r'\bgenotyping\b': 'genetic profiling',
+    r'\bgenotype\b': 'genetic profile',
+    r'\bgenotypes\b': 'genetic profiles',
+    r'\bphenotypic(?:ally)?\b': 'observable-trait',
+    r'\bphenotype\b': 'observable traits',
+    r'\btranscriptomic(?:s)?\b': 'gene-expression analysis',
+    r'\bproteomic(?:s)?\b': 'protein-level analysis',
+    r'\bmetabolomic(?:s)?\b': 'metabolite-level analysis',
+    r'\bupregulat(?:ed|ion)\b': 'increased activity of',
+    r'\bdownregulat(?:ed|ion)\b': 'decreased activity of',
+    # Clinical / pharmacological
+    r'\b[Ii]n vitro\b': 'in laboratory tests',
+    r'\b[Ii]n vivo\b': 'in living organisms',
+    r'\bprophylaxis\b': 'preventive treatment',
+    r'\bprophylactic\b': 'preventive',
+    r'\betiolog(?:y|ical)\b': 'cause',
+    r'\bcomorbid(?:ity|ities)\b': 'co-occurring conditions',
+    r'\bimmunocompromised\b': 'immune-weakened',
+    r'\bimmunosuppressed\b': 'immune-suppressed',
+    # Chemistry / methods
+    r'\bsynergistic(?:ally)?\b': 'combined-effect',
+    r'\bantagonistic(?:ally)?\b': 'counteracting',
+    r'\blyophili[sz](?:ed|ation)\b': 'freeze-dried',
+    r'\bsubstrate\b': 'growth medium',
+    r'\bsubstrates\b': 'growth media',
+    # Ecology
+    r'\bbioremediation\b': 'biological cleanup',
+    r'\brhizosphere\b': 'root zone',
+    r'\bendophyt(?:e|ic|es)\b': 'plant-internal microbe',
+    r'\bmycorrhiza[el]?\b': 'root-associated fungal',
+    # Phrasing
+    r'\bsignificantly inhibited\b': 'substantially reduced',
+    r'\bsignificantly enhanced\b': 'substantially increased',
+    r'\bsignificantly reduced\b': 'substantially reduced',
+    r'\blesion expansion\b': 'the spread of damage',
+    r'\bhost-pathogen interactions?\b': 'infection dynamics',
+    r'\bdose-dependent\b': 'dose-related',
+}
+
+def simplify_jargon(text):
+    """Post-processing: replace specialist jargon with plain language equivalents."""
+    for pattern, replacement in JARGON_MAP.items():
+        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
+    return text
+
 def expand_acronyms(text):
     """Post-processing: expand any acronyms the model failed to write in full."""
+    # First strip parenthetical acronym patterns to prevent stutter
+    text = strip_parenthetical_acronyms(text)
+    # Then expand any remaining bare acronyms
     for pattern, expansion in ACRONYM_MAP.items():
         text = re.sub(pattern, expansion, text)
+    # Final safety: catch any "full term (full term)" stutter that slipped through
+    text = re.sub(r'(\b[\w\s/-]{5,}?)\s*\(\1\)', r'\1', text)
     return text
 
 def formalize_voice(text):
@@ -100,6 +182,9 @@ def formalize_voice(text):
 
     # Expand any remaining acronyms
     text = expand_acronyms(text)
+
+    # Simplify specialist jargon for general readability
+    text = simplify_jargon(text)
 
     return to_sentence_case(text.strip())
 
@@ -162,16 +247,21 @@ def main():
                     "minerals to livers and lungs — and to rapidly adapt to external stresses makes them both a threat and a resource. "
                     "What emerges from such ecological assemblages in turbulent times are not just novel strains of mould but also "
                     "novel forms of social and economic power.\n\n"
-                    "STRUCTURE: Write exactly 6 sentences.\n"
-                    "- Sentences 1-4: Accurately summarise the source findings. Report only what the source text contains. "
+                    "STRUCTURE: Write 5 to 7 sentences.\n"
+                    "- The first sentences accurately summarise the source findings. Report only what the source text contains. "
                     "Use specific data, methods, organisms, and materials named in the source.\n"
-                    "- Sentence 5-6: Frame the findings through the Patchy Anthropocene lens described above. "
+                    "- The final 1-2 sentences frame the findings through the Patchy Anthropocene lens described above. "
                     "Draw out the tension, duality, or material entanglement implied by the research — "
                     "for example, how a pathogen is also a resource, how a remediation technology reveals deeper dependencies, "
                     "or how a clinical finding reflects broader patterns of exposure shaped by housing, labour, or capital. "
-                    "This sentence should be observational and grounded — do not invent details not implied by the source.\n\n"
+                    "These sentences should be observational and grounded — do not invent details not implied by the source.\n\n"
                     "TONE: Clinical, detached, observational. No enthusiasm, no hedging. "
                     "Write as if documenting a field site, not reviewing a paper.\n\n"
+                    "READABILITY: Write for an educated general audience, not specialists. "
+                    "Replace specialist jargon with plain language equivalents — for example, write 'programmed cell death' "
+                    "not 'apoptosis', 'reduced the spread of damage' not 'significantly inhibited lesion expansion', "
+                    "'genetic variation' not 'single nucleotide polymorphism', 'cell membrane damage' not 'lipid peroxidation'. "
+                    "Keep the scientific detail but express it in words a non-scientist can follow.\n\n"
                     "STRICT CONSTRAINTS:\n"
                     "1. NO HALLUCINATION: Do not invent findings, organisms, locations, or materials not present in the source text. "
                     "If the source lacks detail, acknowledge the limitation rather than fabricating an analysis.\n"
