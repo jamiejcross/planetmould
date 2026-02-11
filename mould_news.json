@@ -4,7 +4,7 @@
     "source": "ScienceDirect Publication: Journal of Hazardous Materials",
     "excerpt": "Publication date: 15 February 2026Source: Journal of Hazardous Materials, Volume 504Author(s): Ramya Duraisamy, Bhuvaneshwari. S, Philip. A, VM Vishnu, P. Sribalaji, Agnieszka Saeid, Jemima Balaselvi Juliana. S, Jennifer Michellin Kiruba N",
     "url": "https://www.sciencedirect.com/science/article/pii/S0304389426003018?dgcid=rss_sd_all",
-    "pubDate": "2026-02-11T13:14:07Z",
+    "pubDate": "2026-02-11T14:49:59Z",
     "category": "indoor"
   },
   {
@@ -12,7 +12,7 @@
     "source": "ScienceDirect Publication: Journal of Hazardous Materials",
     "excerpt": "While traditionally the health impacts of the biotic and abiotic components of indoor air have been assumed to be independent, recent studies indicate the opposite, highlighting the need for a systematic evaluation of their interactions to provide a holistic assessment of the health impacts of indoor air. In this study, we assessed the toxicological relationship between a commonly found indoor mold species, Aspergillus fumigatus, and air fresheners, an emerging source of abiotic indoor air pollutants. We evaluated the cytotoxic effects of mold and two air fresheners (Brands A and B) on A549 cells and then tested the effect of co-exposure to the two toxicants on various cellular responses. We also analyzed the chemical composition of the air fresheners using LC-MS. Our results show that both air fresheners were composed of several compounds that could inhibit mold growth and pose health risks to humans. Furthermore, the chemical composition and concentration of the air freshener solutions could influence the toxicological interactions. Overall, our study demonstrates the need for further research on these interactions for a comprehensive assessment of indoor air health impacts. The knowledge will also allow air freshener manufacturers to formulate products with minimal health impacts.",
     "url": "https://www.sciencedirect.com/science/article/pii/S0304389426002979?dgcid=rss_sd_all",
-    "pubDate": "2026-02-11T13:14:07Z",
+    "pubDate": "2026-02-11T14:49:59Z",
     "category": "indoor",
     "abstract_source": "openalex"
   },
@@ -21,7 +21,7 @@
     "source": "ScienceDirect Publication: Food Research International",
     "excerpt": "Publication date: 30 April 2026Source: Food Research International, Volume 230Author(s): Kangnan Liu, Ling Fang, Yaling An, Zijun Tang, Wenjie Zhao, Chunqian Song, Lin Feng, Xiaokang Liu, Zhenwei Li, Daidi Zhang, De-an Guo",
     "url": "https://www.sciencedirect.com/science/article/pii/S0963996926002188?dgcid=rss_sd_all",
-    "pubDate": "2026-02-11T13:14:04Z",
+    "pubDate": "2026-02-11T14:49:56Z",
     "category": "health"
   },
   {
@@ -29,7 +29,7 @@
     "source": "ScienceDirect Publication: Food Research International",
     "excerpt": "Publication date: 1 April 2026Source: Food Research International, Volume 229Author(s): Karolina Kowalska, Eszter Borsos, Elisabeth Varga, Doris Marko",
     "url": "https://www.sciencedirect.com/science/article/pii/S0963996926000244?dgcid=rss_sd_all",
-    "pubDate": "2026-02-11T13:14:04Z",
+    "pubDate": "2026-02-11T14:49:56Z",
     "category": "health"
   },
   {
@@ -37,7 +37,7 @@
     "source": "ScienceDirect Publication: Food Chemistry",
     "excerpt": "Alternaria alternata causes serious postharvest diseases in tomatoes, threatening shelf life and food safety. In this study, a natural and eco-friendly strategy was developed using Ligusticum jeholense essential oil (LEO), extracted via optimized enzymatic-deep eutectic solvent microwave-assisted method (EDP-MAHD), which achieved a 3.38-fold higher yield than conventional extraction. GC-MS analysis confirmed consistent chemical composition across production batches. In vitro, LEO exhibited potent antifungal activity against A. alternata (IC\u2085\u2080, 0.0718 \u03bcL/mL), while in vivo experiments on tomato fruit showed it significantly inhibited lesion expansion and suppressed the accumulation of mycotoxins, alternariol (AOH) and tenuazonic acid (TeA). SEM, TEM, proteomic, and physiological analyses revealed that LEO disrupted membrane integrity, interfered with energy metabolism, and induced oxidative stress, suggesting multi-target antifungal mechanisms. Acute toxicity in mice confirmed its safety. These findings support the application of LEO as a promising natural preservative for postharvest disease and toxin control in tomatoes.",
     "url": "https://www.sciencedirect.com/science/article/pii/S0308814626004231?dgcid=rss_sd_all",
-    "pubDate": "2026-02-11T13:14:04Z",
+    "pubDate": "2026-02-11T14:49:56Z",
     "category": "health",
     "abstract_source": "openalex"
   },
@@ -114,6 +114,24 @@
     "url": "https://journals.asm.org/doi/abs/10.1128/aac.01528-25?af=R",
     "pubDate": "2026-02-03T08:00:00Z",
     "category": "clinical",
+    "abstract_source": "semantic_scholar"
+  },
+  {
+    "title": "Antifungal Activity and Resistance Risk of Cyclobutrifluram against Fusarium solani, the Causal Agent of Peanut Root Rot",
+    "source": "acs: Journal of Agricultural and Food Chemistry: Table of Contents",
+    "excerpt": "Peanut root rot (PRR), caused by Fusarium solani, is a common and destructive disease. Cyclobutrifluram exhibits antifungal activity against Fusarium spp., yet its bioactivity and resistance risk against F. solani remain unclear. In this study, the EC50 values of cyclobutrifluram against 155 F. solani strains ranged from 0.0279 to 0.1102 \u03bcg/mL, with a mean of 0.0513 \u00b1 0.0170 \u03bcg/mL. Treatment with cyclobutrifluram significantly inhibited conidial production and germination, reduced succinate dehydrogenase (SDH) activity, increased hyphal branching, and shortened the distance between septa or cell nuclei. Cyclobutrifluram provided excellent control over PRR. Seven laboratory-generated cyclobutrifluram-resistant mutants showed no or slight fitness penalties and exhibited positive cross-resistance only with pydiflumetofen, indicating a moderate-to-high resistance risk. Resistance to cyclobutrifluram in F. solani was conferred by four SDH substitutions (FsSdhBH248Y, FsSdhC1A83V, FsSdhC2A85V, and FsSdhDD184G), which was confirmed by molecular docking and gene replacement. This study provides crucial insights for developing effective control strategies to manage PRR.",
+    "url": "https://pubs.acs.org/doi/10.1021/acs.jafc.5c12378?af=R",
+    "pubDate": "2026-02-03T08:00:00Z",
+    "category": "health",
+    "abstract_source": "semantic_scholar"
+  },
+  {
+    "title": "Efficacy of Ipflufenoquin against Strawberry Gray Mold: Insights from AlphaFold- Based Structural Modeling and Genome-Wide Transcriptomic Analysis",
+    "source": "acs: Journal of Agricultural and Food Chemistry: Table of Contents",
+    "excerpt": "Gray mold caused by Botrytis cinerea significantly threatens strawberry production. This study evaluated the efficacy of ipflufenoquin, a novel dihydroorotate dehydrogenase (DHODH) inhibitor, against fungal pathogens isolated from Korean strawberry fields in 2023. Ipflufenoquin demonstrated a high in vitro sensitivity to B. cinerea and broad activity against other pathogens. Fruit and greenhouse trials confirmed its robust control of gray mold, including strains resistant to multiple fungicide classes. However, treatment shifted the fungal community, promoting less sensitive genera, such as Cladosporium and Rhizopus. Structural modeling with AlphaFold2 and molecular docking confirmed that ipflufenoquin binds to the quinone binding tunnel of DHODH, correlating binding affinity with susceptibility. Additionally, RNA-seq analysis revealed that ipflufenoquin suppresses primary metabolic pathways while triggering a robust stress response, up-regulating detoxification and efflux transporter genes. This integrated study confirms the efficacy of ipflufenoquin against gray mold and elucidates its molecular impacts, offering essential data for sustainable management strategies.",
+    "url": "https://pubs.acs.org/doi/10.1021/acs.jafc.5c14085?af=R",
+    "pubDate": "2026-01-30T08:00:00Z",
+    "category": "health",
     "abstract_source": "semantic_scholar"
   },
   {
