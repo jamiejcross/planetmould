@@ -351,6 +351,7 @@ html, body { height: 100%; margin: 0; background: #fff; }
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 .log-stat {
