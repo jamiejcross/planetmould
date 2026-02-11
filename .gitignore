@@ -1,0 +1,16 @@
+# RAG vector store (cached in GitHub Actions, not committed)
+chroma_db/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

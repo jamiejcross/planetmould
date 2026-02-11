@@ -193,18 +193,11 @@
     
 <div class="system-logs">
     <h4>Mouldwire System Log</h4>
-    <ul class="log-list">
+    <div class="log-stats" id="logStats"></div>
+    <ul class="log-list" id="logList">
         <li>
-            <span class="log-date">2026-02-10</span>
-            <span class="log-event">Updated instruction set for <strong>Llama-3.3-70B</strong> Inference Engine to maintain scientific register.</span>
-        </li>
-        <li>
-            <span class="log-date">2026-02-07</span>
-            <span class="log-event">Calibration: "Patchy Anthropocene" field guide logic implemented.</span>
-        </li>
-        <li>
-            <span class="log-date">2026-02-01</span>
-            <span class="log-event">Mouldwire v0.3 active: 50+ journals integrated.</span>
+            <span class="log-date">...</span>
+            <span class="log-event">Loading system log...</span>
         </li>
     </ul>
 </div>
@@ -324,8 +317,69 @@
     }
   }
 
+  // --- SYSTEM LOG ---
+  async function fetchSystemLog() {
+    const logList = document.getElementById("logList");
+    const logStats = document.getElementById("logStats");
+    if (!logList) return;
+
+    try {
+      const response = await fetch('system_log.json?v=' + new Date().getTime());
+      if (!response.ok) throw new Error('Log not available');
+      const log = await response.json();
+
+      // Render summary stats bar
+      if (log.summary && logStats) {
+        const s = log.summary;
+        const updated = s.last_updated ? new Date(s.last_updated).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' }) : '';
+
+        // Find today's new articles from entries
+        const today = new Date().toISOString().slice(0, 10);
+        const dailyEntry = (log.entries || []).find(e => e.type === 'daily' && e.date === today);
+        const newToday = dailyEntry ? dailyEntry.event : 'No new articles today.';
+
+        logStats.innerHTML = `
+          <div class="log-stat-row">
+            <span class="log-stat"><strong>${s.total_articles || 0}</strong> articles in archive</span>
+            <span class="log-stat"><strong>${s.total_enhanced || 0}</strong> enhanced</span>
+            <span class="log-stat log-stat-new">${newToday}</span>
+          </div>
+          <div class="log-stat-updated">Last pipeline run: ${updated}</div>
+        `;
+      }
+
+      // Render log entries (show last 10)
+      const entries = (log.entries || []).slice(0, 10);
+      if (entries.length === 0) {
+        logList.innerHTML = '<li><span class="log-event">No log entries yet.</span></li>';
+        return;
+      }
+
+      logList.innerHTML = entries.map(entry => {
+        const typeIcon = {
+          'engine': '\u2699\uFE0F',
+          'calibration': '\uD83D\uDD2C',
+          'milestone': '\uD83D\uDCCC',
+          'daily': '\uD83D\uDCE1',
+          'error': '\u26A0\uFE0F'
+        }[entry.type] || '\u25CF';
+
+        return `<li>
+          <span class="log-date">${entry.date || ''}</span>
+          <span class="log-type-icon">${typeIcon}</span>
+          <span class="log-event">${entry.event || ''}</span>
+        </li>`;
+      }).join('');
+
+    } catch (err) {
+      // Fallback: keep whatever's in the HTML
+      console.log('System log not available, using static fallback.');
+    }
+  }
+
   window.onload = () => {
     fetchNews();
+    fetchSystemLog();
     document.getElementById("newsSearch")?.addEventListener("input", () => { visibleCount = 5; displayNews(); });
     document.getElementById("refreshBtn")?.addEventListener("click", () => { visibleCount = 5; fetchNews(); });
     document.getElementById("loadMoreBtn")?.addEventListener("click", () => { visibleCount += 5; displayNews(); });

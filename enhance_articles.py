@@ -188,6 +188,23 @@ def formalize_voice(text):
 
     return to_sentence_case(text.strip())
 
+# --- RAG Integration (optional) ---
+def get_rag_context(article):
+    """Retrieve related articles from ChromaDB for cross-referencing.
+    Returns formatted context string, or empty string if RAG unavailable."""
+    try:
+        from rag_retrieve import find_related, format_context_for_prompt
+        results = find_related(article, n_results=3)
+        if results:
+            context = format_context_for_prompt(results, max_chars=800)
+            return context
+    except ImportError:
+        pass  # RAG modules not installed
+    except Exception as e:
+        print(f"  RAG context unavailable: {e}")
+    return ""
+
+
 def main():
     print("=" * 60)
     print("Mouldwire Research Enhancement System (Llama-3 Chat)")
@@ -233,9 +250,14 @@ def main():
         
         print(f"[{i}/{len(new_articles)}] Researching: {title[:50]}...")
 
+        # Retrieve related articles from RAG for cross-referencing context
+        rag_context = get_rag_context(article)
+        if rag_context:
+            print(f"  RAG: retrieved related context ({len(rag_context)} chars)")
+
         messages = [
             {
-                "role": "system", 
+                "role": "system",
                 "content": (
                     "You are a detached field researcher documenting human-nonhuman interactions in the Anthropocene.\n\n"
                     "ANALYTICAL LENS (Patchy Anthropocene):\n"
@@ -282,8 +304,11 @@ def main():
                 )
             },
             {
-                "role": "user", 
-                "content": f"Analyze this research signal.\n\nTitle: {title}\nSource abstract: {excerpt}"
+                "role": "user",
+                "content": (
+                    f"Analyze this research signal.\n\nTitle: {title}\nSource abstract: {excerpt}"
+                    + (f"\n\n{rag_context}" if rag_context else "")
+                )
             }
         ]
 
