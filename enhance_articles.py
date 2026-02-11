@@ -72,6 +72,13 @@ ACRONYM_MAP = {
     r'\bITS\b': 'internal transcribed spacer',
     r'\bCGD\b': 'chronic granulomatous disease',
     r'\bETP\b': 'epipolythiodioxopiperazine',
+    r'\bSDH\b': 'succinate dehydrogenase',
+    r'\bDHODH\b': 'dihydroorotate dehydrogenase',
+    r'\bBGCs?\b': 'biosynthetic gene clusters',
+    r'\bLPs?\b(?=\s)': 'lipopeptides',
+    r'\bGSNOR\b': 'S-nitrosoglutathione reductase',
+    r'\bNrf2\b': 'nuclear factor erythroid 2-related factor 2',
+    r'\bNLRP3\b': 'NOD-like receptor protein 3',
 }
 
 def strip_parenthetical_acronyms(text):
@@ -110,14 +117,23 @@ JARGON_MAP = {
     r'\bgenotype\b': 'genetic profile',
     r'\bgenotypes\b': 'genetic profiles',
     r'\bphenotypic(?:ally)?\b': 'observable-trait',
-    r'\bphenotype\b': 'observable traits',
+    r'\bphenotypes\b': 'observable traits',
+    r'\bphenotype\b': 'observable trait profile',
     r'\btranscriptomic(?:s)?\b': 'gene-expression analysis',
     r'\bproteomic(?:s)?\b': 'protein-level analysis',
     r'\bmetabolomic(?:s)?\b': 'metabolite-level analysis',
-    r'\bupregulat(?:ed|ion)\b': 'increased activity of',
-    r'\bdownregulat(?:ed|ion)\b': 'decreased activity of',
+    r'\bupregulation of\b': 'increased activity of',
+    r'\bwere upregulated\b': 'showed increased activity',
+    r'\bupregulated\b': 'elevated',
+    r'\bupregulating\b': 'increasing the activity of',
+    r'\bdownregulation of\b': 'decreased activity of',
+    r'\bwere downregulated\b': 'showed decreased activity',
+    r'\bdownregulated\b': 'reduced',
+    r'\bdownregulating\b': 'decreasing the activity of',
     # Clinical / pharmacological
-    r'\b[Ii]n vitro\b': 'in laboratory tests',
+    r'\b[Ii]n vitro experiments?\b': 'laboratory experiments',
+    r'\b[Ii]n vitro\b': 'laboratory-based',
+    r'\b[Ii]n vivo experiments?\b': 'live-organism experiments',
     r'\b[Ii]n vivo\b': 'in living organisms',
     r'\bprophylaxis\b': 'preventive treatment',
     r'\bprophylactic\b': 'preventive',
@@ -276,7 +292,9 @@ def main():
                     "Draw out the tension, duality, or material entanglement implied by the research — "
                     "for example, how a pathogen is also a resource, how a remediation technology reveals deeper dependencies, "
                     "or how a clinical finding reflects broader patterns of exposure shaped by housing, labour, or capital. "
-                    "These sentences should be observational and grounded — do not invent details not implied by the source.\n\n"
+                    "These sentences should be observational and grounded — do not invent details not implied by the source. "
+                    "Do NOT reproduce the Patchy Anthropocene description verbatim. "
+                    "Apply the lens in your own words, specific to the findings of this paper.\n\n"
                     "TONE: Clinical, detached, observational. No enthusiasm, no hedging. "
                     "Write as if documenting a field site, not reviewing a paper.\n\n"
                     "READABILITY: Write for an educated general audience, not specialists. "
@@ -286,10 +304,15 @@ def main():
                     "Keep the scientific detail but express it in words a non-scientist can follow.\n\n"
                     "STRICT CONSTRAINTS:\n"
                     "1. NO HALLUCINATION: Do not invent findings, organisms, locations, or materials not present in the source text. "
-                    "If the source lacks detail, acknowledge the limitation rather than fabricating an analysis.\n"
+                    "If the source lacks detail, acknowledge the limitation rather than fabricating an analysis. "
+                    "If RELATED RESEARCH CONTEXT is provided, it is for your background awareness ONLY. "
+                    "Do NOT report findings from related articles as if they belong to the source paper. "
+                    "Do NOT merge, blend, or attribute related findings to the source. "
+                    "Your factual summary sentences must describe ONLY the source abstract.\n"
                     "2. WEAK SIGNAL PROTOCOL: If the source text contains only metadata (author names, journal info, publication date) "
                     "with no substantive abstract or findings, write 2-3 sentences only. State clearly that source data is limited. "
-                    "Do not attempt a full 5-sentence summary from a title alone.\n"
+                    "Do not attempt a full summary from a title alone. "
+                    "Related research context does NOT substitute for missing source data.\n"
                     "3. NO ACRONYMS OR ABBREVIATIONS: Write every term in full, every time. "
                     "Do not introduce an acronym even once. For example: write 'polymerase chain reaction' not 'PCR', "
                     "'minimum inhibitory concentration' not 'MIC', 'reactive oxygen species' not 'ROS', "
@@ -318,7 +341,7 @@ def main():
         try:
             response = client.chat_completion(
                 messages=messages,
-                max_tokens=400,
+                max_tokens=550,
                 temperature=0.5
             )
             raw_ai_summary = response.choices[0].message.content.strip()
