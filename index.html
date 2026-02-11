@@ -152,7 +152,7 @@
 
 <div class="page-header">
     <h1>Mouldwire</h1>
-    <p>Mouldwire is a bespoke science/media news service designed to collect and summarise the latest mould related research stories from around the world using a prompt engineered inference engine. This version of Mouldwire uses a "Patchy Anthropocene" lens - specially calibrated for social science, arts and humanities researchers interested in planetary health, infrastructure, and human/non-human sociality.</p>
+    <p>Mouldwire is a bespoke science/media news service designed to collect and summarise the latest mould related research stories from around the world using a prompt engineered inference engine. This version uses a "Patchy Anthropocene" lens - specially calibrated for social science, arts and humanities researchers interested in planetary health, infrastructure, and human/non-human sociality in the Anthropocene.</p>
    <p class="repo-callout">
     Mouldwire is an open source project. You can follow the development, 
     view the summaries in raw format, or contribute to the 
@@ -173,9 +173,10 @@
             <button class="filter-btn" data-filter="science">Microbiology</button>
             <button class="filter-btn" data-filter="health">Health & Environment</button>
             <button class="filter-btn" data-filter="indoor">Housing & Indoor Air</button>
-            <button class="filter-btn" data-filter="media">Media</button>
+            <button class="filter-btn" data-filter="media">Social Media Coming Soon</button>
         </div>
         <button id="refreshBtn" class="refresh-btn">Refresh Feed</button>
+        <div class="log-stats" id="logStats"></div>
         <input type="text" id="newsSearch" class="search-input" placeholder="Use keywords to search for reports since Feb 10th 2026" />
     </div>
 </div>
@@ -193,7 +194,6 @@
     
 <div class="system-logs">
     <h4>Mouldwire System Log</h4>
-    <div class="log-stats" id="logStats"></div>
     <ul class="log-list" id="logList">
         <li>
             <span class="log-date">...</span>
