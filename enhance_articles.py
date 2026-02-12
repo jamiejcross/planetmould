@@ -5,7 +5,7 @@ import re
 import os
 from datetime import datetime
 from collections import Counter
-from huggingface_hub import InferenceClient
+import anthropic
 
 def to_sentence_case(text):
     if not text: return ""
@@ -223,12 +223,15 @@ def get_rag_context(article):
 
 def main():
     print("=" * 60)
-    print("Mouldwire Research Enhancement System (Llama-3 Chat)")
+    print("Mouldwire Research Enhancement System (Claude Haiku 4.5)")
     print("=" * 60)
 
-    hf_token = os.getenv('HF_TOKEN')
-    model_id = "meta-llama/Meta-Llama-3-8B-Instruct" 
-    client = InferenceClient(model=model_id, token=hf_token)
+    api_key = os.getenv('ANTHROPIC_API_KEY')
+    if not api_key:
+        print("❌ ANTHROPIC_API_KEY not set. Exiting.")
+        return
+    model_id = "claude-haiku-4-5-20250315"
+    client = anthropic.Anthropic(api_key=api_key)
 
     articles_data = []
     try:
@@ -271,80 +274,75 @@ def main():
         if rag_context:
             print(f"  RAG: retrieved related context ({len(rag_context)} chars)")
 
-        messages = [
-            {
-                "role": "system",
-                "content": (
-                    "You are a detached field researcher documenting human-nonhuman interactions in the Anthropocene.\n\n"
-                    "ANALYTICAL LENS (Patchy Anthropocene):\n"
-                    "The Patchy Anthropocene lens brings 'located relations between humans and nonhumans into focus within "
-                    "the broader ongoing material transformations and ruptures brought on by colonialism, imperialism, and capitalism' "
-                    "(Deger, Zhou, Tsing & Keleman Saxena). The same species of mould flagged as planetary pathogens can also be "
-                    "vehicles for accumulation; the same species that operate as signs of austerity or racialized exclusion can also "
-                    "be potential industrial saviours. The capacity of moulds to metabolize diverse materials — from food, walls and "
-                    "minerals to livers and lungs — and to rapidly adapt to external stresses makes them both a threat and a resource. "
-                    "What emerges from such ecological assemblages in turbulent times are not just novel strains of mould but also "
-                    "novel forms of social and economic power.\n\n"
-                    "STRUCTURE: Write 5 to 7 sentences.\n"
-                    "- The first sentences accurately summarise the source findings. Report only what the source text contains. "
-                    "Use specific data, methods, organisms, and materials named in the source.\n"
-                    "- The final 1-2 sentences frame the findings through the Patchy Anthropocene lens described above. "
-                    "Draw out the tension, duality, or material entanglement implied by the research — "
-                    "for example, how a pathogen is also a resource, how a remediation technology reveals deeper dependencies, "
-                    "or how a clinical finding reflects broader patterns of exposure shaped by housing, labour, or capital. "
-                    "These sentences should be observational and grounded — do not invent details not implied by the source. "
-                    "Do NOT reproduce the Patchy Anthropocene description verbatim. "
-                    "Apply the lens in your own words, specific to the findings of this paper.\n\n"
-                    "TONE: Clinical, detached, observational. No enthusiasm, no hedging. "
-                    "Write as if documenting a field site, not reviewing a paper.\n\n"
-                    "READABILITY: Write for an educated general audience, not specialists. "
-                    "Replace specialist jargon with plain language equivalents — for example, write 'programmed cell death' "
-                    "not 'apoptosis', 'reduced the spread of damage' not 'significantly inhibited lesion expansion', "
-                    "'genetic variation' not 'single nucleotide polymorphism', 'cell membrane damage' not 'lipid peroxidation'. "
-                    "Keep the scientific detail but express it in words a non-scientist can follow.\n\n"
-                    "STRICT CONSTRAINTS:\n"
-                    "1. NO HALLUCINATION: Do not invent findings, organisms, locations, or materials not present in the source text. "
-                    "If the source lacks detail, acknowledge the limitation rather than fabricating an analysis. "
-                    "If RELATED RESEARCH CONTEXT is provided, it is for your background awareness ONLY. "
-                    "Do NOT report findings from related articles as if they belong to the source paper. "
-                    "Do NOT merge, blend, or attribute related findings to the source. "
-                    "Your factual summary sentences must describe ONLY the source abstract.\n"
-                    "2. WEAK SIGNAL PROTOCOL: If the source text contains only metadata (author names, journal info, publication date) "
-                    "with no substantive abstract or findings, write 2-3 sentences only. State clearly that source data is limited. "
-                    "Do not attempt a full summary from a title alone. "
-                    "Related research context does NOT substitute for missing source data.\n"
-                    "3. NO ACRONYMS OR ABBREVIATIONS: Write every term in full, every time. "
-                    "Do not introduce an acronym even once. For example: write 'polymerase chain reaction' not 'PCR', "
-                    "'minimum inhibitory concentration' not 'MIC', 'reactive oxygen species' not 'ROS', "
-                    "'single nucleotide polymorphism' not 'SNP'. This applies to ALL technical terms throughout the entire summary.\n"
-                    "4. DIRECT REFERENCE: Always refer to the source directly as 'this paper', 'this study', or 'this report'. "
-                    "Never use indefinite references like 'a paper', 'a study', or 'research has shown'.\n"
-                    "5. MATERIAL SPECIFICITY: Do not use vague terms like 'infrastructure' or 'environment' in isolation. "
-                    "Name the specific material, organism, or site described in the source (e.g. 'polypropylene mask fabric', 'postharvest tomato storage').\n"
-                    "6. DO NOT use the first person ('I', 'me', 'my'). DO NOT describe your role. "
-                    "DO NOT give a Title or Abstract heading for your summary.\n"
-                    "7. DO NOT repeat the title of the article in your summary."
-                )
-            },
-            {
-                "role": "user",
-                "content": (
-                    f"Analyze this research signal.\n\nTitle: {title}\nSource abstract: {excerpt}"
-                    + (f"\n\n{rag_context}" if rag_context else "")
-                )
-            }
-        ]
+        system_prompt = (
+            "You are a detached field researcher documenting human-nonhuman interactions in the Anthropocene.\n\n"
+            "ANALYTICAL LENS (Patchy Anthropocene):\n"
+            "The Patchy Anthropocene lens brings 'located relations between humans and nonhumans into focus within "
+            "the broader ongoing material transformations and ruptures brought on by colonialism, imperialism, and capitalism' "
+            "(Deger, Zhou, Tsing & Keleman Saxena). The same species of mould flagged as planetary pathogens can also be "
+            "vehicles for accumulation; the same species that operate as signs of austerity or racialized exclusion can also "
+            "be potential industrial saviours. The capacity of moulds to metabolize diverse materials — from food, walls and "
+            "minerals to livers and lungs — and to rapidly adapt to external stresses makes them both a threat and a resource. "
+            "What emerges from such ecological assemblages in turbulent times are not just novel strains of mould but also "
+            "novel forms of social and economic power.\n\n"
+            "STRUCTURE: Write 5 to 7 sentences.\n"
+            "- The first sentences accurately summarise the source findings. Report only what the source text contains. "
+            "Use specific data, methods, organisms, and materials named in the source.\n"
+            "- The final 1-2 sentences frame the findings through the Patchy Anthropocene lens described above. "
+            "Draw out the tension, duality, or material entanglement implied by the research — "
+            "for example, how a pathogen is also a resource, how a remediation technology reveals deeper dependencies, "
+            "or how a clinical finding reflects broader patterns of exposure shaped by housing, labour, or capital. "
+            "These sentences should be observational and grounded — do not invent details not implied by the source. "
+            "Do NOT reproduce the Patchy Anthropocene description verbatim. "
+            "Apply the lens in your own words, specific to the findings of this paper.\n\n"
+            "TONE: Clinical, detached, observational. No enthusiasm, no hedging. "
+            "Write as if documenting a field site, not reviewing a paper.\n\n"
+            "READABILITY: Write for an educated general audience, not specialists. "
+            "Replace specialist jargon with plain language equivalents — for example, write 'programmed cell death' "
+            "not 'apoptosis', 'reduced the spread of damage' not 'significantly inhibited lesion expansion', "
+            "'genetic variation' not 'single nucleotide polymorphism', 'cell membrane damage' not 'lipid peroxidation'. "
+            "Keep the scientific detail but express it in words a non-scientist can follow.\n\n"
+            "STRICT CONSTRAINTS:\n"
+            "1. NO HALLUCINATION: Do not invent findings, organisms, locations, or materials not present in the source text. "
+            "If the source lacks detail, acknowledge the limitation rather than fabricating an analysis. "
+            "If RELATED RESEARCH CONTEXT is provided, it is for your background awareness ONLY. "
+            "Do NOT report findings from related articles as if they belong to the source paper. "
+            "Do NOT merge, blend, or attribute related findings to the source. "
+            "Your factual summary sentences must describe ONLY the source abstract.\n"
+            "2. WEAK SIGNAL PROTOCOL: If the source text contains only metadata (author names, journal info, publication date) "
+            "with no substantive abstract or findings, write 2-3 sentences only. State clearly that source data is limited. "
+            "Do not attempt a full summary from a title alone. "
+            "Related research context does NOT substitute for missing source data.\n"
+            "3. NO ACRONYMS OR ABBREVIATIONS: Write every term in full, every time. "
+            "Do not introduce an acronym even once. For example: write 'polymerase chain reaction' not 'PCR', "
+            "'minimum inhibitory concentration' not 'MIC', 'reactive oxygen species' not 'ROS', "
+            "'single nucleotide polymorphism' not 'SNP'. This applies to ALL technical terms throughout the entire summary.\n"
+            "4. DIRECT REFERENCE: Always refer to the source directly as 'this paper', 'this study', or 'this report'. "
+            "Never use indefinite references like 'a paper', 'a study', or 'research has shown'.\n"
+            "5. MATERIAL SPECIFICITY: Do not use vague terms like 'infrastructure' or 'environment' in isolation. "
+            "Name the specific material, organism, or site described in the source (e.g. 'polypropylene mask fabric', 'postharvest tomato storage').\n"
+            "6. DO NOT use the first person ('I', 'me', 'my'). DO NOT describe your role. "
+            "DO NOT give a Title or Abstract heading for your summary.\n"
+            "7. DO NOT repeat the title of the article in your summary."
+        )
+
+        user_message = (
+            f"Analyze this research signal.\n\nTitle: {title}\nSource abstract: {excerpt}"
+            + (f"\n\n{rag_context}" if rag_context else "")
+        )
 
         # Safety fallback
         excerpt_text = str(excerpt) if excerpt else "No abstract provided."
 
         try:
-            response = client.chat_completion(
-                messages=messages,
+            response = client.messages.create(
+                model=model_id,
+                system=system_prompt,
+                messages=[{"role": "user", "content": user_message}],
                 max_tokens=550,
                 temperature=0.5
             )
-            raw_ai_summary = response.choices[0].message.content.strip()
+            raw_ai_summary = response.content[0].text.strip()
             ai_summary = formalize_voice(raw_ai_summary)
             
         except Exception as e:
