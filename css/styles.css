@@ -123,7 +123,7 @@ body { font-family: var(--font); }
 }
 
 /* 5. NEWS WIRE ITEMS */
-#newsContainer { display: flex; flex-direction: column; gap: 40px; margin-bottom: 64px; border-bottom: 1px solid #333;}
+#newsContainer { display: flex; flex-direction: column; gap: 40px; margin-bottom: 64px;}
 
 .news-meta {
   display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px;
@@ -133,9 +133,9 @@ body { font-family: var(--font); }
 .news-item {
   padding-top: 40px;
   padding-bottom: 60px;
-  border-bottom: 2px solid #000;
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid #333;
 }
 
 .news-title { 
@@ -144,7 +144,7 @@ body { font-family: var(--font); }
 }
 
 .news-item--last {
-  border-bottom: 2px solid #333;
+  border-bottom: none;
 }
 
 .news-excerpt {
