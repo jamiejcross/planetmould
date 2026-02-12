@@ -183,7 +183,7 @@ body { font-family: var(--font); }
 .ai-badge {
   display: inline-block;
   border: none;
-  padding: 12px 16px;
+  padding: 4px 8px;
   background: #f5f5f5;
   font-size: 14px;
   font-weight: 700;
