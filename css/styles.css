@@ -144,7 +144,7 @@ body { font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display"
 }
 
 .news-excerpt {
-  font-size: 1.0rem; line-height: 1.7; color: #1a1919;
+  font-size: 1.0rem; line-height: 1.6; color: #000;
   max-width: 75ch; margin-bottom: 20px;
 }
 
