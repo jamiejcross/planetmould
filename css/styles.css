@@ -149,6 +149,7 @@ body { font-family: var(--font); }
 .news-excerpt {
   font-size: 20px; line-height: 1.6; color: #000;
   max-width: 75ch; margin-bottom: 20px;
+  text-transform: none;
 }
 
 .field-metadata {
@@ -156,7 +157,7 @@ body { font-family: var(--font); }
     font-size: 14px;
     background: #f0f0f0;
     padding: 8px 12px;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
