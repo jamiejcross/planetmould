@@ -134,7 +134,7 @@ body { font-family: var(--font); }
   padding-top: 40px;
   padding-bottom: 60px;
   display: flex;
-  flex-direction: column;
+  align-items: flex-start;
 }
 
 .news-title { 
@@ -183,7 +183,6 @@ body { font-family: var(--font); }
 .ai-badge {
   display: inline-block;
   border: none;
-  padding: 4px 8px;
   background: #f5f5f5;
   font-size: 14px;
   font-weight: 700;
