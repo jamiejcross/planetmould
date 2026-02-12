@@ -2,7 +2,7 @@ name: Fetch and Enhance Mouldwire News
 
 on:
   schedule:
-    - cron: '0 9 * * 1'  # Weekly: Monday at 9am UTC
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -50,7 +50,7 @@ jobs:
 
     - name: Enhance articles with AI
       env:
-        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
       run: python enhance_articles.py
 
     - name: Re-ingest enhanced articles into RAG
