@@ -125,6 +125,11 @@ body { font-family: var(--font); }
 /* 5. NEWS WIRE ITEMS */
 #newsContainer { display: flex; flex-direction: column; gap: 40px; margin-bottom: 64px; }
 
+.news-meta {
+  display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px;
+  font-size: 14px; color: #333; text-transform: uppercase; letter-spacing: 0.5px;
+}
+
 .news-item {
   padding-top: 40px;
   padding-bottom: 60px;
@@ -139,12 +144,7 @@ body { font-family: var(--font); }
 }
 
 .news-item--last {
-  border-bottom: none;
-}
-
-.news-meta {
-  display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px;
-  font-size: 14px; color: #333; text-transform: uppercase; letter-spacing: 0.5px;
+  border-bottom: 2px solid #333;
 }
 
 .news-excerpt {
@@ -152,7 +152,7 @@ body { font-family: var(--font); }
   max-width: 75ch; margin-bottom: 20px;
   text-transform: none;
   border-left: 10px solid #afadad;
-  padding-left: 5;
+  padding-left: 20px;
 }
 
 .field-metadata {
