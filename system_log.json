@@ -1,6 +1,71 @@
 {
   "entries": [
     {
+      "date": "2026-02-12",
+      "type": "engine",
+      "event": "Inference engine updated to Meta-Llama-3-8B-Instruct.",
+      "_meta": {
+        "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-12",
+      "type": "engine",
+      "event": "Summary structure updated to 5 to 7 sentences.",
+      "_meta": {
+        "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-12",
+      "type": "engine",
+      "event": "Readability layer added: specialist jargon mapped to plain language.",
+      "_meta": {
+        "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-12",
+      "type": "engine",
+      "event": "Acronym expansion dictionary updated (100 patterns).",
+      "_meta": {
+        "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-12",
+      "type": "engine",
+      "event": "Readability instructions embedded in inference prompt for non-specialist audiences.",
+      "_meta": {
+        "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-12",
+      "type": "daily",
+      "event": "6 new articles collected today."
+    },
+    {
       "date": "2026-02-11",
       "type": "engine",
       "event": "Inference engine updated to Meta-Llama-3-8B-Instruct.",
@@ -313,12 +378,25 @@
         "openalex": 3,
         "none": 10
       }
+    },
+    {
+      "timestamp": "2026-02-12T02:27:58.358019+00:00",
+      "date": "2026-02-12",
+      "total_articles": 26,
+      "new_today": 6,
+      "total_enhanced": 26,
+      "new_enhanced": 0,
+      "enrichment_sources": {
+        "semantic_scholar": 13,
+        "openalex": 3,
+        "none": 10
+      }
     }
   ],
   "summary": {
     "total_articles": 26,
     "total_enhanced": 26,
-    "last_updated": "2026-02-11T19:08:39.384668+00:00",
+    "last_updated": "2026-02-12T02:27:58.357383+00:00",
     "enrichment_sources": {
       "semantic_scholar": 13,
       "openalex": 3,
