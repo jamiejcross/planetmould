@@ -80,6 +80,7 @@ body { font-family: var(--font); }
   border-bottom: 2px solid #000;
   padding-bottom: 40px;
   margin-bottom: 50px;
+  max-width: 68ch;
 }
 
 .filter-buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
@@ -131,11 +132,14 @@ body { font-family: var(--font); }
   flex-direction: column;
 }
 
-.news-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
-.news-title a { color: #000; text-decoration: none; }
+.news-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #333; }
+
+.news-item--last {
+  border-bottom: none;
+}
 
 .news-meta {
-  display: flex; gap: 15px; margin-bottom: 12px;
+  display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px;
   font-size: 14px; color: #333; text-transform: uppercase; letter-spacing: 0.5px;
 }
 
@@ -177,8 +181,15 @@ body { font-family: var(--font); }
 }
 
 .ai-badge {
-  display: inline-block; border: none; padding: 4px 8px;
-  font-size: 14px; font-weight: 700; text-transform: none;
+  display: inline-block;
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #333;
   margin-bottom: 15px;
 }
 
@@ -241,8 +252,10 @@ body { font-family: var(--font); }
     padding: 30px 18px;
   }
 
-  .uni-logo {
+  .uni-logo,
+  .footer-banner .uni-logo {
     height: 60px; /* Smaller logo for mobile */
+    margin-left: 0; /* Align left on mobile */
   }
 }
 

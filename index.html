@@ -28,8 +28,12 @@
   .news-item {
     padding-top: 40px;
     padding-bottom: 60px;
-    border-bottom: 2px solid var(--black) !important;
+    border-bottom: 2px solid var(--black);
     background: transparent;
+  }
+
+  .news-item--last {
+    border-bottom: none;
   }
 
   .read-more {
@@ -41,18 +45,18 @@
     margin-top: 10px;
   }
 
-  /* AI BADGE RESTORATION */
+  /* AI BADGE - plain text label */
   .ai-badge {
     display: inline-block;
-    background: #fff;
-    border: 1px solid #000;
-    color: #000;
-    padding: 4px 12px;
+    background: none;
+    border: none;
+    color: #333;
+    padding: 0;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     margin: 15px 0;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
   }
 
   .keyword-tag {
@@ -255,25 +259,37 @@
       );
     }
 
+    // Non-journal news outlets (everything else is treated as a journal)
+    const newsOutlets = ['sciencedaily', 'phys.org', 'bbc', 'guardian', 'reuters', 'associated press'];
+
+    function isJournalSource(source) {
+      if (!source) return false;
+      const s = source.toLowerCase();
+      return !newsOutlets.some(outlet => s.includes(outlet));
+    }
+
     if (filtered.length > 0) {
+      const visible = filtered.slice(0, visibleCount);
       let html = `<div class="news-list">`;
-      filtered.slice(0, visibleCount).forEach((item) => {
+      visible.forEach((item, index) => {
         const isEnhanced = item.enhanced === true;
+        const isLast = index === visible.length - 1;
         const displayDate = item.pubDate ? new Date(item.pubDate).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : 'Recent';
         let rawSummary = item.summary || item.excerpt || "";
         let formattedSummary = rawSummary.length > 0 ? rawSummary : "No summary available for this wire.";
+        const titlePrefix = isJournalSource(item.source) ? '<strong>New Research:</strong> ' : '';
 
         html += `
-          <div class="news-item">
+          <div class="news-item${isLast ? ' news-item--last' : ''}">
             <div class="news-meta">
-              <span><strong>Published:</strong> ${displayDate}</span>
-              <span><strong>Source:</strong> ${item.source}</span>
+              <span>${displayDate}</span>
+              <span>${item.source}</span>
             </div>
-            <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
+            <h3 class="news-title">${titlePrefix}${item.title}</h3>
             <div class="news-keywords">
               ${(item.keywords || []).slice(0, 3).map(k => `<span class="keyword-tag">${k}</span>`).join('')}
             </div>
-            ${isEnhanced ? '<span class="ai-badge">🌏 Mouldwire Patchy Anthropocene Summary</span>' : ''}
+            ${isEnhanced ? '<span class="ai-badge">Patchy Anthropocene Summary</span>' : ''}
             <p class="news-excerpt">${formattedSummary}</p>
             <div class="source-link-container">
               <a href="${item.url}" target="_blank" class="read-more">View source online →</a>
