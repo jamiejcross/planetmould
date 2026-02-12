@@ -129,7 +129,6 @@ body { font-family: var(--font); }
   display: flex; flex-direction: column; gap: 4px;
   font-size: 14px; color: #333; text-transform: uppercase; letter-spacing: 0.5px; 
   border-bottom: 1px solid #333; 
-  margin-bottom: 10px;
 }
 
 .news-item {
@@ -137,7 +136,6 @@ body { font-family: var(--font); }
   padding-bottom: 60px;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #333;
 }
 
 .news-title { 

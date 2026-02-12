@@ -150,7 +150,7 @@
             <button class="filter-btn" data-filter="science">Microbiology</button>
             <button class="filter-btn" data-filter="health">Health & Environment</button>
             <button class="filter-btn" data-filter="indoor">Housing & Indoor Air</button>
-            <button class="filter-btn" data-filter="media">Social Media Coming Soon</button>
+            <button class="filter-btn" data-filter="media">Media Feeds * Coming Soon</button>
         </div>
         <button id="refreshBtn" class="refresh-btn">Refresh Feed</button>
         <div class="log-stats" id="logStats"></div>
@@ -278,8 +278,9 @@
         html += `
           <div class="news-item>
             <div class="news-meta">
-              <p><span><strong>Published:</strong> ${displayDate}</span></p> </div>
-              <p><span><strong>Source:</strong> ${item.source}</span></p> </div>
+              ><span><strong>Published:</strong> ${displayDate}</span>
+              <span><strong>Source:</strong> ${item.source}</span>
+            </div>
             <h3 class="news-title"><strong>${titlePrefix}</strong>${item.title}</h3>
             <div class="news-keywords">
               ${(item.keywords || []).slice(0, 3).map(k => `<span class="keyword-tag">${k}</span>`).join('')}
