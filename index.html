@@ -41,7 +41,7 @@
     margin-top: 10px;
     padding-bottom: 2px;
     border-bottom: 2px #666 solid;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
 
   /* AI BADGE - plain text label */
@@ -283,7 +283,7 @@
             <div class="news-meta">
               <span><strong>Published:</strong> ${displayDate}</span><Br>
               <span><strong>Source:</strong> ${item.source}</span>
-            <h3 class="news-title"><strong>${titlePrefix}</strong>${item.title}</h3>
+            <span><strong>>${titlePrefix}</strong>${item.title}<span>
             <div class="news-keywords">
               ${(item.keywords || []).slice(0, 3).map(k => `<span class="keyword-tag">${k}</span>`).join('')}
             </div>
