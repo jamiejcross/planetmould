@@ -123,7 +123,7 @@ body { font-family: var(--font); }
 }
 
 /* 5. NEWS WIRE ITEMS */
-#newsContainer { display: flex; flex-direction: column; gap: 40px; margin-bottom: 64px; }
+#newsContainer { display: flex; flex-direction: column; gap: 40px; margin-bottom: 64px; border-bottom: 1px solid #333;}
 
 .news-meta {
   display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px;
@@ -151,8 +151,6 @@ body { font-family: var(--font); }
   font-size: 20px; line-height: 1.6; color: #000;
   max-width: 75ch; margin-bottom: 20px;
   text-transform: none;
-  border-left: 10px solid #afadad;
-  padding-left: 20px;
 }
 
 .field-metadata {
