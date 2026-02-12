@@ -125,20 +125,21 @@ body { font-family: var(--font); }
 /* 5. NEWS WIRE ITEMS */
 #newsContainer { display: flex; flex-direction: column; gap: 40px; margin-bottom: 64px;}
 
-.news-meta {
-  display: flex; flex-direction: column; gap: 4px;
-  font-size: 14px; color: #333; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;
-}
-
 .news-item {
   padding-top: 40px;
   padding-bottom: 60px;
   display: flex;
+  flex-direction: column;
+  gap: 4px
+}
+.news-meta {
+  display: flex; flex-direction: column; 
+  font-size: 14px; color: #333; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;
 }
 
 .news-title { 
-    display: flex; flex-direction: column; gap: 4px; padding: 2px 2px
-  font-size: 14px; color: #333; text-transform: none; letter-spacing: 0.5px; font-weight: 700; 
+    display: flex; flex-direction: column; padding: 2px 2px
+  font-size: 14px; color: #333; text-transform: none; font-weight: 700; 
 }
 
 .news-excerpt {
@@ -183,12 +184,12 @@ body { font-family: var(--font); }
   display: inline-block;
   border: none;
   padding: 12px 16px;
-  background: #f5f5f5;
+  background: #b7b5b5;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: #333;
+  color: #000000;
 }
 
 /* FOOTER - EXACT MATCH TO MASTER */
