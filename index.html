@@ -29,36 +29,12 @@
     padding-top: 40px;
     padding-bottom: 60px;
     border-bottom: 2px solid var(--black) !important;
-    background: transparent; /* Removes any "box" look */
-  }
-
-  .news-title {
-    font-size: 20pt; /* Large Clinical Header */
-    margin: 10px 0;
-    line-height: 1.2;
-  }
-
-  .news-excerpt {
-    font-size: 1.2rem; /* Larger, readable text */
-    line-height: 1.7;
-    color: #333;
-    max-width: 75ch;
-    margin: 20px 0;
-  }
-
-  .news-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    font-size: 0.85rem;
-    color: var(--grey);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    background: transparent;
   }
 
   .read-more {
     font-weight: 800;
-    font-size: 13px;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
     display: inline-block;
@@ -72,7 +48,7 @@
     border: 1px solid #000;
     color: #000;
     padding: 4px 12px;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     margin: 15px 0;
@@ -151,7 +127,7 @@
   </div>
 </div>
 
- <main class="article">
+<div class="page-header">
     <h1>Mouldwire</h1>
     <p>Mouldwire is a bespoke science/media news service designed to collect and summarise the latest mould related research stories from around the world using a prompt engineered inference engine. This version uses a "Patchy Anthropocene" lens - specially calibrated for social science, arts and humanities researchers interested in planetary health, infrastructure, and human/non-human sociality in the Anthropocene.</p>
    <p class="repo-callout">
@@ -165,7 +141,7 @@
         <strong>GitHub Repository</strong>
     </a>.
 </p>
-</main>
+  </div>
 
 <div class="controls">
     <div class="filter-row">
@@ -174,7 +150,7 @@
             <button class="filter-btn" data-filter="science">Microbiology</button>
             <button class="filter-btn" data-filter="health">Health & Environment</button>
             <button class="filter-btn" data-filter="indoor">Housing & Indoor Air</button>
-            <button class="filter-btn" data-filter="media">Social Media ** Coming Soon</button>
+            <button class="filter-btn" data-filter="media">Social Media Coming Soon</button>
         </div>
         <button id="refreshBtn" class="refresh-btn">Refresh Feed</button>
         <div class="log-stats" id="logStats"></div>

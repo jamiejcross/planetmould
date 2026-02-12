@@ -1,8 +1,7 @@
 /* 1. GLOBAL RESET & VARIABLES (MATCHED TO MAIN SITE) */
 * { box-sizing: border-box; }
 html, body { height: 100%; margin: 0; background: #fff; }
-body { font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display",
-          "Helvetica Neue", Helvetica, Arial, sans-serif; }
+body { font-family: var(--font); }
 
 :root {
   --blue: #000000;
@@ -69,10 +68,7 @@ body { font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display"
   margin-left: auto;
   margin-right: auto;
   padding: 0 18px;
-  line-height: 1.6;
-  color: #000;
-  font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display",
-          "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: var(--font);
 }
 
 .page-header { margin-top: 48px; margin-bottom: 32px; }
@@ -95,6 +91,7 @@ body { font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display"
   color: #000 !important;
   border-radius: 0;
   cursor: pointer;
+  font-family: var(--font);
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -108,7 +105,7 @@ body { font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display"
   background: #fff;
   color: #000;
   border-radius: 0;
-
+  font-family: var(--font);
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -124,8 +121,7 @@ body { font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display"
 }
 
 /* 5. NEWS WIRE ITEMS */
-#newsContainer { display: flex; flex-direction: column; gap: 40px; margin-bottom: 64px; font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display",
-          "Helvetica Neue", Helvetica, Arial, sans-serif}
+#newsContainer { display: flex; flex-direction: column; gap: 40px; margin-bottom: 64px; }
 
 .news-item {
   padding-top: 40px;
@@ -135,21 +131,22 @@ body { font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display"
   flex-direction: column;
 }
 
-.news-title { font-size: 1.0rem !important; font-weight: 700; margin-bottom: 12px; }
+.news-title { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
 .news-title a { color: #000; text-decoration: none; }
 
 .news-meta {
   display: flex; gap: 15px; margin-bottom: 12px;
-  font-size: 1.0rem; color: #333;
+  font-size: 14px; color: #333; text-transform: uppercase; letter-spacing: 0.5px;
 }
 
 .news-excerpt {
-  font-size: 1.0rem; line-height: 1.6; color: #000;
+  font-size: 20px; line-height: 1.6; color: #000;
   max-width: 75ch; margin-bottom: 20px;
 }
 
 .field-metadata {
-    font-size: 0.75rem;
+    font-family: var(--font);
+    font-size: 14px;
     background: #f0f0f0;
     padding: 8px 12px;
     margin-bottom: 15px;
@@ -174,14 +171,14 @@ body { font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display"
     margin: 20px 0;
     padding: 5px 0 5px 20px;
     font-style: italic;
-    font-size: 1.1rem;
+    font-size: 20px;
     color: #333;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .ai-badge {
   display: inline-block; border: none; padding: 4px 8px;
-  font-size: 0.9rem; font-weight: 700; text-transform: none;
+  font-size: 14px; font-weight: 700; text-transform: none;
   margin-bottom: 15px;
 }
 
@@ -296,6 +293,26 @@ body { font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display"
 
   .links a { padding-left: 0; }
   .links a + a::before { content: none; } /* Bullets removed for vertical mobile list */
+
+  /* Match main site .article mobile typography */
+  .page-header p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .news-title {
+    font-size: 16px;
+  }
+
+  .news-excerpt {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .source-quote {
+    font-size: 16px;
+    line-height: 1.65;
+  }
 }
 
 /* Attribution */
@@ -340,8 +357,8 @@ body { font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display"
   margin: 0 0 20px 0;
 }
 
-.log-stats {  
-  margin-top: 16px;    /* Added semicolon */
+.log-stats {
+  margin-top: 16px;
   padding: 12px 16px;
   background: #f5f5f5;
   font-family: var(--font);
