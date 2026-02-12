@@ -28,7 +28,7 @@
   .news-item {
     padding-top: 40px;
     padding-bottom: 60px;
-    border-bottom: 2px solid var(--black);
+    border-bottom: 2px solid var(--black) !important;
     background: transparent;
   }
 
@@ -39,7 +39,7 @@
     letter-spacing: 1px;
     display: inline-block;
     margin-top: 10px;
-    border-bottom: 1px #666solid; padding-bottom: 2px;
+    border-bottom: 1px #666 solid; padding-bottom: 2px;
   }
 
   /* AI BADGE - plain text label */
@@ -279,7 +279,7 @@
         html += `
           <div class="news-item>
             <div class="news-meta">
-              <span><strong>Published:</strong> ${displayDate}</span>
+              <span><strong>Published:</strong> ${displayDate}</span><Br>
               <span><strong>Source:</strong> ${item.source}</span>
             <h3 class="news-title"><strong>${titlePrefix}</strong>${item.title}</h3>
             <div class="news-keywords">

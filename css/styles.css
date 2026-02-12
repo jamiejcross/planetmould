@@ -154,7 +154,7 @@ body { font-family: var(--font); }
     font-size: 14px;
     background: #f0f0f0;
     padding: 8px 12px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
