@@ -132,7 +132,10 @@ body { font-family: var(--font); }
   flex-direction: column;
 }
 
-.news-title { font-size: 20px; font-weight: 400; margin-bottom: 12px; color: #333; }
+.news-title { 
+    display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px;
+  font-size: 14px; color: #333; text-transform: uppercase; letter-spacing: 0.5px; 
+}
 
 .news-item--last {
   border-bottom: none;
