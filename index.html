@@ -284,7 +284,7 @@
               <span><strong>Published:</strong> ${displayDate}</span><Br>
               <span><strong>Source:</strong> ${item.source}</span><Br>
               </div>
-            <h3 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h3>
+            <h2 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h2>
             <div class="news-keywords">
               ${(item.keywords || []).slice(0, 3).map(k => `<span class="keyword-tag">${k}</span>`).join('')}
             </div>
