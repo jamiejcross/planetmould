@@ -71,6 +71,8 @@ body { font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display"
   padding: 0 18px;
   line-height: 1.6;
   color: #000;
+  font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display",
+          "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
 .page-header { margin-top: 48px; margin-bottom: 32px; }
@@ -93,7 +95,6 @@ body { font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display"
   color: #000 !important;
   border-radius: 0;
   cursor: pointer;
-  font-family: var(--font);
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -107,7 +108,7 @@ body { font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display"
   background: #fff;
   color: #000;
   border-radius: 0;
-  font-family: var(--font);
+
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -123,7 +124,8 @@ body { font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display"
 }
 
 /* 5. NEWS WIRE ITEMS */
-#newsContainer { display: flex; flex-direction: column; gap: 40px; margin-bottom: 64px; }
+#newsContainer { display: flex; flex-direction: column; gap: 40px; margin-bottom: 64px; font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display",
+          "Helvetica Neue", Helvetica, Arial, sans-serif}
 
 .news-item {
   padding-top: 40px;
