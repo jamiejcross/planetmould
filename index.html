@@ -41,7 +41,7 @@
     margin-top: 10px;
     padding-bottom: 2px;
     border-bottom: 2px #666 solid;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 
   /* AI BADGE - plain text label */
@@ -279,12 +279,12 @@
         const titlePrefix = isJournalSource(item.source) ? '<strong>New Research:</strong> ' : '';
 
         html += `
-          <div class="news-item>
+          <div class="news-item">
             <div class="news-meta">
               <span><strong>Published:</strong> ${displayDate}</span><Br>
               <span><strong>Source:</strong> ${item.source}</span><Br>
               </div>
-            <h2 class="news-title"><a href="${item.url}" target="_blank">${item.title}</a></h2>
+            <h2 class="news-title">${item.title}</h2>
             <div class="news-keywords">
               ${(item.keywords || []).slice(0, 3).map(k => `<span class="keyword-tag">${k}</span>`).join('')}
             </div>
