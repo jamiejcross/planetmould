@@ -1,7 +1,8 @@
 /* 1. GLOBAL RESET & VARIABLES (MATCHED TO MAIN SITE) */
 * { box-sizing: border-box; }
 html, body { height: 100%; margin: 0; background: #fff; }
-body { font-family: var(--font); }
+body { font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display",
+          "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 :root {
   --blue: #000000;
@@ -68,7 +69,6 @@ body { font-family: var(--font); }
   margin-left: auto;
   margin-right: auto;
   padding: 0 18px;
-  font-family: var(--font);
 }
 
 .page-header { margin-top: 48px; margin-bottom: 32px; }
@@ -145,8 +145,6 @@ body { font-family: var(--font); }
 }
 
 .field-metadata {
-    font-family: "Neue Haas Grotesk Display Pro", "Neue Haas Grotesk Display",
-          "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.75rem;
     background: #f0f0f0;
     padding: 8px 12px;
