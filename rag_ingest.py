@@ -170,14 +170,17 @@ def ingest_articles(rebuild=False, incremental=True):
 
     # Load custom sources (user-curated papers, notes, field observations)
     if os.path.exists(CUSTOM_SOURCES_FILE):
-        with open(CUSTOM_SOURCES_FILE, 'r', encoding='utf-8') as f:
-            custom = json.load(f)
-        for a in custom:
-            # Ensure custom sources have a category
-            if not a.get('category'):
-                a['category'] = 'custom'
-            articles[a.get('url', a.get('title', ''))] = a
-        print(f"  Loaded {len(custom)} custom sources from {CUSTOM_SOURCES_FILE}")
+        try:
+            with open(CUSTOM_SOURCES_FILE, 'r', encoding='utf-8') as f:
+                custom = json.load(f)
+            for a in custom:
+                # Ensure custom sources have a category
+                if not a.get('category'):
+                    a['category'] = 'custom'
+                articles[a.get('url', a.get('title', ''))] = a
+            print(f"  Loaded {len(custom)} custom sources from {CUSTOM_SOURCES_FILE}")
+        except (json.JSONDecodeError, Exception) as e:
+            print(f"  ⚠ Skipping {CUSTOM_SOURCES_FILE}: {e}")
 
     if not articles:
         print("  No articles found. Nothing to ingest.")
