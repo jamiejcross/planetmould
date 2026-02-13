@@ -33,6 +33,14 @@ body { font-family: var(--font); }
   white-space: nowrap;
 }
 
+
+.AI-HL-PR-logo {
+  height: 50px;
+  width: 334px;
+  display: block; /* Ensures it behaves correctly as a block element */
+  object-fit: contain; /* Prevents the image from stretching if the aspect ratio differs */
+}
+
 .links {
   margin-left: auto;
   display: flex;
