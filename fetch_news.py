@@ -132,6 +132,46 @@ def resolve_pii_to_doi(pii, elsevier_key):
         print(f"  Elsevier API error for PII {pii}: {e}")
     return None
 
+def resolve_title_to_doi(title):
+    """Resolve an article title to a DOI via CrossRef free API. No key needed."""
+    try:
+        url = "https://api.crossref.org/works"
+        params = {'query.bibliographic': title, 'rows': 1}
+        headers = {'User-Agent': 'MouldwireBot/1.0 (mailto:news@planetmould.com)'}
+        resp = requests.get(url, params=params, headers=headers, timeout=15)
+        if resp.status_code == 200:
+            items = resp.json().get('message', {}).get('items', [])
+            if items:
+                candidate = items[0]
+                candidate_title = candidate.get('title', [''])[0].lower()
+                # Verify the match is close enough (prevent false positives)
+                if _titles_match(title.lower(), candidate_title):
+                    doi = candidate.get('DOI', '')
+                    # Skip supplementary material DOIs (e.g. .s001, .s002)
+                    if doi and not re.search(r'\.s\d{3}$', doi):
+                        return doi
+    except Exception as e:
+        print(f"  CrossRef error for title lookup: {e}")
+    return None
+
+def _titles_match(a, b):
+    """Check if two titles are similar enough to be the same paper.
+    Handles truncated titles (RSS feeds often cut titles short)."""
+    def norm(t):
+        return re.sub(r'[^a-z0-9 ]', '', t.lower()).strip()
+    na, nb = norm(a), norm(b)
+    if not na or not nb:
+        return False
+    # Check if one title is a prefix/subset of the other (handles truncation)
+    if na in nb or nb in na:
+        return True
+    # Check word overlap relative to the shorter title
+    words_a, words_b = set(na.split()), set(nb.split())
+    if not words_a or not words_b:
+        return False
+    overlap = len(words_a & words_b) / min(len(words_a), len(words_b))
+    return overlap > 0.75
+
 def fetch_abstract_semantic_scholar(doi, api_key=None):
     """Fetch abstract from Semantic Scholar. Authenticated calls get higher rate limits."""
     try:
@@ -206,6 +246,9 @@ def scrape_abstract_from_page(url):
 
         # Strategy 2: Look for common abstract containers in the HTML
         abstract_patterns = [
+            # ScienceDirect (must be before generic abstract patterns)
+            r'<div[^>]*class="[^"]*abstract author"[^>]*>(.*?)</div>',
+            r'<div[^>]*class="[^"]*abstracts"[^>]*>(.*?)</div>\s*</div>',
             # MDPI, Frontiers
             r'<div[^>]*class="[^"]*abstract[^"]*"[^>]*>(.*?)</div>',
             # PLOS
@@ -262,12 +305,14 @@ def enrich_abstracts(articles):
         # Skip articles that already have good excerpts
         if not is_thin_excerpt(article.get('excerpt', '')):
             continue
-        # Skip articles already enriched in a previous run
+        # Retry: if excerpt is still thin despite a previous enrichment attempt,
+        # clear the old source flag so we try again (APIs may have caught up)
         if article.get('abstract_source'):
-            skipped_count += 1
-            continue
+            print(f"  ↻ Retrying (still thin): {article.get('title', '')[:50]}...")
+            del article['abstract_source']
 
         url = article.get('url', '')
+        title = article.get('title', '')
         doi = extract_doi(url)
 
         # For ScienceDirect, resolve PII to DOI via Elsevier API
@@ -276,7 +321,13 @@ def enrich_abstracts(articles):
             if pii:
                 doi = resolve_pii_to_doi(pii, elsevier_key)
                 if doi:
-                    print(f"  Resolved PII {pii} → DOI {doi}")
+                    print(f"  Resolved PII → DOI (Elsevier): {doi}")
+
+        # Fallback: resolve title to DOI via CrossRef (free, no key needed)
+        if not doi and title:
+            doi = resolve_title_to_doi(title)
+            if doi:
+                print(f"  Resolved title → DOI (CrossRef): {doi}")
 
         if not doi:
             # No DOI — try scraping the page directly as last resort
@@ -285,8 +336,10 @@ def enrich_abstracts(articles):
                 article['excerpt'] = abstract[:2000]
                 article['abstract_source'] = 'web_scrape'
                 enriched_count += 1
-                print(f"  ✅ Enriched (no DOI, scraped): {article['title'][:50]}...")
+                print(f"  ✅ Enriched (scraped, no DOI): {title[:50]}...")
                 time.sleep(0.3)
+            else:
+                print(f"  ⚠ No DOI or abstract found: {title[:50]}...")
             continue
 
         # Try Semantic Scholar first, then OpenAlex, then scrape the page
@@ -303,7 +356,9 @@ def enrich_abstracts(articles):
             article['excerpt'] = abstract[:2000]
             article['abstract_source'] = source
             enriched_count += 1
-            print(f"  ✅ Enriched: {article['title'][:50]}... ({source})")
+            print(f"  ✅ Enriched: {title[:50]}... ({source})")
+        else:
+            print(f"  ⚠ DOI found ({doi}) but no abstract from any source: {title[:50]}...")
 
         # Polite delay between API calls / page fetches
         time.sleep(0.3)
