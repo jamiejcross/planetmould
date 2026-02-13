@@ -104,10 +104,12 @@ def is_relevant(title, excerpt, source):
 
 def extract_doi(url):
     """Extract DOI from article URL. Works for Frontiers, ASM, Wiley, ACS, Nature, MDPI, PLOS."""
-    match = re.search(r'(10\.\d{4,9}/[^\s?#&]+)', url)
+    match = re.search(r'(10\.\d{4,9}/[^\s"\'<>]+)', url)
     if match:
-        return match.group(1).rstrip('.')
+        return match.group(1).rstrip(' .)')
     return None
+
+
 
 def extract_pii(url):
     """Extract PII from ScienceDirect URLs."""
@@ -229,6 +231,8 @@ def scrape_abstract_from_page(url):
 
         html = resp.text
 
+        MIN_ABSTRACT_LEN = 100 # ← Add this near the top of the function
+
         # Strategy 1: Look for <meta name="description"> or <meta property="og:description">
         # These often contain the abstract on publisher pages
         meta_patterns = [
@@ -242,7 +246,7 @@ def scrape_abstract_from_page(url):
             if match:
                 text = re.sub('<[^<]+?>', '', match.group(1)).strip()
                 # Only accept if it's substantial (not just a journal tagline)
-                if len(text) > 150:
+                if len(text) > MIN_ABSTRACT_LEN: 
                     return text[:2000]
 
         # Strategy 2: Look for common abstract containers in the HTML
@@ -269,7 +273,7 @@ def scrape_abstract_from_page(url):
                 text = re.sub('<[^<]+?>', '', match.group(1)).strip()
                 # Remove "Abstract" heading if present
                 text = re.sub(r'^(?:Abstract|ABSTRACT|Summary|SUMMARY)[:\s]*', '', text).strip()
-                if len(text) > 150:
+                if len(text) > MIN_ABSTRACT_LEN:
                     return text[:2000]
 
     except Exception as e:
@@ -296,9 +300,10 @@ def is_thin_excerpt(excerpt):
 
 def enrich_abstracts(articles):
     """Enrich articles that have thin excerpts with real abstracts from academic APIs."""
-    ss_key = os.getenv('SS2_KEY')
-    openalex_key = os.getenv('OPENALEX_KEY')
-    elsevier_key = os.getenv('ELSEVIER_KEY')
+        export SS2_KEY="your_semantic_scholar_key"
+        export OPENALEX_KEY="your_openalex_key"
+        export ELSEVIER_KEY="your_elsevier_key"
+        python fetch_news.py
     enriched_count = 0
     skipped_count = 0
 
@@ -380,20 +385,31 @@ def enrich_abstracts(articles):
                 'category': article.get('category', ''),
                 'pubDate': article.get('pubDate', ''),
             })
-    if missing:
-        with open('missing_abstracts.json', 'w', encoding='utf-8') as f:
-            json.dump(missing, f, indent=2, ensure_ascii=False)
-        with open('missing_abstracts.csv', 'w', encoding='utf-8', newline='') as f:
-            writer = csv.DictWriter(f, fieldnames=['doi', 'title', 'url', 'category', 'pubDate'])
-            writer.writeheader()
-            writer.writerows(missing)
-        print(f"\n📋 Exported {len(missing)} articles still missing abstracts → missing_abstracts.json / .csv")
-    else:
-        print("\n✅ All articles have abstracts — no missing manifest needed.")
-        # Clean up old manifests if they exist
-        for f in ('missing_abstracts.json', 'missing_abstracts.csv'):
-            if os.path.exists(f):
-                os.remove(f)
+if missing:
+    with open('missing_abstracts.json', 'w', encoding='utf-8') as f:
+        json.dump(missing, f, indent=2, ensure_ascii=False)
+    with open('missing_abstracts.csv', 'w', encoding='utf-8', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=['doi', 'title', 'url', 'category', 'pubDate'])
+        writer.writeheader()
+        writer.writerows(missing)
+    print(f"\n📋 Exported {len(missing)} articles still missing abstracts → missing_abstracts.json / .csv")
+else:
+    print("\n✅ All articles have abstracts — no missing manifest needed.")
+    # Only delete if there are truly no missing ones
+    for f in ('missing_abstracts.json', 'missing_abstracts.csv'):
+        if os.path.exists(f):
+            os.remove(f)
+            if not doi:
+    print(f" ⚠ No DOI for: {title[:60]} ({url})")
+        # After Semantic Scholar
+        if not abstract:
+            print(f"   – No abstract from Semantic Scholar for {doi}")
+        # After OpenAlex
+        if not abstract:
+            print(f"   – No abstract from OpenAlex for {doi}")
+        # After scrape
+        if not abstract:
+            print(f"   – No abstract from scraping for {url[:60]}")
 
 
 def run_fetcher():

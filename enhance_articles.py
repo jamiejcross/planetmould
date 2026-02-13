@@ -255,6 +255,18 @@ def main():
             existing_enhanced = {}
 
     # Identify articles needing enhancement:
+    # 0. check for thin ones that were previously enhanced with a weak signal, but now have a real abstract — these should be re-enhanced to replace the weak summary with a proper one. This way we can catch new articles and also improve summaries as more data becomes available.
+
+    def _is_thin(excerpt):
+        """Quick check if excerpt is metadata-only."""
+        if not excerpt or len(excerpt) < 250:
+            return True
+        if re.match(r'^Publication date:', excerpt, re.IGNORECASE):
+            return True
+        if excerpt.strip().endswith('...') and len(excerpt) < 150:
+            return True
+        return False
+    
     # 1. New articles not yet in the archive
     # 2. Previously enhanced articles whose summary was a WEAK SIGNAL
     #    AND whose excerpt has since been enriched with a real abstract
@@ -271,15 +283,13 @@ def main():
             return True  # Was weak, now has real abstract — re-enhance
         return False
 
-    def _is_thin(excerpt):
-        """Quick check if excerpt is metadata-only."""
-        if not excerpt or len(excerpt) < 100:
-            return True
-        if re.match(r'^Publication date:', excerpt, re.IGNORECASE):
-            return True
-        if excerpt.strip().endswith('...') and len(excerpt) < 150:
-            return True
-        return False
+ # If the article has an abstract_source but the excerpt is still thin,
+# clear it so we can retry enrichment.
+        if article.get('abstract_source') and _is_thin(article.get('excerpt', '')):
+            print(f" ↻ Retrying (still thin): {article.get('title', '')[:50]}...")
+            article.pop('abstract_source', None)
+            article['excerpt'] = ''
+
 
     new_articles = [a for a in articles_data if needs_enhancement(a)]
     retry_count = sum(1 for a in new_articles if a.get('url', '') in existing_enhanced)
