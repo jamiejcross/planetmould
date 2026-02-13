@@ -19,3 +19,8 @@ scikit-learn>=1.3.0  # Recommended if you want to scale up keyword extraction
 # RAG (Retrieval-Augmented Generation)
 chromadb>=0.5.0
 sentence-transformers>=3.0.0
+
+# PDF enrichment (Google Drive → Claude)
+google-api-python-client>=2.100.0
+google-auth>=2.23.0
+PyPDF2>=3.0.0

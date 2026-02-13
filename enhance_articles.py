@@ -263,7 +263,9 @@ def main():
         if url not in existing_enhanced:
             return True  # New article
         prev = existing_enhanced[url]
-        was_weak = 'WEAK SIGNAL' in prev.get('summary', '')
+        prev_summary = prev.get('summary', '')
+        was_weak = ('WEAK SIGNAL' in prev_summary
+                    or 'hot off the press' in prev_summary)
         now_has_abstract = not _is_thin(article.get('excerpt', ''))
         if was_weak and now_has_abstract:
             return True  # Was weak, now has real abstract — re-enhance
@@ -335,7 +337,10 @@ def main():
             "Do NOT merge, blend, or attribute related findings to the source. "
             "Your factual summary sentences must describe ONLY the source abstract.\n"
             "2. WEAK SIGNAL PROTOCOL: If the source text contains only metadata (author names, journal info, publication date) "
-            "with no substantive abstract or findings, write 2-3 sentences only. State clearly that source data is limited. "
+            "with no substantive abstract or findings, output ONLY the following message and nothing else:\n"
+            "\"This publication is still hot off the press. That means the abstract is not yet indexed by global research "
+            "catalogues like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might has to say about life on Planet Mould "
+            "you'll just have to read it yourself!\"\n"
             "Do not attempt a full summary from a title alone. "
             "Related research context does NOT substitute for missing source data.\n"
             "3. NO ACRONYMS OR ABBREVIATIONS: Write every term in full, every time. "

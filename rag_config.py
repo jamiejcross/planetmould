@@ -37,3 +37,8 @@ HF_TOKEN = os.getenv('HF_TOKEN', '')
 
 # --- Categories for metadata filtering ---
 VALID_CATEGORIES = ['science', 'health', 'indoor', 'media', 'clinical', 'custom']
+
+# --- Google Drive PDF Enrichment ---
+GDRIVE_PDF_FOLDER_ID = os.getenv('GDRIVE_PDF_FOLDER_ID', '')
+MISSING_ABSTRACTS_JSON = 'missing_abstracts.json'
+MISSING_ABSTRACTS_CSV = 'missing_abstracts.csv'
