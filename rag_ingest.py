@@ -27,7 +27,7 @@ import chromadb
 from chromadb.config import Settings
 
 from rag_config import (
-    CHROMA_DIR, NEWS_FILE, ENHANCED_FILE,
+    CHROMA_DIR, NEWS_FILE, ENHANCED_FILE, CUSTOM_SOURCES_FILE,
     COLLECTION_ARTICLES, COLLECTION_ABSTRACTS,
     EMBEDDING_MODEL, MAX_CHUNK_LENGTH, CHUNK_OVERLAP
 )
@@ -167,6 +167,17 @@ def ingest_articles(rebuild=False, incremental=True):
             # Enhanced articles overwrite raw (richer content)
             articles[a.get('url', '')] = a
         print(f"  Loaded {len(enhanced)} articles from {ENHANCED_FILE}")
+
+    # Load custom sources (user-curated papers, notes, field observations)
+    if os.path.exists(CUSTOM_SOURCES_FILE):
+        with open(CUSTOM_SOURCES_FILE, 'r', encoding='utf-8') as f:
+            custom = json.load(f)
+        for a in custom:
+            # Ensure custom sources have a category
+            if not a.get('category'):
+                a['category'] = 'custom'
+            articles[a.get('url', a.get('title', ''))] = a
+        print(f"  Loaded {len(custom)} custom sources from {CUSTOM_SOURCES_FILE}")
 
     if not articles:
         print("  No articles found. Nothing to ingest.")

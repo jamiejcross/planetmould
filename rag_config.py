@@ -12,6 +12,7 @@ import os
 CHROMA_DIR = os.path.join(os.path.dirname(__file__), 'chroma_db')
 NEWS_FILE = 'mould_news.json'
 ENHANCED_FILE = 'articles_enhanced.json'
+CUSTOM_SOURCES_FILE = 'custom_sources.json'
 
 # --- ChromaDB Collection Names ---
 COLLECTION_ARTICLES = 'mouldwire_articles'
@@ -35,4 +36,4 @@ HF_MODEL = os.getenv('HF_MODEL', 'meta-llama/Meta-Llama-3-8B-Instruct')
 HF_TOKEN = os.getenv('HF_TOKEN', '')
 
 # --- Categories for metadata filtering ---
-VALID_CATEGORIES = ['science', 'health', 'indoor', 'media', 'clinical']
+VALID_CATEGORIES = ['science', 'health', 'indoor', 'media', 'clinical', 'custom']

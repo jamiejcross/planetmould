@@ -174,6 +174,65 @@ def fetch_abstract_openalex(doi, api_key):
         print(f"  OpenAlex error for {doi}: {e}")
     return None
 
+def scrape_abstract_from_page(url):
+    """Last-resort fallback: scrape the abstract directly from the paper's web page.
+    Works for open-access publishers (MDPI, Frontiers, PLOS, ASM, Wiley, Nature, ACS, ScienceDirect)."""
+    try:
+        headers = {
+            'User-Agent': 'MouldwireBot/1.0 (academic research aggregator; +https://news.planetmould.com)',
+            'Accept': 'text/html'
+        }
+        resp = requests.get(url, headers=headers, timeout=15, allow_redirects=True)
+        if resp.status_code != 200:
+            return None
+
+        html = resp.text
+
+        # Strategy 1: Look for <meta name="description"> or <meta property="og:description">
+        # These often contain the abstract on publisher pages
+        meta_patterns = [
+            r'<meta\s+name=["\'](?:dc\.description|DC\.Description|description)["\'].*?content=["\'](.*?)["\']',
+            r'<meta\s+property=["\']og:description["\'].*?content=["\'](.*?)["\']',
+            r'<meta\s+content=["\'](.*?)["\']\s+name=["\']description["\']',
+            r'<meta\s+content=["\'](.*?)["\']\s+property=["\']og:description["\']',
+        ]
+        for pattern in meta_patterns:
+            match = re.search(pattern, html, re.IGNORECASE | re.DOTALL)
+            if match:
+                text = re.sub('<[^<]+?>', '', match.group(1)).strip()
+                # Only accept if it's substantial (not just a journal tagline)
+                if len(text) > 150:
+                    return text[:2000]
+
+        # Strategy 2: Look for common abstract containers in the HTML
+        abstract_patterns = [
+            # MDPI, Frontiers
+            r'<div[^>]*class="[^"]*abstract[^"]*"[^>]*>(.*?)</div>',
+            # PLOS
+            r'<div[^>]*id="[^"]*abstract[^"]*"[^>]*>(.*?)</div>',
+            # Nature
+            r'<div[^>]*id="Abs1-content"[^>]*>(.*?)</div>',
+            # Wiley
+            r'<section[^>]*class="[^"]*abstract[^"]*"[^>]*>(.*?)</section>',
+            # ASM journals
+            r'<div[^>]*class="[^"]*abstractSection[^"]*"[^>]*>(.*?)</div>',
+            # Generic <abstract> tag (some XML feeds)
+            r'<abstract[^>]*>(.*?)</abstract>',
+        ]
+        for pattern in abstract_patterns:
+            match = re.search(pattern, html, re.IGNORECASE | re.DOTALL)
+            if match:
+                text = re.sub('<[^<]+?>', '', match.group(1)).strip()
+                # Remove "Abstract" heading if present
+                text = re.sub(r'^(?:Abstract|ABSTRACT|Summary|SUMMARY)[:\s]*', '', text).strip()
+                if len(text) > 150:
+                    return text[:2000]
+
+    except Exception as e:
+        print(f"  Scrape error for {url[:60]}: {e}")
+    return None
+
+
 def is_thin_excerpt(excerpt):
     """Check if an excerpt is metadata-only and lacks real abstract content."""
     if not excerpt or len(excerpt) < 100:
@@ -220,14 +279,25 @@ def enrich_abstracts(articles):
                     print(f"  Resolved PII {pii} → DOI {doi}")
 
         if not doi:
+            # No DOI — try scraping the page directly as last resort
+            abstract = scrape_abstract_from_page(url)
+            if abstract:
+                article['excerpt'] = abstract[:2000]
+                article['abstract_source'] = 'web_scrape'
+                enriched_count += 1
+                print(f"  ✅ Enriched (no DOI, scraped): {article['title'][:50]}...")
+                time.sleep(0.3)
             continue
 
-        # Try Semantic Scholar first, then OpenAlex
+        # Try Semantic Scholar first, then OpenAlex, then scrape the page
         abstract = fetch_abstract_semantic_scholar(doi, ss_key)
         source = 'semantic_scholar'
         if not abstract:
             abstract = fetch_abstract_openalex(doi, openalex_key)
             source = 'openalex'
+        if not abstract:
+            abstract = scrape_abstract_from_page(url)
+            source = 'web_scrape'
 
         if abstract:
             article['excerpt'] = abstract[:2000]
@@ -235,8 +305,8 @@ def enrich_abstracts(articles):
             enriched_count += 1
             print(f"  ✅ Enriched: {article['title'][:50]}... ({source})")
 
-        # Polite delay between API calls
-        time.sleep(0.2)
+        # Polite delay between API calls / page fetches
+        time.sleep(0.3)
 
     print(f"Abstract enrichment: {enriched_count} enriched, {skipped_count} already enriched, {len(articles) - enriched_count - skipped_count} unchanged.")
 
