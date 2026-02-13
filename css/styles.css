@@ -34,7 +34,7 @@ body { font-family: var(--font); }
 }
 
 .AI-HL-PR-logo {
-  height: 150px; /* Master height */
+  height: 70px; /* Master height */
   width: auto;
   display: block; /* Ensures it behaves correctly as a block element */
   object-fit: contain; /* Prevents the image from stretching if the aspect ratio differs */
