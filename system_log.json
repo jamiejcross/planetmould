@@ -1,6 +1,71 @@
 {
   "entries": [
     {
+      "date": "2026-02-13",
+      "type": "engine",
+      "event": "Inference engine updated to claude-haiku-4-5-20250315.",
+      "_meta": {
+        "model": "claude-haiku-4-5-20250315",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-13",
+      "type": "engine",
+      "event": "Summary structure updated to 5 to 7 sentences.",
+      "_meta": {
+        "model": "claude-haiku-4-5-20250315",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-13",
+      "type": "engine",
+      "event": "Readability layer added: specialist jargon mapped to plain language.",
+      "_meta": {
+        "model": "claude-haiku-4-5-20250315",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-13",
+      "type": "engine",
+      "event": "Acronym expansion dictionary updated (100 patterns).",
+      "_meta": {
+        "model": "claude-haiku-4-5-20250315",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-13",
+      "type": "engine",
+      "event": "Readability instructions embedded in inference prompt for non-specialist audiences.",
+      "_meta": {
+        "model": "claude-haiku-4-5-20250315",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-13",
+      "type": "daily",
+      "event": "8 new articles collected today."
+    },
+    {
       "date": "2026-02-12",
       "type": "engine",
       "event": "Inference engine updated to Meta-Llama-3-8B-Instruct.",
@@ -299,6 +364,66 @@
       "event": "Readability instructions embedded in inference prompt for non-specialist audiences.",
       "_meta": {
         "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-12",
+      "type": "engine",
+      "event": "Inference engine updated to claude-haiku-4-5-20250315.",
+      "_meta": {
+        "model": "claude-haiku-4-5-20250315",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-12",
+      "type": "engine",
+      "event": "Summary structure updated to 5 to 7 sentences.",
+      "_meta": {
+        "model": "claude-haiku-4-5-20250315",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-12",
+      "type": "engine",
+      "event": "Readability layer added: specialist jargon mapped to plain language.",
+      "_meta": {
+        "model": "claude-haiku-4-5-20250315",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-12",
+      "type": "engine",
+      "event": "Acronym expansion dictionary updated (100 patterns).",
+      "_meta": {
+        "model": "claude-haiku-4-5-20250315",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-02-12",
+      "type": "engine",
+      "event": "Readability instructions embedded in inference prompt for non-specialist audiences.",
+      "_meta": {
+        "model": "claude-haiku-4-5-20250315",
         "sentence_spec": "5 to 7",
         "has_jargon": true,
         "has_readability": true,
@@ -683,12 +808,38 @@
         "openalex": 3,
         "none": 14
       }
+    },
+    {
+      "timestamp": "2026-02-12T23:37:50.345128+00:00",
+      "date": "2026-02-12",
+      "total_articles": 30,
+      "new_today": 10,
+      "total_enhanced": 30,
+      "new_enhanced": 30,
+      "enrichment_sources": {
+        "semantic_scholar": 13,
+        "openalex": 3,
+        "none": 14
+      }
+    },
+    {
+      "timestamp": "2026-02-13T00:01:51.971490+00:00",
+      "date": "2026-02-13",
+      "total_articles": 30,
+      "new_today": 8,
+      "total_enhanced": 30,
+      "new_enhanced": 30,
+      "enrichment_sources": {
+        "semantic_scholar": 13,
+        "openalex": 3,
+        "none": 14
+      }
     }
   ],
   "summary": {
     "total_articles": 30,
     "total_enhanced": 30,
-    "last_updated": "2026-02-12T22:07:41.714877+00:00",
+    "last_updated": "2026-02-13T00:01:51.970973+00:00",
     "enrichment_sources": {
       "semantic_scholar": 13,
       "openalex": 3,
