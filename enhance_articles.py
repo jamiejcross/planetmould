@@ -272,6 +272,14 @@ def main():
     #    AND whose excerpt has since been enriched with a real abstract
     def needs_enhancement(article):
         url = article.get('url', '')
+
+        # If the article has an abstract_source but the excerpt is still thin,
+        # clear it so we can retry enrichment.
+        if article.get('abstract_source') and _is_thin(article.get('excerpt', '')):
+            print(f"  ↻ Retrying (still thin): {article.get('title', '')[:50]}...")
+            article.pop('abstract_source', None)
+            article['excerpt'] = ''
+
         if url not in existing_enhanced:
             return True  # New article
         prev = existing_enhanced[url]
@@ -282,13 +290,6 @@ def main():
         if was_weak and now_has_abstract:
             return True  # Was weak, now has real abstract — re-enhance
         return False
-
- # If the article has an abstract_source but the excerpt is still thin,
-# clear it so we can retry enrichment.
-        if article.get('abstract_source') and _is_thin(article.get('excerpt', '')):
-            print(f" ↻ Retrying (still thin): {article.get('title', '')[:50]}...")
-            article.pop('abstract_source', None)
-            article['excerpt'] = ''
 
 
     new_articles = [a for a in articles_data if needs_enhancement(a)]

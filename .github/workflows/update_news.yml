@@ -43,7 +43,12 @@ jobs:
         SS2_KEY: ${{ secrets.SS2_KEY }}
         OPENALEX_KEY: ${{ secrets.OPENALEX_KEY }}
         ELSEVIER_KEY: ${{ secrets.ELSEVIER_KEY }}
-      run: python fetch_news.py
+      run: |
+        echo "Checking API keys..."
+        [ -n "$SS2_KEY" ] && echo "  SS2_KEY: SET" || echo "  SS2_KEY: MISSING"
+        [ -n "$OPENALEX_KEY" ] && echo "  OPENALEX_KEY: SET" || echo "  OPENALEX_KEY: MISSING"
+        [ -n "$ELSEVIER_KEY" ] && echo "  ELSEVIER_KEY: SET" || echo "  ELSEVIER_KEY: MISSING"
+        python fetch_news.py
     
     - name: Enrich from manually uploaded PDFs
       env:
