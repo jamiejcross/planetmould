@@ -45,6 +45,13 @@ jobs:
         ELSEVIER_KEY: ${{ secrets.ELSEVIER_KEY }}
       run: python fetch_news.py
     
+    - name: Enrich from manually uploaded PDFs
+      env:
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        GDRIVE_CREDENTIALS: ${{ secrets.GDRIVE_CREDENTIALS }}
+        GDRIVE_PDF_FOLDER_ID: ${{ secrets.GDRIVE_PDF_FOLDER_ID }}
+      run: python enrich_from_pdfs.py
+
     - name: Ingest articles into RAG vector store
       run: python rag_ingest.py --incremental
 
@@ -64,6 +71,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add mould_news.json articles_enhanced.json system_log.json
+        git add missing_abstracts.json missing_abstracts.csv 2>/dev/null || true
         # Only commit if there are actual changes in the data
         git diff --quiet && git diff --staged --quiet || (git commit -m "Update research feed: $(date '+%Y-%m-%d %H:%M UTC')" && git pull --rebase && git push)
     

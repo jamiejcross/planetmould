@@ -1,5 +1,6 @@
 import feedparser
 import json
+import csv
 import datetime
 import re
 import time
@@ -364,6 +365,35 @@ def enrich_abstracts(articles):
         time.sleep(0.3)
 
     print(f"Abstract enrichment: {enriched_count} enriched, {skipped_count} already enriched, {len(articles) - enriched_count - skipped_count} unchanged.")
+
+    # Export manifest of articles still missing abstracts (for manual PDF enrichment)
+    missing = []
+    for article in articles:
+        if is_thin_excerpt(article.get('excerpt', '')):
+            doi = extract_doi(article.get('url', ''))
+            if not doi:
+                doi = article.get('doi', '')  # May have been resolved earlier
+            missing.append({
+                'doi': doi or '',
+                'title': article.get('title', ''),
+                'url': article.get('url', ''),
+                'category': article.get('category', ''),
+                'pubDate': article.get('pubDate', ''),
+            })
+    if missing:
+        with open('missing_abstracts.json', 'w', encoding='utf-8') as f:
+            json.dump(missing, f, indent=2, ensure_ascii=False)
+        with open('missing_abstracts.csv', 'w', encoding='utf-8', newline='') as f:
+            writer = csv.DictWriter(f, fieldnames=['doi', 'title', 'url', 'category', 'pubDate'])
+            writer.writeheader()
+            writer.writerows(missing)
+        print(f"\n📋 Exported {len(missing)} articles still missing abstracts → missing_abstracts.json / .csv")
+    else:
+        print("\n✅ All articles have abstracts — no missing manifest needed.")
+        # Clean up old manifests if they exist
+        for f in ('missing_abstracts.json', 'missing_abstracts.csv'):
+            if os.path.exists(f):
+                os.remove(f)
 
 
 def run_fetcher():

@@ -14,3 +14,13 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+# Credentials (NEVER commit)
+*.json.bak
+plucky-*.json
+*-credentials*.json
+*-service-account*.json
+
+# Temp
+plan.md
+$
