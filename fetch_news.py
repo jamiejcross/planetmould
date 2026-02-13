@@ -300,10 +300,8 @@ def is_thin_excerpt(excerpt):
 
 def enrich_abstracts(articles):
     """Enrich articles that have thin excerpts with real abstracts from academic APIs."""
-        export SS2_KEY="your_semantic_scholar_key"
-        export OPENALEX_KEY="your_openalex_key"
-        export ELSEVIER_KEY="your_elsevier_key"
-        python fetch_news.py
+    ss_key = os.getenv('SS2_KEY') openalex_key = os.getenv('OPENALEX_KEY') elsevier_key = os.getenv('ELSEVIER_KEY')
+
     enriched_count = 0
     skipped_count = 0
 
