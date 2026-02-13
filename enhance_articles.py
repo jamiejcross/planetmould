@@ -254,9 +254,34 @@ def main():
             print(f"Warning: Could not load existing enhanced articles: {e}")
             existing_enhanced = {}
 
-    # Only enhance articles not already in the archive
-    new_articles = [a for a in articles_data if a['url'] not in existing_enhanced]
-    print(f"Found {len(new_articles)} new articles to enhance ({len(articles_data) - len(new_articles)} already in archive).")
+    # Identify articles needing enhancement:
+    # 1. New articles not yet in the archive
+    # 2. Previously enhanced articles whose summary was a WEAK SIGNAL
+    #    AND whose excerpt has since been enriched with a real abstract
+    def needs_enhancement(article):
+        url = article.get('url', '')
+        if url not in existing_enhanced:
+            return True  # New article
+        prev = existing_enhanced[url]
+        was_weak = 'WEAK SIGNAL' in prev.get('summary', '')
+        now_has_abstract = not _is_thin(article.get('excerpt', ''))
+        if was_weak and now_has_abstract:
+            return True  # Was weak, now has real abstract — re-enhance
+        return False
+
+    def _is_thin(excerpt):
+        """Quick check if excerpt is metadata-only."""
+        if not excerpt or len(excerpt) < 100:
+            return True
+        if re.match(r'^Publication date:', excerpt, re.IGNORECASE):
+            return True
+        if excerpt.strip().endswith('...') and len(excerpt) < 150:
+            return True
+        return False
+
+    new_articles = [a for a in articles_data if needs_enhancement(a)]
+    retry_count = sum(1 for a in new_articles if a.get('url', '') in existing_enhanced)
+    print(f"Found {len(new_articles)} articles to enhance ({len(new_articles) - retry_count} new, {retry_count} retrying after abstract enrichment).")
 
     enhanced_articles = []
 
