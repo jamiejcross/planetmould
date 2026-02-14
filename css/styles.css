@@ -190,14 +190,15 @@ body { font-family: var(--font); }
 .ai-badge {
   display: inline-block;
   border: none;
-  background: #ffffff;
+  background: none;
   font-family: var(--font);
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   color: #3a3a3a;
 }
+
 
 /* AI badge dropdown container */
 .ai-dropdown {
@@ -212,7 +213,7 @@ body { font-family: var(--font); }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 10px;
+  padding: 0px 10px;
 }
 
 /* Remove the default disclosure triangle (Chrome/Safari) */
@@ -222,13 +223,14 @@ body { font-family: var(--font); }
 
 /* Add a + / − indicator on the right */
 .ai-dropdown > summary.ai-badge::after {
-  content: "+";
+  content: "";
   font-weight: 900;
   line-height: 1;
 }
 
 .ai-dropdown[open] > summary.ai-badge::after {
-  content: "−";
+  content: "Generated with Claude Opus 4.6";
+  font-weight: 200;
 }
 
 /* The dropdown panel */
