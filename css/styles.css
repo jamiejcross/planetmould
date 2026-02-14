@@ -84,9 +84,10 @@ body { font-family: var(--font); }
 
 .page-header .links{
     font-weight:  700;
-    font-style: normal
+    font-style: normal;
     text-decoration: underline;
-}
+    text-decoration-color: #000;
+ }
 
 
 /* 4. CONTROLS & SEARCH */
