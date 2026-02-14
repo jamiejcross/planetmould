@@ -152,8 +152,8 @@
 
     <p>Mouldwire is an open source project. You can follow the development, 
         view the 
-        <a href="https://github.com/jamiejcross/planetmould/blob/main/mould_news.json" target="_blank" rel="noopener">summaries</a> 
-        in raw format, examine the 
+        <a href="https://github.com/jamiejcross/planetmould/blob/main/mould_news.json" target="_blank" rel="noopener">raw summaries</a> 
+        , examine the 
       <a href="https://github.com/jamiejcross/planetmould/blob/main/prompt.txt" target="_blank" rel="noopener">prompt</a> 
       or contribute to the code on Github.
     </p> 
@@ -303,8 +303,11 @@
         const isLast = index === visible.length - 1;
         const displayDate = item.pubDate ? new Date(item.pubDate).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : 'Recent';
         let rawSummary = item.summary || item.excerpt || "";
-        let formattedSummary = rawSummary.length > 0 ? rawSummary : "No summary available for this wire.";
-        const titlePrefix = isJournalSource(item.source) ? '<strong>New Research:</strong> ' : '';
+        let formattedSummary = rawSummary.length > 0 ? rawSummary : "No summary available for this wire.";                         
+     if (isEnhanced) {
+        formattedSummary = formattedSummary.replace(/\r?\n\s*\r?\n/g, "<br><br>");
+    }
+         const titlePrefix = isJournalSource(item.source) ? '<strong>New Research:</strong> ' : '';
                 const excerptBlock = isEnhanced
           ? `
             <details class="ai-dropdown">
