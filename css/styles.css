@@ -10,13 +10,6 @@ body { font-family: var(--font); }
           "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.page-header .links {
-    font-weight:  700;
-    font-style: normal;
-    text-decoration: underline;
-}
-
-
 /* 2. NAVIGATION & HEADER (EXACT MATCH TO MAIN SITE) */
 .banner {
   width: 100%;
@@ -64,7 +57,8 @@ body { font-family: var(--font); }
   white-space: nowrap;
 }
 
-.links a:hover { text-decoration: bold; }
+.links a:hover { 
+  font-weight: 700px; }
 
 .links a + a::before {
   content: "\2022";
