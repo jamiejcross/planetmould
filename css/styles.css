@@ -49,16 +49,17 @@ body { font-family: var(--font); }
   justify-content: flex-end;
 }
 
-.links a {
+.links p a {
   color: var(--blue);
-  text-decoration: underline;
   font: inherit;
   padding-left: 12px;
   white-space: nowrap;
 }
 
-.links a:hover { 
-  font-weight: 700px; }
+.links p a:hover { 
+  text-decoration: underline;
+  font-weight: 700px;
+}
 
 .links a + a::before {
   content: "\2022";
