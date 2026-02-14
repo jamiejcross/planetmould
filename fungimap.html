@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body { font-family: "Courier New", Courier, monospace; background: #fff; color: #000; }
+    .node circle { fill: #000; stroke: #000; stroke-width: 1.5px; }
+    .node--highlight circle { fill: #000; r: 8; } /* Large Aspergillus nodes */
+    .node text { font-size: 11px; letter-spacing: 1px; }
+    .link { fill: none; stroke: #000; stroke-width: 0.5px; stroke-dasharray: 2,2; }
+    h2 { text-transform: uppercase; border-bottom: 1px solid #000; display: inline-block; }
+  </style>
+</head>
+<body>
+  <h2>Family: Trichocomaceae / Metabolic Mapping</h2>
+  <div id="tree-viz"></div>
+  <script>
+    const data = {
+      name: "Trichocomaceae",
+      children: [
+        {
+          name: "Aspergillaceae",
+          children: [
+            { name: "Aspergillus niger", highlight: true },
+            { name: "Aspergillus fumigatus", highlight: true },
+            { name: "Aspergillus flavus", highlight: true },
+            { name: "Penicillium", highlight: true }
+          ]
+        },
+        {
+          name: "Thermoascaceae",
+          children: [
+            { name: "Thermoascus" },
+            { name: "Paecilomyces" }
+          ]
+        },
+        {
+          name: "Trichocomaceae (sensu stricto)",
+          children: [
+            { name: "Trichocoma" },
+            { name: "Sclerocleista" }
+          ]
+        }
+      ]
+    };
+
+    const width = 900;
+    const height = 500;
+    const svg = d3.select("#tree-viz").append("svg")
+      .attr("width", width)
+      .attr("height", height)
+      .append("g")
+      .attr("transform", "translate(150,0)");
+
+    const tree = d3.tree().size([height, width - 400]);
+    const root = d3.hierarchy(data);
+    tree(root);
+
+    // Dotted links representing "metabolic entanglements"
+    svg.selectAll(".link")
+      .data(root.links())
+      .join("path")
+      .attr("class", "link")
+      .attr("d", d3.linkHorizontal().x(d => d.y).y(d => d.x));
+
+    const node = svg.selectAll(".node")
+      .data(root.descendants())
+      .join("g")
+      .attr("class", d => d.data.highlight ? "node node--highlight" : "node")
+      .attr("transform", d => `translate(${d.y},${d.x})`);
+
+    // Nodes for Aspergillus are larger to represent their "cultural moment"
+    node.append("circle").attr("r", d => d.data.highlight ? 6 : 3);
+
+    node.append("text")
+      .attr("dy", ".35em")
+      .attr("x", d => d.children ? -15 : 15)
+      .style("text-anchor", d => d.children ? "end" : "start")
+      .text(d => d.data.name);
+  </script>
+</body>
+</html>
