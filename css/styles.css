@@ -141,7 +141,7 @@ body { font-family: var(--font); }
 }
 .news-meta {
   display: flex; flex-direction: column; 
-  font-size: 14px; color: #333; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;
+  font-size: 16px; color: #3a3a3a; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;
 }
 
 .news-title { 
@@ -196,12 +196,12 @@ body { font-family: var(--font); }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: #000000;
+  color: #3a3a3a;
 }
 
 /* AI badge dropdown container */
 .ai-dropdown {
-  margin: 6px 0 0 0;
+  margin: 0px 0 0 0;
   padding: 0;
 }
 
