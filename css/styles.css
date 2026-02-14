@@ -82,6 +82,10 @@ body { font-family: var(--font); }
 .page-header h1 { font-size: 32px; font-weight: 700; margin: 0 0 12px 0; }
 .page-header p { font-size: 20px; line-height: 1.6; color: rgba(0,0,0,.75); }
 
+.page-header .links{
+    font-weight:  700;
+}
+
 /* 4. CONTROLS & SEARCH */
 .controls {
   border-bottom: 2px solid #000;
