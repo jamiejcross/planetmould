@@ -84,7 +84,10 @@ body { font-family: var(--font); }
 
 .page-header .links{
     font-weight:  700;
+    font-style: normal
+    text-decoration: underline;
 }
+
 
 /* 4. CONTROLS & SEARCH */
 .controls {
