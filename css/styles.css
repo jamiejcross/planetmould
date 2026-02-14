@@ -198,6 +198,51 @@ body { font-family: var(--font); }
   color: #000000;
 }
 
+/* AI badge dropdown container */
+.ai-dropdown {
+  margin: 6px 0 0 0;
+  padding: 0;
+}
+
+/* Make the summary (badge) behave like a control */
+.ai-dropdown > summary.ai-badge {
+  cursor: pointer;
+  list-style: none; /* helps in some browsers */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+}
+
+/* Remove the default disclosure triangle (Chrome/Safari) */
+.ai-dropdown > summary.ai-badge::-webkit-details-marker {
+  display: none;
+}
+
+/* Add a + / − indicator on the right */
+.ai-dropdown > summary.ai-badge::after {
+  content: "+";
+  font-weight: 900;
+  line-height: 1;
+}
+
+.ai-dropdown[open] > summary.ai-badge::after {
+  content: "−";
+}
+
+/* The dropdown panel */
+.ai-dropdown-panel {
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-left: 3px solid #000;
+}
+
+/* Avoid double spacing inside the panel */
+.ai-dropdown-panel .news-excerpt {
+  margin: 0;
+}
+
+
 /* FOOTER - EXACT MATCH TO MASTER */
 .footer-banner {
   width: 100%;
