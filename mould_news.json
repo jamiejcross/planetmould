@@ -4,7 +4,7 @@
     "source": "ScienceDirect Publication: Journal of Hazardous Materials",
     "excerpt": "The widespread use of polypropylene-based surgical masks during the COVID-19 pandemic has exacerbated environmental plastic pollution, necessitating sustainable degradation strategies. This study investigates the biodegradation potential of the endophytic fungus Aspergillus bridgerii on nonwoven polypropylene mask layers under both nutrient-rich (MSM broth) and soil microcosm conditions. A multidisciplinary approach combining weight loss measurements, FTIR-ATR spectral analysis, scanning electron microscopy (SEM), and gas chromatography-mass spectrometry (GC-MS) was employed to characterize physical, chemical, and biochemical changes in the polymer matrix. Results show that A. bridgerii induced significant degradation in both environments, with the highest weight loss % observed in MSM microcosms (20.38\u00a0\u00b1\u00a00.29\u202f%), indicating active fragmentation and partial mineralization. In soil microcosms, fungal inoculation led to the most advanced oxidation (SAUB CI up to \u223c4.6), extensive surface fragmentation, and the release of unique volatile organic compounds (VOCs), including DEHP (\u223c15\u202f% GC-MS area) and long-chain ketones. Surprisingly, this was accompanied by the lowest residual mask mass (9.48\u00a0\u00b1\u00a00.19\u202f%), suggesting enhanced mineralization in the nutrient-limited soil. SEM analysis further confirmed pronounced fiber degradation and biofilm formation. These findings underscore the role of fungal metabolism and environmental context in modulating polypropylene decay, supporting a multiple mechanistic process such as oxidative fragmentation followed by microbial assimilation. The integration of FTIR, SEM, and GC-MS provided robust evidence of mask polymer degradation and highlights the potential of Aspergillus bridgerii as a bioremediation agent for PPE waste.",
     "url": "https://www.sciencedirect.com/science/article/pii/S0304389426003018?dgcid=rss_sd_all",
-    "pubDate": "2026-02-13T14:58:37Z",
+    "pubDate": "2026-02-14T11:36:59Z",
     "category": "indoor",
     "abstract_source": "europepmc"
   },
@@ -13,7 +13,7 @@
     "source": "ScienceDirect Publication: Chemical Engineering Journal",
     "excerpt": "Publication date: 1 March 2026Source: Chemical Engineering Journal, Volume 531Author(s): Jialong He, Yanghong Liu, Chunyao Shang, Jiaheng Li, Tong Wu, Huiyuan Xie, Yu Dong, Kai Dong, Yingping Wang, Chen Xu",
     "url": "https://www.sciencedirect.com/science/article/pii/S1385894726015032?dgcid=rss_sd_all",
-    "pubDate": "2026-02-13T14:58:37Z",
+    "pubDate": "2026-02-14T11:36:59Z",
     "category": "indoor"
   },
   {
@@ -21,7 +21,7 @@
     "source": "ScienceDirect Publication: Bioresource Technology",
     "excerpt": "Publication date: April 2026Source: Bioresource Technology, Volume 446Author(s): Yingfei Sun, Yijiao Chang, Yuxuan Wang, Zuohong Chen, Zhu Liang, Jiao Chen, Bing Li, Yongcheng Wang, Xiao-yan Li, Lin Lin",
     "url": "https://www.sciencedirect.com/science/article/pii/S096085242600218X?dgcid=rss_sd_all",
-    "pubDate": "2026-02-13T14:58:36Z",
+    "pubDate": "2026-02-14T11:36:58Z",
     "category": "indoor"
   },
   {
@@ -29,27 +29,43 @@
     "source": "ScienceDirect Publication: Food Chemistry",
     "excerpt": "Aflatoxins are highly toxic secondary metabolites widely found in peanut and maize kernels. This study proposes a strategy based on self-supervised learning (SSL) for the accurate detection of Aflatoxin B1 in peanuts and maize. Firstly, an SSL backbone network was constructed to perform a spectral reconstruction task on masked spectra, providing pre-trained weights for subsequent supervised learning. Secondly, the spectral reconstruction error was innovatively used as a wavelength attention mechanism, integrated with the fine-tuned encoder from the SSL stage to develop a classification model. This model achieved a mean accuracy of 0.9805\u00a0\u00b1\u00a00.0019 in peanuts and 0.9478\u00a0\u00b1\u00a00.0060 in maize, outperforming other deep learning models. Furthermore, key wavelengths were selected based on the spectral reconstruction error. Experimental results demonstrated that the 40 selected key wavelengths outperformed other methods, with a more uniform distribution, capturing richer spectral features. The strategy in this study provides an efficient solution for few-sample spectral detection.",
     "url": "https://www.sciencedirect.com/science/article/pii/S0308814626005005?dgcid=rss_sd_all",
-    "pubDate": "2026-02-13T14:58:34Z",
+    "pubDate": "2026-02-14T11:36:55Z",
     "category": "health",
-    "abstract_source": "europepmc"
+    "abstract_source": "semantic_scholar"
   },
   {
     "title": "A comprehensive review of decontamination techniques for mycotoxin control in food: Advancement from conventional to unconventional strategies and the way forward",
     "source": "ScienceDirect Publication: Food Chemistry",
     "excerpt": "Mycotoxin contamination of food and feed is a lingering issue of the global agro-food industries and a matter of severe socio-economic concern. Several methods have been conventionally employed for mycotoxin decontamination but their efficiency remained low and insufficient due to robustness of mycotoxin structures. In this article, use of unconventional technologies like irradiation, ozonation, cold activated plasma, magnetic nanoparticles, high hydrostatic pressure, pulsed electric fields, pulsed light, natural essential oils and phytochemicals in controlling growth of toxigenic fungi and degrading mycotoxins in various foodstuffs have been reviewed. The efficacy of decontamination of different types of major mycotoxins by these novel techniques and the associated safety and limitation factors have been analysed and discussed in detail. Combination of different unconventional techniques and impact of techno-economic-environmental aspects associated with these advanced technologies on their adoption and implementation at large scale to achieve a green and sustainable control of mycotoxins have been highlighted.",
     "url": "https://www.sciencedirect.com/science/article/pii/S0308814626005200?dgcid=rss_sd_all",
-    "pubDate": "2026-02-13T14:58:34Z",
+    "pubDate": "2026-02-14T11:36:55Z",
     "category": "health",
-    "abstract_source": "europepmc"
+    "abstract_source": "semantic_scholar"
   },
   {
     "title": "Advances in affinity magnetic bead - based pretreatment and detection strategies for mycotoxins in foods: A review",
     "source": "ScienceDirect Publication: Food Chemistry",
     "excerpt": "Food contamination with mycotoxins poses a serious threat to human and animal health. Traditional chromatographic methods and rapid detection techniques are widely used for accurate quantification and on-site rapid screening, respectively, and play essential roles in food safety monitoring. However, these approaches still face limitations arising from cumbersome sample pretreatment and matrix effects. Affinity magnetic beads (AMBs), which integrate highly specific recognition elements with magnetic carriers, represent a promising solution owing to their strong enrichment capability, good dispersibility, soften matrix effects, and high compatibility with automated systems. This review discusses the structure, working principles, and applications of AMBs employing antibodies, aptamers, and molecularly imprinted polymers as recognition elements. It also evaluates their effectiveness in enhancing the sensitivity and accuracy of both chromatographic and rapid detection methods. Finally, the review highlights current challenges and future perspectives for the application of AMBs in mycotoxin detection.",
     "url": "https://www.sciencedirect.com/science/article/pii/S0308814626004802?dgcid=rss_sd_all",
-    "pubDate": "2026-02-13T14:58:34Z",
+    "pubDate": "2026-02-14T11:36:55Z",
     "category": "health",
     "abstract_source": "europepmc"
+  },
+  {
+    "title": "Screening, risk assessment, and rapid detection of mycotoxins in edible herbs based on UPLC-MS/MS and FT-NIR",
+    "source": "ScienceDirect Publication: Food Research International",
+    "excerpt": "Publication date: 30 April 2026Source: Food Research International, Volume 230Author(s): Kangnan Liu, Ling Fang, Yaling An, Zijun Tang, Wenjie Zhao, Chunqian Song, Lin Feng, Xiaokang Liu, Zhenwei Li, Daidi Zhang, De-an Guo",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926002188?dgcid=rss_sd_all",
+    "pubDate": "2026-02-14T11:36:55Z",
+    "category": "health"
+  },
+  {
+    "title": "Molecular stabilizing a glucose oxidase from Aspergillus eucalypticola with improved catalytic activity and optimized antimicrobial capacity",
+    "source": "ScienceDirect Publication: International Journal of Biological Macromolecules",
+    "excerpt": "Publication date: Available online 11 February 2026Source: International Journal of Biological MacromoleculesAuthor(s): Jing Li, Ying-Zhi Peng, Jian-Qiang He, Xiao-Lu Zhu, Marriam Khurshid, Shu-Biao Yuan, Kun Meng, Shuai You, Sheng-Jun Wang",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0141813026008123?dgcid=rss_sd_all",
+    "pubDate": "2026-02-14T11:36:53Z",
+    "category": "science"
   },
   {
     "title": "Antifungal mechanism and mycotoxin control of Ligusticum jeholense essential oil against Alternaria alternata in postharvest tomato",
@@ -61,28 +77,12 @@
     "abstract_source": "openalex"
   },
   {
-    "title": "Screening, risk assessment, and rapid detection of mycotoxins in edible herbs based on UPLC-MS/MS and FT-NIR",
-    "source": "ScienceDirect Publication: Food Research International",
-    "excerpt": "Publication date: 30 April 2026Source: Food Research International, Volume 230Author(s): Kangnan Liu, Ling Fang, Yaling An, Zijun Tang, Wenjie Zhao, Chunqian Song, Lin Feng, Xiaokang Liu, Zhenwei Li, Daidi Zhang, De-an Guo",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926002188?dgcid=rss_sd_all",
-    "pubDate": "2026-02-13T14:58:34Z",
-    "category": "health"
-  },
-  {
     "title": "Hyperglycemic conditions modulate the response of colon cancer cells to the mycotoxins alternariol and deoxynivalenol in vitro",
     "source": "ScienceDirect Publication: Food Research International",
     "excerpt": "Publication date: 1 April 2026Source: Food Research International, Volume 229Author(s): Karolina Kowalska, Eszter Borsos, Elisabeth Varga, Doris Marko",
     "url": "https://www.sciencedirect.com/science/article/pii/S0963996926000244?dgcid=rss_sd_all",
     "pubDate": "2026-02-13T14:58:34Z",
     "category": "health"
-  },
-  {
-    "title": "Molecular stabilizing a glucose oxidase from Aspergillus eucalypticola with improved catalytic activity and optimized antimicrobial capacity",
-    "source": "ScienceDirect Publication: International Journal of Biological Macromolecules",
-    "excerpt": "Publication date: Available online 11 February 2026Source: International Journal of Biological MacromoleculesAuthor(s): Jing Li, Ying-Zhi Peng, Jian-Qiang He, Xiao-Lu Zhu, Marriam Khurshid, Shu-Biao Yuan, Kun Meng, Shuai You, Sheng-Jun Wang",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0141813026008123?dgcid=rss_sd_all",
-    "pubDate": "2026-02-13T14:58:32Z",
-    "category": "science"
   },
   {
     "title": "Case Report: Rare pulmonary infection and cytomegalovirus retinitis revealed a case of lymphoma",
