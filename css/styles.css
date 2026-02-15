@@ -370,6 +370,12 @@ body { font-family: var(--font); }
     line-height: 1.65;
   }
 
+  .article {
+    font-size: 16px;
+    line-height: 1.65;
+    margin: 18px auto 44px;
+  }
+
   .news-excerpt {
     font-size: 16px;
     line-height: 1.65;
