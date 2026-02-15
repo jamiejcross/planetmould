@@ -901,6 +901,16 @@
     "summary": "Fusarium solani produces acadesine (adenosine analogue AICAR), a compound in clinical trials for cardiovascular complications and leukaemia treatment. This paper identifies a regulatory pathway controlling acadesine biosynthesis: the global regulator VeA activates phosphoribosyl pyrophosphate synthase 2, an enzyme essential for the compound's production. Deletion of PRPS2 reduced acadesine levels by 17 percent, while overexpression increased production 1.2-fold. The paper further characterises MtfA, a transcription factor that suppresses PRPS2 expression and is itself inhibited by VeA; yeast one-hybrid assays confirmed direct binding between MtfA and the PRPS2 gene, and deletion of mtfA resulted in significantly elevated acadesine accumulation.  The regulatory architecture documented here reveals how a fungal metabolite with pharmaceutical value emerges not from inherent biosynthetic capacity alone, but from the tuning of transcriptional control. VeA's suppression of MtfA, which then releases inhibition of PRPS2, creates a metabolic state that favours acadesine accumulation — a finding that exposes the contingency of microbial chemistry on regulatory networks shaped by environmental and developmental signals. The same fungal strain that produces a clinical-stage therapeutic compound is simultaneously subject to genetic manipulation that intensifies or dampens that production, illustrating how the value of a fungal metabolite depends entirely on the engineered or selected state of its regulatory machinery.",
     "enhanced": true,
     "enhanced_at": "2026-02-15T14:57:21.041145"
+  },
+  {
+    "title": "The Subjective Science of Mold Testing",
+    "source": "Healthy Indoors",
+    "excerpt": "By Bob Krell &#8212; Having just come off the road from a few of this year’s national industry events, the topic of mold testing came up multiple times—as usual.&#160; Many people vocalized their opinions on the pros and cons of the various sampling and analysis methodologies currently being used.&#160; Spore traps and mycotoxins got their \nThe post The Subjective Science of Mold Testing appeared first on Healthy Indoors.",
+    "url": "https://healthyindoors.com/2023/05/the-subjective-science-of-mold-testing/",
+    "pubDate": "2023-05-17T14:24:06Z",
+    "category": "indoor",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-02-15T18:43:45.553448"
   }
-  
 ]
