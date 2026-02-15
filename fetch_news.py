@@ -38,11 +38,13 @@ RSS_FEEDS = {
     "media": [
         "https://www.sciencedaily.com/rss/plants_animals/fungi.xml",
         "https://phys.org/rss-feed/biology-news/microbiology/",
-        "https://drfungus.org/feed/", # Doctor Fungus
-        "https://fungiacademy.com/feed/", # Fungi Academy
-        "https://centraltexasmycology.org/blog?format=rss", # Central Texas Mycology
-        "https://sustainablemycology.blogspot.com/feeds/posts/default", # Sustainable Mycology
-        "https://themycologist.com/feed/rss2" # The Mycologist
+        "https://theconversation.com/articles.atom",
+        "https://allafrica.com/rss/main/main.xml",
+        "https://news.mongabay.com/feed/",
+        "https://rss.buzzsprout.com/1257893.rss",
+        "https://www.scidev.net/asia-pacific/rss.xml",
+        "https://www.scidev.net/sub-saharan-africa/rss.xml",
+
     ],
     "health": [
         "https://www.mdpi.com/rss/journal/toxins",
@@ -64,7 +66,12 @@ RSS_FEEDS = {
         "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=afsthl", # ACS Food Science & Tech
         "https://rss.sciencedirect.com/publication/science/09567135", # Food Control
         "https://rss.sciencedirect.com/publication/science/07400020", # Food Microbiology
-        "https://rss.sciencedirect.com/publication/science/22147993" # Current Opinion in Food Science
+        "https://rss.sciencedirect.com/publication/science/22147993", # Current Opinion in Food Science
+        "https://www.govwire.co.uk/rss/department-of-health-and-social-care.atom", # UK DHSC
+        "https://www.govwire.co.uk/rss/foreign-commonwealth-development-office", 
+        "https://www.govwire.co.uk/rss/department-for-environment-food-rural-affairs",
+        "https://www.govwire.co.uk/rss/department-for-science-innovation-and-technology",
+
     ],
     "indoor": [
         "https://journals.asm.org/action/showFeed?feed=rss&jc=AEM&type=etoc",
