@@ -7,7 +7,7 @@ import time
 import os
 import requests
 
-# CATEGORIES AND FEEDS (Updated with Biotechnology, Food Science, and Vascular Review)
+# CATEGORIES AND FEEDS (Expanded with Mycology, Food Safety, and Clinical Microbiology)
 RSS_FEEDS = {
     "science": [
         "https://www.nature.com/srep.rss",
@@ -16,7 +16,7 @@ RSS_FEEDS = {
         "https://www.mdpi.com/rss/journal/jof",
         "https://www.mdpi.com/rss/journal/microorganisms",
         "https://www.mdpi.com/rss/journal/molecules",
-        "https://onlinelibrary.wiley.com/action/showFeed?jc=10970010&type=etoc&feed=rss", # J. Sci Food Agric
+        "https://onlinelibrary.wiley.com/action/showFeed?jc=10970010&type=etoc&feed=rss",
         "https://www.mdpi.com/rss/journal/biomolecules",
         "https://www.mdpi.com/rss/journal/ijms",
         "https://journals.asm.org/action/showFeed?feed=rss&jc=MBIO&type=etoc",
@@ -24,11 +24,25 @@ RSS_FEEDS = {
         "https://www.frontiersin.org/journals/microbiology/rss",
         "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=acsodf",
         "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=jacsat",
-        "https://rss.sciencedirect.com/publication/science/01418130"
+        "https://rss.sciencedirect.com/publication/science/01418130",
+        "https://www.tandfonline.com/feed/rss/tmyc20", # Mycology
+        "https://rss.sciencedirect.com/publication/science/18786146", # Fungal Biology
+        "https://rss.sciencedirect.com/publication/science/17494613", # Fungal Biology Reviews
+        "https://www.tandfonline.com/feed/rss/umyc20", # Mycologia
+        "https://www.studiesinmycology.org/index.php/sim/gateway/plugin/WebFeedGatewayPlugin/rss2",
+        "https://www.ingentaconnect.com/content/asb/pers/latest?format=rss", # Persoonia
+        "https://www.microbiologyresearch.org/rss/content/journal/micro/latestarticles?fmt=rss",
+        "https://rss.sciencedirect.com/publication/science/10871845", # Fungal Genetics and Biology
+        "https://www.nature.com/nmicrobiol.rss" # Nature Microbiology
     ],
     "media": [
         "https://www.sciencedaily.com/rss/plants_animals/fungi.xml",
-        "https://phys.org/rss-feed/biology-news/microbiology/"
+        "https://phys.org/rss-feed/biology-news/microbiology/",
+        "https://drfungus.org/feed/", # Doctor Fungus
+        "https://fungiacademy.com/feed/", # Fungi Academy
+        "https://centraltexasmycology.org/blog?format=rss", # Central Texas Mycology
+        "https://sustainablemycology.blogspot.com/feeds/posts/default", # Sustainable Mycology
+        "https://themycologist.com/feed/rss2" # The Mycologist
     ],
     "health": [
         "https://www.mdpi.com/rss/journal/toxins",
@@ -42,7 +56,15 @@ RSS_FEEDS = {
         "https://rss.sciencedirect.com/publication/science/03088146",
         "https://rss.sciencedirect.com/publication/science/09639969",
         "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=jafcau",
-        "https://www.mdpi.com/rss/journal/marinedrugs"
+        "https://www.mdpi.com/rss/journal/marinedrugs",
+        "https://www.wageningenacademic.com/action/showFeed?jc=wmj&type=etoc&feed=rss", # World Mycotoxin Journal
+        "https://www.tandfonline.com/feed/rss/tfac20", # Food Additives & Contaminants
+        "https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=12550", # Mycotoxin Research
+        "https://meridian.allenpress.com/jfp/rss", # Journal of Food Protection
+        "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=afsthl", # ACS Food Science & Tech
+        "https://rss.sciencedirect.com/publication/science/09567135", # Food Control
+        "https://rss.sciencedirect.com/publication/science/07400020", # Food Microbiology
+        "https://rss.sciencedirect.com/publication/science/22147993" # Current Opinion in Food Science
     ],
     "indoor": [
         "https://journals.asm.org/action/showFeed?feed=rss&jc=AEM&type=etoc",
@@ -57,12 +79,22 @@ RSS_FEEDS = {
         "https://rss.sciencedirect.com/publication/science/02697491",
         "https://rss.sciencedirect.com/publication/science/03043894",
         "https://rss.sciencedirect.com/publication/science/13858947",
-        "https://rss.sciencedirect.com/publication/science/09619534"
+        "https://rss.sciencedirect.com/publication/science/09619534",
+        "https://onlinelibrary.wiley.com/action/showFeed?jc=16000668&type=etoc&feed=rss", # Indoor Air
+        "https://rss.sciencedirect.com/publication/science/03601323", # Building and Environment
+        "https://healthyindoors.com/feed/", # Healthy Indoor Magazine
+        "https://www.nature.com/jes.rss", # Journal of Exposure Science
+        "https://ehp.niehs.nih.gov/action/showFeed?type=etoc&feed=rss&jc=ehp", # Env Health Perspectives
+        "https://rss.sciencedirect.com/publication/science/13522310", # Atmospheric Environment
+        "https://verifyairqualitytest.ca/feed/", # Verify Air Quality Blog
+        "https://smartairfilters.com/en/feed/", # Smart Air Blog
+        "https://rss.sciencedirect.com/publication/science/23527102", # Journal of Building Engineering
+        "https://www.gov.uk/government/organisations/uk-health-security-agency.atom" # UKHSA
     ],
     "clinical": [
         "https://journals.plos.org/plospathogens/feed/atom",
-        "https://www.benthamdirect.com/content/journals/cpb/fasttrack?feed=rss", # Current Pharm. Biotech
-        "https://verjournal.com/index.php/ver/gateway/plugin/WebFeedGatewayPlugin/rss2", # Vascular & Endo Review
+        "https://www.benthamdirect.com/content/journals/cpb/fasttrack?feed=rss",
+        "https://verjournal.com/index.php/ver/gateway/plugin/WebFeedGatewayPlugin/rss2",
         "https://www.mdpi.com/rss/journal/antibiotics",
         "https://www.mdpi.com/rss/journal/pathogens",
         "https://www.mdpi.com/rss/journal/pharmaceuticals",
@@ -72,7 +104,15 @@ RSS_FEEDS = {
         "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/rss",
         "https://www.frontiersin.org/journals/medicine/rss",
         "https://www.frontiersin.org/journals/immunology/rss",
-        "https://www.frontiersin.org/journals/pharmacology/rss"
+        "https://www.frontiersin.org/journals/pharmacology/rss",
+        "https://academic.oup.com/rss/site_5376/3452.xml", # Medical Mycology
+        "https://academic.oup.com/rss/site_5204/3169.xml", # Journal of Antimicrobial Chemotherapy
+        "https://journals.asm.org/action/showFeed?feed=rss&jc=cmr&type=etoc", # Clinical Microbiology Reviews
+        "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=aidcbc", # ACS Infectious Diseases
+        "https://www.thelancet.com/rssfeed/laninf_current.xml", # Lancet Infectious Diseases
+        "https://rss.sciencedirect.com/publication/science/07328893", # Diagnostic Microbiology
+        "https://rss.sciencedirect.com/publication/science/01634453", # Journal of Infection
+        "https://onlinelibrary.wiley.com/action/showFeed?jc=14390507&type=etoc&feed=rss" # Mycoses
     ]
 }
 
