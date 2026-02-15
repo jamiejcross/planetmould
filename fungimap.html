@@ -2,81 +2,124 @@
 <html>
 <head>
   <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
   <style>
-    body { font-family: "Courier New", Courier, monospace; background: #fff; color: #000; }
-    .node circle { fill: #000; stroke: #000; stroke-width: 1.5px; }
-    .node--highlight circle { fill: #000; r: 8; } /* Large Aspergillus nodes */
-    .node text { font-size: 11px; letter-spacing: 1px; }
-    .link { fill: none; stroke: #000; stroke-width: 0.5px; stroke-dasharray: 2,2; }
-    h2 { text-transform: uppercase; border-bottom: 1px solid #000; display: inline-block; }
+    body { background: #000; color: #fff; font-family: "Courier New", monospace; margin: 0; overflow: hidden; }
+    #controls { position: absolute; top: 20px; left: 20px; z-index: 100; border-left: 3px solid #fff; padding-left: 15px; }
+    .node circle { fill: #fff; stroke: #fff; cursor: pointer; }
+    .node text { font-size: 11px; fill: #fff; text-transform: uppercase; }
+    .link { fill: none; stroke: #444; stroke-width: 1px; }
+    
+    /* Landecker Overlay Styling */
+    .landecker-layer { font-size: 9px; fill: #00ff00; font-style: italic; opacity: 0; transition: opacity 0.5s; pointer-events: none; }
+    .link-aftermath { stroke: #00ff00; stroke-dasharray: 2,2; opacity: 0; transition: opacity 0.5s; }
+    .active .landecker-layer, .active .link-aftermath { opacity: 1; }
+    
+    .switch { position: relative; display: inline-block; width: 40px; height: 20px; vertical-align: middle; }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #444; transition: .4s; }
+    .slider:before { position: absolute; content: ""; height: 16px; width: 16px; left: 2px; bottom: 2px; background-color: white; transition: .4s; }
+    input:checked + .slider { background-color: #00ff00; }
+    input:checked + .slider:before { transform: translateX(20px); }
   </style>
 </head>
 <body>
-  <h2>Family: Trichocomaceae / Metabolic Mapping</h2>
-  <div id="tree-viz"></div>
-  <script>
-    const data = {
-      name: "Trichocomaceae",
+
+<div id="controls">
+  <h2 style="margin:0; letter-spacing: 2px;">PLANET MOULD: SYSTEMATICS</h2>
+  <div style="margin-top: 10px;">
+    <label class="switch">
+      <input type="checkbox" id="historyToggle">
+      <span class="slider"></span>
+    </label>
+    <span style="font-size: 10px; margin-left: 10px;">BIOLOGY OF HISTORY (TOGGLE)</span>
+  </div>
+</div>
+
+<div id="viz-container"></div>
+
+<script>
+const treeData = {
+  name: "Eurotiales",
+  children: [
+    {
+      name: "Aspergillaceae",
+      aftermath: "Life in the wake of industrial fungicides[cite: 31, 32].",
       children: [
         {
-          name: "Aspergillaceae",
+          name: "Aspergillus",
+          aftermath: "A duel register of control and biofallibility[cite: 33].",
           children: [
-            { name: "Aspergillus niger", highlight: true },
-            { name: "Aspergillus fumigatus", highlight: true },
-            { name: "Aspergillus flavus", highlight: true },
-            { name: "Penicillium", highlight: true }
+            { name: "A. fumigatus", aftermath: "Resistant spores from tulip bulbs[cite: 32]." },
+            { name: "A. niger", aftermath: "Black rot in agricultural supply chains[cite: 31]." },
+            { name: "A. flavus", aftermath: "Toxins in the aftermath of crop control[cite: 31]." },
+            { name: "A. nidulans", aftermath: "Model for anthropogenic DNA repair study[cite: 12]." },
+            { name: "A. oryzae" }, { name: "A. terreus" }
           ]
         },
         {
-          name: "Thermoascaceae",
+          name: "Penicillium",
+          aftermath: "Sequelae of mass-manufactured healers[cite: 112].",
           children: [
-            { name: "Thermoascus" },
-            { name: "Paecilomyces" }
-          ]
-        },
-        {
-          name: "Trichocomaceae (sensu stricto)",
-          children: [
-            { name: "Trichocoma" },
-            { name: "Sclerocleista" }
+            { name: "P. chrysogenum", aftermath: "The antibiotic era's anthropogenic legacy[cite: 321]." },
+            { name: "P. marneffei", aftermath: "Pathogen evolution in anthropogenic biomes[cite: 363]." }
           ]
         }
       ]
-    };
+    },
+    {
+      name: "Solvents/Cryo",
+      aftermath: "The Anthropocene of the cell[cite: 105].",
+      children: [
+        { name: "DMSO-Biology", aftermath: "Alterlife: life that is 'something else'[cite: 297, 298]." },
+        { name: "Undead State", aftermath: "A biology ensuant and attendant to DMSO[cite: 94]." }
+      ]
+    }
+  ]
+};
 
-    const width = 900;
-    const height = 500;
-    const svg = d3.select("#tree-viz").append("svg")
-      .attr("width", width)
-      .attr("height", height)
-      .append("g")
-      .attr("transform", "translate(150,0)");
+const width = window.innerWidth;
+const height = window.innerHeight;
+const dx = 80; // Increased vertical spacing for clarity
+const dy = 260; // Wide horizontal columns
 
-    const tree = d3.tree().size([height, width - 400]);
-    const root = d3.hierarchy(data);
-    tree(root);
+const svg = d3.select("#viz-container").append("svg")
+    .attr("width", width).attr("height", height)
+    .call(d3.zoom().on("zoom", (e) => g.attr("transform", e.transform)))
+    .append("g");
 
-    // Dotted links representing "metabolic entanglements"
-    svg.selectAll(".link")
-      .data(root.links())
-      .join("path")
-      .attr("class", "link")
-      .attr("d", d3.linkHorizontal().x(d => d.y).y(d => d.x));
+const g = svg.append("g").attr("transform", `translate(150, ${height/2})`);
+const tree = d3.tree().nodeSize([dx, dy]);
+const diagonal = d3.linkHorizontal().x(d => d.y).y(d => d.x);
 
-    const node = svg.selectAll(".node")
-      .data(root.descendants())
-      .join("g")
-      .attr("class", d => d.data.highlight ? "node node--highlight" : "node")
-      .attr("transform", d => `translate(${d.y},${d.x})`);
+let root = d3.hierarchy(treeData);
+tree(root);
 
-    // Nodes for Aspergillus are larger to represent their "cultural moment"
-    node.append("circle").attr("r", d => d.data.highlight ? 6 : 3);
+// Toggle Listener
+d3.select("#historyToggle").on("change", function() {
+    d3.select("#viz-container").classed("active", this.checked);
+});
 
-    node.append("text")
-      .attr("dy", ".35em")
-      .attr("x", d => d.children ? -15 : 15)
-      .style("text-anchor", d => d.children ? "end" : "start")
-      .text(d => d.data.name);
-  </script>
+// Links
+g.selectAll(".link").data(root.links()).enter().append("path").attr("class", "link")
+    .attr("d", diagonal);
+
+// Nodes
+const node = g.selectAll(".node").data(root.descendants()).enter().append("g")
+    .attr("class", "node")
+    .attr("transform", d => `translate(${d.y},${d.x})`);
+
+node.append("circle").attr("r", 4);
+
+// Biological Label
+node.append("text").attr("dy", "-6px").attr("x", 12).text(d => d.data.name);
+
+// Landecker Overlay Label
+node.append("foreignObject")
+    .attr("class", "landecker-layer")
+    .attr("x", 12).attr("y", 6).attr("width", 200).attr("height", 60)
+    .append("xhtml:div").html(d => d.data.aftermath || "");
+
+</script>
 </body>
 </html>

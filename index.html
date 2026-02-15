@@ -32,7 +32,33 @@
     text-decoration: underline;
     font-weight: 800px;
   }
-  
+
+/* Article text block */
+.article{
+  max-width: 68ch;
+  margin: 28px auto 64px;
+  padding: 0 18px;
+
+  font-family: var(--font);
+  font-size: 20px;
+  line-height: 1.6;
+  color: #000;
+}
+
+.article p{ margin: 0; }
+.article p + p{ margin-top: 16px; }
+
+
+.article p a {
+    color: var(--black) !important;
+
+}
+
+.article p a {
+    text-decoration: underline;
+    font-weight: 800px;
+}
+
   /* NEWS ITEM STYLING (The Field Guide Look) */
   .news-item {
     padding-top: 40px;
@@ -139,7 +165,7 @@
   </div>
 </div>
 
-<div class="page-header">
+<div class="article">
     <h1>Mouldwire</h1>
 
     <p>Mouldwire is a bespoke science/media news service designed to collect and summarise the latest mould related research stories from around the world using a prompt engineered inference engine. 
