@@ -331,6 +331,12 @@ body { font-family: var(--font); }
     margin-right: auto; /* Pushes the hamburger to the far right */
   }
 
+  .article {
+    font-size: 16px;
+    line-height: 1.65;
+    margin: 18px auto 44px;
+  }
+
   /* 3. Hamburger size and style from Master */
   .hamburger {
     display: inline-block;
@@ -368,12 +374,6 @@ body { font-family: var(--font); }
   .page-header p {
     font-size: 16px;
     line-height: 1.65;
-  }
-
-  .article {
-    font-size: 16px;
-    line-height: 1.65;
-    margin: 18px auto 44px;
   }
 
   .news-excerpt {
