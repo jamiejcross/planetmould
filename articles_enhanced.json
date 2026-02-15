@@ -901,50 +901,6 @@
     "summary": "Fusarium solani produces acadesine (adenosine analogue AICAR), a compound in clinical trials for cardiovascular complications and leukaemia treatment. This paper identifies a regulatory pathway controlling acadesine biosynthesis: the global regulator VeA activates phosphoribosyl pyrophosphate synthase 2, an enzyme essential for the compound's production. Deletion of PRPS2 reduced acadesine levels by 17 percent, while overexpression increased production 1.2-fold. The paper further characterises MtfA, a transcription factor that suppresses PRPS2 expression and is itself inhibited by VeA; yeast one-hybrid assays confirmed direct binding between MtfA and the PRPS2 gene, and deletion of mtfA resulted in significantly elevated acadesine accumulation.  The regulatory architecture documented here reveals how a fungal metabolite with pharmaceutical value emerges not from inherent biosynthetic capacity alone, but from the tuning of transcriptional control. VeA's suppression of MtfA, which then releases inhibition of PRPS2, creates a metabolic state that favours acadesine accumulation — a finding that exposes the contingency of microbial chemistry on regulatory networks shaped by environmental and developmental signals. The same fungal strain that produces a clinical-stage therapeutic compound is simultaneously subject to genetic manipulation that intensifies or dampens that production, illustrating how the value of a fungal metabolite depends entirely on the engineered or selected state of its regulatory machinery.",
     "enhanced": true,
     "enhanced_at": "2026-02-15T14:57:21.041145"
-  },
-  {
-    "title": "May 2023 Case of the Month",
-    "source": "Doctor Fungus",
-    "excerpt": "Mucormycosis is a rare, life-threatening opportunistic infection predominantly affecting the immunocompromised population. In this case, we report a 68-year-old female with no discernible immunocompromising condition, apart from uncontrolled diabetes. She tested positive for influenza A viral infection, accompanied by methicillin-sensitive Staphylococcus aureus (MSSA) pneumonia, and subsequently unfolding pulmonary mucormycosis without rhino-cerebral involvement.  \nThe post May 2023 Case of the Month appeared first on Doctor Fungus.",
-    "url": "https://drfungus.org/may-2023-case-of-the-month/",
-    "pubDate": "2023-06-07T22:38:49Z",
-    "category": "media",
-    "summary": "A 68-year-old woman with uncontrolled diabetes developed pulmonary mucormycosis following sequential viral and bacterial respiratory infections—first influenza A, then methicillin-sensitive Staphylococcus aureus pneumonia. This paper documents the progression without rhino-cerebral involvement, a notable departure from the typical presentation pattern of mucormycosis, which usually manifests in severely immune-weakened populations. The patient had no documented immunocompromising condition beyond her hyperglycemia, suggesting that the combination of viral infection, secondary bacterial pneumonia, and metabolic dysregulation created sufficient physiologic disruption to permit fungal invasion.  The case reveals how transient physiologic stress—in this instance, sequential respiratory pathogens in a diabetic host—can breach the ordinary barriers to invasive fungal disease without requiring the permanent immunosuppression typically associated with mucormycosis risk. Uncontrolled diabetes and acute respiratory infection together appear capable of generating the temporary window of vulnerability that allows a rare opportunistic pathogen to establish pulmonary infection. This pattern suggests that mucormycosis risk is not fixed to a stable category of immune-weakened patients but emerges from specific material conditions—metabolic dysregulation, viral-bacterial coinfection, damaged respiratory epithelium—that can arise across broader populations during periods of acute illness.",
-    "enhanced": true,
-    "enhanced_at": "2026-02-15T14:57:25.423219"
-  },
-  {
-    "title": "The Subjective Science of Mold Testing",
-    "source": "Healthy Indoors",
-    "excerpt": "By Bob Krell &#8212; Having just come off the road from a few of this year’s national industry events, the topic of mold testing came up multiple times—as usual.&#160; Many people vocalized their opinions on the pros and cons of the various sampling and analysis methodologies currently being used.&#160; Spore traps and mycotoxins got their \nThe post The Subjective Science of Mold Testing appeared first on Healthy Indoors.",
-    "url": "https://healthyindoors.com/2023/05/the-subjective-science-of-mold-testing/",
-    "pubDate": "2023-05-17T14:24:06Z",
-    "category": "indoor",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
-    "enhanced": true,
-    "enhanced_at": "2026-02-15T14:57:26.612141"
-  },
-  {
-    "title": "Case #5: COVID-19 and Pulmonary Aspergillus",
-    "source": "Doctor Fungus",
-    "excerpt": "Case #5: COVID-19 and Pulmonary Aspergillus\n66-year-old white male admitted to the hospital for COVID-19 pneumonia with a two-week history of worsening shortness of breath, fevers, myalgias, anosmia, nausea and poor oral intake. \nThe post Case #5: COVID-19 and Pulmonary Aspergillus appeared first on Doctor Fungus.",
-    "url": "https://drfungus.org/case-5-covid-19-and-pulmonary-aspergillus/",
-    "pubDate": "2022-04-15T20:50:26Z",
-    "category": "media",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
-    "enhanced": true,
-    "enhanced_at": "2026-02-15T14:57:27.403978"
-  },
-  {
-    "title": "Hurricane molds",
-    "source": "PASTURES NEW",
-    "excerpt": "UNLABELLED\nDust collected in New Orleans homes mold-contaminated because of the flooding after hurricane Katrina was analyzed for molds and mycotoxins. The mycoflora was studied by cultivation and quantitative PCR for selected molds. The most commonly found mold taxa were Aspergillus, Cladosporium, and Penicillium. Verrucarol, a hydrolysis product of macrocyclic trichothecenes predominately produced by Stachybotrys spp. was identified in three dust samples by gas chromatography-tandem mass spectrometry, and sterigmatocystin (produced by various Aspergillus spp.) was found in two samples by high pressure liquid chromatography-tandem mass spectrometry. This is the first demonstration of mycotoxins in Katrina-associated dust samples. The analytical methods used represent valuable tools in further studies on bioaerosol exposure and health risks.\n\n\nPRACTICAL IMPLICATIONS\nIn the aftermath of natural disasters like hurricane Katrina water-damages on infrastructure and public and private property are often associated with health risks for remediation workers and returning residents. In the case of New Orleans evaluations of health hazards, health studies, and assessments of bioaerosol have been conducted previously. However, until now mycotoxins have not been addressed. Our study shows, for the first time, the presence of mycotoxins in dust collected in houses in New Orleans mold-contaminated because of the hurricane Katrina. The results may highlight the potential health threats posed by mold aerosols in post-disaster inhabited areas.",
-    "url": "https://www.themycologist.com/hurricane-molds",
-    "pubDate": "2017-09-11T10:11:16Z",
-    "category": "media",
-    "abstract_source": "semantic_scholar",
-    "summary": "Dust collected from New Orleans homes flooded during Hurricane Katrina contained multiple mold taxa, with Aspergillus, Cladosporium, and Penicillium identified as the most abundant through both cultivation methods and quantitative genetic sequencing. Two mycotoxins were detected in the dust samples: verrucarol, a breakdown product of macrocyclic trichothecenes produced primarily by Stachybotrys species, was found in three samples using gas chromatography-tandem mass spectrometry; sterigmatocystin, produced by various Aspergillus species, was identified in two samples using high pressure liquid chromatography-tandem mass spectrometry. This paper represents the first documented detection of mycotoxins in dust from homes damaged by Hurricane Katrina.  The presence of these toxic fungal metabolites in post-disaster housing dust reveals how natural disasters create material conditions—water-saturated walls, compromised building envelopes, disrupted remediation—that enable both mold proliferation and toxin production. The same molds that signal structural failure and contamination in flooded homes are also toxin factories; their capacity to generate verrucarol and sterigmatocystin transforms water damage from a property problem into a chemical exposure hazard for remediation workers and residents attempting to return to inhabited spaces. This study documents how disaster-driven ecological rupture produces novel forms of biological risk that remain invisible until specifically measured—a pattern of exposure shaped less by individual susceptibility than by the material aftermath of flooding and the uneven capacity to remediate it.",
-    "enhanced": true,
-    "enhanced_at": "2026-02-15T14:57:31.632645"
   }
+  
 ]
