@@ -30,8 +30,26 @@
 }
 .page-header a:hover {
     text-decoration: underline;
-    font-weight: 800;
   }
+
+   font-weight: 800px;
+  }
+
+/* Article text block */
+.article{
+  max-width: 68ch;
+  margin: 28px auto 64px;
+  padding: 0 18px;
+
+  font-family: var(--font);
+  font-size: 20px;
+  line-height: 1.6;
+  color: #000;
+}
+
+.article p{ margin: 0; }
+.article p + p{ margin-top: 16px; }
+
 
 .article p a {
     color: var(--black) !important;
@@ -40,7 +58,6 @@
 
 .article p a {
     text-decoration: underline;
-    font-weight: 800;
 }
 
   /* NEWS ITEM STYLING (The Field Guide Look) */
@@ -130,7 +147,15 @@
         padding: 0;
         border: none;
     }
-
+/* 5. Mobile view */
+@media (min-width: 700px) {
+  .article{
+    font-size: 16px;
+    line-height: 1.65;
+    margin: 18px auto 44px;
+  }
+}
+    
 }
 
 </style>
