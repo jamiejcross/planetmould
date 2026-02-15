@@ -10,6 +10,11 @@ body { font-family: var(--font); }
           "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.page-header .links {
+    font-weight:  700;
+    font-style: normal;
+}
+
 /* 2. NAVIGATION & HEADER (EXACT MATCH TO MAIN SITE) */
 .banner {
   width: 100%;
