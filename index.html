@@ -35,9 +35,8 @@
 /* Article text block */
 .article{
   max-width: 68ch;
-  margin: 28px auto 64px;
+  margin: 28px auto 30px;
   padding: 0 18px;
-
   font-family: var(--font);
   font-size: 20px;
   line-height: 1.6;
@@ -54,6 +53,24 @@
 }
 
 .article p a {
+    text-decoration: underline;
+}
+
+.partners {
+  max-width: 68ch;
+  margin: 10px auto 30px;
+  padding: 0 18px;
+  font-family: var(--font);
+  font-size: 20px;
+  line-height: 1.6;
+  color: #000;
+}
+
+.partners a {
+    text-decoration: none;
+}
+
+.partners a:hover {
     text-decoration: underline;
 }
 
@@ -190,7 +207,9 @@
       <a href="https://github.com/jamiejcross/planetmould/blob/main/prompt.txt" target="_blank" rel="noopener">prompt</a> 
       or contribute to the code on Github.
     </p> 
+</div>
 
+<div class="partners">
     <p>
         <a href="https://github.com/jamiejcross/planetmould" target="_blank" rel="noopener" class="github-link-inline">
         <svg height="30" width="30" viewBox="0 0 16 16" style="fill: currentColor; vertical-align: middle; margin-bottom: 2px;">
