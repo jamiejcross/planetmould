@@ -1,5 +1,16 @@
 [
   {
+    "title": "Lactobacillus rhamnosus MY-1 alleviates deoxynivalenol-induced oxidative stress, inflammation, and gut microbiota dysbiosis both in vivo and in vitro",
+    "source": "Frontiers in Microbiology | New and Recent Articles",
+    "excerpt": "IntroductionDeoxynivalenol (DON), a prevalent mycotoxin in grains and feed, poses a serious threat to animal health by inducing intestinal dysfunction. While some probiotics are known to mitigate DON toxicity, the multifaceted protective effects of Lactobacillus rhamnosus MY-1—a strain with high DON-degradation capacity and a proven safety profile—require comprehensive evaluation. This study aimed to systematically assess the ability of MY-1 to alleviate DON-induced oxidative stress, inflammation, and gut microbiota dysbiosis, and to elucidate its underlying mechanisms.MethodsInvestigations were conducted in vitro using IPEC-J2 cells and in vivo using a BALB/c mouse model. We examined the effects of MY-1 on cell viability, ultrastructure, oxidative stress markers (MDA, T-AOC), inflammatory cytokines (TNF-α, IL-1α, IL-4), apoptosis-related genes (BAX, Caspase-3, BCL-2), and tight junction protein (ZO-1, Occludin, Claudin-1) expression. Gut microbiota composition was analyzed via alpha (Chao1, Simpson, Shannon) and beta diversity indices.ResultsThe MY-1 supernatant restored IPEC-J2 cell viability and ameliorated DON-induced ultrastructural damage. MY-1 alleviated oxidative stress by ",
+    "url": "https://www.frontiersin.org/articles/10.3389/fmicb.2026.1750402",
+    "pubDate": "2026-02-16T00:00:00Z",
+    "category": "science",
+    "summary": "This study examined how Lactobacillus rhamnosus MY-1, a bacterial strain capable of breaking down deoxynivalenol, protects intestinal cells and animal hosts from damage caused by this mycotoxin. The paper reports findings from both laboratory experiments using intestinal cell cultures and living mouse models. In cell cultures, the bacterial supernatant restored cell survival and reversed structural damage to cells exposed to deoxynivalenol. The strain reduced markers of cellular damage from oxidative stress, lowered inflammatory signalling molecules, and preserved the expression of proteins that maintain the physical integrity of the intestinal barrier. In mice, the bacterial treatment modulated the composition and diversity of gut microorganisms that had been disrupted by toxin exposure.  The dual capacity of this bacterial strain—simultaneously a consumer of a mould-derived poison and a modifier of the microbial ecosystem that follows contamination—reveals how remediation operates within the lived body. The restoration of barrier function and microbial balance does not erase the prior exposure to deoxynivalenol but rather absorbs and redirects its consequences, rendering the toxin metabolically useful while restoring a particular order to the gut ecology. This locates the probiotic not as a simple antidote but as an agent that transforms the material and biological aftermath of grain contamination into a recoverable state—a recovery that depends entirely on the strain's capacity to persist and function within the specific conditions of feed systems and animal bodies shaped by agricultural practice.",
+    "enhanced": true,
+    "enhanced_at": "2026-02-16T09:49:33.238294"
+  },
+  {
     "title": "Symbiont in circulation: Mycetohabitans endofungorum bacteremia heralding invasive mucormycosis",
     "source": "ScienceDirect Publication: Diagnostic Microbiology and Infectious Disease",
     "excerpt": "Isolation of M. endofungorum in blood may signal invasive mucormycosis. Even in patients without published risk factors, transient physiologic stress and barrier disruption may permit fungal invasion. Early recognition of bacterial endosymbionts could provide a valuable diagnostic clue in invasive fungal disease.",
@@ -901,6 +912,16 @@
     "summary": "Fusarium solani produces acadesine (adenosine analogue AICAR), a compound in clinical trials for cardiovascular complications and leukaemia treatment. This paper identifies a regulatory pathway controlling acadesine biosynthesis: the global regulator VeA activates phosphoribosyl pyrophosphate synthase 2, an enzyme essential for the compound's production. Deletion of PRPS2 reduced acadesine levels by 17 percent, while overexpression increased production 1.2-fold. The paper further characterises MtfA, a transcription factor that suppresses PRPS2 expression and is itself inhibited by VeA; yeast one-hybrid assays confirmed direct binding between MtfA and the PRPS2 gene, and deletion of mtfA resulted in significantly elevated acadesine accumulation.  The regulatory architecture documented here reveals how a fungal metabolite with pharmaceutical value emerges not from inherent biosynthetic capacity alone, but from the tuning of transcriptional control. VeA's suppression of MtfA, which then releases inhibition of PRPS2, creates a metabolic state that favours acadesine accumulation — a finding that exposes the contingency of microbial chemistry on regulatory networks shaped by environmental and developmental signals. The same fungal strain that produces a clinical-stage therapeutic compound is simultaneously subject to genetic manipulation that intensifies or dampens that production, illustrating how the value of a fungal metabolite depends entirely on the engineered or selected state of its regulatory machinery.",
     "enhanced": true,
     "enhanced_at": "2026-02-15T14:57:21.041145"
+  },
+  {
+    "title": "The Subjective Science of Mold Testing",
+    "source": "Healthy Indoors",
+    "excerpt": "By Bob Krell &#8212; Having just come off the road from a few of this year’s national industry events, the topic of mold testing came up multiple times—as usual.&#160; Many people vocalized their opinions on the pros and cons of the various sampling and analysis methodologies currently being used.&#160; Spore traps and mycotoxins got their \nThe post The Subjective Science of Mold Testing appeared first on Healthy Indoors.",
+    "url": "https://healthyindoors.com/2023/05/the-subjective-science-of-mold-testing/",
+    "pubDate": "2023-05-17T14:24:06Z",
+    "category": "indoor",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-02-16T09:49:33.975943"
   }
-  
 ]
