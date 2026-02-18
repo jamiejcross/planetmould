@@ -1,5 +1,39 @@
 [
   {
+    "title": "Mechanistic role of Fe-Nx sites in biochar-activated bisulfite for aflatoxin B1 degradation during edible oil refining",
+    "source": "ScienceDirect Publication: Food Chemistry",
+    "excerpt": "Aflatoxin B1 (AFB1) contamination in edible oils poses significant health risks. Fe, N co-doped biochar (FeNBC) was synthesized from straw and integrated with sulfate radical-based advanced oxidation during oil aqueous refining. FeNBC activated sodium bisulfite to generate reactive oxygen species, degrading AFB1 that migrated into the aqueous phase. Over 98% of AFB1 (100 μg/L) was removed from oil within 50 min, with a reaction rate constant 3.02 times higher than that of pristine biochar and negligible impact on oil quality. Quenching and site-poisoning experiments identified Fe-Nx as the main catalytic site, with singlet oxygen and superoxide radical as the dominant active species. Electrochemical analysis and density functional theory calculations revealed that N-coordination modulates the Fe d-band center, facilitates charge redistribution, and promotes Fe valence cycling, thereby enhancing bisulfite adsorption and overcoming electron-transfer limitations during activation. This work provides a practical detoxification strategy and fundamental insights for designing food-compatible advanced oxidation technologies.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0308814626005443?dgcid=rss_sd_all",
+    "pubDate": "2026-02-18T11:22:47Z",
+    "category": "health",
+    "abstract_source": "europepmc",
+    "summary": "This paper describes the synthesis of iron and nitrogen co-doped biochar from straw and its application as a catalyst in the degradation of aflatoxin B1 during edible oil refining. The biochar activated sodium bisulfite to produce reactive oxygen species that broke down aflatoxin B1 migrating into the aqueous phase of the refining process, removing over 98% of the toxin (at 100 micrograms per litre) within 50 minutes. The reaction proceeded 3.02 times faster than with untreated biochar, while leaving oil quality unaffected. Experiments isolating specific catalytic sites and reactive species identified iron-nitrogen coordination complexes as the primary active sites, with singlet oxygen and superoxide radical as the dominant degradation agents. Electrochemical measurements and computational modelling showed that nitrogen coordination altered the electronic structure of iron atoms, redistributed charge, enabled cycling between iron valence states, and enhanced both the binding of bisulfite and electron transfer during the activation process.  The research embeds a food safety intervention within material transformations that reveal deeper dependencies in commodity processing. The same straw-derived biochar that serves as a detoxification technology also demonstrates how agricultural residues can be repositioned as industrial catalysts—a shift that depends on precise control of elemental composition and surface chemistry. The capacity to degrade a mycotoxin while preserving oil quality illustrates the narrow technical margins within which food safety operates under industrial pressure, and the reliance on engineered materials to manage contamination that arises from prior ecological or storage failures.",
+    "enhanced": true,
+    "enhanced_at": "2026-02-18T11:24:59.337839"
+  },
+  {
+    "title": "Influence of interstitial carbon dioxide on deoxynivalenol accumulation in stored wheat under varying Fusarium treatments and airtight storage conditions",
+    "source": "Wiley: Journal of the Science of Food and Agriculture: Table of Contents",
+    "excerpt": "Journal of the Science of Food and Agriculture, EarlyView.",
+    "url": "https://scijournals.onlinelibrary.wiley.com/doi/10.1002/jsfa.70527?af=R",
+    "pubDate": "2026-02-18T07:05:00Z",
+    "category": "science",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-02-18T11:25:00.526220"
+  },
+  {
+    "title": "MiRNAs: a call to arms that shapes the plasticity of tumor associated macrophages in breast cancer",
+    "source": "Frontiers in Immunology | New and Recent Articles",
+    "excerpt": "Breast cancer (BC) remains a leading cause of cancer-related mortality, and a major contribution to tumor progression and resistance to therapies arise from tumor microenvironment (TME). Tumor is indeed able to shape a self-permissive TME, reprogramming the cellular components into allies. Tumor-associated macrophages (TAMs), abundant in BC TME, mainly acquire an immunosuppressive M2-like phenotype able to fuel tumor progression, immune evasion, metastasis and therapy resistance through a dynamic crosstalk with cancer cells. MicroRNAs, transferred via extracellular vesicles and exploited by the tumor to mold an immunesuppressive niche, act as central mediators of this bidirectional communication: tumor-derived miRNAs can reprogram macrophages toward an M2-like functional program, and TAM-derived miRNAs in turn promote and sustain cancer cell progression. This miRNA-orchestrated plasticity highlights TAMs as key TME regulators. Clinically, miRNA modulation offers promising strategies for TAM reprogramming, alongside their utility as prognostic biomarkers. Integrating miRNA-targeted TME interventions with conventional therapies holds the potential to overcome resistance in high-TAM B",
+    "url": "https://www.frontiersin.org/articles/10.3389/fimmu.2026.1792965",
+    "pubDate": "2026-02-18T00:00:00Z",
+    "category": "clinical",
+    "summary": "This paper examines how microRNAs function as molecular signals that reprogram immune cells within breast cancer tumors. The study describes tumor-associated macrophages—immune cells that accumulate in breast cancer tissue—as primarily adopting an immunosuppressive form that promotes tumor growth, immune evasion, metastasis, and resistance to treatment. The paper identifies microRNAs, which are transferred between cells via extracellular vesicles (small membrane-bound packages), as central mediators of communication between cancer cells and macrophages. Tumor-derived microRNAs reprogram macrophages toward an immunosuppressive functional state, while macrophage-derived microRNAs in turn sustain cancer cell progression, creating a bidirectional exchange. This study proposes that modulating microRNAs offers clinical potential both for redirecting macrophage behavior and as prognostic markers to predict patient outcomes.  Within the patchy landscape of breast cancer, this paper documents how a single molecular mechanism—microRNA transfer—simultaneously enables tumor survival and creates a point of intervention. The immunosuppressive macrophages that accumulate in high numbers within tumors are not fixed cellular states but rather plastic entities continuously reshaped through molecular crosstalk; the same signaling system that allows tumors to construct a permissive niche could theoretically be disrupted to dismantle it. This dual capacity—microRNAs as both instruments of tumor control and potential therapeutic targets—reveals how the material entanglement of cancer cells and immune cells produces both deepening dependency and latent vulnerability.",
+    "enhanced": true,
+    "enhanced_at": "2026-02-18T11:25:05.092820"
+  },
+  {
     "title": "Rapid Diagnosis of a Mixed Pulmonary Infection with Rhizopus microsporus, Aspergillus fumigatus, Pneumocystis jirovecii, and Cytomegalovirus in a Lymphoma Patient Using Metagenomic Next-Generation Sequencing: A Case Report",
     "source": "ScienceDirect Publication: Diagnostic Microbiology and Infectious Disease",
     "excerpt": "Publication date: Available online 16 February 2026Source: Diagnostic Microbiology and Infectious DiseaseAuthor(s): Lisha Wang, Jiajia Wang, Qiqi Zhu, Qinyi Zhang, Jiao Qian",
@@ -489,6 +523,17 @@
     "enhanced_at": "2026-02-14T22:34:44.631661"
   },
   {
+    "title": "Molecular Dynamics and Quantum Chemical Insights into the Molecular Basis of Differential Toxicity of the Mycotoxin Deoxynivalenol (DON) and Its Microbial Derivatives DOM-1 and 3-epi-DON",
+    "source": "acs: ACS Omega: Table of Contents",
+    "excerpt": "",
+    "url": "https://pubs.acs.org/doi/10.1021/acsomega.5c09756?af=R",
+    "pubDate": "2026-02-03T08:00:00Z",
+    "category": "science",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-02-18T11:25:05.947179"
+  },
+  {
     "title": "Mycotoxin occurrence and risk assessment in plant-based meat, cheese, and fish alternatives based on an adapted UHPLC-MS/MS multi-method",
     "source": "Latest Results",
     "excerpt": "Plant-based alternatives to animal-derived products have gained significant prominence in recent years, with the market for these products experiencing continuous growth. In response to this trend, we developed an ultra-high-performance liquid chromatography method, coupled with tandem mass spectrometry (UHPLC-MS/MS) for the simultaneous quantification of 15 mycotoxins from Fusarium (deoxynivalenol (DON), DON-3-glucoside (D3G), 3-acetyl-DON, 15-acetyl-DON, HT-2 toxin, T-2 toxin), Alternaria (alternariol, alternariolmonomethylether (AME), tenuazonic acid (TeA)), and Aspergillus species (aflatoxin (AF) B1, B2, G1, G2, sterigmatocystin (STC), ochratoxin A) in plant-based meat, cheese, and fish substitutes. Sample extraction was performed using a QuEChERS (quick, easy, cheap, effective, rugged, and safe) approach, followed by dispersive solid phase extraction (dSPE) for clean-up. Quantification was achieved through stable isotope dilution analysis (SIDA). The method demonstrated limits of detection (LOD) ranging from 0.01 µg/kg (AFB2 and STC) to 14.1 µg/kg (D3G) and limits of quantification (LOQ) between 0.02 µg/kg (STC) and 41.9 µg/kg (D3G). This method was successfully applied to qua",
@@ -957,6 +1002,6 @@
     "category": "indoor",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-02-17T13:23:57.915431"
+    "enhanced_at": "2026-02-18T11:25:07.014600"
   }
 ]
