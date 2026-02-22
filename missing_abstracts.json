@@ -1,59 +1,52 @@
 [
   {
     "doi": "",
-    "title": "Rapid Diagnosis of a Mixed Pulmonary Infection with Rhizopus microsporus, Aspergillus fumigatus, Pneumocystis jirovecii, and Cytomegalovirus in a Lymphoma Patient Using Metagenomic Next-Generation Sequencing: A Case Report",
+    "title": "Rapid diagnosis of a mixed pulmonary infection with Rhizopus microsporus, Aspergillus fumigatus, Pneumocystis jirovecii, and Cytomegalovirus in a Lymphoma patient using metagenomic next-generation sequencing: A case report",
     "url": "https://www.sciencedirect.com/science/article/pii/S0732889326000702?dgcid=rss_sd_all",
     "category": "clinical",
-    "pubDate": "2026-02-20T12:31:47Z"
+    "pubDate": "2026-02-22T13:55:52Z"
+  },
+  {
+    "doi": "",
+    "title": "Cyanidin-3-O-glucoside alleviates aflatoxin B1-induced splenic immunotoxicity via gut microbiota remodeling",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0269749126002265?dgcid=rss_sd_all",
+    "category": "indoor",
+    "pubDate": "2026-02-22T13:55:40Z"
   },
   {
     "doi": "",
     "title": "Rapid and simultaneous detection of Aspergillus and aflatoxin B1 content in maize using data fusion and explainable analysis",
     "url": "https://www.sciencedirect.com/science/article/pii/S0956713526000320?dgcid=rss_sd_all",
     "category": "health",
-    "pubDate": "2026-02-20T12:31:28Z"
+    "pubDate": "2026-02-22T13:55:35Z"
   },
   {
     "doi": "",
     "title": "Mechanistic elucidation of aflatoxin B1 degradation in corn and peanuts via nonthermal plasma: Reactive species and kinetic insights",
     "url": "https://www.sciencedirect.com/science/article/pii/S0956713526000666?dgcid=rss_sd_all",
     "category": "health",
-    "pubDate": "2026-02-20T12:31:28Z"
+    "pubDate": "2026-02-22T13:55:35Z"
   },
   {
     "doi": "",
     "title": "Efficient removal of aflatoxin B1 from soybean kernels by a coupled ultrasound–ozone process: A mechanistic study",
     "url": "https://www.sciencedirect.com/science/article/pii/S0956713526000332?dgcid=rss_sd_all",
     "category": "health",
-    "pubDate": "2026-02-20T12:31:28Z"
+    "pubDate": "2026-02-22T13:55:35Z"
   },
   {
     "doi": "",
     "title": "Recent advances of different dimensional materials for the fluorescent detection of mycotoxins",
     "url": "https://www.sciencedirect.com/science/article/pii/S0963996926003273?dgcid=rss_sd_all",
     "category": "health",
-    "pubDate": "2026-02-20T12:31:23Z"
+    "pubDate": "2026-02-22T13:55:31Z"
   },
   {
     "doi": "",
     "title": "Enzyme and biosurfactant production as strategy for bis(2-ethylhexyl) phthalate degradation by Fusarium culmorum: Metabolic pathway proposal using quantum chemical investigation",
     "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000048?dgcid=rss_sd_all",
     "category": "science",
-    "pubDate": "2026-02-20T12:31:10Z"
-  },
-  {
-    "doi": "10.1128/spectrum.04036-25?af=R",
-    "title": "The HosA histone deacetylase regulates stress resistance, host cell interactions, and virulence in Aspergillus fumigatus",
-    "url": "https://journals.asm.org/doi/abs/10.1128/spectrum.04036-25?af=R",
-    "category": "science",
-    "pubDate": "2026-02-19T08:00:00Z"
-  },
-  {
-    "doi": "10.1128/aem.01955-25?af=R",
-    "title": "Effects of Aspergillus oryzae-derived rice-koji protein on the sake metabolome",
-    "url": "https://journals.asm.org/doi/abs/10.1128/aem.01955-25?af=R",
-    "category": "indoor",
-    "pubDate": "2026-02-19T08:00:00Z"
+    "pubDate": "2026-02-22T13:55:22Z"
   },
   {
     "doi": "",
@@ -84,13 +77,6 @@
     "pubDate": "2026-02-15T10:16:34Z"
   },
   {
-    "doi": "",
-    "title": "Hyperglycemic conditions modulate the response of colon cancer cells to the mycotoxins alternariol and deoxynivalenol in vitro",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926000244?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-02-13T14:58:34Z"
-  },
-  {
     "doi": "10.1021/acsomega.5c09756?af=R",
     "title": "Molecular Dynamics and Quantum Chemical Insights into the Molecular Basis of Differential Toxicity of the Mycotoxin Deoxynivalenol (DON) and Its Microbial Derivatives DOM-1 and 3-epi-DON",
     "url": "https://pubs.acs.org/doi/10.1021/acsomega.5c09756?af=R",
@@ -103,19 +89,5 @@
     "url": "https://link.springer.com/article/10.1007/s12550-025-00629-7",
     "category": "health",
     "pubDate": "2025-12-23T00:00:00Z"
-  },
-  {
-    "doi": "10.1021/acsfoodscitech.5c00713?af=R",
-    "title": "Occurrence and Quantification of Fusarium Mycotoxins in Wheat Grains from Uruguay",
-    "url": "https://pubs.acs.org/doi/10.1021/acsfoodscitech.5c00713?af=R",
-    "category": "health",
-    "pubDate": "2025-12-19T08:00:00Z"
-  },
-  {
-    "doi": "10.1021/acsfoodscitech.5c00887?af=R",
-    "title": "Dynamics of Kojic Acid and Other Compositions during Solid-State Fermentation of Two White Grape Pomaces by Aspergillus oryzae and tamarii",
-    "url": "https://pubs.acs.org/doi/10.1021/acsfoodscitech.5c00887?af=R",
-    "category": "health",
-    "pubDate": "2025-12-18T08:00:00Z"
   }
 ]
