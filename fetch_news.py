@@ -12,6 +12,8 @@ RSS_FEEDS = {
     "science": [
         "https://www.nature.com/srep.rss",
         "https://www.nature.com/ncomms.rss",
+        "https://www.nature.com/natrevearthenviron.rss",
+        "https://www.cell.com/current-biology/current.rss",
         "https://journals.plos.org/plosone/feed/atom",
         "https://www.mdpi.com/rss/journal/jof",
         "https://www.mdpi.com/rss/journal/microorganisms",
@@ -29,12 +31,18 @@ RSS_FEEDS = {
         "https://rss.sciencedirect.com/publication/science/18786146", # Fungal Biology
         "https://rss.sciencedirect.com/publication/science/17494613", # Fungal Biology Reviews
         "https://www.tandfonline.com/feed/rss/umyc20", # Mycologia
+        "https://onlinelibrary.wiley.com/feed/14683083/most-recent", # Environmental Microbiology
         "https://www.studiesinmycology.org/index.php/sim/gateway/plugin/WebFeedGatewayPlugin/rss2",
         "https://www.ingentaconnect.com/content/asb/pers/latest?format=rss", # Persoonia
         "https://www.microbiologyresearch.org/rss/content/journal/micro/latestarticles?fmt=rss",
         "https://rss.sciencedirect.com/publication/science/10871845", # Fungal Genetics and Biology
         "https://www.nature.com/nmicrobiol.rss" # Nature Microbiology
+        "https://www.microbiologyresearch.org/rss/content/journal/jmm/latest?fmt=rss", # Journal of Medical Microbiology
+        "https://academic.oup.com/rss/site_6222/4034.xml", # Journal of Fungi
+        "https://www.ncbi.nlm.nih.gov/feed/rss.cgi?ChanKey=PubMedNews",
+        "https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=15010&sortOrder=newestFirst",
     ],
+
     "media": [
         "https://www.sciencedaily.com/rss/plants_animals/fungi.xml",
         "https://phys.org/rss-feed/biology-news/microbiology/",
@@ -44,10 +52,12 @@ RSS_FEEDS = {
         "https://rss.buzzsprout.com/1257893.rss",
         "https://www.scidev.net/asia-pacific/rss.xml",
         "https://www.scidev.net/sub-saharan-africa/rss.xml",
-
     ],
+
     "health": [
         "https://www.mdpi.com/rss/journal/toxins",
+        "https://www.thelancet.com/laninf.xml",
+        "https://www.sciencedirect.com/journal/acta-tropica/rss",
         "https://www.cdc.gov/media/rss/topic/fungal.xml",
         "https://www.mdpi.com/rss/journal/animals",
         "https://www.mdpi.com/rss/journal/plants",
@@ -59,6 +69,7 @@ RSS_FEEDS = {
         "https://rss.sciencedirect.com/publication/science/09639969",
         "https://pubs.acs.org/action/showFeed?type=etoc&feed=rss&jc=jafcau",
         "https://www.mdpi.com/rss/journal/marinedrugs",
+        "https://www.mdpi.com/rss/journal/antibiotics",
         "https://www.wageningenacademic.com/action/showFeed?jc=wmj&type=etoc&feed=rss", # World Mycotoxin Journal
         "https://www.tandfonline.com/feed/rss/tfac20", # Food Additives & Contaminants
         "https://link.springer.com/search.rss?facet-content-type=Article&facet-journal-id=12550", # Mycotoxin Research
@@ -67,6 +78,7 @@ RSS_FEEDS = {
         "https://rss.sciencedirect.com/publication/science/09567135", # Food Control
         "https://rss.sciencedirect.com/publication/science/07400020", # Food Microbiology
         "https://rss.sciencedirect.com/publication/science/22147993", # Current Opinion in Food Science
+        "https://www.sciencedirect.com/journal/one-health/rss", # One Health
         "https://www.govwire.co.uk/rss/department-of-health-and-social-care.atom", # UK DHSC
         "https://www.govwire.co.uk/rss/foreign-commonwealth-development-office", 
         "https://www.govwire.co.uk/rss/department-for-environment-food-rural-affairs",
@@ -96,8 +108,14 @@ RSS_FEEDS = {
         "https://verifyairqualitytest.ca/feed/", # Verify Air Quality Blog
         "https://smartairfilters.com/en/feed/", # Smart Air Blog
         "https://rss.sciencedirect.com/publication/science/23527102", # Journal of Building Engineering
-        "https://www.gov.uk/government/organisations/uk-health-security-agency.atom" # UKHSA
+        "https://www.gov.uk/government/organisations/uk-health-security-agency.atom", # UKHSA
+        "https://www.sciencedirect.com/journal/journal-of-building-engineering/rss",
+        "https://www.frontiersin.org/journals/public-health/rss",   
+        "https://abc2.net/index.php/journal/gateway/plugin/WebFeedGatewayPlugin/rss2",  
+        "https://advanced.onlinelibrary.wiley.com/feed/15214095/most-recent",   
+        "https://www.sciencedirect.com/journal/building-and-environment/rss",
     ],
+    
     "clinical": [
         "https://journals.plos.org/plospathogens/feed/atom",
         "https://www.benthamdirect.com/content/journals/cpb/fasttrack?feed=rss",
