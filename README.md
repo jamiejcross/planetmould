@@ -25,7 +25,7 @@ CONTEXTS = ['resistance', 'amr', 'famr', 'infection', 'clinical', 'indoor air', 
 
 Mouldwire uses RSS feeds from a mixed ecology of sources: including primary research journals (MDPI, Frontiers, ASM, ACS, Elsevier); high-impact general science journals (Nature, PLOS), public health organisations and science journalism.
 
-RSS_FEEDS = 
+_RSS FEEDS_ 
 
     "science":
         "https://www.nature.com/srep.rss",
