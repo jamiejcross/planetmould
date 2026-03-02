@@ -1,5 +1,28 @@
 [
   {
+    "title": "Enhancement in the nutritional profile and hepatoprotective activity of pine pollen via Aspergillus niger fermentation",
+    "source": "ScienceDirect Publication: Food Chemistry",
+    "excerpt": "Fermentation with Aspergillus niger significantly enhances the hepatoprotective effects of pine pollen. This study evaluated the effects of Aspergillus niger-fermented pine pollen (FPP) against alcoholic fatty liver disease (AFLD) using ethanol-induced HepG2 cells and an AFLD mouse model. In AFLD mice, FPP markedly reduced hepatic triglyceride levels from 1.47 ± 0.13 to 0.90 ± 0.11 mg/g and serum alanine aminotransferase (ALT) from 2.27 ± 0.63 to 1.02 ± 0.15 U/mL, indicating significant alleviation of lipid accumulation and liver injury. Mechanistically, FPP suppressed lipogenesis by downregulating PPARγ and SREBP-1c, while promoting fatty acid oxidation through upregulation of PPARα and CPT1. Untargeted metabolomic analysis further revealed substantial fermentation-induced metabolic remodeling and identified six key metabolites closely correlated with improvements in liver injury, lipid metabolism, and oxidative stress. Overall, these findings demonstrate that Aspergillus niger-fermented pine pollen may serve as a promising functional food for AFLD prevention.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0308814626007831?dgcid=rss_sd_all",
+    "pubDate": "2026-03-02T09:43:20Z",
+    "category": "health",
+    "abstract_source": "semantic_scholar",
+    "summary": "Fermentation with Aspergillus niger substantially altered the biochemical profile of pine pollen and enhanced its protective effects against alcoholic fatty liver disease. This study tested fermented pine pollen in both cultured liver cells exposed to ethanol and in mice with alcohol-induced fatty liver disease. In diseased mice, fermented pine pollen reduced hepatic triglyceride accumulation from 1.47 ± 0.13 to 0.90 ± 0.11 milligrams per gram of tissue and lowered serum alanine aminotransferase (a marker of liver damage) from 2.27 ± 0.63 to 1.02 ± 0.15 units per millilitre, indicating reduced lipid buildup and liver injury. The mechanism involved suppression of fat synthesis genes (PPARγ and SREBP-1c) and activation of fat-burning pathways (PPARα and CPT1). Untargeted metabolite-level analysis analysis identified six key metabolites produced during fermentation that correlated with improvements in liver function, fat metabolism, and cellular stress resistance.  Aspergillus niger here functions simultaneously as a metabolic transformer and a therapeutic agent—the same fungus flagged in other contexts as a source of toxins becomes, through fermentation, a vehicle for producing compounds that protect liver tissue from alcohol-induced damage. The fermentation process does not simply concentrate existing pine pollen properties but generates novel metabolites whose appearance correlates with hepatoprotective effects, revealing how microbial metabolism can rewrite the therapeutic potential of plant material under conditions of controlled industrial cultivation.",
+    "enhanced": true,
+    "enhanced_at": "2026-03-02T09:50:24.276110"
+  },
+  {
+    "title": "Metabologenomic profiling of the endemic Australian fungus Aspergillus luteorubrus",
+    "source": "tandf: Mycology: Table of Contents",
+    "excerpt": ".",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/21501203.2026.2613528?af=R",
+    "pubDate": "2026-03-01T03:34:48Z",
+    "category": "science",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-03-02T09:50:25.449199"
+  },
+  {
     "title": "CoFe Prussian blue analogue photothermal self-healing coating for resistance to corrosion, UV degradation and mold",
     "source": "ScienceDirect Publication: Chemical Engineering Journal",
     "excerpt": "Publication date: Available online 27 February 2026Source: Chemical Engineering JournalAuthor(s): Yang Han, Qiang Sun, Lin Cao, Han Li, Lankun Liu, Zihan Li, Wei Wang",
@@ -1481,6 +1504,6 @@
     "category": "indoor",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-02-28T23:51:30.694105"
+    "enhanced_at": "2026-03-02T09:50:26.532215"
   }
 ]
