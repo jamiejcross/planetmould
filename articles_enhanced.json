@@ -2,13 +2,82 @@
   {
     "title": "Mycotoxin Toxicity Assessment in the 21st Century: Where Are We on the Path to Alternatives?",
     "source": "ScienceDirect Publication: Current Opinion in Food Science",
-    "excerpt": "Publication date: Available online 17 March 2026Source: Current Opinion in Food ScienceAuthor(s): Zingales Veronica, Izzo Luana",
+    "excerpt": "An unprecedented global effort is currently underway to move away from animal studies and toward more human-relevant methods. While this shift is gaining momentum in biomedical research and preclinical safety assessment, how does it extend to the toxicological and regulatory evaluation of food contaminants? This review examines the current state of foodborne contaminant assessment, specifically mycotoxins, emphasizing both emerging efforts and persistent barriers to implementing an animal-free testing paradigm. Several initiatives from regulatory bodies signal a strong commitment to change. However, major challenges remain. Additionally, animal use in the European Union continues to be widespread in procedures related to food and feed safety, as well as in hazard assessment studies addressing exposure to mycotoxins. These considerations emphasize an urgent call to action to promote human-relevant approaches and advance safety assessment practices in the context of 21 st century technologies. • Global efforts are moving toxicology assessment away from animal studies. • Regulatory integration of NAMs in food safety remains limited. • Mycotoxin risk assessment represents an example of the slow adoption of NAMs. • Momentum from biomedical research should now drive innovation in food safety.",
     "url": "https://www.sciencedirect.com/science/article/pii/S2214799326000184?dgcid=rss_sd_all",
-    "pubDate": "2026-03-18T21:39:38Z",
+    "pubDate": "2026-03-23T09:59:36Z",
+    "category": "health",
+    "abstract_source": "openalex",
+    "summary": "This paper examines the slow adoption of human-relevant testing methods in the safety assessment of mycotoxins—fungal poisons that contaminate food and feed. The review documents that while a global movement toward animal-free toxicology is underway in biomedical research and preclinical safety evaluation, this shift has not substantially extended to food safety regulation. The paper identifies several regulatory initiatives signalling commitment to change, yet notes that animal testing remains widespread across the European Union for procedures related to food and feed safety and for hazard assessment studies of mycotoxin exposure. The review emphasizes that non-animal methods, despite their availability, remain poorly integrated into regulatory frameworks for food contaminant assessment, and calls for accelerated adoption of twenty-first century technologies to modernize how mycotoxin risks are evaluated.  The persistent reliance on animal studies for mycotoxin safety assessment reveals a material entanglement between regulatory practice and the bodies used to generate knowledge about exposure. Mycotoxins move through food systems and human bodies as accumulating contaminants, yet the methods used to assess their danger remain anchored to animal models rather than to the actual human populations whose exposures are shaped by patterns of food access, labour conditions, and economic inequality. The gap between available human-relevant testing methods and their regulatory adoption suggests that the barriers to change are not technical but institutional—rooted in how authority, evidence, and acceptable risk are constructed within food safety governance.",
+    "enhanced": true,
+    "enhanced_at": "2026-03-23T10:02:55.754926"
+  },
+  {
+    "title": "AltoSafe: A predictive model for Alternaria mycotoxins in tomatoes",
+    "source": "ScienceDirect Publication: Food Control",
+    "excerpt": "Tomatoes, a widely cultivated vegetable, are susceptible to infections by Alternaria species, which can lead to contamination with mycotoxins such as alternariol (AOH), alternariol monomethyl ether (AME), and tenuazonic acid (TeA), posing public health risks. This study presents Altosafe , a predictive model combined with a Random Forest approach for exploratory assessment of Alternaria mycotoxin contamination in open-field tomatoes. First, a cumulative fungal infection index was constructed based on literature and experimental data. This cumulative fungal infection index was then integrated with weather and agronomic data collected from open-field tomato cultivation trials held in China to develop predictive models using the random forest (RF) algorithm. Field trial data collected between April and November 2023 were used for model development and internal validation, while samples collected in May and June 2023 were reserved for hold-out validation within the same experimental context. Separate RF classification models were developed for AOH, AME, and TeA using predefined contamination thresholds. Internal validation accuracies ranged from 96.0% to 98.0%, and hold-out validation accuracies ranged from 70.0% to 82.0%. Threshold adjustment demonstrated expected trade-offs between sensitivity and specificity. To our knowledge, this is the first study in China to explore predictive models for Alternaria mycotoxin contamination in tomatoes. While the models showed promising performance under constrained field conditions, broader multi-season and multi-location validation is required before wider application can be considered. • Altosafe integrates a cumulative fungal infection index with random forest approach. • Altosafe models are based on simplified biological assumptions and limited data. • Fungal infection risk index is the most important predictor among all inputs. • Hold-out validation accuracies between 74% and 82% in one field context. • AltoSafe models provid",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526001945?dgcid=rss_sd_all",
+    "pubDate": "2026-03-23T09:59:36Z",
+    "category": "health",
+    "abstract_source": "openalex",
+    "summary": "This study presents AltoSafe, a predictive model using random forest machine learning to forecast contamination of open-field tomatoes with three Alternaria mycotoxins: alternariol, alternariol monomethyl ether, and tenuazonic acid. The model integrates a cumulative fungal infection index constructed from literature and experimental data with weather and agronomic variables collected during open-field tomato cultivation trials in China between April and November 2023. Separate classification models were developed for each of the three mycotoxins using predefined contamination thresholds. Internal validation accuracies ranged from 96.0% to 98.0%, while hold-out validation accuracies on samples reserved from May and June 2023 ranged from 70.0% to 82.0%, with the fungal infection risk index identified as the most important predictor across all inputs.  The gap between internal and hold-out validation performance reveals a material constraint: the model's capacity to predict mycotoxin contamination depends on the specific field conditions and seasonal timing from which it was trained, and broader application across multiple seasons and locations remains unvalidated. This paper documents a predictive technology designed to manage a fungal hazard in a high-value crop, yet the technology's own performance demonstrates how Alternaria contamination risk is entangled with particular weather patterns, agronomic practices, and temporal windows—factors that vary across growing contexts and cannot be easily generalized. The model thus becomes a tool for managing risk within constrained conditions rather than a portable solution, reflecting deeper dependencies between crop safety, environmental variability, and the localized knowledge required to govern fungal threats in agricultural systems.",
+    "enhanced": true,
+    "enhanced_at": "2026-03-23T10:03:00.127937"
+  },
+  {
+    "title": "Aflatoxin B1 in Maize: A Cross-Country Analysis of Occurrence and Dietary Exposure",
+    "source": "ScienceDirect Publication: Food Control",
+    "excerpt": "Publication date: Available online 18 March 2026Source: Food ControlAuthor(s): Christian Kelly Scott, Charitha J. Gamlath, Felicia Wu",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526001830?dgcid=rss_sd_all",
+    "pubDate": "2026-03-23T09:59:36Z",
     "category": "health",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-03-18T21:41:54.716569"
+    "enhanced_at": "2026-03-23T10:03:02.336639"
+  },
+  {
+    "title": "Study on a temperature-dependent selective soil treatment agent in regulating tobacco rhizosphere microbial community and controlling root and stem diseases",
+    "source": "Frontiers in Microbiology | New and Recent Articles",
+    "excerpt": "IntroductionThis study investigated the effects of a selective soil treatment agent on the microbial community structure of tobacco rhizosphere soil and the photosynthetic performance of tobacco plants at different temperatures (15 °C, 25 °C, 35 °C) through pot experiments.MethodsThe control efficacy against black shank and root rot diseases was also evaluated.Results and discussionThe results indicated that 25 °C was the optimal temperature for the agent’s effectiveness. Under this condition, the agent significantly inhibited the enrichment of phytopathogenic fungi such as Fusarium spp. in the rhizosphere soil (the abundance of Fusarium in the T25SJ treatment decreased by 78.6% compared to the untreated group T25CK), while optimizing the microbial community structure, as evidenced by increased fungal α-diversity (Shannon index) and enhanced competitiveness of beneficial bacteria (e.g., Pseudomonas spp.). Notably, the bacterial community stability was maintained (no significant change in the Simpson index), confirming the agent’s selective regulatory effect rather than non-specific sterilization. Fluorescence imaging analysis revealed that the photosynthetic performance of tobacco ",
+    "url": "https://www.frontiersin.org/articles/10.3389/fmicb.2026.1717189",
+    "pubDate": "2026-03-23T00:00:00Z",
+    "category": "science",
+    "summary": "This paper examined how a temperature-dependent selective soil treatment agent affects the microbial community in tobacco root zone soil and the plant's capacity for photosynthesis across three temperature conditions (15 degrees Celsius, 25 degrees Celsius, and 35 degrees Celsius). The agent proved most effective at 25 degrees Celsius, where it substantially reduced populations of disease-causing fungi such as Fusarium species—the abundance of Fusarium decreased by 78.6 percent in treated soil compared to untreated controls at this temperature. The treatment also increased the diversity of fungal communities and strengthened populations of beneficial bacteria including Pseudomonas species, while maintaining the stability of the broader bacterial community, indicating that the agent selectively suppresses harmful microorganisms rather than indiscriminately killing microbial life. Fluorescence imaging showed improvements in tobacco photosynthetic performance under these conditions, and the agent controlled black shank and root rot diseases.  Within the material entanglements of tobacco cultivation, this selective agent operates as both a disease suppression tool and a microbial reshaper—its capacity to target pathogenic fungi while preserving or enhancing beneficial bacterial populations reveals how agricultural interventions can be calibrated to work with rather than against the soil ecosystem. Yet the temperature-dependence of this selectivity also exposes a fragility: the agent's efficacy is contingent on specific thermal conditions, suggesting that as growing environments shift or become more variable, the stability of disease control in tobacco root zone systems may become increasingly uncertain.",
+    "enhanced": true,
+    "enhanced_at": "2026-03-23T10:03:06.745917"
+  },
+  {
+    "title": "Multi-kingdom metagenomic characterization of the gut bacteriome, mycobiome, and virome in chronic functional constipation",
+    "source": "Frontiers in Cellular and Infection Microbiology | New and Recent Articles",
+    "excerpt": "BackgroundChronic functional constipation (CFC) is a common gastrointestinal disorder increasingly linked to gut microbiome dysbiosis. However, multi-kingdom metagenomic characterization of bacterial, fungal, and viral communities in CFC remains limited.MethodsFecal samples from 53 CFC patients and 48 healthy controls were analyzed using whole-metagenome shotgun sequencing. Microbial composition, function, cross-kingdom interactions, and diagnostic potential were evaluated using diversity analyses, KEGG annotation, network analysis, and random forest modeling.ResultsCompared with healthy controls, CFC patients exhibited marked alterations across multiple microbial kingdoms. The gut bacteriome showed significant community-structure shifts despite comparable α-diversity, characterized by depletion of health-associated Firmicutes (e.g., Faecalibacterium and Roseburia) and enrichment of Proteobacteria (e.g., Klebsiella). The mycobiome displayed selective changes in diversity and composition, with several potentially pathogenic fungal taxa enriched in CFC (e.g., Fusarium sp. c181). In the virome, community composition differed significantly between groups, with higher viral richness in ",
+    "url": "https://www.frontiersin.org/articles/10.3389/fcimb.2026.1744020",
+    "pubDate": "2026-03-23T00:00:00Z",
+    "category": "clinical",
+    "summary": "Fecal samples from 53 chronic functional constipation patients and 48 healthy controls were analyzed using whole-metagenome shotgun sequencing to characterize bacterial, fungal, and viral communities simultaneously. The bacteriome in constipation patients showed marked shifts in community structure, with depletion of health-associated bacteria such as Faecalibacterium and Roseburia (both Firmicutes) and enrichment of Proteobacteria including Klebsiella, despite comparable overall bacterial diversity between groups. The fungal community displayed selective changes, with several potentially pathogenic fungi enriched in constipation patients, including Fusarium sp. c181. Viral community composition also differed significantly between patients and controls, with higher viral diversity observed in the constipation group. This paper evaluated microbial composition, metabolic function through genetic annotation, cross-kingdom interactions via network analysis, and diagnostic potential using machine learning classification.  Within the constipated gut, bacterial depletion and fungal enrichment occur as coupled processes rather than independent shifts—the loss of fiber-fermenting bacteria and the expansion of fungal taxa represent entangled changes in how the intestinal ecosystem processes and resists material flows. The simultaneous presence of pathogenic fungi and altered bacterial structure suggests that constipation reflects not a simple microbial imbalance but a reorganization of metabolic capacity and cross-kingdom dependencies; what appears clinically as a disorder of transit may register at the microbial level as a reconfiguration of who feeds on what, and which organisms gain competitive advantage in a slowed, altered intestinal environment.",
+    "enhanced": true,
+    "enhanced_at": "2026-03-23T10:03:10.911807"
+  },
+  {
+    "title": "High‐Volume Culture Improves Diagnostic Yield of Aspergillus Species From Sputum",
+    "source": "Wiley: Mycoses: Table of Contents",
+    "excerpt": "High-volume culture at 37°C substantially improves the detection of filamentous moulds in sputum, especially Aspergillus species and clinically relevant azole-resistant A. fumigatus. Incorporating HVC37 into routine mycology workflows can significantly enhance fungal diagnosis and antifungal resistance surveillance.",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/myc.70168?af=R",
+    "pubDate": "2026-03-20T11:51:27Z",
+    "category": "clinical",
+    "abstract_source": "openalex",
+    "summary": "High-volume culture incubated at 37 degrees Celsius substantially improves the detection of filamentous moulds in sputum samples, particularly Aspergillus species and clinically relevant azole-resistant strains of Aspergillus fumigatus. This paper demonstrates that incorporating high-volume culture at 37 degrees Celsius into routine mycology workflows can significantly enhance fungal diagnosis and antifungal resistance surveillance. The method addresses a diagnostic gap in respiratory sampling where standard culture protocols may miss or delay identification of these organisms.  Within the context of turbulent diagnostic landscapes shaped by antimicrobial resistance and clinical vulnerability, this paper reveals how a technical modification to culture volume and temperature becomes a site where pathogenic detection and epidemiological visibility converge. The same organisms flagged as threats to immune-weakened patients—particularly those whose respiratory exposure reflects broader patterns of institutional or occupational vulnerability—become legible through enhanced laboratory protocols. The improvement in detecting azole-resistant strains specifically indicates that diagnostic capacity is not neutral; it is entangled with the emergence and tracking of resistance observable traits that reflect both clinical need and the material conditions under which moulds proliferate and adapt.",
+    "enhanced": true,
+    "enhanced_at": "2026-03-23T10:03:14.807138"
+  },
+  {
+    "title": "Diagnostic Performance of Sōna GM LFA in Pulmonary Infections Caused by Different Aspergillus Species",
+    "source": "Wiley: Mycoses: Table of Contents",
+    "excerpt": "",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/myc.70155?af=R",
+    "pubDate": "2026-03-20T06:31:28Z",
+    "category": "clinical",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-03-23T10:03:15.779780"
   },
   {
     "title": "Aflatoxin M1 contamination in milk samples from households in Lahore, Pakistan: Occurrence, Exposure and Risk Characterization",
@@ -24,13 +93,14 @@
   {
     "title": "Non-fumigatus Aspergillus-associated pulmonary events: a diagnostic challenge",
     "source": "American Society for Microbiology: Journal of Clinical Microbiology: Table of Contents",
-    "excerpt": "Journal of Clinical Microbiology, Ahead of Print.",
+    "excerpt": "Non-<i>fumigatus Aspergillus</i> species are recognized as pulmonary pathogens, but their diagnosis is poorly documented. In this 5-year, single-center study, 497 of 1,256 patients had at least one positive respiratory culture for a non-<i>fumigatus</i> species, with 36 considered colonized and 16 with documented lung disease. <i>A. niger</i>, <i>A. flavus,</i> and <i>A. nidulans</i> accounted for almost four-fifths of the isolates. Routine tests produced poor results, with positivity rates of 2.3% for microscopy, 9.3% for repeat culture, 7.4% for bronchoalveolar galactomannan, and 24.5% for <i>Aspergillus fumigatus</i> serum IgG. Overall, the study shows that non-<i>fumigatus</i> species can cause treatable chronic lung disease, but that current diagnostics miss most cases. Until more sensitive tests are available, clinicians must rely on repeated respiratory sampling and culture to identify these infections.",
     "url": "https://journals.asm.org/doi/abs/10.1128/jcm.00163-26?af=R",
     "pubDate": "2026-03-18T07:00:00Z",
     "category": "clinical",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "abstract_source": "openalex",
+    "summary": "This paper documents a five-year clinical series of 1,256 patients, of whom 497 had at least one positive respiratory culture for non-*fumigatus Aspergillus* species. Among these, 36 patients were classified as colonized and 16 had documented lung disease caused by these organisms. The three dominant species were *Aspergillus niger*, *Aspergillus flavus*, and *Aspergillus nidulans*, together representing nearly 80 percent of all isolates recovered. Routine diagnostic methods performed poorly across the board: microscopy of respiratory samples detected the organism in only 2.3 percent of cases, repeat culture in 9.3 percent, bronchoalveolar lavage fluid galactomannan antigen testing in 7.4 percent, and serum antibody testing for *Aspergillus fumigatus* in 24.5 percent. The paper concludes that non-*fumigatus* species can produce treatable chronic lung infections but that current diagnostic approaches fail to identify most cases, leaving clinicians dependent on repeated respiratory sampling and culture as the most reliable detection method.  The diagnostic gap documented here reveals a material entanglement between clinical capacity and fungal epidemiology. These species circulate through respiratory systems and clinical laboratories at measurable rates, yet the tools designed to detect fungal lung disease—tests calibrated primarily for the more common *fumigatus* species—systematically fail to register their presence. The result is a clinical landscape where treatable infections remain undiagnosed not because the organisms are absent from patient lungs, but because the infrastructure of detection has been built around a narrower pathogenic profile. This selective blindness shapes which patients receive treatment and which remain classified as colonized rather than diseased, embedding diagnostic capacity itself as a mechanism of differential exposure and care.",
     "enhanced": true,
-    "enhanced_at": "2026-03-18T21:41:56.304495"
+    "enhanced_at": "2026-03-23T10:03:20.577234"
   },
   {
     "title": "Efficacy of chitinases from mangrove wetland derived Penicillium oxalicum on powdered chitin",
@@ -531,7 +601,7 @@
     "category": "clinical",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-03-18T21:42:48.738656"
+    "enhanced_at": "2026-03-23T10:03:21.354296"
   },
   {
     "title": "Directed evolution of the pathogenic mold Aspergillus fumigatus reveals novel genes contributing to triazole resistance",
@@ -2089,6 +2159,6 @@
     "category": "indoor",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-03-18T21:42:54.313568"
+    "enhanced_at": "2026-03-23T10:03:22.209149"
   }
 ]
