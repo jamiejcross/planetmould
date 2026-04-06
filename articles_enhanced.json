@@ -142,13 +142,14 @@
   {
     "title": "Role of exogenous treatments of phenylalanine and tyrosine in the mechanism of yeast‐secreted protein PgASP enhancing blue mold resistance in citrus fruits",
     "source": "Wiley: Journal of the Science of Food and Agriculture: Table of Contents",
-    "excerpt": "Journal of the Science of Food and Agriculture, EarlyView.",
+    "excerpt": "The results demonstrate that PgASP enhanced citrus disease resistance primarily through the activation of phenylalanine and tyrosine metabolism, boosting the biosynthesis of phenolic compounds and lignin. The direct antifungal activity of these amino acids also suggests their dual role in both signaling and defense, offering new avenues for managing postharvest disease control. © 2026 Society of Chemical Industry.",
     "url": "https://scijournals.onlinelibrary.wiley.com/doi/10.1002/jsfa.70612?af=R",
     "pubDate": "2026-04-04T05:55:22Z",
     "category": "science",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "abstract_source": "openalex",
+    "summary": "This paper documents how a yeast-secreted protein called PgASP strengthens citrus fruit resistance to blue mold by activating two amino acid pathways: phenylalanine and tyrosine metabolism. The study found that PgASP treatment increased the production of phenolic compounds and lignin—structural molecules that form physical and chemical barriers against fungal infection. The research also identified that phenylalanine and tyrosine themselves possess direct antifungal properties, suggesting these amino acids function simultaneously as signaling molecules that trigger defense responses and as active antimicrobial agents.  Within postharvest fruit storage systems, this dual mechanism reveals how a biological treatment converts a metabolic pathway into both a detection system and a weapon against fungal pathogens. The reliance on amino acid activation—rather than synthetic fungicides—situates disease control within the fruit's own biochemistry, yet this approach remains contingent on the specific protein source and the continued metabolic capacity of the stored fruit. The findings suggest that managing blue mold in citrus involves not simply blocking a pathogen but mobilizing the fruit's own chemical defenses, a strategy that depends on maintaining viable biological activity in the postharvest environment where decay and microbial competition are ongoing material realities.",
     "enhanced": true,
-    "enhanced_at": "2026-04-05T18:53:18.787029"
+    "enhanced_at": "2026-04-06T10:07:42.724045"
   },
   {
     "title": "H-phosphinic analogs of natural amino acids: a novel and efficient treatment for preventing biodeterioration of treasured painted artworks",
@@ -202,9 +203,9 @@
     "url": "https://phys.org/news/2026-03-cell-tool-enables-analysis-actin.html",
     "pubDate": "2026-03-30T21:50:06Z",
     "category": "media",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!  ---  **Explanation:** The source text provided is a press release or news summary containing only metadata (author name, institution, tool name, and journal) with no substantive abstract describing actual findings, methods, organisms studied, or data produced. The title alone does not constitute sufficient source material for analysis under the constraints specified. The related research context concerns mould enzyme systems and plant polymer degradation—a distinct research domain with no connection to the plant actin cytoskeleton tool described in the title. Per the Weak Signal Protocol, a full summary cannot be constructed from title and metadata alone.",
     "enhanced": true,
-    "enhanced_at": "2026-04-05T18:53:38.165431"
+    "enhanced_at": "2026-04-06T10:07:45.372750"
   },
   {
     "title": "Hygrothermal impact of water resistive barriers on mould growth in wood-frame wall assemblies",
@@ -2591,6 +2592,6 @@
     "category": "indoor",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-04-05T18:53:53.543930"
+    "enhanced_at": "2026-04-06T10:07:46.685049"
   }
 ]
