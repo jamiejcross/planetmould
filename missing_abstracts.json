@@ -1,17 +1,115 @@
 [
   {
     "doi": "",
+    "title": "A circular biorefinery approach for mango and lemon industrial waste: on-site Aspergillus welwitschiae cellulase production, enzymatic hydrolysis and bioethanol fermentation",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0961953426004381?dgcid=rss_sd_all",
+    "category": "indoor",
+    "pubDate": "2026-05-11T12:01:35Z"
+  },
+  {
+    "doi": "",
+    "title": "An in-situ photoderivative fluorescence enhancement method without chromatographic separation for Aflatoxin B1 (AFB1) detection",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0304389426012562?dgcid=rss_sd_all",
+    "category": "indoor",
+    "pubDate": "2026-05-11T12:01:34Z"
+  },
+  {
+    "doi": "",
+    "title": "Ventilation strategies for mold control during egg storage and transportation: A comprehensive evaluation integrating ITS sequencing and antibacterial efficacy",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526002203?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-05-11T12:01:27Z"
+  },
+  {
+    "doi": "",
+    "title": "Co-occurrence of mycotoxins contamination and risk assessment of dietary intake in maize (Zea mays L) from Nigeria",
+    "url": "https://www.sciencedirect.com/science/article/pii/S095671352600246X?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-05-11T12:01:27Z"
+  },
+  {
+    "doi": "",
+    "title": "Dual role and metabolic reprogramming: Key amino acids in marinade bidirectionally control aflatoxin B1 biosynthesis in Aspergillus parasiticus",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026000626?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-05-11T12:01:27Z"
+  },
+  {
+    "doi": "",
+    "title": "CPT on the inhibitory activity against Penicillium expansum and control of blue mold",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026000857?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-05-11T12:01:27Z"
+  },
+  {
+    "doi": "",
+    "title": "Glutathione S-transferase AaGST1 impacts the pathogenicity of Alternaria alternata through the regulation of the redox balance",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026000894?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-05-11T12:01:27Z"
+  },
+  {
+    "doi": "",
+    "title": "AppleMM: A multimodal model for apple moldy core diagnosis via low-fielda NMR and expert text fusion",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526003129?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-05-11T12:01:27Z"
+  },
+  {
+    "doi": "",
+    "title": "Mycotoxin field trial uncovers first aflatoxin B1 occurrence in maize in Lower Austria",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526003038?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-05-11T12:01:27Z"
+  },
+  {
+    "doi": "",
+    "title": "Pulsed light causes structural damage and proteomic alterations in Aspergillus brasiliensis conidia",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026001061?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-05-11T12:01:27Z"
+  },
+  {
+    "doi": "",
+    "title": "Biochemical, transcriptomics, and metabolomics analyses reveal coordinated antioxidant responses in Penicillium digitatum under MAP-simulated gas conditions",
+    "url": "https://www.sciencedirect.com/science/article/pii/S074000202600105X?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-05-11T12:01:27Z"
+  },
+  {
+    "doi": "",
+    "title": "Metabolomic profiling and identification of flavonoids related compounds in peanut seed oils for inhibition of aspergillus flavus growth",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0308814626016249?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-05-11T12:01:23Z"
+  },
+  {
+    "doi": "",
+    "title": "Aptamer-cDNA-driven nanozyme strategy: A recyclable dual-signal immunosensor for amplified detection of aflatoxin B1 in edible oil",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926010331?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-05-11T12:01:23Z"
+  },
+  {
+    "doi": "",
+    "title": "Assessing the antifungal resistance of synthesized tannic acid-modified silver nanoparticles against Aspergillus niger isogenic mutants",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000541?dgcid=rss_sd_all",
+    "category": "science",
+    "pubDate": "2026-05-11T12:01:10Z"
+  },
+  {
+    "doi": "",
+    "title": "Breaking the mould: cellulose in the cell walls of the Ophiostomatales",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1749461326000199?dgcid=rss_sd_all",
+    "category": "science",
+    "pubDate": "2026-05-11T12:01:10Z"
+  },
+  {
+    "doi": "",
     "title": "Antifungal exposure variability in critically ill patients: Extending risk-based frameworks in invasive mould infections",
     "url": "https://www.sciencedirect.com/science/article/pii/S0163445326000423?dgcid=rss_sd_all",
     "category": "clinical",
     "pubDate": "2026-05-04T11:02:00Z"
-  },
-  {
-    "doi": "",
-    "title": "A circular biorefinery approach for mango and lemon industrial waste: on-site Aspergillus welwitschiae cellulase production, enzymatic hydrolysis and bioethanol fermentation",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0961953426004381?dgcid=rss_sd_all",
-    "category": "indoor",
-    "pubDate": "2026-05-04T11:01:36Z"
   },
   {
     "doi": "",
@@ -21,46 +119,11 @@
     "pubDate": "2026-05-04T11:01:30Z"
   },
   {
-    "doi": "",
-    "title": "Ventilation strategies for mold control during egg storage and transportation: A comprehensive evaluation integrating ITS sequencing and antibacterial efficacy",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526002203?dgcid=rss_sd_all",
+    "doi": "10.1021/acs.jafc.6c00539?af=R",
+    "title": "The Cysteine-Rich Secretory Protein TaSCP1-6B Modulates Resistance to Fusarium graminearum in Wheat",
+    "url": "https://pubs.acs.org/doi/10.1021/acs.jafc.6c00539?af=R",
     "category": "health",
-    "pubDate": "2026-05-04T11:01:30Z"
-  },
-  {
-    "doi": "",
-    "title": "Co-occurrence of mycotoxins contamination and risk assessment of dietary intake in maize (Zea mays L) from Nigeria",
-    "url": "https://www.sciencedirect.com/science/article/pii/S095671352600246X?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-05-04T11:01:30Z"
-  },
-  {
-    "doi": "",
-    "title": "Dual role and metabolic reprogramming: Key amino acids in marinade bidirectionally control aflatoxin B1 biosynthesis in Aspergillus parasiticus",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026000626?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-05-04T11:01:30Z"
-  },
-  {
-    "doi": "",
-    "title": "CPT on the inhibitory activity against Penicillium expansum and control of blue mold",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026000857?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-05-04T11:01:30Z"
-  },
-  {
-    "doi": "",
-    "title": "Glutathione S-transferase AaGST1 impacts the pathogenicity of Alternaria alternata through the regulation of the redox balance",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026000894?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-05-04T11:01:30Z"
-  },
-  {
-    "doi": "",
-    "title": "Assessing the antifungal resistance of synthesized tannic acid-modified silver nanoparticles against Aspergillus niger isogenic mutants",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000541?dgcid=rss_sd_all",
-    "category": "science",
-    "pubDate": "2026-05-04T11:01:14Z"
+    "pubDate": "2026-04-23T07:00:00Z"
   },
   {
     "doi": "",
@@ -75,13 +138,6 @@
     "url": "https://pubs.acs.org/doi/10.1021/acs.jafc.5c16825?af=R",
     "category": "health",
     "pubDate": "2026-04-17T07:00:00Z"
-  },
-  {
-    "doi": "10.1080/21501203.2026.2647504?af=R",
-    "title": "Chitin deacetylases AaCDAs enable Alternaria alternata to evade host immune responses via cell wall modification",
-    "url": "https://www.tandfonline.com/doi/full/10.1080/21501203.2026.2647504?af=R",
-    "category": "science",
-    "pubDate": "2026-04-14T06:02:13Z"
   },
   {
     "doi": "",
