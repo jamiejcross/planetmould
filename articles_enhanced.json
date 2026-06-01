@@ -1,5 +1,212 @@
 [
   {
+    "title": "Comparative analysis of microbial saccharification and enzymatic hydrolysis of lignocellulosic biomass under optimal process conditions using Aspergillus fumigatus and Trichoderma reesei cultured on agro-waste",
+    "source": "ScienceDirect Publication: Biomass and Bioenergy",
+    "excerpt": "Publication date: December 2026Source: Biomass and Bioenergy, Volume 215Author(s): Tinku Goswami, Pratik Satya, Laxmi Sharma, Suman Roy, Gouranga Kar, A.K. Singh, Girindrani Dutta",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0961953426006872?dgcid=rss_sd_all",
+    "pubDate": "2026-06-01T14:55:36Z",
+    "category": "indoor",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-06-01T14:58:18.098562"
+  },
+  {
+    "title": "Gluconobacter oxydans as a biocontrol agent against Alternaria alternata in postharvest chili peppers: Antifungal activity and action mechanisms",
+    "source": "ScienceDirect Publication: Food Microbiology",
+    "excerpt": "Alternaria alternata (A. alternata) is a pathogenic fungus responsible for post-harvest diseases in peppers, often causing rot and significant economic losses. In this study, Gluconobacter oxydans (G. oxydans) isolated from Yunnan specialty fruits and vegetables was found to exhibit potential inhibitory activity against A. alternata. G. oxydans significantly suppressed mycelial growth and demonstrated comparable efficacy in vitro. Further analysis revealed that G. oxydans disrupted the integrity of A. alternata's cell wall and cell membrane, leading to intracellular content aggregation and organelle damage. Additionally, G. oxydans treatment was found to inhibit antioxidant enzyme activity, reduce GSH content, induce ROS accumulation, and elevate MDA levels. Transcriptome analysis revealed 606 upregulated and 121 downregulated genes in the G. oxydans treated group. Genes associated with cell walls, cell membranes, and transporters showed significant enrichment. These results indicate that G. oxydans effectively inhibits A. alternata growth by disrupting membrane integrity, activating oxidative stress, and interfering with energy metabolism. Our findings provide new directions for developing biocontrol agents against pepper black spot disease post-harvest.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026001231?dgcid=rss_sd_all",
+    "pubDate": "2026-06-01T14:55:27Z",
+    "category": "health",
+    "abstract_source": "europepmc",
+    "summary": "Gluconobacter oxydans, a bacterium isolated from Yunnan specialty fruits and vegetables, suppressed mycelial growth of Alternaria alternata laboratory-based with comparable efficacy to standard treatments. This paper demonstrates that G. oxydans disrupted the cell wall and cell membrane of A. alternata, causing intracellular content aggregation and organelle damage. The bacterium also inhibited antioxidant enzyme activity, reduced glutathione content, accumulated reactive oxygen species, and elevated malondialdehyde levels in the fungal cells. Transcriptome analysis identified 606 elevated genes and 121 reduced genes in A. alternata exposed to G. oxydans, with significant enrichment in genes associated with cell walls, cell membranes, and molecular transporters. The paper concludes that G. oxydans inhibits A. alternata growth through membrane disruption, oxidative stress activation, and interference with energy metabolism pathways.  Within postharvest pepper systems, this research reveals a material entanglement: the same bacterial metabolite that damages fungal cell membranes—a mechanism of pathogen suppression—simultaneously triggers cellular stress responses that render the fungus metabolically vulnerable. The bacterium's capacity to disrupt membrane integrity while simultaneously forcing the fungus into oxidative crisis demonstrates how biocontrol operates not through simple antagonism but through the exploitation of metabolic fragility. In the context of agricultural commodity chains where Alternaria alternata causes significant economic losses, G. oxydans emerges as both a remediation tool and a window into the precarious material dependencies that sustain postharvest disease—dependencies that might equally be leveraged or destabilized by other microbial actors under different conditions.",
+    "enhanced": true,
+    "enhanced_at": "2026-06-01T14:58:47.200715"
+  },
+  {
+    "title": "Pulsed light causes structural damage and proteomic alterations in Aspergillus brasiliensis conidia",
+    "source": "ScienceDirect Publication: Food Microbiology",
+    "excerpt": "PL treatment on A. brasiliensis DSM 1988 conidia. SEM revealed marked structural damage to the surface of conidia exposed to PL, including surface perforations and extracellular material suggestive of leakage of intracellular contents. Proteomic analysis revealed a significant decrease in the abundance of 36 proteins, notably catalases, laccase, proteins involved in vesicle trafficking and DNA maintenance processes. These findings indicate that PL affects not only the conidial surface but also intracellular protein networks. To our knowledge, this study provides the first proteomic characterization of PL-treated conidia and offers molecular-level insight into PL-induced damage relevant to food decontamination.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026001061?dgcid=rss_sd_all",
+    "pubDate": "2026-06-01T14:55:27Z",
+    "category": "health",
+    "abstract_source": "openalex",
+    "summary": "Pulsed light treatment of *Aspergillus brasiliensis* conidia produces visible structural damage and measurable changes in the organism's internal protein composition. Scanning electron microscopy revealed surface perforations and leakage of cellular material from conidia exposed to pulsed light. protein-level analysis analysis identified a significant reduction in 36 proteins following treatment, including catalases (enzymes that break down hydrogen peroxide), laccase (an oxidative enzyme), and proteins responsible for moving materials between cellular compartments and maintaining genetic material. This paper provides the first protein-level characterization of pulsed light damage in fungal conidia and demonstrates that the treatment disrupts both the physical barrier of the spore surface and the biochemical machinery within.  The findings reveal how a decontamination technology operates across multiple scales of the fungal body—simultaneously breaching the protective outer layer and dismantling the metabolic defences that allow the organism to persist in hostile conditions. In food production contexts where chemical disinfectants generate toxic by-products and face consumer resistance, pulsed light emerges as a non-chemical alternative; yet this study shows it achieves decontamination by exploiting the very protein systems—oxidative stress responses, cellular repair mechanisms—that *Aspergillus brasiliensis* relies upon to survive in the moisture-rich, nutrient-dense environments of food storage and processing. The technology's effectiveness thus depends on rendering the organism unable to mobilize its adaptive capacity, a dependency that may itself shift as fungal populations encounter repeated pulsed light exposure in industrial food chains.",
+    "enhanced": true,
+    "enhanced_at": "2026-06-01T14:58:37.805694"
+  },
+  {
+    "title": "Biochemical, transcriptomics, and metabolomics analyses reveal coordinated antioxidant responses in Penicillium digitatum under MAP-simulated gas conditions",
+    "source": "ScienceDirect Publication: Food Microbiology",
+    "excerpt": "Antioxidant metabolism plays a key role in maintaining redox balance and enhancing adaptive capacity in postharvest fungal pathogens. However, the mechanism by which Penicillium digitatum adapts under modified atmosphere packaging (MAP) conditions remains unclear. To investigate this, integrated biochemical, transcriptomic, and metabolomic analyses were conducted on P. digitatum exposed to Air, controlled atmosphere (CA), and MAP treatments for three days. Transcriptomic profiling on day 3, identified 75 differentially expressed genes (DEGs) associated with antioxidant pathways, while metabolomic analysis revealed 4 differentially accumulated metabolites. Under both CA and MAP treatments, enhanced fatty acid β-oxidation was associated with increased reactive oxygen species (ROS), specifically hydrogen peroxide (H<sub>2</sub>O<sub>2</sub>) and superoxide anion. Moreover, MAP-adapted P. digitatum efficiently scavenged H<sub>2</sub>O<sub>2</sub>, as supported by biochemical assays showing increases in catalase (CAT) activity and moderate elevation of superoxide dismutase activity. MAP treatment was associated with transcriptional reprogramming of the HOG-MAPK signaling pathway and downregulated the transcription factor Sko1, which was correlated with CAT expression and activity. Additionally, MAP promoted ascorbic acid biosynthesis via upregulation of D-glucarate dehydratase and L-gulonate dehydrogenase, and strengthened the glutathione cycle through upregulation of glutathione reductase and glutathione peroxidase. Inhibition of CAT of pathogen by 3-amino-1,2,4-triazole under MAP conditions suppressed fungal growth, suggesting its critical role in adaptive antioxidant defense. Finally, qRT-PCR validation of eight key DEGs confirmed the transcriptomic patterns. In conclusion, these coordinated responses under MAP conditions were associated with enhanced ROS scavenging and alleviated oxidative damage and provided new insights into the adaptive antioxidant mechanism of P.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S074000202600105X?dgcid=rss_sd_all",
+    "pubDate": "2026-06-01T14:55:27Z",
+    "category": "health",
+    "abstract_source": "europepmc",
+    "summary": "This paper documents how Penicillium digitatum, a fungal pathogen affecting citrus and other postharvest crops, coordinates multiple biochemical systems to survive in modified atmosphere packaging environments. The study combined three analytical approaches—measuring enzyme activity, analyzing gene expression patterns, and tracking small molecule metabolites—on fungal samples exposed to standard air, controlled atmosphere, and modified atmosphere packaging conditions over three days. The fungal pathogen responded to modified atmosphere packaging by activating 75 genes involved in antioxidant defense, accumulating four distinct metabolites, and increasing the breakdown of fatty acids, which generated reactive oxygen species including hydrogen peroxide and superoxide anion. To neutralize this oxidative stress, the fungus elevated catalase and superoxide dismutase enzymes, enhanced production of ascorbic acid through specific enzymatic pathways, and strengthened the glutathione cycle—a cellular detoxification system. Blocking catalase activity with a chemical inhibitor suppressed fungal growth under modified atmosphere packaging, confirming this enzyme's importance for survival.  The fungus's capacity to thrive in the chemically altered atmosphere of packaged produce reveals how postharvest storage technologies create selective pressures that favour rapid metabolic adaptation. What emerges is not simply a pathogen responding to stress, but an organism whose survival mechanisms—the very antioxidant defenses that allow it to persist in hostile storage conditions—are inseparable from its capacity to cause disease and economic loss in the commodity chain. The same enzymatic systems that enable P. digitatum to colonize treated produce also represent potential intervention points, yet their inhibition requires understanding how fungal populations have already evolved coordinated responses across multiple metabolic pathways.",
+    "enhanced": true,
+    "enhanced_at": "2026-06-01T14:58:43.005038"
+  },
+  {
+    "title": "CPT on the inhibitory activity against Penicillium expansum and control of blue mold",
+    "source": "ScienceDirect Publication: Food Microbiology",
+    "excerpt": "Camptothecin (CPT), a natural alkaloid, exhibits potent antitumor and antifungal properties. Penicillium expansum is one of the most devastating pathogens affecting temperate fruit. Its infection can severely reduce fruit storage quality and commercial value. This study demonstrated that CPT exhibited excellent antifungal activity for P. expansum and also inhibited its accumulation of patulin. Notably, CPT (5 μg/mL) resulted in statistically significant and substantial inhibition of colony growth, spore germination, sporulation, and biomass accumulation. Gene expression analyses revealed that spore development-related genes were markedly downregulated following CPT exposure. This led to dramatic morphological damage in P. expansum spores and hyphae, as well as extensive leakage of intracellular nucleic acids and proteins. CPT treatment sharply reduced patulin content in both culture and inoculated fruit. CPT application also led to pronounced suppression of key cell wall-degrading enzymes (CWDEs). These including polygalacturonase (PG), pectin lyase (PL), cellulose (Cx), pectin methylesterase (PME), polygalacturonase transeliminase (PGTE), and pectin methylesterase transeliminase (PMTE), which are produced during fruit infection. As a result, lesion expansion was effectively halted. In summary, CPT impaired P. expansum growth by disrupting hyphal and spore development. It also inhibited cell wall-degrading enzyme activity at fruit wound sites, indicating its strong potential to mitigate postharvest blue mold.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026000857?dgcid=rss_sd_all",
+    "pubDate": "2026-06-01T14:55:27Z",
+    "category": "health",
+    "abstract_source": "europepmc",
+    "summary": "Camptothecin, a naturally occurring alkaloid, reduced the growth, spore formation, and biomass accumulation of *Penicillium expansum* at a concentration of 5 micrograms per milliliter, with measurable effects on colony expansion and spore germination. The compound suppressed genes involved in spore development and caused structural damage to fungal spores and filaments, leading to leakage of nucleic acids and proteins from damaged cells. Treatment with camptothecin also lowered the production of patulin—a toxic metabolite produced by the fungus—in both laboratory cultures and infected fruit tissue. The alkaloid inhibited six enzymes that the fungus deploys to break down plant cell walls during infection (polygalacturonase, pectin lyase, cellulose, pectin methylesterase, polygalacturonase transeliminase, and pectin methylesterase transeliminase), which halted the expansion of decay lesions on fruit surfaces.  Within postharvest fruit storage systems, camptothecin operates as both a direct fungal toxin and an inhibitor of the enzymatic machinery through which *Penicillium expansum* penetrates and colonizes plant tissue. The compound's capacity to simultaneously suppress fungal reproduction, damage cellular structures, and block the biochemical pathways of tissue invasion reveals how a single natural product can address multiple material vulnerabilities in the fruit-fungus-storage assemblage—yet the reliance on such chemical interventions also signals the ongoing dependency of temperate fruit supply chains on external antimicrobial inputs to manage pathogenic pressure that storage conditions themselves may intensify.",
+    "enhanced": true,
+    "enhanced_at": "2026-06-01T14:58:27.738798"
+  },
+  {
+    "title": "Glutathione S-transferase AaGST1 impacts the pathogenicity of Alternaria alternata through the regulation of the redox balance",
+    "source": "ScienceDirect Publication: Food Microbiology",
+    "excerpt": "Alternaria alternata is a major postharvest pathogen that causes substantial economic losses to a wide range of fruits and vegetables. Glutathione S-transferases (GSTs) are crucial for cellular detoxification and antioxidant defense. However, the functional role and regulatory mechanism of AaGST1 in A. alternata remain poorly understood. In this study, we cloned the AaGST1 gene from A. alternata, revealing a 1626 bp genomic sequence that contains two introns and three exons. The 780 bp coding sequence (CDS) encodes 259 amino acids. Structural analysis indicated that AaGST1 possesses both a Thioredoxin-like superfamily and a GST C-family superfamily domains, showing high similarity to GST1 homologs in related fungi. To investigate its biological function, we generated an AaGST1 deletion mutant. The results demonstrated that the deletion impaired fungal growth, reduced the activity of cell wall-degrading enzymes, and compromised cell membrane integrity, leading to substantial intracellular reactive oxygen species (ROS) accumulation. The mutation also affected the expression of multiple antioxidant enzyme genes and disrupted glutathione redox equilibrium, thereby contributing to the attenuation of pathogenicity in A. alternata. Furthermore, exogenous ascorbic acid partially restored both the growth and virulence of the mutant. In conclusion, our findings indicate that AaGST1 modulates the pathogenicity of A. alternata by regulating redox equilibrium. These results provide valuable insights and suggest potential strategies for the targeted management of postharvest diseases caused by A. alternata.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026000894?dgcid=rss_sd_all",
+    "pubDate": "2026-06-01T14:55:27Z",
+    "category": "health",
+    "abstract_source": "europepmc",
+    "summary": "Alternaria alternata causes substantial postharvest losses across fruits and vegetables by degrading cell walls and compromising tissue integrity. This paper cloned and characterized the AaGST1 gene from the fungus, a 780 base-pair coding sequence encoding 259 amino acids that contains structural domains typical of detoxification enzymes found in related fungi. When researchers deleted the AaGST1 gene, the resulting mutant showed reduced growth, weakened cell wall-degrading enzyme activity, damaged cell membranes, and accumulated reactive oxygen species—toxic byproducts of cellular metabolism—within its cells. The deletion also suppressed genes responsible for producing antioxidant enzymes and disrupted the fungus's ability to maintain balanced levels of glutathione, a key cellular antioxidant molecule. Treating the mutant with exogenous ascorbic acid partially restored both growth and disease-causing ability, confirming that redox balance—the equilibrium between oxidative stress and antioxidant defenses—directly governs the fungus's capacity to cause disease.  The findings reveal how a single detoxification enzyme orchestrates the fungus's capacity to persist in the hostile chemical environment of ripening fruit tissue. The same molecular machinery that allows Alternaria alternata to tolerate the oxidative stresses of postharvest storage—heat, ethylene exposure, microbial competition—also enables its pathogenic activity; disrupt the redox balance and the fungus loses both its metabolic vigor and its ability to breach plant defenses. This creates a narrow window for intervention: the enzyme's dependence on glutathione equilibrium suggests that disrupting this balance could render the fungus vulnerable without requiring direct toxicity, potentially offering a pathway toward targeted disease management that exploits the fungus's own biochemical constraints rather than introducing external antimicrobial agents.",
+    "enhanced": true,
+    "enhanced_at": "2026-06-01T14:58:32.951683"
+  },
+  {
+    "title": "Dual role and metabolic reprogramming: Key amino acids in marinade bidirectionally control aflatoxin B1 biosynthesis in Aspergillus parasiticus",
+    "source": "ScienceDirect Publication: Food Microbiology",
+    "excerpt": "This study revealed the effects and underlying mechanisms of key amino acids in marinade on A. parasiticus growth and aflatoxin B<sub>1</sub> (AFB<sub>1</sub>) biosynthesis. Six key amino acids (with a concentration gradient of 0.5-8 g/L) from the marinade were selected and cultured them synchronously with A. parasiticus in this study. Solid/liquid culture combined with LC-MS/MS technology was used to analyse the effects of amino acids on colony growth, spore production, mycelial dry weight, and AFB<sub>1</sub> biosynthesis in A. parasiticus, and metabolomics was employed to elucidate the regulatory mechanisms of key amino acids. Results demonstrated that arginine, glycine, and lysine exhibited varying degrees of inhibitory effects. Specifically, 8 g/L lysine completely inhibited AFB<sub>1</sub> biosynthesis and significantly suppressed the mycelial growth. Proline, phenylalanine, and leucine remarkably promoted both the growth of A. parasiticus and AFB<sub>1</sub> production, with AFB<sub>1</sub> content reaching 324.50 ng/mL in the 8 g/L proline group, 3.45 times higher than in the control group. Metabolomic analysis indicated that proline synergistically enhanced AFB<sub>1</sub> biosynthesis by activating metabolic pathways, including the tricarboxylic acid (TCA) cycle and gibberellin metabolism. In contrast, lysine disrupted glucose metabolism and the TCA cycle, destroyed cell membrane integrity and inhibited A. parasiticus growth and toxin production at multiple levels. This study clarified the bidirectional regulatory effects and mechanisms of key amino acids in marinade, providing crucial technical references and theoretical foundations for controlling AFB<sub>1</sub> contamination in the production of marinated products by regulating marinade amino acid composition.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026000626?dgcid=rss_sd_all",
+    "pubDate": "2026-06-01T14:55:27Z",
+    "category": "health",
+    "abstract_source": "europepmc",
+    "summary": "Marinade components can bidirectionally control aflatoxin B1 production in *Aspergillus parasiticus*, with opposing effects depending on which amino acid is present. This paper cultured six key amino acids from marinade—at concentrations ranging from 0.5 to 8 grams per litre—alongside the fungus, then used solid and liquid culture methods combined with liquid chromatography-tandem mass spectrometry to measure colony growth, spore production, mycelial dry weight, and aflatoxin B1 levels. Arginine, glycine, and lysine inhibited toxin production to varying degrees; lysine at 8 grams per litre completely blocked aflatoxin B1 biosynthesis and suppressed mycelial growth by disrupting glucose metabolism and the tricarboxylic acid cycle, while also damaging cell membrane integrity. Proline, phenylalanine, and leucine promoted both fungal growth and aflatoxin B1 production, with proline at 8 grams per litre generating 324.50 nanograms per millilitre of aflatoxin B1—3.45 times higher than untreated controls—by activating the tricarboxylic acid cycle and gibberellin metabolism pathways.  The same marinade components that pose a contamination risk in fermented foods reveal a material entanglement between food preservation chemistry and fungal toxin production. The amino acids present in brine do not simply inhibit or promote fungal growth uniformly; instead, they operate as metabolic switches that redirect the fungus toward either toxin accumulation or growth suppression depending on molecular composition. This suggests that controlling aflatoxin B1 in marinated products requires not merely reducing fungal presence but strategically manipulating the chemical environment of the marinade itself—a form of microbial governance embedded in food preparation practices that exposes the dependency of food safety on precise knowledge of fungal metabolism under conditions of human food production.",
+    "enhanced": true,
+    "enhanced_at": "2026-06-01T14:58:23.089665"
+  },
+  {
+    "title": "Dietary risk assessment of mycotoxins in plant-based meat alternatives (PBMAs) in the context of co-occurring bioaccessible polyphenols",
+    "source": "ScienceDirect Publication: Food Control",
+    "excerpt": "Publication date: November 2026Source: Food Control, Volume 189Author(s): Paula Llorens, Marta Leite, Andreia Freitas, Giovanni Caprioli, Gianni Sagratini, Laura Acquaticci, Ana Juan-García, Cristina Juan, Angelina Pena, Liliana J.G. Silva",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526003828?dgcid=rss_sd_all",
+    "pubDate": "2026-06-01T14:55:27Z",
+    "category": "health",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-06-01T14:58:48.208819"
+  },
+  {
+    "title": "Molecular mechanism of the multi-copper oxidase biosynthesis gene PdFET5 affecting the pathogenicity of Penicillium digitatum to citrus",
+    "source": "ScienceDirect Publication: Food Microbiology",
+    "excerpt": "Publication date: Available online 26 May 2026Source: Food MicrobiologyAuthor(s): Yue Zhang, Qiya Yang, Xiaoyun Zhang, Solairaj Dhanasekaran, Xue Bai, Pengchen Sun, Wenjing Zhang, Xifei Chen, Mditshwa Asanda, Hongyin Zhang",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026001371?dgcid=rss_sd_all",
+    "pubDate": "2026-06-01T14:55:27Z",
+    "category": "health",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-06-01T14:58:49.415073"
+  },
+  {
+    "title": "A multispectral and LC–MS/MS approach for investigating matrix interference in aflatoxin B1 analysis of pressed peanut cake",
+    "source": "ScienceDirect Publication: Food Chemistry",
+    "excerpt": "Pressed peanut cake (PPC) is a valuable plant-based protein source, but its complex matrix might lead to underestimation of aflatoxin B1 (AFB1). This study established a multi-technique diagnostic framework integrating UV-Vis, FTIR, LC-MS/MS, and SEM to systematically dissect matrix interference in different extraction solvents, ultimately correlating with AFB1 detection. It was found that, due to lipid interference, the use of nonpolar solvents during extraction not only significantly amplified detection errors but also severely compromised extraction efficiency, resulting in an analytical error exceeding 85%. Systematic profiling revealed that conventional methanol/water extraction introduced dual errors, attributable to either inefficient toxin extraction or excessive pigment co-extraction, leading to an AFB1 underestimation up to 50%. Acetonitrile/water was identified as the optimal extraction solvent, minimizing interferents and achieving consistent AFB1 recoveries >90%. This work not only provides a practically applicable detection protocol but also offers a clear mechanistic explanation for the observed errors.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0308814626019321?dgcid=rss_sd_all",
+    "pubDate": "2026-06-01T14:55:24Z",
+    "category": "health",
+    "abstract_source": "europepmc",
+    "summary": "Pressed peanut cake, a protein-rich byproduct of oil extraction, contains complex chemical compounds that interfere with the detection of aflatoxin B1, a toxic fungal metabolite. This paper used multiple analytical techniques—ultraviolet-visible light spectroscopy, Fourier transform infrared spectroscopy, liquid chromatography with tandem mass spectrometry, and scanning electron microscopy—to identify which extraction solvents minimized these interferences. Nonpolar solvents caused lipid compounds in the peanut cake to interfere with measurements, producing detection errors exceeding 85 percent and failing to extract the toxin efficiently. Methanol mixed with water introduced a different problem: either the toxin was not extracted completely, or pigments from the plant material were co-extracted in excessive amounts, leading to underestimation of aflatoxin B1 by up to 50 percent. Acetonitrile mixed with water proved optimal, reducing interference and achieving toxin recovery rates above 90 percent.  The findings reveal how the material composition of a food commodity—its lipids and pigments—shapes the detectability of a hazardous substance within it. What appears as a technical problem of measurement precision is rooted in the specific chemistry of pressed peanut cake itself: the same lipids that make the material valuable as a protein source become obstacles to identifying contamination. The protocol that emerges from this work is not simply a neutral improvement in analytical accuracy but a solution embedded in the material properties of a particular agricultural commodity and the economic chains through which it moves.",
+    "enhanced": true,
+    "enhanced_at": "2026-06-01T14:58:54.304852"
+  },
+  {
+    "title": "Assessing the antifungal resistance of synthesized tannic acid-modified silver nanoparticles against Aspergillus niger isogenic mutants",
+    "source": "ScienceDirect Publication: Fungal Biology",
+    "excerpt": "In the present study, the chemical synthesis and characterization of silver (Ag) nanoparticles, as well as their effects on the growth and inhibition of the filamentous fungus Aspergillus niger, were examined. Tannic acid-modified silver nanoparticles (TA-AgNPs) with a size 13.6 nm were synthesized and characterized before being exposed to antimicrobial assessments. The preparation involved mixing an aqueous solution of silver nitrate with an aqueous tannic acid solution. Antimicrobial assessmsents included the exposure of the nanoparticles to the A. niger, and five isogenic mutant strains (MA2.34, TLF93, TLF95, TLF96,TLF39), each lacking a distinct combination of genes. were analyzed to assess the effects of four different concentrations (30, 60, 90, and 120 ppm) of Ag nanoparticles. Statistical analysis of the experimental data confirmed that Ag nanoparticles reduce fungal growth rates and inhibit growth across all strains. However, due to genetic differences among the mutant strains, the extent of growth varied depending on the specific strain. The TLF96 mutant (ΔkusA::DR-amdS-DR, ΔcrhA-G, ΔagsA) exhibited greater sensitivity to chemically synthesized silver nanoparticles than TLF39 (ΔkusA::DR-amdS-DR, ΔcrhA-G), indicating that deletion of the agsA gene increases A. niger susceptibility by compromising α-glucan-mediated cell wall integrity. The findings of this study offer valuable insights into the antifungal properties of silver nanoparticles, highlighting their potential effectiveness in overcoming fungal resistance.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000541?dgcid=rss_sd_all",
+    "pubDate": "2026-06-01T14:55:16Z",
+    "category": "science",
+    "abstract_source": "openalex",
+    "summary": "This paper synthesized tannic acid-modified silver nanoparticles measuring 13.6 nanometers by mixing aqueous silver nitrate with aqueous tannic acid solution. The nanoparticles were tested against the fungus Aspergillus niger and five isogenic mutant strains (MA2.34, TLF93, TLF95, TLF96, TLF39), each engineered to lack specific genes. At four tested concentrations (30, 60, 90, and 120 parts per million), the silver nanoparticles reduced fungal growth rates across all strains, though the degree of inhibition varied by strain. The TLF96 mutant, which lacked three genes including agsA, showed greater sensitivity to the nanoparticles than TLF39, which lacked only two of those genes. This paper attributes the difference to the agsA gene's role in maintaining cell wall integrity through α-glucan production, suggesting that loss of this gene compromises the fungus's ability to resist the nanoparticles.  The findings reveal a material dependency embedded in fungal resistance: the same genetic deletions that weaken a cell wall against chemical assault also create vulnerability to engineered particles. Rather than discovering a universal antifungal solution, this paper documents how resistance emerges from specific genetic architectures—and how those same architectures can be exploited. The nanoparticles do not overcome resistance so much as expose it as contingent on particular metabolic and structural investments. In contexts where Aspergillus niger causes costly spoilage or poses clinical risk, such particles might become valuable tools; yet their effectiveness depends entirely on which genes the target population carries, a variation shaped by prior exposure, selection pressures, and the material conditions under which the fungus has evolved.",
+    "enhanced": true,
+    "enhanced_at": "2026-06-01T14:58:59.405541"
+  },
+  {
+    "title": "Inducers enhanced cellulase production from Cladosporium pseudochalastosporoides and immobilization on mesoporous silica nanoparticles for improved catalytic efficiency and stability",
+    "source": "ScienceDirect Publication: International Journal of Biological Macromolecules",
+    "excerpt": "Mesoporous silica nanoparticles were synthesized and employed as an effective support for immobilization of cellulases produced from Cladosporium pseudochalastosporoides (CPC) and a commercial cellulase from Trichoderma reesei (ATCC 26921) was included as a benchmark reference for comparative evaluation during hydrolysis, aiming to improve catalytic performance, thermal stability, and operational reusability. The PP2 formulation (PEG-8000 and pectin, 1:1% w/v) yielded the highest enzyme production, reaching 95.6 U/mL β-glucosidase and 1.85 FPU/mL cellulase. Acetone precipitation increased cellulase and β-glucosidase activity to 6.11 FPU/mL and 375.3 U/mL, respectively with 66 and 60% recovery. Immobilization studies demonstrated the immobilization efficiency of CPC showed 83.3%. Morphological and structural characterization using FTIR, SEM-EDS, XPS, BET and XRD confirmed the successful attachment of CPC onto the MSN surface. Immobilization shifted the optimum pH to 5.5 for the CPC cellulase, while the optimum temperature remained at 50 °C. Immobilized CPC showed enhanced thermal and storage stability, retaining about 90% activity after 4 h at 50 °C, and 95% activity, respectively after 30 days of storage. During Avicel hydrolysis, immobilized CPC produced 46 mg/mL of glucose at 16 h, whereas the immobilized commercial cellulase achieved a hydrolytic efficiency of 75 mg/mL under the same conditions. Similarly, in cocoa pod hydrolysis, immobilized CPC yielded 30 mg/mL glucose, while the immobilized commercial enzyme produced 58 mg/mL at 16 h, respectively. Reusability studies indicated that immobilized CPC and commercial cellulases retained 63.22% and 85.32% activity after four cycles, corresponding to residual protein concentrations of 0.48 mg/mL and 61 mg/mL respectively.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0141813026026565?dgcid=rss_sd_all",
+    "pubDate": "2026-06-01T14:55:16Z",
+    "category": "science",
+    "abstract_source": "europepmc",
+    "summary": "Cladosporium pseudochalastosporoides was cultured with polyethylene glycol-8000 and pectin (at equal proportions) to induce maximum enzyme production, yielding 95.6 units per millilitre of β-glucosidase and 1.85 filter paper units per millilitre of cellulase. Following acetone precipitation, these enzyme activities increased to 375.3 units per millilitre and 6.11 filter paper units per millilitre respectively, with recovery rates of 60 and 66 percent. The enzymes were then attached to mesoporous silica nanoparticles with an immobilization efficiency of 83.3 percent, confirmed through infrared spectroscopy, scanning electron microscopy with energy-dispersive X-ray analysis, X-ray photoelectron spectroscopy, nitrogen adsorption-desorption analysis, and X-ray diffraction. When immobilized, the Cladosporium enzyme retained approximately 90 percent of its activity after four hours at 50 degrees Celsius and 95 percent activity after 30 days of storage, though it produced 46 milligrams per millilitre of glucose during the hydrolysis of Avicel cellulose compared to 75 milligrams per millilitre from the immobilized commercial reference enzyme from Trichoderma reesei.  Across repeated use cycles, the immobilized Cladosporium enzyme retained only 63.22 percent of its original activity after four cycles, whereas the commercial benchmark retained 85.32 percent—a gap that correlates with substantially lower residual protein concentrations in the Cladosporium preparation (0.48 milligrams per millilitre versus 61 milligrams per millilitre). This paper reveals a characteristic tension in fungal enzyme development: the same immobilization strategy that stabilizes the enzyme for storage and thermal stress simultaneously accelerates its depletion during repeated industrial use, suggesting that enhanced durability under static conditions does not translate into sustained catalytic capacity under conditions of labour. The material scaffolding that enables the Cladosporium enzyme to perform—the mesoporous silica matrix—appears to distribute enzyme loss unevenly across cycles, raising questions about whether the enzyme itself is being depleted, whether the attachment chemistry is failing differentially, or whether the enzyme-carrier interface is simply incompatible with the wear patterns of continuous operation.",
+    "enhanced": true,
+    "enhanced_at": "2026-06-01T14:59:05.085956"
+  },
+  {
+    "title": "The peroxisome RING-type E3 ubiquitin ligase-mediated peroxisome function is essential for Alternaria alternata pathogenicity: coordinated regulation of lipid metabolism homeostasis and redox balance",
+    "source": "ScienceDirect Publication: Fungal Biology",
+    "excerpt": "Publication date: Available online 30 May 2026Source: Fungal BiologyAuthor(s): Qianqian Jiang, Yongcai Li, Yuanpin Nan, Rong Li, Yangyang Yang, Wenjuan Liu, Yang Bi",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000747?dgcid=rss_sd_all",
+    "pubDate": "2026-06-01T14:55:16Z",
+    "category": "science",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-06-01T14:59:06.079110"
+  },
+  {
+    "title": "Cosmopolites sordidus G. as a dispersal agent of Fusarium oxysporum f. sp. cubense Tropical Race 4 (Foc TR4) in Cavendish banana crops (Musa AAA)",
+    "source": "ScienceDirect Publication: Fungal Biology",
+    "excerpt": "",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000760?dgcid=rss_sd_all",
+    "pubDate": "2026-06-01T14:55:16Z",
+    "category": "science",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-06-01T14:59:07.307646"
+  },
+  {
+    "title": "Biocontrol mechanisms of two Paenibacillus strains against Astragalus membranaceus root rot and their effects on soil microecological structure",
+    "source": "Frontiers in Microbiology | New and Recent Articles",
+    "excerpt": "Astragalus membranaceus is an important medicinal herb in China, yet its yield and quality are severely constrained by root rot disease. In this study, two efficient antagonistic strains, HQ-1 and HQT-2, were isolated and identified as Paenibacillus polymyxa and Paenibacillus terrae, respectively. Both strains exhibited multiple plant growth-promoting traits and strong inhibitory activity against Fusarium solani (syn. Neocosmospora solani) GF-3. In vitro assays confirmed that their sterile fermentation filtrates effectively inhibited pathogen growth and damaged fungal hyphae. GFP labeling further verified their colonization potential on plant roots, while greenhouse experiments indicated preventive efficacies of 86.046% for HQ-1 and 80.619% for HQT-2. In addition, they significantly promoted the growth of A. membranaceus. Metagenomic analysis showed that biocontrol bacterium-treated soils had significantly increased relative abundance of beneficial microorganisms, alongside a reduction in phytopathogenic taxa. Notably, despite the scarcity of biocontrol reports for P. terrae, our study introduces strains HQ-1 and HQT-2 as highly effective, multifunctional resources for sustainable ",
+    "url": "https://www.frontiersin.org/articles/10.3389/fmicb.2026.1827299",
+    "pubDate": "2026-06-01T00:00:00Z",
+    "category": "science",
+    "summary": "Astragalus membranaceus, a medicinal herb cultivated widely in China, suffers significant yield losses from root rot caused by the fungus Fusarium solani. This study isolated two bacterial strains—designated HQ-1 and HQT-2 and identified as Paenibacillus polymyxa and Paenibacillus terrae respectively—from soil samples. Both strains produced compounds in their fermentation filtrates that inhibited fungal growth and damaged fungal filaments in laboratory conditions, and when labeled with fluorescent protein markers, they colonized plant roots effectively. Greenhouse trials demonstrated preventive efficacy rates of 86.046% for HQ-1 and 80.619% for HQT-2, while also promoting plant biomass accumulation. Genetic sequencing of soil microbial communities revealed that soils treated with these biocontrol bacteria contained higher proportions of beneficial microorganisms and lower proportions of disease-causing fungi.  The application of these bacterial strains to diseased medicinal herb cultivation exemplifies a material entanglement characteristic of contemporary agricultural practice: the same soil microbes mobilized to suppress one fungal pathogen simultaneously reshape the broader microbial landscape, increasing populations of other organisms whose ecological roles remain partially unknown. This study positions bacterial biocontrol as a sustainable alternative to chemical fungicides, yet the mechanism operates through deliberate microbial manipulation—introducing external microbial agents to alter soil composition—a practice that depends on continuous reintroduction and monitoring to maintain efficacy. The shift from chemical to biological control thus does not eliminate human intervention in agricultural systems but rather relocates it from chemical synthesis to microbial engineering and ecosystem management.",
+    "enhanced": true,
+    "enhanced_at": "2026-06-01T14:59:12.175679"
+  },
+  {
+    "title": "A large-scale retrospective analysis reveals the fungal pathogen spectrum across diverse clinical specimens using metagenomic next-generation sequencing",
+    "source": "Frontiers in Cellular and Infection Microbiology | New and Recent Articles",
+    "excerpt": "IntroductionEarly diagnosis of invasive fungal diseases (IFD) remains a major clinical challenge due to pathogen diversity and nonspecific symptoms. This study used metagenomic next-generation sequencing (mNGS) technology to comprehensively characterize fungal profiles across various clinical specimens and the demographic characteristics (sex and age) of the patient population. The results provide laboratory evidence to support the diagnosis and treatment of fungal infections.MethodsA total of 11,161 mNGS reports from clinical specimens collected at the Renmin Hospital of Wuhan University between March 2022 to August 2024 were retrospectively analyzed. Fungal spectra and patient demographics were comprehensively profiled and compared across different specimen types.ResultsThe highest fungal detection rate was observed in bronchoalveolar lavage fluid (36.85%, 1,985/5,387), followed by urine (22.76%, 264/1,160), blood (13.38%, 380/2,840), pleural and peritoneal fluid (12.91%, 174/1,348), cerebrospinal fluid (CSF) (13.82%, 17/123), and wound exudates (12.87%, 39/303). Candida species were the most frequently detected fungi across all specimen types except CSF, wherein Aspergillus pred",
+    "url": "https://www.frontiersin.org/articles/10.3389/fcimb.2026.1779223",
+    "pubDate": "2026-06-01T00:00:00Z",
+    "category": "clinical",
+    "summary": "This paper analyzed 11,161 metagenomic next-generation sequencing reports from clinical specimens collected at Renmin Hospital of Wuhan University between March 2022 and August 2024 to characterize fungal species and patient demographics across different specimen types. Bronchoalveolar lavage fluid showed the highest fungal detection rate at 36.85%, followed by urine at 22.76%, blood at 13.38%, pleural and peritoneal fluid at 12.91%, cerebrospinal fluid at 13.82%, and wound exudates at 12.87%. Candida species were the most frequently detected fungi across all specimen types except cerebrospinal fluid, where Aspergillus predominated.  Across these diverse clinical sites within a single hospital system, fungal detection rates reveal a patchy landscape of exposure shaped by specimen source and patient vulnerability. The concentration of detections in respiratory specimens—bronchoalveolar lavage fluid and the respiratory tract more broadly—suggests that fungal colonization and infection follow material pathways tied to ventilation, air quality, and the particular exposures of hospitalized populations. The shift from Candida dominance in most body sites to Aspergillus in cerebrospinal fluid indicates that different fungal species exploit different anatomical niches and patient conditions, a pattern that reflects not merely biological preference but the accumulated material conditions—moisture, immunosuppression, medical device presence—that enable particular fungal assemblages to establish themselves within clinical spaces.",
+    "enhanced": true,
+    "enhanced_at": "2026-06-01T14:59:15.914637"
+  },
+  {
+    "title": "Chitosan-selenium alleviates AFB1-induced growth impairment and immunotoxicity in broilers by suppressing splenic oxidative stress, inflammation and apoptosis",
+    "source": "Frontiers in Veterinary Science | New and Recent Articles",
+    "excerpt": "IntroductionAflatoxin B1 (AFB1) is a prevalent mycotoxin that severely compromises poultry growth performance and induces immunotoxicity. While selenium is known to mitigate mycotoxicosis, the protective efficacy of chitosan-selenium (Ct-Se), a novel organic formulation, against AFB1-induced splenic immunotoxicity in broilers remains unclear.Methods48 one-day-old AA broilers were randomly assigned to four groups: control (CON), AFB1 (0.6 mg/kg), Ct-Se (0.4 mg/kg) and AFB1+Ct-Se groups. Following a 42-day trial, we evaluated growth performance, immune organ indices, oxidative stress, inflammatory cytokines, splenic histopathological lesions and apoptosis.ResultsCt-Se alleviated AFB1-induced growth impairments by improving body weight, average daily gain, and feed conversion ratio. Furthermore, dietary Ct-Se reversed the AFB1-induced suppression of serum IgG and IgM levels, while elevating SOD, GSH-Px, T-AOC activities, and reducing MDA accumulation. Moreover, Ct-Se mitigated AFB1-triggered inflammatory responses by suppressing the expression of pro-inflammatory cytokines and upregulating anti-inflammatory cytokines. Histopathological analysis revealed that Ct-Se effectively attenuat",
+    "url": "https://www.frontiersin.org/articles/10.3389/fvets.2026.1859938",
+    "pubDate": "2026-05-29T00:00:00Z",
+    "category": "health",
+    "summary": "Aflatoxin B1, a fungal toxin commonly found in poultry feed, damages the spleen and immune system in broiler chickens, reducing body weight gain and feed efficiency while suppressing antibody production. This paper tested whether a compound combining chitosan and selenium could protect birds against these effects in a 42-day trial with 48 one-day-old broilers exposed to either no toxin, toxin alone, the protective compound alone, or toxin plus the protective compound. The chitosan-selenium formulation reversed the toxin's damage by restoring antibody levels, increasing the activity of cellular antioxidant enzymes (superoxide dismutase, glutathione peroxidase, and total antioxidant capacity) while reducing cellular damage markers, suppressing inflammatory signalling molecules, and reducing cell death in splenic tissue.  Within poultry production systems shaped by storage failures and feed contamination, the same fungal toxin that impairs growth and immunity also creates a market for protective additives. The chitosan-selenium formulation documented in this study operates simultaneously as a remediation technology and as evidence of a deeper dependency: the reliance on chemical intervention to manage exposures that arise from material conditions in feed storage and handling. What emerges is not simply a solution to a biological problem, but a material entanglement in which the toxin, the protective compound, and the broiler body become bound together within industrial feed systems where prevention through storage infrastructure remains economically or logistically unachieved.",
+    "enhanced": true,
+    "enhanced_at": "2026-06-01T14:59:20.685802"
+  },
+  {
+    "title": "The complexity of invasive fungal diseases in the intensive care unit: evaluation of metagenomic next-generation sequencing",
+    "source": "Frontiers in Cellular and Infection Microbiology | New and Recent Articles",
+    "excerpt": "BackgroundIn the intensive care unit (ICU), a subset of adult individuals who are non-neutropenic and lack conventional host risk factors frequently develop fungal infections, which constitute a major mortality risk in this population. This patient group has received limited attention to date, and research on diagnostic approaches remains insufficient. This research looks into whether metagenomic next-generation sequencing (mNGS) could be used to diagnose this group of people.MethodsWe performed a retrospective analysis of 106 individuals with invasive fungal infections between July 2022 and February 2025. These patients were divided into two groups: immunocompetent and immunocompromised. Demographic and clinical characteristics were analyzed and compared between the two groups. The diagnostic value of mNGS was carefully assessed, and its diagnostic performance was contrasted with that of conventional microbiological tests (CMTs). In addition, the impact of mNGS results from different specimen types on clinical management and antifungal treatment decisions was summarized.ResultsAmong the 106 adult patients, 66.26% were immunocompetent, but many of them had underlying comorbidities.",
+    "url": "https://www.frontiersin.org/articles/10.3389/fcimb.2026.1820501",
+    "pubDate": "2026-05-29T00:00:00Z",
+    "category": "clinical",
+    "summary": "In this study of 106 adult patients hospitalized in intensive care units with invasive fungal infections between July 2022 and February 2025, two-thirds were immunocompetent despite carrying underlying chronic conditions. This paper evaluates metagenomic next-generation sequencing as a diagnostic tool for this understudied population, comparing its performance against conventional microbiological tests and examining how results from different specimen types influenced clinical decisions about antifungal treatment. The research addresses a gap in diagnostic approaches for fungal infections in patients who lack the typical immunosuppression markers that usually flag fungal disease risk.  The findings document a material entanglement between diagnostic technology and clinical vulnerability. Immunocompetent intensive care patients with co-occurring conditions occupy an ambiguous position in the landscape of fungal disease recognition—their infections are frequent enough to constitute major mortality risk, yet their immune status renders them epidemiologically invisible in conventional risk frameworks. Metagenomic sequencing, by detecting fungal genetic material across diverse specimen types, makes visible what standard microbiological methods miss, yet this visibility also exposes how fungal disease in intensive care units emerges not from immune failure alone but from the accumulated material stresses of critical illness, invasive devices, and prolonged hospitalization. The diagnostic power of sequencing thus reveals deeper patterns of exposure embedded in the intensive care setting itself.",
+    "enhanced": true,
+    "enhanced_at": "2026-06-01T14:59:25.229810"
+  },
+  {
     "title": "Prevalence and clinical implications of Aspergillus infection among tuberculosis patients in Peru",
     "source": "ScienceDirect Publication: Journal of Infection",
     "excerpt": "OBJECTIVES: Aspergillosis is a fungal infection known to contribute to post-tuberculosis lung disease, but its prevalence and impact during tuberculosis (TB) treatment are not well understood. We aimed to estimate the prevalence of Aspergillus infection among newly diagnosed TB patients and its association with treatment response and outcomes. METHODS: We conducted a prospective cohort study of pulmonary TB patients in Lima, Peru. We screened for Aspergillus infection by measuring anti-Aspergillus antibodies in serum at TB treatment initiation and after two months of treatment. We assessed patient disease status at baseline and two months with chest x-ray, the St. George's Respiratory Questionnaire (SGRQ) and 6-minute walking test. We used modified Poisson regression to identify risk factors for baseline Aspergillus seropositivity and study the association of Aspergillus seropositivity with clinical non-improvement at 2 months and with final treatment outcomes. RESULTS: At baseline, 5.4% of 1,998 participants were seropositive for anti-Aspergillus antibodies. Older age and a history of prior TB were associated with baseline Aspergillus seropositivity. Cavitary lesions were not a significant risk factor for the presence of Aspergillus antibodies. The presence of baseline Aspergillus antibodies was found to be independently associated with non-improvement on chest-xray (adjusted RR= 1.76, 95% CI: 1.07, 2.89) and non-improvement in SGRQ score (adjusted RR= 1.44, 95% CI: 1.02, 2.03) after 2 months. CONCLUSIONS: Aspergillus seropositivity was associated with poorer clinical response during TB treatment, including among patients with no prior history of TB. These findings raise the possibility that aspergillosis may emerge during TB treatment itself and underscore the importance of careful end-of-treatment and post-treatment monitoring to improve longer-term outcomes.",
@@ -57,17 +264,6 @@
     "summary": "**WEAK SIGNAL PROTOCOL ACTIVATED**  This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
     "enhanced_at": "2026-05-25T12:27:04.098314"
-  },
-  {
-    "title": "Gluconobacter oxydans as a biocontrol agent against Alternaria alternata in postharvest chili peppers: Antifungal activity and action mechanisms",
-    "source": "ScienceDirect Publication: Food Microbiology",
-    "excerpt": "Publication date: October 2026Source: Food Microbiology, Volume 139Author(s): Jing He, Juan Zhao, Zi Ye, Yongli Jiang, Zhijia Liu, Junjie Yi",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026001231?dgcid=rss_sd_all",
-    "pubDate": "2026-05-25T12:23:38Z",
-    "category": "health",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
-    "enhanced": true,
-    "enhanced_at": "2026-05-25T12:27:05.872956"
   },
   {
     "title": "Aptamer-cDNA-driven nanozyme strategy: A recyclable dual-signal immunosensor for amplified detection of aflatoxin B1 in edible oil",
@@ -147,9 +343,9 @@
     "url": "https://www.frontiersin.org/articles/10.3389/fcimb.2026.1820764",
     "pubDate": "2026-05-22T00:00:00Z",
     "category": "clinical",
-    "summary": "The source abstract is incomplete and lacks substantive findings data. While the text describes the study design—collection of ear secretion specimens from 196 patients with otomycosis at a Chinese medicine hospital between December 2022 and December 2024, isolation and identification of pathogens, and drug sensitivity testing of predominant strains to econazole nitrate—the results section cuts off mid-sentence at \"Aspergillus terreus (\" without reporting the actual prevalence figures, minimum inhibitory concentration values, or the correlation analysis between drug susceptibility and clinical treatment duration that the study was designed to investigate.  Without access to the complete findings, the specific distribution of pathogenic fungi in the local region, the susceptibility data for econazole nitrate against predominant strains, and the quantified relationship between drug susceptibility and treatment outcomes cannot be documented.  This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "summary": "Otomycosis—a fungal infection of the ear canal—was documented in 196 patients at a hospital in Zhejiang Province between December 2022 and December 2024. Ear secretion samples were cultured and tested for susceptibility to econazole nitrate, a standard antifungal treatment. Aspergillus species dominated the infection landscape, accounting for 85.10% of cases, with Aspergillus terreus identified as a major contributor. Among 149 patients with complete clinical records, researchers examined whether the minimum inhibitory concentration of econazole nitrate—the lowest drug concentration needed to stop fungal growth in laboratory conditions—correlated with how long patients required treatment.  The findings reveal a material entanglement between laboratory measurement and clinical outcome: the same fungal strains that show resistance to econazole nitrate in petri dishes also demand extended treatment duration in infected ear canals, yet the paper documents only the dominant Aspergillus species without reporting the full results of this correlation analysis or the treatment timelines themselves. This gap between what can be measured laboratory-based and what unfolds in the body—between standardized drug susceptibility and the lived duration of infection in a specific geographic region—exposes how antifungal efficacy is not simply a property of the drug but emerges from the particular assemblage of pathogen, host tissue, and local fungal ecology.",
     "enhanced": true,
-    "enhanced_at": "2026-05-25T12:27:40.837455"
+    "enhanced_at": "2026-06-01T14:59:29.718294"
   },
   {
     "title": "Salt‐tolerant endopeptidases from xerophilic Aspergillus sydowii for potential applications in meat processing",
@@ -381,28 +577,6 @@
     "enhanced_at": "2026-05-11T12:06:41.782539"
   },
   {
-    "title": "Pulsed light causes structural damage and proteomic alterations in Aspergillus brasiliensis conidia",
-    "source": "ScienceDirect Publication: Food Microbiology",
-    "excerpt": "Publication date: October 2026Source: Food Microbiology, Volume 139Author(s): Imed Dorbani, Thierry Meylheuc, Jean Armengaud, Frédéric Carlin, Catherine Duport",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026001061?dgcid=rss_sd_all",
-    "pubDate": "2026-05-11T12:01:27Z",
-    "category": "health",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
-    "enhanced": true,
-    "enhanced_at": "2026-05-11T12:06:43.608691"
-  },
-  {
-    "title": "Biochemical, transcriptomics, and metabolomics analyses reveal coordinated antioxidant responses in Penicillium digitatum under MAP-simulated gas conditions",
-    "source": "ScienceDirect Publication: Food Microbiology",
-    "excerpt": "Publication date: October 2026Source: Food Microbiology, Volume 139Author(s): Zhengli Wang, Shihao Liu, Huihui Xu, Nana Ji, Aqleem Abbas, Yanyin Guo, Shanshan Hao",
-    "url": "https://www.sciencedirect.com/science/article/pii/S074000202600105X?dgcid=rss_sd_all",
-    "pubDate": "2026-05-11T12:01:27Z",
-    "category": "health",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
-    "enhanced": true,
-    "enhanced_at": "2026-05-11T12:06:44.703006"
-  },
-  {
     "title": "Breaking the mould: cellulose in the cell walls of the Ophiostomatales",
     "source": "ScienceDirect Publication: Fungal Biology Reviews",
     "excerpt": "Publication date: September 2026Source: Fungal Biology Reviews, Volume 57Author(s): Bianke Marx, Alida van Dijk, Emma T. Steenkamp, Michael J. Wingfield, Brenda D. Wingfield",
@@ -620,28 +794,6 @@
     "enhanced_at": "2026-04-27T11:03:37.215692"
   },
   {
-    "title": "CPT on the inhibitory activity against Penicillium expansum and control of blue mold",
-    "source": "ScienceDirect Publication: Food Microbiology",
-    "excerpt": "Publication date: Available online 24 April 2026Source: Food MicrobiologyAuthor(s): Xiaodong Wu, Weijun Kong, Zihao Peng, Xinyu Li, Tinghan Yu, Abudulimu Wubuli, Xuemei Zhang, Xuan Zhu",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026000857?dgcid=rss_sd_all",
-    "pubDate": "2026-04-27T10:58:21Z",
-    "category": "health",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
-    "enhanced": true,
-    "enhanced_at": "2026-04-27T11:03:38.149974"
-  },
-  {
-    "title": "Glutathione S-transferase AaGST1 impacts the pathogenicity of Alternaria alternata through the regulation of the redox balance",
-    "source": "ScienceDirect Publication: Food Microbiology",
-    "excerpt": "Publication date: Available online 20 April 2026Source: Food MicrobiologyAuthor(s): Wenjuan Liu, Yangyang Yang, Qianqian Jiang, Yating Wang, Yongcai Li, Miao Zhang, Xiaojing Wang, Yang Bi",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026000894?dgcid=rss_sd_all",
-    "pubDate": "2026-04-27T10:58:21Z",
-    "category": "health",
-    "summary": "**WEAK SIGNAL PROTOCOL ACTIVATED**  This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
-    "enhanced": true,
-    "enhanced_at": "2026-04-27T11:03:39.076879"
-  },
-  {
     "title": "Toward sustainable food safety: Natural ligand–gold nanoparticle plasmonic sensors for on-site mycotoxin detection",
     "source": "ScienceDirect Publication: Food Chemistry",
     "excerpt": "Mycotoxins remain a critical challenge to food safety, with limitations in conventional methods driving demand for rapid, portable alternatives. Gold nanoparticle (AuNP)-based sensors, exploiting localized surface plasmon resonance (LSPR) and surface-enhanced Raman scattering (SERS), offer rapid and highly sensitive detection, typically achieving detection limits in the low ppb (μg/kg) to ng/mL range, with performance in food matrices further improved through suitable ligand functionalization and optimized assay design. This review highlights recent advances in the use of natural ligands to design sustainable plasmonic nanosensors for on-site mycotoxin detection. Moreover, natural ligands, such as polyphenols, flavonoids, and organic acids, enable green synthesis while enhancing selectivity and biocompatibility. We discuss structure-function relationships at the ligand-AuNP interface, linking functional groups (hydroxyl, carbonyl, and carboxyl) to stability and specificity. Case studies illustrate improvements in detection limits and applicability in food matrices. Recent trends point toward dual-ligand systems, portable paper-based devices, smartphone integration, and IoT/blockchain-enabled monitoring. Challenges such as reproducibility, standardization, and regulatory approval are considered, alongside opportunities for digital integration and global-scale food safety networks. This review positions metabolite-functionalized plasmonic sensors as a sustainable, next-generation trend in food safety surveillance.",
@@ -797,17 +949,6 @@
     "enhanced_at": "2026-04-20T10:35:05.804020"
   },
   {
-    "title": "Assessing the antifungal resistance of synthesized tannic acid-modified silver nanoparticles against Aspergillus niger isogenic mutants",
-    "source": "ScienceDirect Publication: Fungal Biology",
-    "excerpt": "Publication date: Available online 16 April 2026Source: Fungal BiologyAuthor(s): Konstantina Avdala, Christos Skertsos, Eleni Kollia, Maria Theodosiou, Evangelia Tsitsou, Eleni Efthimiadou, Vasilis Valdramidis",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000541?dgcid=rss_sd_all",
-    "pubDate": "2026-04-20T10:31:11Z",
-    "category": "science",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
-    "enhanced": true,
-    "enhanced_at": "2026-04-20T10:35:06.785209"
-  },
-  {
     "title": "Enhanced Production of β-Glucosidase in Aspergillus niger Induced by Corncob Powder through Regulatory Modification",
     "source": "acs: Journal of Agricultural and Food Chemistry: Table of Contents",
     "excerpt": "",
@@ -838,7 +979,7 @@
     "category": "clinical",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-05-25T12:28:01.410461"
+    "enhanced_at": "2026-06-01T14:59:30.668703"
   },
   {
     "title": "Kernel structure and varietal attributes determine aflatoxin production by Aspergillus flavus in maize (Zea mays L.)",
@@ -957,17 +1098,6 @@
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
     "enhanced_at": "2026-04-13T10:32:17.092407"
-  },
-  {
-    "title": "Dual role and metabolic reprogramming: Key amino acids in marinade bidirectionally control aflatoxin B1 biosynthesis in Aspergillus parasiticus",
-    "source": "ScienceDirect Publication: Food Microbiology",
-    "excerpt": "Publication date: October 2026Source: Food Microbiology, Volume 139Author(s): Xinyue Hu, Xianghong Deng, Zhanrui Huang, Wanying He, Lianhua Hu, Guoqing Wu, Xiaojie Zhou, Hao Chen",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026000626?dgcid=rss_sd_all",
-    "pubDate": "2026-04-13T10:29:22Z",
-    "category": "health",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
-    "enhanced": true,
-    "enhanced_at": "2026-04-13T10:32:18.302229"
   },
   {
     "title": "Transformation patterns of masked fusarium mycotoxins during barley malting: Mechanistic evidence and multimodal detection in industrial products",
@@ -1261,7 +1391,7 @@
     "category": "media",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-05-25T12:28:02.324090"
+    "enhanced_at": "2026-06-01T14:59:32.000581"
   },
   {
     "title": "Hygrothermal impact of water resistive barriers on mould growth in wood-frame wall assemblies",
@@ -3672,6 +3802,6 @@
     "category": "indoor",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-05-25T12:28:03.294118"
+    "enhanced_at": "2026-06-01T14:59:33.415741"
   }
 ]

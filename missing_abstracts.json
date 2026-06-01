@@ -1,6 +1,62 @@
 [
   {
     "doi": "",
+    "title": "Comparative analysis of microbial saccharification and enzymatic hydrolysis of lignocellulosic biomass under optimal process conditions using Aspergillus fumigatus and Trichoderma reesei cultured on agro-waste",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0961953426006872?dgcid=rss_sd_all",
+    "category": "indoor",
+    "pubDate": "2026-06-01T14:55:36Z"
+  },
+  {
+    "doi": "",
+    "title": "AppleMM: A multimodal model for apple moldy core diagnosis via low-fielda NMR and expert text fusion",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526003129?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-06-01T14:55:27Z"
+  },
+  {
+    "doi": "",
+    "title": "Global activities of mycotoxin societies in safeguarding food and health and future challenges",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526002951?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-06-01T14:55:27Z"
+  },
+  {
+    "doi": "",
+    "title": "Aflatoxins: global insights on occurrence, health risks, regulations, and integrated management strategies from farm-to-fork for a safer food system",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526003312?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-06-01T14:55:27Z"
+  },
+  {
+    "doi": "",
+    "title": "Dietary risk assessment of mycotoxins in plant-based meat alternatives (PBMAs) in the context of co-occurring bioaccessible polyphenols",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526003828?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-06-01T14:55:27Z"
+  },
+  {
+    "doi": "",
+    "title": "Molecular mechanism of the multi-copper oxidase biosynthesis gene PdFET5 affecting the pathogenicity of Penicillium digitatum to citrus",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026001371?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-06-01T14:55:27Z"
+  },
+  {
+    "doi": "",
+    "title": "Breaking the mould: cellulose in the cell walls of the Ophiostomatales",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1749461326000199?dgcid=rss_sd_all",
+    "category": "science",
+    "pubDate": "2026-06-01T14:55:16Z"
+  },
+  {
+    "doi": "",
+    "title": "The peroxisome RING-type E3 ubiquitin ligase-mediated peroxisome function is essential for Alternaria alternata pathogenicity: coordinated regulation of lipid metabolism homeostasis and redox balance",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000747?dgcid=rss_sd_all",
+    "category": "science",
+    "pubDate": "2026-06-01T14:55:16Z"
+  },
+  {
+    "doi": "",
     "title": "A circular biorefinery approach for mango and lemon industrial waste: on-site Aspergillus welwitschiae cellulase production, enzymatic hydrolysis and bioethanol fermentation",
     "url": "https://www.sciencedirect.com/science/article/pii/S0961953426004381?dgcid=rss_sd_all",
     "category": "indoor",
@@ -26,83 +82,6 @@
     "url": "https://www.sciencedirect.com/science/article/pii/S095671352600246X?dgcid=rss_sd_all",
     "category": "health",
     "pubDate": "2026-05-25T12:23:38Z"
-  },
-  {
-    "doi": "",
-    "title": "Dual role and metabolic reprogramming: Key amino acids in marinade bidirectionally control aflatoxin B1 biosynthesis in Aspergillus parasiticus",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026000626?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-05-25T12:23:38Z"
-  },
-  {
-    "doi": "",
-    "title": "CPT on the inhibitory activity against Penicillium expansum and control of blue mold",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026000857?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-05-25T12:23:38Z"
-  },
-  {
-    "doi": "",
-    "title": "Glutathione S-transferase AaGST1 impacts the pathogenicity of Alternaria alternata through the regulation of the redox balance",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026000894?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-05-25T12:23:38Z"
-  },
-  {
-    "doi": "",
-    "title": "AppleMM: A multimodal model for apple moldy core diagnosis via low-fielda NMR and expert text fusion",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526003129?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-05-25T12:23:38Z"
-  },
-  {
-    "doi": "",
-    "title": "Pulsed light causes structural damage and proteomic alterations in Aspergillus brasiliensis conidia",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026001061?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-05-25T12:23:38Z"
-  },
-  {
-    "doi": "",
-    "title": "Biochemical, transcriptomics, and metabolomics analyses reveal coordinated antioxidant responses in Penicillium digitatum under MAP-simulated gas conditions",
-    "url": "https://www.sciencedirect.com/science/article/pii/S074000202600105X?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-05-25T12:23:38Z"
-  },
-  {
-    "doi": "",
-    "title": "Global activities of mycotoxin societies in safeguarding food and health and future challenges",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526002951?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-05-25T12:23:38Z"
-  },
-  {
-    "doi": "",
-    "title": "Aflatoxins: global insights on occurrence, health risks, regulations, and integrated management strategies from farm-to-fork for a safer food system",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526003312?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-05-25T12:23:38Z"
-  },
-  {
-    "doi": "",
-    "title": "Gluconobacter oxydans as a biocontrol agent against Alternaria alternata in postharvest chili peppers: Antifungal activity and action mechanisms",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026001231?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-05-25T12:23:38Z"
-  },
-  {
-    "doi": "",
-    "title": "Breaking the mould: cellulose in the cell walls of the Ophiostomatales",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1749461326000199?dgcid=rss_sd_all",
-    "category": "science",
-    "pubDate": "2026-05-25T12:23:24Z"
-  },
-  {
-    "doi": "",
-    "title": "Assessing the antifungal resistance of synthesized tannic acid-modified silver nanoparticles against Aspergillus niger isogenic mutants",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000541?dgcid=rss_sd_all",
-    "category": "science",
-    "pubDate": "2026-05-25T12:23:24Z"
   },
   {
     "doi": "10.1080/21501203.2026.2666472?af=R",
