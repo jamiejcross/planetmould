@@ -1,5 +1,62 @@
 [
   {
+    "title": "Evaluation of Three Aspergillus Antibody Assays for Screening of Chronic Pulmonary Aspergillosis: Prospective Diagnostic Accuracy Study",
+    "source": "ScienceDirect Publication: Diagnostic Microbiology and Infectious Disease",
+    "excerpt": "OBJECTIVES\nChronic pulmonary aspergillosis (CPA) is a frequent complication of pulmonary tuberculosis (PTB), particularly in high-burden settings where access to reliable serological diagnostics remains limited. We evaluated the diagnostic performance of two immunochromatographic technology (ICT) lateral flow assays (LFAs) and an ELISA for CPA screening among patients with active or previously treated PTB.\n\n\nMETHODS\nIn this two-year prospective multicentre diagnostic evaluation, serum from adults with prior or active PTB was tested using the Era Biology Aspergillus IgG ICT LFA, LDBio Aspergillus IgG/IgM ICT LFA, and Bordier Aspergillus fumigatus IgG ELISA. CPA diagnosis was established using a consensus composite reference standard incorporating clinical, immunological, radiological, and microbiological criteria. The Bordier ELISA was used as part of the immunological component of the consensus CPA diagnosis, with a cutoff optical density of ≥1.0. Diagnostic accuracy, agreement statistics, receiver operating characteristic analysis, and latent class analysis (LCA) were performed.\n\n\nRESULTS\nAmong 340 participants, 24 (7.06%) had CPA. Proportion of participants with positive antibody tests among all tested individuals were 6.76% for LDBio ICT LFA, 20.0% for Era Biology ICT LFA, and 11.47% for Bordier ELISA. Against consensus CPA diagnosis, Bordier ELISA showed 87.50% sensitivity and 94.30% specificity, LDBio ICT LFA 58.33% sensitivity and 97.15% specificity, and Era Biology LFA 66.67% sensitivity and 83.54% specificity. LCA estimated CPA prevalence at 7.72%. LCA-derived sensitivities and specificities were 86.58% and 99.92% for LDBio ICT LFA, 83.39% and 85.31% for Era Biology LFA, and 79.10% and 94.19% for Bordier ELISA.\n\n\nCONCLUSIONS\nThe Bordier ELISA showed high sensitivity and specificity, while the LDBio ICT LFA demonstrated very high specificity with strong LCA-derived performance. These findings support the use of ELISA for laboratory diagnosis and ICT as a poin",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0732889326002749?dgcid=rss_sd_all",
+    "pubDate": "2026-06-29T13:02:19Z",
+    "category": "clinical",
+    "abstract_source": "semantic_scholar",
+    "summary": "This paper evaluated three antibody-based diagnostic tests for detecting chronic pulmonary aspergillosis among 340 adults with active or previously treated tuberculosis. The Bordier enzyme-linked immunosorbent assay achieved 87.50% sensitivity and 94.30% specificity against a composite diagnostic standard combining clinical, radiological, immunological, and microbiological criteria. The LDBio immunochromatographic lateral flow assay showed lower sensitivity (58.33%) but very high specificity (97.15%), while the Era Biology lateral flow assay achieved 66.67% sensitivity and 83.54% specificity. Using latent class analysis—a statistical method that estimates true disease prevalence without relying on a single reference standard—the LDBio lateral flow assay demonstrated substantially improved sensitivity (86.58%) and exceptional specificity (99.92%), suggesting its performance may be underestimated when measured against the composite standard alone.  The findings reveal a material and diagnostic tension characteristic of fungal disease detection in tuberculosis-endemic settings. The enzyme-linked immunosorbent assay delivers reliable laboratory performance but requires infrastructure, trained personnel, and time unavailable in resource-constrained clinics where tuberculosis burden is highest. The lateral flow assays, designed for rapid point-of-care deployment in precisely these settings, show variable performance depending on the measurement framework applied—their apparent weakness against the composite standard dissolves when statistical methods account for diagnostic uncertainty, suggesting the tests may be more useful than conventional evaluation protocols recognize. This gap between standardized laboratory assessment and field-applicable performance reflects broader dependencies: the diagnostic tools most feasible for high-burden settings remain least validated through the methods that determine clinical credibility and resource allocation.",
+    "enhanced": true,
+    "enhanced_at": "2026-06-29T13:04:53.566379"
+  },
+  {
+    "title": "White spots and gaps of microbial single cell proteins for food applications: yeasts, bacteria and filamentous fungi",
+    "source": "ScienceDirect Publication: Food Research International",
+    "excerpt": "Publication date: 31 October 2026Source: Food Research International, Volume 242, Part 1Author(s): Veronika Volk, Louisa Wötzel, Evelyn Reinmuth, Jacob Ewert, Mario Jekle, Jannika Dombrowski",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926014468?dgcid=rss_sd_all",
+    "pubDate": "2026-06-29T13:01:58Z",
+    "category": "health",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-06-29T13:04:55.270368"
+  },
+  {
+    "title": "Integrative computational–experimental discovery and translation of antifungal peptides for multidrug-resistant fungi",
+    "source": "Frontiers in Microbiology | New and Recent Articles",
+    "excerpt": "Multidrug-resistant fungal infections caused by Candida and Aspergillus species have become one of the major global health concerns, especially among immunocompromised individuals. The small number of antifungals available and the rapid emergence of resistance to azoles, echinocandins and polyenes underscore the urgent need to develop alternative therapeutic strategies with different mechanisms of action. Antifungal peptides (AFPs) have attracted increasing attention as promising candidates due to their broad-spectrum activity, multimodal mechanisms of action, and their low likelihood of resistance development. This review presents a thorough and holistic summary of the research on AFPs that target clinically significant drug-resistant fungi such as Candida auris, azole-resistant Candida albicans, and triazole-resistant Aspergillus fumigatus. We review the structural and physicochemical properties of AFPs and address their various antifungal mechanisms, which include membrane disruption, oxidative stress induction, and disruption of intracellular homeostasis, as well as biofilm inhibition. We further highlight an emerging computational–experimental pipeline to discover and optimize",
+    "url": "https://www.frontiersin.org/articles/10.3389/fmicb.2026.1861239",
+    "pubDate": "2026-06-29T00:00:00Z",
+    "category": "science",
+    "summary": "This paper surveys antifungal peptides as therapeutic candidates against multidrug-resistant fungi including Candida auris, azole-resistant Candida albicans, and triazole-resistant Aspergillus fumigatus. The review documents that antifungal peptides possess broad-spectrum activity and operate through multiple mechanisms: disruption of fungal cell membranes, induction of oxidative stress, disruption of internal cellular balance, and inhibition of surface-colonising microbial communities. This paper identifies the scarcity of available antifungal drugs and the rapid emergence of resistance to azoles, echinocandins, and polyenes as drivers for developing peptide-based alternatives with distinct modes of action. The review describes an emerging computational–experimental pipeline for discovering and optimizing antifungal peptides, though the abstract does not detail the specific methods or results of this pipeline.  Within the context of fungal pathogens as material actors in the Anthropocene, this work documents how the same fungi that circulate through immune-weakened bodies and hospital environments—accumulating resistance across multiple drug classes—simultaneously become sites of pharmaceutical innovation and extraction of value. The peptide-based approach outlined here represents not a departure from but a deepening of the logic that treats fungal adaptation as a problem to be solved through molecular redesign, even as the conditions enabling multidrug resistance (antibiotic overuse, immunosuppression, concentrated human habitation) remain unaddressed. The shift toward peptide therapeutics reveals a dependency: as conventional antifungals fail, the pharmaceutical apparatus must continuously engineer new molecular tools, binding human survival to an accelerating cycle of discovery and resistance.",
+    "enhanced": true,
+    "enhanced_at": "2026-06-29T13:05:00.197973"
+  },
+  {
+    "title": "P15 Bacteriological profile and antimicrobial resistance trends in chronic suppurative otitis media (CSOM) in India: comprehensive review (1961–2026)",
+    "source": "JAC-Antimicrobial Resistance Current Issue",
+    "excerpt": "AbstractBackgroundChronic suppurative otitis media (CSOM), characterized by persistent middle ear suppuration through tympanic membrane perforation for ≥2 weeks, remains a major public health challenge in India with prevalence ranging from 1.4% to 14.7%, classifying India as a WHO high-prevalence zone. The earliest CSOM study from Uttar Pradesh in 1961 reported 14.7% prevalence among schoolchildren. This 65-year review analyses how CSOM pathogens and their resistance patterns have evolved across India's regions.MethodsReview studies from Karnataka, Bhopal, Agartala, Bhopal, Panipat, Rajasthan, West Bengal, and other centres revealed that early studies used manual culture and Kirby-Bauer disc diffusion (CLSI M100). Recent studies incorporated VITEK-2/MicroScan automated systems for identification and AST (6-12h), MALDI-TOF MS for rapid proteomic speciation (&lt;30 min), and Etest strips for precise MIC determination of anaerobes. Data were analysed by geographic region, pathogen predominance, resistance evolution, demographic patterns, and diagnostic methodology.ResultsAcross Indian studies, Pseudomonas aeruginosa (19.9–67.5%) and Staphylococcus aureus (11.3–51.9%) consistently emer",
+    "url": "https://academic.oup.com/jacamr/article/doi/10.1093/jacamr/dlag102.021/8716114?rss=1",
+    "pubDate": "2026-06-26T00:00:00Z",
+    "category": "science",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-06-29T13:05:01.244093"
+  },
+  {
+    "title": "Correction to ‘Seroprevalence Screening of Chronic Aspergillus Infection in a Post‐Tuberculosis Cohort in Senegal: A Cross‐Sectional Study Comparing ELISA and Rapid Diagnostic Tests’",
+    "source": "Wiley: Mycoses: Table of Contents",
+    "excerpt": "Mariama, T., N. I. Mbaye, S. Djiby, et al., “ Seroprevalence Screening of Chronic Aspergillus Infection in a Post-Tuberculosis Cohort in Senegal: A Cross-Sectional Study Comparing ELISA and Rapid Diagnostic Tests,” Mycoses 69, no. 4 (2026): e70174, https://doi.org/10.1111/myc.70174. The first and last names of the authors were inadvertently swapped and have been corrected. The correct author names are: Touré M, Ndiaye IM, Sow D, Diallo MA, Diongue K, Seck MC, Ndiaye M, Ndiaye D, Diop NF, Fortes L, Denning DW, Badiane AS. The online version of this article has been corrected accordingly. We apologize for this error.",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/myc.70202?af=R",
+    "pubDate": "2026-06-23T07:00:00Z",
+    "category": "clinical",
+    "abstract_source": "openalex",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!  ---  **Explanation:** The source text provided contains only a correction notice documenting an author name-order error. No substantive abstract, findings, methods, organisms, materials, locations, or data are present in the source material itself.   While related research context describing the original study is available in the archive, the constraint against hallucination and the prohibition against merging related findings into the source summary prevent me from reporting those findings as belonging to this correction notice. The correction notice itself contains no scientific content to analyze.  To produce a meaningful summary following the analytical framework requested, the full abstract or substantive content of the original research article would be required.",
+    "enhanced": true,
+    "enhanced_at": "2026-06-29T13:05:05.725830"
+  },
+  {
     "title": "Mucormycosis: A life-threatening invasive fungal infection",
     "source": "ScienceDirect Publication: Diagnostic Microbiology and Infectious Disease",
     "excerpt": "<h4>Background</h4>Mucormycosis is a life-threatening invasive fungal infection that primarily affects immunocompromised individuals, particularly those with poorly controlled diabetes mellitus, hematological malignancies, or solid organ transplants. Severe complications, including orbital and central nervous system involvement, may occur.<h4>Objectives</h4>The aim of this study was to describe the epidemiological, clinical, diagnostic, therapeutic, and outcome characteristics of mucormycosis cases in a tertiary care center.<h4>Methods</h4>We conducted a retrospective descriptive case series including all patients diagnosed with mucormycosis and hospitalized in the infectious diseases department between January 2000 and December 2022.<h4>Result</h4>A total of 23 patients were included, with a male predominance (60.8%). Diabetes mellitus was the most common underlying condition (82.6%). The most frequent clinical manifestations were facial swelling (82.6%) and fever (73.9%). Microbiological confirmation was obtained in 78.2% of cases, predominantly identifying Rhizopus oryzae, while histopathological examination confirmed the diagnosis in all patients. Rhino-orbito-cerebral involvement was the most frequent presentation (91.3%), followed by cutaneous and abdominal forms. Imaging showed paranasal sinus involvement in 78.2% of cases and cerebral extension in 60.8%. All patients received antifungal therapy with amphotericin B. Surgical management was performed in 69.6% of cases, mainly consisting of surgical debridement and, in severe cases, orbital exenteration. Recovery without sequelae occurred in 34.8% of patients, while mortality reached 30.4% despite appropriate treatment.<h4>Conclusions</h4>Mucormycosis remains a severe invasive fungal infection with high morbidity and mortality. Early diagnosis and prompt multidisciplinary management are essential to improve patient outcomes.",
@@ -10,17 +67,6 @@
     "summary": "Between January 2000 and December 2022, this study documented 23 patients hospitalized with mucormycosis at a tertiary care center, predominantly male (60.8%), with poorly controlled diabetes mellitus as the underlying condition in 82.6% of cases. Facial swelling and fever were the most frequent clinical presentations, occurring in 82.6% and 73.9% of patients respectively. Microbiological cultures identified *Rhizopus oryzae* in 78.2% of cases, while histopathological examination confirmed the diagnosis in all patients. Rhino-orbito-cerebral involvement—affecting the nasal passages, eye socket, and brain—occurred in 91.3% of patients, with imaging revealing paranasal sinus involvement in 78.2% and extension into the brain in 60.8%. All patients received the antifungal drug amphotericin B, and surgical intervention occurred in 69.6% of cases, ranging from tissue removal to orbital exenteration in the most severe presentations. Despite treatment, mortality reached 30.4%, with only 34.8% of patients recovering without lasting damage.  This paper documents how a single fungal species becomes a vector of mortality concentrated among populations already marked by metabolic disease and constrained access to early medical intervention. The overwhelming prevalence of poorly controlled diabetes in this cohort reveals how mucormycosis emerges not simply as a pathogenic threat but as a material manifestation of unequal exposure to both the infection and the conditions that enable it—a pattern where the same organism that destroys tissue also exposes the social and economic structures that determine who survives fungal invasion and who does not.",
     "enhanced": true,
     "enhanced_at": "2026-06-22T14:35:37.577784"
-  },
-  {
-    "title": "Evaluation of Three Aspergillus Antibody Assays for Screening of Chronic Pulmonary Aspergillosis: Prospective Diagnostic Accuracy Study",
-    "source": "ScienceDirect Publication: Diagnostic Microbiology and Infectious Disease",
-    "excerpt": "Publication date: Available online 19 June 2026Source: Diagnostic Microbiology and Infectious DiseaseAuthor(s): Felix Bongomin, Claudine Mukashyaka, Quinto Ogwang, Ritah Nantale, Tobius Odongo, Jonathan Mulungi, Flonic Acire, Bwambale Jonani, Joseph Baruch Baluku, Norman van Rhijn, David W. Denning",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0732889326002749?dgcid=rss_sd_all",
-    "pubDate": "2026-06-22T14:32:31Z",
-    "category": "clinical",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
-    "enhanced": true,
-    "enhanced_at": "2026-06-22T14:35:38.514000"
   },
   {
     "title": "Dampness and mould over 20 years and new onset of respiratory symptoms, asthma and rhinitis",
@@ -96,13 +142,14 @@
   {
     "title": "Amino acid‐montmorillonite nanocomposites: preparation, characteristics and biological effects on ruminal fermentation and greenhouse gas emission potential in diets exposed to aflatoxin B1 in vitro",
     "source": "Wiley: Journal of the Science of Food and Agriculture: Table of Contents",
-    "excerpt": "Journal of the Science of Food and Agriculture, EarlyView.",
+    "excerpt": "Abstract BACKGROUND Modified clays demonstrate superior modulation of ruminal fermentation compared to natural clays and exhibit effects distinct from monensin, suggesting novel modes of action for methane (CH 4 ) mitigation. The objective of this study was to develop and evaluate the effectiveness of amino acid–montmorillonite nanocomposites (AA‐MNC) in modulating ruminal fermentation and mitigating methane production in diets contaminated with aflatoxin B1 (AFB1) by the in vitro gas production technique. Two AA‐MNC clays were developed by modifying natural montmorillonite (NM) with methionine and threonine, resulting in Met‐MNC and Thr‐MNC clays, respectively. The treatments consisted of –AFB1diet (basal substrate without supplementation), +AFB1 diet (‐AFB1diet at a final concentration of 20 ppb AFB1), NM diet [+AFB1 diet supplemented with NM at 5 g kg −1 dry matter (DM)], monensin (+AFB1 diet supplemented with monensin at 40 mg kg −1 DM), and Met‐MNC and Thr‐MNC supplemented to the +AFB1 diet at two levels: 0.5 g kg −1 DM (low) and 1 g kg −1 DM (high). RESULTS Both AA‐MNC clays showed increased surface area, cation exchange capacity, and narrow particle size distribution compared to NM clay. The +AFB1 diet decreased ( P &lt; 0.05) acid detergent fiber degradation compared with the other treatments. Both low and high levels of Met‐MNC and Thr‐MNC resulted in comparable reductions in CH 4 production. These reductions were similar to those observed with the monensin diet when compared with the –AFB1 and NM diets ( P = 0.058). High levels of AA‐MNC decreased ( P &lt; 0.001) total short‐chain fatty acid concentrations relative to the NM and –AFB1 diets. By contrast, low levels of AA‐MNC increased ( P = 0.001) acetate production compared with high supplementation levels. CONCLUSION These findings highlight the potential of supplementing AA‐MNC at low dose as a promising feed additive for sustainable livestock production through CH 4 mitigation at the same time as maint",
     "url": "https://scijournals.onlinelibrary.wiley.com/doi/10.1002/jsfa.70821?af=R",
     "pubDate": "2026-06-22T04:55:37Z",
     "category": "science",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "abstract_source": "openalex",
+    "summary": "Both amino acid–montmorillonite nanocomposites developed in this paper—one modified with methionine and one with threonine—reduced methane production in cattle feed contaminated with aflatoxin B1 at concentrations of 20 parts per billion. The modified clays showed larger surface area and higher cation exchange capacity than unmodified montmorillonite, with narrower particle size distributions. When added to contaminated feed at low doses (0.5 grams per kilogram of dry matter), both nanocomposites reduced methane output to levels comparable with monensin, a standard pharmaceutical additive used in livestock production. At higher doses (1 gram per kilogram of dry matter), the nanocomposites decreased total short-chain fatty acid concentrations, though low-dose supplementation increased acetate production compared to high-dose treatment. The aflatoxin-contaminated diet itself reduced the breakdown of acid detergent fiber compared to uncontaminated feed, a degradation that the nanocomposites partially reversed.  These findings reveal a material entanglement characteristic of industrial agriculture under contamination stress: the same clay minerals engineered to bind and neutralize a mycotoxin—a sign of crop failure and food system fragility—simultaneously function as a methane suppressant, converting a remediation problem into a productivity gain. The nanocomposites operate not as a solution to aflatoxin exposure but as a technology that absorbs contamination while extracting additional economic value through greenhouse gas reduction, embedding deeper dependencies on chemical modification and nanoscale engineering into livestock feeding systems already shaped by toxin risk.",
     "enhanced": true,
-    "enhanced_at": "2026-06-22T14:36:08.356044"
+    "enhanced_at": "2026-06-29T13:05:11.009844"
   },
   {
     "title": "Palaeoanthropology: A Neanderthal start to life",
@@ -113,7 +160,7 @@
     "category": "science",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-06-22T14:36:09.322432"
+    "enhanced_at": "2026-06-29T13:05:12.818640"
   },
   {
     "title": "Microbial-enzymatic coupling drives nitrogen stabilization during static pile composting of rice straw amended with contrasting nitrogen sources",
@@ -504,6 +551,17 @@
     "summary": "In this study of 106 adult patients hospitalized in intensive care units with invasive fungal infections between July 2022 and February 2025, two-thirds were immunocompetent despite carrying underlying chronic conditions. This paper evaluates metagenomic next-generation sequencing as a diagnostic tool for this understudied population, comparing its performance against conventional microbiological tests and examining how results from different specimen types influenced clinical decisions about antifungal treatment. The research addresses a gap in diagnostic approaches for fungal infections in patients who lack the typical immunosuppression markers that usually flag fungal disease risk.  The findings document a material entanglement between diagnostic technology and clinical vulnerability. Immunocompetent intensive care patients with co-occurring conditions occupy an ambiguous position in the landscape of fungal disease recognition—their infections are frequent enough to constitute major mortality risk, yet their immune status renders them epidemiologically invisible in conventional risk frameworks. Metagenomic sequencing, by detecting fungal genetic material across diverse specimen types, makes visible what standard microbiological methods miss, yet this visibility also exposes how fungal disease in intensive care units emerges not from immune failure alone but from the accumulated material stresses of critical illness, invasive devices, and prolonged hospitalization. The diagnostic power of sequencing thus reveals deeper patterns of exposure embedded in the intensive care setting itself.",
     "enhanced": true,
     "enhanced_at": "2026-06-01T14:59:25.229810"
+  },
+  {
+    "title": "[Corrections] Correction to Lancet Infect Dis 2026; 26: 343–61",
+    "source": "The Lancet Infectious Diseases",
+    "excerpt": "GBD 2023 Lower Respiratory Infections and Antimicrobial Resistance Collaborators. Global burden of lower respiratory infections and aetiologies, 1990–2023: a systematic analysis for the Global Burden of Disease Study 2023. Lancet Infect Dis 2026; 26: 343–61—In appendix 3 of this Article, Chulwoo Park's affiliation should have been “Department of Sociology, Anthropology, and Public Health, University of Maryland, Baltimore County, MD, USA”. This correction has been made to appendix 3 as of May 26, 2026.",
+    "url": "https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(26)00290-2/fulltext?rss=yes",
+    "pubDate": "2026-05-26T22:30:01Z",
+    "category": "clinical",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-06-29T13:05:13.744759"
   },
   {
     "title": "Prevalence and clinical implications of Aspergillus infection among tuberculosis patients in Peru",
@@ -1270,7 +1328,7 @@
     "category": "clinical",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-06-22T14:36:24.416384"
+    "enhanced_at": "2026-06-29T13:05:14.721451"
   },
   {
     "title": "Kernel structure and varietal attributes determine aflatoxin production by Aspergillus flavus in maize (Zea mays L.)",
@@ -1671,7 +1729,7 @@
     "category": "media",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-06-22T14:36:25.363986"
+    "enhanced_at": "2026-06-29T13:05:15.793282"
   },
   {
     "title": "Hygrothermal impact of water resistive barriers on mould growth in wood-frame wall assemblies",
@@ -4083,6 +4141,6 @@
     "category": "indoor",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-06-22T14:36:26.446037"
+    "enhanced_at": "2026-06-29T13:05:16.807491"
   }
 ]
