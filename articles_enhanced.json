@@ -1,5 +1,27 @@
 [
   {
+    "title": "The efficient plant genetic transformation system mediated by FELBs and RTBs respectively via novel somatic embryogenesis in Allium sativum",
+    "source": "Frontiers in Plant Science | New and Recent Articles",
+    "excerpt": "IntroductionSomatic embryogenesis represents an indirect but highly efficient biotechnological method for plant regeneration, genetic transformation, and virus-free propagation.MethodsHerein, we investigated the effects of NAA, 2,4-D, and TDZ on the morphogenic capacity of Allium sativum. This is evaluated in terms of the formation of frog egg-like body and rhizoid tuber morphological structures, somatic embryo development, shoot regeneration, and the genetic transformation method.ResultsTwo novel high-efficiency SE systems in garlic were characterized, operating through the FELB and RTB pathways, respectively, with a focus on the regulatory effects of plant growth regulators (PGRs) on SE progression. In the FELB pathway, somatic embryos were highly induced from root explants, achieving an induction rate of 96.33%. Embryoid development was successfully accomplished using a combination of 2.5 mg/L NAA and 2.5 mg/L 2,4-D under dark conditions. Furthermore, 5.0 mg/L BAP was identified as the optimal cytokinin concentration for plant regeneration via the FELB pathway. In the RTB pathway, somatic embryos were also efficiently induced from root explants; under sucrose semistarvation cond",
+    "url": "https://www.frontiersin.org/articles/10.3389/fpls.2026.1832239",
+    "pubDate": "2026-07-06T00:00:00Z",
+    "category": "health",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-07-06T12:44:16.792215"
+  },
+  {
+    "title": "Aflatoxin B1 modulates mixture-induced neurotoxicity under multi-contaminant exposure: insights from combination modeling in SH-SY5Y cells",
+    "source": "Frontiers in Pharmacology | New and Recent Articles",
+    "excerpt": "IntroductionThe chemical exposome is increasingly implicated in neurodegenerative diseases (NDs). However, although human exposure to environmental and dietary contaminants typically occurs as complex mixtures, neurotoxicity assessments still largely focus on single compounds. This study investigated the neurotoxic interactions between aflatoxin B1 (AFB1), acrylamide (ACR), and cadmium in a neuronal cell model.Methods SH‐SY5Y cells were exposed to AFB1, ACR, and Cd2+ individually or in fixed‐ratio mixtures for 72 h. Mixture interactions were evaluated from MTT data using the combination index (CI) approach implemented through the Chou‐Talalay (CT) and CISNE frameworks.Results Individual potency ranked Cd2+>AFB1>ACR. At low effect levels, AFB1‐containing mixtures showed relevant deviations from additivity. The ACR/AFB1 combination displayed synergism at IC10 (CISNE CI 0.62), with concentrations reducing to 4.4‐fold for ACR and 2.6‐fold for AFB1. AFB1/Cd2+ interactions were model-dependent, with CT indicating synergism at IC10 (CI 0.43), whereas CISNE indicated near additivity. ACR/Cd2+ and ternary mixtures displayed strong antagonism at low effect levels (CISNE CI 7.07 at IC10). Int",
+    "url": "https://www.frontiersin.org/articles/10.3389/fphar.2026.1857857",
+    "pubDate": "2026-07-03T00:00:00Z",
+    "category": "clinical",
+    "summary": "This study examined how three contaminants interact when present together in neuronal cells, rather than in isolation. Researchers exposed human neuroblastoma cells to aflatoxin a mould toxin, acrylamide (an industrial chemical), and cadmium individually and in combinations over 72 hours, measuring cell survival through metabolic activity. When ranked by individual toxicity, cadmium proved most potent, followed by aflatoxin B1, then acrylamide. Mixtures containing aflatoxin B1 deviated significantly from simple additive effects at low exposure levels. The acrylamide and aflatoxin B1 combination showed combined-effect toxicity at the 10 percent effect level, with both compounds requiring substantially lower concentrations when paired (acrylamide reduced 4.4-fold, aflatoxin B1 reduced 2.6-fold). The aflatoxin B1 and cadmium interaction produced conflicting results depending on the mathematical model applied: one framework indicated synergism while another suggested near-additive effects. Acrylamide combined with cadmium, and all three contaminants together, displayed strong counteracting effects at low exposure levels, meaning the mixture was less toxic than expected from individual potencies.  Within the material entanglements of chemical exposure, aflatoxin B1 emerges as a destabilizing agent—capable of amplifying harm when paired with certain industrial contaminants while dampening it with others. This pattern suggests that the neurotoxic burden experienced by exposed populations cannot be predicted from laboratory assessments of single chemicals; the presence of a mould metabolite fundamentally reshapes how other environmental toxins behave in living cells. The model-dependent outcomes reveal an epistemic problem embedded in exposure assessment itself: different mathematical frameworks produce contradictory predictions about the same biological interaction, exposing the fragility of risk frameworks built on single-compound toxicology when confronted with the messy realities of multi-contaminant environments.",
+    "enhanced": true,
+    "enhanced_at": "2026-07-06T12:44:23.952710"
+  },
+  {
     "title": "Evaluation of Three Aspergillus Antibody Assays for Screening of Chronic Pulmonary Aspergillosis: Prospective Diagnostic Accuracy Study",
     "source": "ScienceDirect Publication: Diagnostic Microbiology and Infectious Disease",
     "excerpt": "OBJECTIVES\nChronic pulmonary aspergillosis (CPA) is a frequent complication of pulmonary tuberculosis (PTB), particularly in high-burden settings where access to reliable serological diagnostics remains limited. We evaluated the diagnostic performance of two immunochromatographic technology (ICT) lateral flow assays (LFAs) and an ELISA for CPA screening among patients with active or previously treated PTB.\n\n\nMETHODS\nIn this two-year prospective multicentre diagnostic evaluation, serum from adults with prior or active PTB was tested using the Era Biology Aspergillus IgG ICT LFA, LDBio Aspergillus IgG/IgM ICT LFA, and Bordier Aspergillus fumigatus IgG ELISA. CPA diagnosis was established using a consensus composite reference standard incorporating clinical, immunological, radiological, and microbiological criteria. The Bordier ELISA was used as part of the immunological component of the consensus CPA diagnosis, with a cutoff optical density of ≥1.0. Diagnostic accuracy, agreement statistics, receiver operating characteristic analysis, and latent class analysis (LCA) were performed.\n\n\nRESULTS\nAmong 340 participants, 24 (7.06%) had CPA. Proportion of participants with positive antibody tests among all tested individuals were 6.76% for LDBio ICT LFA, 20.0% for Era Biology ICT LFA, and 11.47% for Bordier ELISA. Against consensus CPA diagnosis, Bordier ELISA showed 87.50% sensitivity and 94.30% specificity, LDBio ICT LFA 58.33% sensitivity and 97.15% specificity, and Era Biology LFA 66.67% sensitivity and 83.54% specificity. LCA estimated CPA prevalence at 7.72%. LCA-derived sensitivities and specificities were 86.58% and 99.92% for LDBio ICT LFA, 83.39% and 85.31% for Era Biology LFA, and 79.10% and 94.19% for Bordier ELISA.\n\n\nCONCLUSIONS\nThe Bordier ELISA showed high sensitivity and specificity, while the LDBio ICT LFA demonstrated very high specificity with strong LCA-derived performance. These findings support the use of ELISA for laboratory diagnosis and ICT as a poin",
@@ -40,9 +62,9 @@
     "url": "https://academic.oup.com/jacamr/article/doi/10.1093/jacamr/dlag102.021/8716114?rss=1",
     "pubDate": "2026-06-26T00:00:00Z",
     "category": "science",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "summary": "This paper documents the bacterial species and resistance patterns associated with chronic suppurative otitis media across India over a 65-year period, establishing India as a high-prevalence zone with disease rates between 1.4% and 14.7%. The earliest recorded study, conducted in Uttar Pradesh in 1961, identified 14.7% prevalence among schoolchildren. Across multiple Indian regions—Karnataka, Bhopal, Agartala, Panipat, Rajasthan, and West Bengal—two bacterial species consistently dominated: Pseudomonas aeruginosa (ranging from 19.9% to 67.5% of cases) and Staphylococcus aureus (11.3% to 51.9%). The paper tracks shifts in diagnostic methodology over this period, from manual culture and Kirby-Bauer disc diffusion testing in early studies to automated systems (VITEK-2 and MicroScan) capable of producing results within 6 to 12 hours, alongside rapid protein-level analysis identification using matrix-assisted laser desorption/ionization time-of-flight mass spectrometry (completing analysis in under 30 minutes) and Etest strips for determining minimum inhibitory concentrations in anaerobic bacteria.  The geographic variability in pathogen prevalence and resistance patterns across Indian regions reflects uneven exposure shaped by differences in housing density, sanitation infrastructure, and access to antibiotic treatments—conditions that concentrate bacterial populations in particular bodies and places. The acceleration of diagnostic speed from manual methods to automated systems does not simply reveal pre-existing resistance; it produces new visibility into microbial populations previously undetectable, potentially reshaping clinical decisions and pharmaceutical markets while simultaneously obscuring the material conditions—poverty, crowded housing, incomplete treatment courses—that generate the resistant strains in the first place.",
     "enhanced": true,
-    "enhanced_at": "2026-06-29T13:05:01.244093"
+    "enhanced_at": "2026-07-06T12:44:28.899433"
   },
   {
     "title": "Correction to ‘Seroprevalence Screening of Chronic Aspergillus Infection in a Post‐Tuberculosis Cohort in Senegal: A Cross‐Sectional Study Comparing ELISA and Rapid Diagnostic Tests’",
@@ -52,9 +74,9 @@
     "pubDate": "2026-06-23T07:00:00Z",
     "category": "clinical",
     "abstract_source": "openalex",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!  ---  **Explanation:** The source text provided contains only a correction notice documenting an author name-order error. No substantive abstract, findings, methods, organisms, materials, locations, or data are present in the source material itself.   While related research context describing the original study is available in the archive, the constraint against hallucination and the prohibition against merging related findings into the source summary prevent me from reporting those findings as belonging to this correction notice. The correction notice itself contains no scientific content to analyze.  To produce a meaningful summary following the analytical framework requested, the full abstract or substantive content of the original research article would be required.",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-06-29T13:05:05.725830"
+    "enhanced_at": "2026-07-06T12:44:31.050202"
   },
   {
     "title": "Mucormycosis: A life-threatening invasive fungal infection",
@@ -160,7 +182,7 @@
     "category": "science",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-06-29T13:05:12.818640"
+    "enhanced_at": "2026-07-06T12:44:32.250362"
   },
   {
     "title": "Microbial-enzymatic coupling drives nitrogen stabilization during static pile composting of rice straw amended with contrasting nitrogen sources",
@@ -561,7 +583,7 @@
     "category": "clinical",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-06-29T13:05:13.744759"
+    "enhanced_at": "2026-07-06T12:44:32.990733"
   },
   {
     "title": "Prevalence and clinical implications of Aspergillus infection among tuberculosis patients in Peru",
@@ -1328,7 +1350,7 @@
     "category": "clinical",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-06-29T13:05:14.721451"
+    "enhanced_at": "2026-07-06T12:44:34.793124"
   },
   {
     "title": "Kernel structure and varietal attributes determine aflatoxin production by Aspergillus flavus in maize (Zea mays L.)",
@@ -1729,7 +1751,7 @@
     "category": "media",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-06-29T13:05:15.793282"
+    "enhanced_at": "2026-07-06T12:44:35.671468"
   },
   {
     "title": "Hygrothermal impact of water resistive barriers on mould growth in wood-frame wall assemblies",
@@ -4141,6 +4163,6 @@
     "category": "indoor",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-06-29T13:05:16.807491"
+    "enhanced_at": "2026-07-06T12:44:37.588531"
   }
 ]
