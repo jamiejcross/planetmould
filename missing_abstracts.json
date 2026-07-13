@@ -1,10 +1,115 @@
 [
   {
     "doi": "",
-    "title": "Molecular mechanism of the multi-copper oxidase biosynthesis gene PdFET5 affecting the pathogenicity of Penicillium digitatum to citrus",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026001371?dgcid=rss_sd_all",
+    "title": "Triazole resistance in clinical Aspergillus fumigatus isolates in India, a multicenter surveillance study",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0732889326002919?dgcid=rss_sd_all",
+    "category": "clinical",
+    "pubDate": "2026-07-13T11:56:58Z"
+  },
+  {
+    "doi": "",
+    "title": "Reassessing evidence and policy claims in Coulburn et al. (2026) on Mould, Insurance and regulation",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0360132326006700?dgcid=rss_sd_all",
+    "category": "indoor",
+    "pubDate": "2026-07-13T11:56:45Z"
+  },
+  {
+    "doi": "",
+    "title": "Indoor relative humidity and air mycobiome in eastern Taiwan residences: associations with Aspergillus and Wallemia",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0360132326007481?dgcid=rss_sd_all",
+    "category": "indoor",
+    "pubDate": "2026-07-13T11:56:45Z"
+  },
+  {
+    "doi": "",
+    "title": "Dual-sensor online detection for sub-healthy apples with moldy core using laser Doppler vibrometry and Vis-NIR spectroscopy",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526004998?dgcid=rss_sd_all",
     "category": "health",
-    "pubDate": "2026-07-06T12:41:25Z"
+    "pubDate": "2026-07-13T11:56:39Z"
+  },
+  {
+    "doi": "",
+    "title": "Co-occurrence of acrylamide and mycotoxins in biscuits: Insights into dietary exposure and risk characterization",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526004731?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-13T11:56:39Z"
+  },
+  {
+    "doi": "",
+    "title": "Alternaria and Fusarium across malting barley process: a comprehensive study of mycotoxins and quality effects",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526004639?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-13T11:56:39Z"
+  },
+  {
+    "doi": "",
+    "title": "Integrated effects of pre-harvest atoxigenic biocontrol and post-harvest storage conditions on aflatoxin contamination and grain quality of maize",
+    "url": "https://www.sciencedirect.com/science/article/pii/S095671352600472X?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-13T11:56:39Z"
+  },
+  {
+    "doi": "",
+    "title": "Corrigendum to “Edible Fe2ZnO4 nanocomposite for extending shelf-life and preventing blue mold decay in apples” [Food Control 171 2025 111111]",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526004238?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-13T11:56:39Z"
+  },
+  {
+    "doi": "",
+    "title": "Container-level proof-of-concept monitoring of postharvest apple blue mold using a whole-cell biosensor array and interpretable machine learning",
+    "url": "https://www.sciencedirect.com/science/article/pii/S095671352600469X?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-13T11:56:39Z"
+  },
+  {
+    "doi": "",
+    "title": "Regulatory roles of Smt3, an orthologue of small ubiquitin-like modifier, in fungal development and the production of α-amylases and organic acids in Aspergillus niger",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026002017?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-13T11:56:39Z"
+  },
+  {
+    "doi": "",
+    "title": "Valorization of durian shell waste: antifungal activity of ethanol extract against Penicillium expansum and its underlying mechanisms",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026001759?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-13T11:56:39Z"
+  },
+  {
+    "doi": "",
+    "title": "Assessment of near-infrared hyperspectral imaging for the discrimination of naturally aflatoxin-contaminated nuts",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926016078?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-13T11:56:37Z"
+  },
+  {
+    "doi": "",
+    "title": "Isolation, identification, and quantum chemical analysis of structure-activity relationships of antioxidant peptides from sesame meal via Aspergillus niger fermentation and flavourzyme hydrolysis",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926015590?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-13T11:56:37Z"
+  },
+  {
+    "doi": "",
+    "title": "The peroxisome RING-type E3 ubiquitin ligase-mediated peroxisome function is essential for Alternaria alternata pathogenicity: coordinated regulation of lipid metabolism homeostasis and redox balance",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000747?dgcid=rss_sd_all",
+    "category": "science",
+    "pubDate": "2026-07-13T11:56:26Z"
+  },
+  {
+    "doi": "",
+    "title": "The role of the transcription factor FsBrlA in regulating sporulation, cell wall integrity stress response, and pathogenicity in Fusarium solani",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000838?dgcid=rss_sd_all",
+    "category": "science",
+    "pubDate": "2026-07-13T11:56:26Z"
+  },
+  {
+    "doi": "",
+    "title": "Regulatory roles of AmyR in amylolytic enzyme production, cellulose utilization, conidiation, stress tolerance, and fruit decay capacity of Aspergillus niger",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000942?dgcid=rss_sd_all",
+    "category": "science",
+    "pubDate": "2026-07-13T11:56:26Z"
   },
   {
     "doi": "",
@@ -29,20 +134,6 @@
   },
   {
     "doi": "",
-    "title": "The peroxisome RING-type E3 ubiquitin ligase-mediated peroxisome function is essential for Alternaria alternata pathogenicity: coordinated regulation of lipid metabolism homeostasis and redox balance",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000747?dgcid=rss_sd_all",
-    "category": "science",
-    "pubDate": "2026-07-06T12:41:13Z"
-  },
-  {
-    "doi": "",
-    "title": "The role of the transcription factor FsBrlA in regulating sporulation, cell wall integrity stress response, and pathogenicity in Fusarium solani",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000838?dgcid=rss_sd_all",
-    "category": "science",
-    "pubDate": "2026-07-06T12:41:13Z"
-  },
-  {
-    "doi": "",
     "title": "Aflatoxins: global insights on occurrence, health risks, regulations, and integrated management strategies from farm-to-fork for a safer food system",
     "url": "https://www.sciencedirect.com/science/article/pii/S0956713526003312?dgcid=rss_sd_all",
     "category": "health",
@@ -54,34 +145,6 @@
     "url": "https://www.sciencedirect.com/science/article/pii/S0961953426006872?dgcid=rss_sd_all",
     "category": "indoor",
     "pubDate": "2026-06-15T15:01:02Z"
-  },
-  {
-    "doi": "",
-    "title": "Combined suppression of Aspergillus parasiticus and aflatoxin B1 in marinades: unraveling the cooperative antifungal mechanism of linalool and surfactin",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926013529?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-06-15T15:00:52Z"
-  },
-  {
-    "doi": "",
-    "title": "Structural characterization of a Penicillium-derived exopolysaccharide and its hepatoprotective effects through regulation of oxidative stress and bile acid metabolism",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926013475?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-06-15T15:00:52Z"
-  },
-  {
-    "doi": "",
-    "title": "Natural occurrence and dietary risk assessment of Alternaria toxins in wheat flour and its products in Shanghai, China",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926013025?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-06-15T15:00:52Z"
-  },
-  {
-    "doi": "",
-    "title": "RNA demethylase CsALKBH8 enhances postharvest disease resistance of citrus fruit against penicillium digitatum via m6A-mediated transcript regulation",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926012627?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-06-15T15:00:52Z"
   },
   {
     "doi": "",
