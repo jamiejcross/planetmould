@@ -1,87 +1,136 @@
 [
   {
     "doi": "",
-    "title": "Triazole resistance in clinical Aspergillus fumigatus isolates in India, a multicenter surveillance study",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0732889326002919?dgcid=rss_sd_all",
-    "category": "clinical",
-    "pubDate": "2026-07-13T11:56:58Z"
-  },
-  {
-    "doi": "",
     "title": "Reassessing evidence and policy claims in Coulburn et al. (2026) on Mould, Insurance and regulation",
     "url": "https://www.sciencedirect.com/science/article/pii/S0360132326006700?dgcid=rss_sd_all",
     "category": "indoor",
-    "pubDate": "2026-07-13T11:56:45Z"
+    "pubDate": "2026-07-20T11:40:18Z"
   },
   {
     "doi": "",
     "title": "Indoor relative humidity and air mycobiome in eastern Taiwan residences: associations with Aspergillus and Wallemia",
     "url": "https://www.sciencedirect.com/science/article/pii/S0360132326007481?dgcid=rss_sd_all",
     "category": "indoor",
-    "pubDate": "2026-07-13T11:56:45Z"
+    "pubDate": "2026-07-20T11:40:18Z"
   },
   {
     "doi": "",
-    "title": "Dual-sensor online detection for sub-healthy apples with moldy core using laser Doppler vibrometry and Vis-NIR spectroscopy",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526004998?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-07-13T11:56:39Z"
-  },
-  {
-    "doi": "",
-    "title": "Co-occurrence of acrylamide and mycotoxins in biscuits: Insights into dietary exposure and risk characterization",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526004731?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-07-13T11:56:39Z"
-  },
-  {
-    "doi": "",
-    "title": "Alternaria and Fusarium across malting barley process: a comprehensive study of mycotoxins and quality effects",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526004639?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-07-13T11:56:39Z"
-  },
-  {
-    "doi": "",
-    "title": "Integrated effects of pre-harvest atoxigenic biocontrol and post-harvest storage conditions on aflatoxin contamination and grain quality of maize",
-    "url": "https://www.sciencedirect.com/science/article/pii/S095671352600472X?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-07-13T11:56:39Z"
-  },
-  {
-    "doi": "",
-    "title": "Corrigendum to “Edible Fe2ZnO4 nanocomposite for extending shelf-life and preventing blue mold decay in apples” [Food Control 171 2025 111111]",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526004238?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-07-13T11:56:39Z"
-  },
-  {
-    "doi": "",
-    "title": "Container-level proof-of-concept monitoring of postharvest apple blue mold using a whole-cell biosensor array and interpretable machine learning",
-    "url": "https://www.sciencedirect.com/science/article/pii/S095671352600469X?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-07-13T11:56:39Z"
-  },
-  {
-    "doi": "",
-    "title": "Regulatory roles of Smt3, an orthologue of small ubiquitin-like modifier, in fungal development and the production of α-amylases and organic acids in Aspergillus niger",
+    "title": "Regulatory roles of Smt3, an ortholog of small ubiquitin-like modifier, in fungal development and the production of amylases and organic acids in Aspergillus niger",
     "url": "https://www.sciencedirect.com/science/article/pii/S0740002026002017?dgcid=rss_sd_all",
     "category": "health",
-    "pubDate": "2026-07-13T11:56:39Z"
+    "pubDate": "2026-07-20T11:40:12Z"
   },
   {
     "doi": "",
     "title": "Valorization of durian shell waste: antifungal activity of ethanol extract against Penicillium expansum and its underlying mechanisms",
     "url": "https://www.sciencedirect.com/science/article/pii/S0740002026001759?dgcid=rss_sd_all",
     "category": "health",
-    "pubDate": "2026-07-13T11:56:39Z"
+    "pubDate": "2026-07-20T11:40:12Z"
+  },
+  {
+    "doi": "",
+    "title": "Dual-sensor online detection for sub-healthy apples with moldy core using laser Doppler vibrometry and Vis-NIR spectroscopy",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526004998?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-20T11:40:11Z"
+  },
+  {
+    "doi": "",
+    "title": "Co-occurrence of acrylamide and mycotoxins in biscuits: Insights into dietary exposure and risk characterization",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526004731?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-20T11:40:11Z"
+  },
+  {
+    "doi": "",
+    "title": "Alternaria and Fusarium across malting barley process: a comprehensive study of mycotoxins and quality effects",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526004639?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-20T11:40:11Z"
+  },
+  {
+    "doi": "",
+    "title": "Integrated effects of pre-harvest atoxigenic biocontrol and post-harvest storage conditions on aflatoxin contamination and grain quality of maize",
+    "url": "https://www.sciencedirect.com/science/article/pii/S095671352600472X?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-20T11:40:11Z"
+  },
+  {
+    "doi": "",
+    "title": "Corrigendum to “Edible Fe2ZnO4 nanocomposite for extending shelf-life and preventing blue mold decay in apples” [Food Control 171 2025 111111]",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526004238?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-20T11:40:11Z"
+  },
+  {
+    "doi": "",
+    "title": "Container-level proof-of-concept monitoring of postharvest apple blue mold using a whole-cell biosensor array and interpretable machine learning",
+    "url": "https://www.sciencedirect.com/science/article/pii/S095671352600469X?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-20T11:40:11Z"
+  },
+  {
+    "doi": "",
+    "title": "Occurrence of aflatoxins in maize, groundnuts, and cassava from retail markets in Kinshasa, Democratic Republic of the Congo",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526005141?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-20T11:40:11Z"
+  },
+  {
+    "doi": "",
+    "title": "Simultaneous determination of multiple mycotoxins and associated fungal species in harvested maize cobs from Egypt",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526004913?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-20T11:40:11Z"
   },
   {
     "doi": "",
     "title": "Assessment of near-infrared hyperspectral imaging for the discrimination of naturally aflatoxin-contaminated nuts",
     "url": "https://www.sciencedirect.com/science/article/pii/S0963996926016078?dgcid=rss_sd_all",
     "category": "health",
-    "pubDate": "2026-07-13T11:56:37Z"
+    "pubDate": "2026-07-20T11:40:08Z"
+  },
+  {
+    "doi": "",
+    "title": "Aflatoxins and their biosynthetic precursors in lotus seeds: simultaneous UPLC-MS/MS determination, contamination profiling, and matrix-specific accumulation during Aspergillus flavus infection",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926016960?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-20T11:40:08Z"
+  },
+  {
+    "doi": "",
+    "title": "Fungal drivers of mycotoxin contamination in wheat: Early warning and plasma-based control",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926016492?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-20T11:40:08Z"
+  },
+  {
+    "doi": "",
+    "title": "Fermentation with aspergillus costiformis enhances the anti-migratory activity of Aquilaria sinensis leaves with possible involvement of MAPK-related pathways",
+    "url": "https://www.sciencedirect.com/science/article/pii/S096399692601639X?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-07-20T11:40:08Z"
+  },
+  {
+    "doi": "",
+    "title": "The peroxisome RING-type E3 ubiquitin ligase-mediated peroxisome function is essential for Alternaria alternata pathogenicity: coordinated regulation of lipid metabolism homeostasis and redox balance",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000747?dgcid=rss_sd_all",
+    "category": "science",
+    "pubDate": "2026-07-20T11:39:59Z"
+  },
+  {
+    "doi": "",
+    "title": "The role of the transcription factor FsBrlA in regulating sporulation, cell wall integrity stress response, and pathogenicity in Fusarium solani",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000838?dgcid=rss_sd_all",
+    "category": "science",
+    "pubDate": "2026-07-20T11:39:59Z"
+  },
+  {
+    "doi": "",
+    "title": "Regulatory roles of AmyR in amylolytic enzyme production, cellulose utilization, conidiation, stress tolerance, and fruit decay capacity of Aspergillus niger",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000942?dgcid=rss_sd_all",
+    "category": "science",
+    "pubDate": "2026-07-20T11:39:59Z"
   },
   {
     "doi": "",
@@ -89,27 +138,6 @@
     "url": "https://www.sciencedirect.com/science/article/pii/S0963996926015590?dgcid=rss_sd_all",
     "category": "health",
     "pubDate": "2026-07-13T11:56:37Z"
-  },
-  {
-    "doi": "",
-    "title": "The peroxisome RING-type E3 ubiquitin ligase-mediated peroxisome function is essential for Alternaria alternata pathogenicity: coordinated regulation of lipid metabolism homeostasis and redox balance",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000747?dgcid=rss_sd_all",
-    "category": "science",
-    "pubDate": "2026-07-13T11:56:26Z"
-  },
-  {
-    "doi": "",
-    "title": "The role of the transcription factor FsBrlA in regulating sporulation, cell wall integrity stress response, and pathogenicity in Fusarium solani",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000838?dgcid=rss_sd_all",
-    "category": "science",
-    "pubDate": "2026-07-13T11:56:26Z"
-  },
-  {
-    "doi": "",
-    "title": "Regulatory roles of AmyR in amylolytic enzyme production, cellulose utilization, conidiation, stress tolerance, and fruit decay capacity of Aspergillus niger",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000942?dgcid=rss_sd_all",
-    "category": "science",
-    "pubDate": "2026-07-13T11:56:26Z"
   },
   {
     "doi": "",
