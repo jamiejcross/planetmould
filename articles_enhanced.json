@@ -1,5 +1,255 @@
 [
   {
+    "title": "Beyond direct pathway engineering: reprogramming Fusarium fujikuroi from a GA3 producer into a GA4+7 factory",
+    "source": "ScienceDirect Publication: Bioresource Technology",
+    "excerpt": "Synthetic biology is emerging as a key approach in chemical synthesis, whose efficiency hinges crucially on the direct engineering of metabolic pathways. In this study, we propose a dual-intervention paradigm to reprogram the industrial fungus Fusarium fujikuroi from a default gibberellic acid (GA3) producer into an exclusive factory for the higher-value gibberellin GA4+7, providing a complementary and orthogonal approach to traditional intra-pathway manipulations. First, by introducing Arabidopsis-derived transporters (Npfs and Sweets), we successfully created a thermodynamic sink that actively depletes intracellular GA4/GA7 pools. With the best candidate protein, Sweet1, the parent strain was converted into an exclusive producer of GA4+7 (with GA3 levels undetectable), a conversion driven by the significantly accelerated dissociation rate (Kdis) for GA7. Concurrently, we uncovered a non-canonical, highly specific regulatory mechanism: overexpression of the Sfp-type 4'-phosphopantetheinyl transferase Ppt1 triggered targeted post-transcriptional silencing of up to 99.9 % of P450-3 mRNA, thereby completely silencing GA3 biosynthesis and again yielding an exclusive producer of GA4+7. Synergistic integration of transporter-driven spatial pulling and Ppt1-mediated gene silencing, coupled with fermentation optimization, propelled the final GA4+7 titer to an unprecedented 3.29 g/L (reaching 0.4 g/L for GA4 and 2.89 g/L for GA7, representing 17.39-, 962.33-, and 125.54-fold increases over the parent strain, respectively). This study achieves indirect metabolic reprogramming not via conventional pathway engineering, but by targeting a membrane transport bottleneck and employing a putative post-transcriptional silencing mechanism.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S096085242601521X?dgcid=rss_sd_all",
+    "pubDate": "2026-07-27T12:15:21Z",
+    "category": "indoor",
+    "abstract_source": "semantic_scholar",
+    "summary": "Fusarium fujikuroi, an industrial fungus normally producing gibberellic acid GA3, was reprogrammed to manufacture the higher-value gibberellin GA4+7 through two parallel interventions. This paper introduced plant-derived transporter proteins (Npfs and Sweets) to create an intracellular sink that actively depletes GA4 and GA7, with Sweet1 proving most effective at accelerating the dissociation rate of GA7 and eliminating detectable GA3 production. Simultaneously, overexpression of the enzyme Ppt1 triggered targeted silencing of up to 99.9 percent of the messenger RNA for the enzyme P450-3, thereby shutting down GA3 biosynthesis entirely and again yielding exclusive GA4+7 production. When both approaches were combined with fermentation optimization, the final GA4+7 concentration reached 3.29 grams per litre—a 125.54-fold increase over the parent strain, with GA4 and GA7 individually elevated 962.33-fold and 17.39-fold respectively.  This study reveals how metabolic reprogramming in industrial fungi operates not through direct pathway manipulation but through material and regulatory bottlenecks: the fungus was redirected by physically removing its product through membrane transport and by silencing biosynthetic machinery at the level of gene expression. The dual intervention—one spatial, one post-transcriptional—demonstrates how the same organism can be steered toward different chemical outputs by targeting the transport and regulatory infrastructure that governs metabolite flow. This capacity to redirect fungal metabolism toward high-value products illustrates how industrial microorganisms embody both biological constraint and economic opportunity within the same cellular system.",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:18:40.569298"
+  },
+  {
+    "title": "Efficiency and mechanism of a magnetic immobilized PPL system for simultaneous removal of the hazardous mycotoxins patulin and ochratoxin A from fruit juice",
+    "source": "ScienceDirect Publication: Journal of Hazardous Materials",
+    "excerpt": "This study developed two novel magnetic nanocomposites with immobilized porcine pancreatic lipase (PPL) for simultaneously removing patulin (PAT) and ochratoxin A (OTA)-two hazardous environmental contaminants-from fruit juices. All detoxification experiments were conducted in real fruit juice matrices (apple juice for PAT, grape juice for OTA) under ambient temperature (25 °C) with realistic contamination ranges. The results demonstrated MNP@UiO-66-(SH)₂@PPL achieved removal rates of 77.03% for PAT in apple juice and 45.03% for OTA in grape juice, while MNP@UiO-66-NH₂@PPL showed removal rates of 85.74% for OTA and 48.44% for PAT. LC-MS analysis indicated that PAT undergoes ring-opening to ascladiol, while OTA is hydrolyzed to phenylalanine and OTα. Molecular docking revealed that PPL spontaneously binds to both toxins via hydrogen bonding and hydrophobic interactions. CCK-8 assays confirmed low cytotoxicity of the materials and their degradation products, with no adverse impact on juice quality. The composites also exhibited magnetic recovery rates > 93%, enabling facile separation and recyclability. This work provides a safe, efficient, and reusable strategy for multi-mycotoxin decontamination with demonstrated environmental relevance.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0304389426020443?dgcid=rss_sd_all",
+    "pubDate": "2026-07-27T12:15:21Z",
+    "category": "indoor",
+    "abstract_source": "semantic_scholar",
+    "summary": "This study developed two magnetic nanocomposites carrying immobilized porcine pancreatic lipase to simultaneously degrade patulin and ochratoxin A—two fungal toxins commonly found in fruit juices—at room temperature in real juice matrices. Testing in apple juice and grape juice showed removal rates ranging from 45% to 86% depending on the composite formulation and target toxin, with liquid chromatography-mass spectrometry analysis confirming that patulin breaks down into ascladiol while ochratoxin A converts to phenylalanine and OTα. The enzyme binds to both toxins through hydrogen bonding and hydrophobic interactions, the composites showed low toxicity to human cells and caused no detectable changes to juice quality, and the magnetic particles could be recovered and reused in more than 93% of trials.  The dual functionality of these materials—simultaneously addressing two distinct mycotoxin threats while remaining recoverable and reusable—reveals how enzymatic decontamination systems operate within the material constraints of food processing. The fact that the same magnetic composites perform differently against each toxin (better removal of ochratoxin A with one formulation, patulin with another) suggests that technological solutions to fungal contamination are not universal fixes but rather contingent on the specific toxin-enzyme-matrix assemblage at hand. The emphasis on testing in actual juice rather than synthetic solutions, combined with the requirement for magnetic recovery to make the system economically viable, indicates that mycotoxin remediation technologies are embedded in the practical demands and material dependencies of food production rather than existing as standalone interventions.",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:18:45.526525"
+  },
+  {
+    "title": "A novel fungus Penicillium crocicola LF-2022 for high-efficiency biodegradation of brominated flame retardants: Performance, pathways, soil remediation, and transcriptomic mechanisms",
+    "source": "ScienceDirect Publication: Journal of Hazardous Materials",
+    "excerpt": "Tetrabromobisphenol A (TBBPA) and decabromodiphenyl ether (BDE-209) are typical brominated flame retardants (BFRs) with environmental persistence, bioaccumulation potential, and high toxicity, posing serious threats to ecosystems and human health. In this study, a novel fungal strain, Penicillium crocicola LF-2022 (P. crocicola LF-2022), was identified, exhibiting excellent biodegradation capabilities toward both BFRs. Within six days, the strain achieved maximum degradation rates of 81.1% for TBBPA and 97.7% for BDE-209. The strain degraded both pollutants via intracellular and extracellular pathways, with cytochrome P450 enzymes playing a key role. Degradation pathway analysis revealed that TBBPA was degraded through reductive debromination and isopropylidene bridge cleavage, whereas BDE-209 underwent sequential debromination, ether bond cleavage, and ring-opening reactions, ultimately leading toward mineralization. In soil remediation experiments, P. crocicola LF-2022 effectively degraded TBBPA and BDE-209 even under non-sterile conditions, achieving approximately 55.3% and 82.9% degradation, respectively, demonstrating strong contaminant detoxification capability. Seed toxicity evaluation confirmed the detoxification efficacy of the fungal treatment. After remediation, wheat seedling root and shoot lengths increased markedly compared with untreated controls. Moreover, malondialdehyde content in plant tissues decreased significantly, while superoxide dismutase, peroxidase, and catalase activities recovered to near-control levels, indicating substantial BFR detoxification. Transcriptomic analysis revealed distinct degradation strategies: TBBPA stress upregulated genes related to membrane integrity, ABC transporters, CYP450 monooxygenases, and antioxidant enzymes, whereas BDE-209 stress induced upregulation of secreted hydrolases, lipoxygenases, and cAMP/Ras signaling components. Collectively, this study provides a robust, stress-tolerant fungal strain for efficien",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0304389426020236?dgcid=rss_sd_all",
+    "pubDate": "2026-07-27T12:15:21Z",
+    "category": "indoor",
+    "abstract_source": "semantic_scholar",
+    "summary": "Penicillium crocicola LF-2022, a newly isolated fungal strain, degraded two persistent brominated flame retardants—tetrabromobisphenol A and decabromodiphenyl ether—at rates of 81.1% and 97.7% respectively within six days of laboratory culture. The fungus employed both intracellular and extracellular degradation mechanisms, with cytochrome P450 enzymes catalyzing the breakdown of tetrabromobisphenol A through reductive debromination and bridge cleavage, while decabromodiphenyl ether underwent sequential debromination, ether bond cleavage, and ring-opening reactions. In non-sterile soil conditions, the strain achieved degradation rates of 55.3% for tetrabromobisphenol A and 82.9% for decabromodiphenyl ether, with wheat seedlings grown in treated soil showing increased root and shoot growth and reduced cellular damage markers compared to untreated controls. gene-expression analysis analysis identified distinct fungal responses: tetrabromobisphenol A exposure activated genes for membrane protection and detoxification enzymes, while decabromodiphenyl ether stress induced genes for secreted breakdown enzymes and signaling pathways.  This paper documents a material entanglement between toxicity and remediation capacity: the same brominated compounds that accumulate in soil and damage plant tissues become growth media for fungal metabolism and economic value as the fungus converts them into less toxic forms. The strain's stress-tolerance and capacity to function in non-sterile soil—conditions that reflect actual contaminated sites rather than controlled laboratory conditions—suggests that fungal remediation emerges not as a clean technological solution but as a situated intervention dependent on the fungus's own survival strategies and the specific chemical and microbial ecology of the soil itself.",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:18:52.738590"
+  },
+  {
+    "title": "FpNuc1α regulates phosphate signaling and pathogenicity in Fusarium proliferatum infection of jujube fruit by targeting FpGit1 via a novel BSN motif",
+    "source": "ScienceDirect Publication: Food Microbiology",
+    "excerpt": "Publication date: January 2027Source: Food Microbiology, Volume 141Author(s): Yizhou Gao, Yitong Wang, Zenghui Yang, Jian Lou, Lingling Liu, Jinghe Sun, Orelvis Portal Villafaña, Zhihong Wu, Xiaofang Zheng, Jun Li, Zhaojun Ban, Li Li",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026002169?dgcid=rss_sd_all",
+    "pubDate": "2026-07-27T12:15:17Z",
+    "category": "health",
+    "summary": "**WEAK SIGNAL PROTOCOL ACTIVATED**  This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:18:54.074896"
+  },
+  {
+    "title": "Biocontrol of postharvest citrus green mold by Meyerozyma caribbica: suppression of Penicillium digitatum development, enhanced ROS metabolism, induced resistance, and quality preservation",
+    "source": "ScienceDirect Publication: Food Microbiology",
+    "excerpt": "Publication date: Available online 25 July 2026Source: Food MicrobiologyAuthor(s): Meiqiu Xu, Jucai Wang, Solairaj Dhanasekaran, Manli Jia, Chaomeng Hu, Menghan Lu, Hong Chen, Wei Xu",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026002133?dgcid=rss_sd_all",
+    "pubDate": "2026-07-27T12:15:17Z",
+    "category": "health",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:18:55.290873"
+  },
+  {
+    "title": "Corrigendum to “Regulatory roles of Smt3, an ortholog of small ubiquitin-like modifier, in fungal development and the production of amylases and organic acids in Aspergillus niger” [Food Microbiol. 141 (2027) 105237]",
+    "source": "ScienceDirect Publication: Food Microbiology",
+    "excerpt": "Publication date: Available online 24 July 2026Source: Food MicrobiologyAuthor(s): Yunqi Zhu, Xingbing Liu, Gang Zhou, Guojun Chen, Tong Liu, Liyan Xie, Xiang Fang, Jie Wang",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0740002026002157?dgcid=rss_sd_all",
+    "pubDate": "2026-07-27T12:15:17Z",
+    "category": "health",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:18:56.391437"
+  },
+  {
+    "title": "Decoding Fusarium-induced microstructural and biochemical degradation for interpretable deoxynivalenol detection in wheat kernels enabled by data-efficient multispectral modeling",
+    "source": "ScienceDirect Publication: Food Control",
+    "excerpt": "Publication date: January 2027Source: Food Control, Volume 191Author(s): Yingzhe Lu, Qinglu Yang, Rongyao Zhang, Zhanhua Song, Mochen Liu, Xuefeng Li, Bingqian Hou, Dong Li, Yinfa Yan, Yao Lu",
+    "url": "https://www.sciencedirect.com/science/article/pii/S095671352600513X?dgcid=rss_sd_all",
+    "pubDate": "2026-07-27T12:15:16Z",
+    "category": "health",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:18:57.533430"
+  },
+  {
+    "title": "A novel chitosan-based bioactive coating loaded with Cryptococcus laurentii for the control of green mold in grapefruit",
+    "source": "ScienceDirect Publication: Food Control",
+    "excerpt": "Publication date: January 2027Source: Food Control, Volume 191Author(s): Xianyu Liu, Rongyu Du, Erbin Huang, Liangjun Xiao, Chao Liu, Le Yang, Xiahong He, Fang Wang, Jia Deng",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526005372?dgcid=rss_sd_all",
+    "pubDate": "2026-07-27T12:15:16Z",
+    "category": "health",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:18:59.151151"
+  },
+  {
+    "title": "Bayesian optimization of natural antifungal blends reveals metabolomic remodeling in Aspergillus niger",
+    "source": "ScienceDirect Publication: Food Chemistry",
+    "excerpt": "The demand for clean-label preservation has heightened interest in natural antifungal alternatives for bakery products. Here, Bayesian optimization and untargeted metabolomics were combined to design and evaluate food-grade botanical blends against the spoilage fungus Aspergillus niger. Individual extracts showed limited in vitro activity, with inhibition values from 2% to 23%. However, the optimization workflow identified multicomponent blends with improved performance: Blend 1 and Blend 2 reached 34% and 27% in vitro inhibition, respectively. Blend 2 showed the strongest matrix-level effect in pound cake, with conidial loads more than 100-fold lower than the control at 18 days post-inoculation (dpi) and visible growth ratios that decreased approximately 5-fold at 7 dpi. Untargeted liquid chromatography-mass spectrometry and gas chromatography-mass spectrometry revealed shared and treatment-specific remodeling of the fungal metabolome. These results indicate that antifungal performance was better explained by blend composition than by the apparent activity of individual extracts.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0308814626026737?dgcid=rss_sd_all",
+    "pubDate": "2026-07-27T12:15:15Z",
+    "category": "health",
+    "abstract_source": "semantic_scholar",
+    "summary": "Bayesian optimization combined with untargeted metabolite-level analysis was used to design botanical blends targeting Aspergillus niger, a fungus that spoils bakery products. Individual plant extracts showed weak antifungal activity in laboratory tests, ranging from 2% to 23% inhibition. However, multicomponent blends formulated through the optimization workflow demonstrated improved performance: Blend 1 achieved 34% inhibition and Blend 2 achieved 27% inhibition laboratory-based. When tested in pound cake, Blend 2 produced the strongest effect, reducing fungal spore counts more than 100-fold compared to untreated cake at 18 days after inoculation, and reducing visible fungal growth approximately 5-fold at 7 days after inoculation. Chemical analysis using liquid chromatography-mass spectrometry and gas chromatography-mass spectrometry detected shared and blend-specific changes in the fungal metabolome—the collection of small molecules the fungus produces and uses. The study found that blend composition explained antifungal performance better than the activity of individual plant extracts alone.  Within food preservation systems shaped by demand for clean-label products, this paper documents how botanical combinations can achieve effects that individual components cannot. The metabolite-level analysis remodeling observed in the fungus under blend exposure reveals a material entanglement: the same fungus that threatens food stability becomes a site where botanical chemistry exerts selective pressure, reorganizing the fungal cell's chemical economy. The superior performance of multicomponent blends over single extracts suggests that antifungal efficacy emerges not from the properties of isolated botanical compounds but from their relational interactions within the fungal metabolic system—a pattern that reflects broader dependencies between food security, plant chemistry, and fungal adaptation in industrialized food systems.",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:19:04.409515"
+  },
+  {
+    "title": "Rapid and efficient determination of 14 mycotoxins in corn by one-step cleanup using a novel mixed-mode multifunction cartridge coupled with solvent smoother and LC-MS/MS",
+    "source": "ScienceDirect Publication: Food Chemistry",
+    "excerpt": "In mycotoxin detection, traditional pretreatment requires multiple rounds of centrifugation and liquid transfer, which eliminates solvent effects by dilution or nitrogen blowing. The procedures are time-consuming and susceptible to quantitative errors. To overcome these limitations, this study developed a novel mixed-mode multifunction cartridge that integrates purification, filtration, and injection capabilities. When coupled with a solvent smoother, this cartridge enables one-step purification and direct LC-MS/MS analysis. The method exhibited a limit of quantitation (LOQ) ranging from 1.0 to 200.0 μg kg-1, the limit of detection (LOD) from 0.3 to 66.7 μg kg-1 and recoveries between 84.2% and 111.1% in corn. The relative standard deviations (RSD) for intra-day and inter-day precision were 0.7%-10.3% and 0.1%-14.9% (n = 3), respectively. When compared to commercial pass-through solid phase extraction cartridges, this cartridge effectively adsorbs impurities and reduces pretreatment time by nearly 50%, demonstrating high accuracy and applicability in feed corn analysis.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0308814626026361?dgcid=rss_sd_all",
+    "pubDate": "2026-07-27T12:15:15Z",
+    "category": "health",
+    "abstract_source": "semantic_scholar",
+    "summary": "Corn grain samples processed through this novel mixed-mode cartridge achieved detection limits as low as 0.3 micrograms per kilogram and quantitation limits ranging from 1.0 to 200.0 micrograms per kilogram across 14 mycotoxins, with recovery rates between 84.2% and 111.1%. The method consolidated multiple preparatory steps—purification, filtration, and sample injection—into a single cartridge operation coupled with a solvent smoother device, eliminating the need for repeated centrifugation and solvent removal that characterizes traditional protocols. Precision measurements showed relative standard deviations of 0.7% to 10.3% within a single day and 0.1% to 14.9% across multiple days, and the streamlined procedure reduced total pretreatment time by approximately 50% compared to commercial solid phase extraction cartridges while maintaining analytical accuracy.  Within the material entanglement of feed production, this technical innovation reveals a deeper dependency: the same corn grain matrix that requires intensive chemical purification to render mycotoxins visible also demands accelerated throughput to meet commercial timelines. The cartridge's capacity to absorb impurities while preserving quantitative fidelity does not eliminate the underlying exposure—it merely compresses the labour and time required to document contamination that likely reflects prior conditions of storage, moisture, or fungal pressure in the crop itself. The efficiency gain, measured in reduced handling steps and faster results, operates as both a practical advance and a marker of the routinization of mycotoxin screening in commodity grain systems where rapid detection has become operationally necessary rather than exceptional.",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:19:09.418959"
+  },
+  {
+    "title": "Development and optimization of analytical methods for rapid detection of multiple mycotoxins in wheat products and dietary risk assessment",
+    "source": "ScienceDirect Publication: Food Chemistry",
+    "excerpt": "Conditions for QuEChERS-based extraction assisted by ultrasonic oscillation and ultra-high-performance liquid chromatography-tandem mass spectrometry were established for the rapid and efficient determination of 16 common mycotoxins in wheat samples. The optimal extraction solvent was acetonitrile/water (80/20, v/v) containing 0.3% formic acid, with ultrasonic oscillation for 10 min, followed by analysis within 5 min. Mycotoxin levels were surveyed in wheat grains and flour from both domestic and imported sources, as well as in major commercially available processed wheat-derived products. Deoxynivalenol and T-2 toxin were predominant, whereas nivalenol, 15-acetyldeoxynivalenol, HT-2 toxin, zearalenone, and ochratoxin A were detected only in raw materials. Mycotoxins were present in 94% of raw materials and 67% of processed products; however, all concentrations complied with European Union and Taiwan Food and Drug Administration limits. Since processed products contained low concentrations of deoxynivalenol and T-2 toxin, the estimated dietary intake remained below the tolerable threshold, indicating minimal risk.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0308814626026178?dgcid=rss_sd_all",
+    "pubDate": "2026-07-27T12:15:15Z",
+    "category": "health",
+    "abstract_source": "semantic_scholar",
+    "summary": "Wheat grains and flour from domestic and imported sources, along with major commercially available processed wheat products, were screened for 16 mycotoxins using a rapid analytical method. The method combined solvent extraction assisted by ultrasonic oscillation with ultra-high-performance liquid chromatography-tandem mass spectrometry, optimized with acetonitrile and water (80 parts to 20 parts by volume) containing 0.3% formic acid, 10 minutes of ultrasonic treatment, and a 5-minute analysis window. Deoxynivalenol and T-2 toxin appeared most frequently across samples, while nivalenol, 15-acetyldeoxynivalenol, HT-2 toxin, zearalenone, and ochratoxin A were restricted to raw wheat materials. Mycotoxins were detected in 94% of raw wheat samples and 67% of processed products, yet all measured concentrations remained below regulatory thresholds set by the European Union and Taiwan Food and Drug Administration.  The presence of mycotoxins across nearly all raw wheat entering food systems—whether grown domestically or imported—reveals an entrenched fungal burden within grain supply chains. Yet the same processing operations that reduce mycotoxin levels in finished products (particularly deoxynivalenol and T-2 toxin) simultaneously obscure the material reality of contamination upstream: raw materials carry a toxic load that industrial processing selectively removes, rendering the final product compliant with safety standards while leaving unexamined the labour, storage conditions, and agricultural practices that allowed fungal colonization to occur in the first place.",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:19:13.939979"
+  },
+  {
+    "title": "Pulsed light induces antifungal activity, oxidative stress, and transcriptional reprogramming in Alternaria alternata isolated from cheese",
+    "source": "ScienceDirect Publication: Food Research International",
+    "excerpt": "Alternaria alternata is a major spoilage fungus of dairy products and a potential producer of mycotoxins. This study evaluated Pulsed Light (PL) as a non-thermal strategy to control A. alternata FCS26 strain isolated from Italian Caciocavallo cheese and investigated its physiological and transcriptional stress responses. To the best of our knowledge this is the first report on the anti-fungal mechanism of PL against A. alternata . In vitro , treatments with 30 PL (11.46 J cm −2 ) and 120 PL (45.84 J cm −2 ) differentially inhibited fungal structures: spore germination was reduced by 77% and 83%, respectively, while mycelial growth was inhibited by up to 22% and 37%, respectively. PL treatment also extended the lag phase and decreased cell viability as confirmed by confocal microscopy. Furthermore, PL pronounced oxidative and nitrosative stress, as evidenced by the early accumulation of Reactive Oxygen (ROS) and Nitrogen (RNS) Species and the modulation of antioxidant enzymes. Superoxide dismutase (SOD) and peroxidase (POD) showed sustained enzymatic responses under the 30-pulse treatment, whereas the 120-pulse treatment induced strong early activation followed by late disruption of POD and catalase (CAT) activity, consistent with severe redox imbalance. Reverse transcription-quantitative PCR revealed broad transcriptional modulation, with consistent downregulation of genes encoding polyketide synthase , chitinase, and dedh DEAD/DEAH box helicase-like protein. In situ studies showed that PL significantly reduced fungal severity on Caciocavallo cheese during refrigerated storage. In fact, the application of 120 pulses yielded the strongest effect, decreasing fungal growth severity by about 80% compared to the untreated control. Overall, PL effectively inhibited A. alternata , supporting its potential for fungal control, shelf-life extension and improved dairy safety.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926018399?dgcid=rss_sd_all",
+    "pubDate": "2026-07-27T12:15:15Z",
+    "category": "health",
+    "abstract_source": "openalex",
+    "summary": "Pulsed light treatment inhibited the fungus *Alternaria alternata*, a common spoilage organism in cheese, through multiple mechanisms documented in this study. At 30 pulses (11.46 joules per square centimetre), spore germination was reduced by 77% and mycelial growth by 22%; at 120 pulses (45.84 joules per square centimetre), these reductions increased to 83% and 37% respectively. The treatment induced oxidative and nitrogen-based chemical stress, with reactive oxygen species and reactive nitrogen species accumulating early and antioxidant enzymes—superoxide dismutase, peroxidase, and catalase—showing disrupted activity patterns, particularly under the higher-dose treatment. Gene expression analysis identified consistent decreased activity of genes encoding polyketide synthase, chitinase, and a helicase-like protein. On actual Caciocavallo cheese stored under refrigeration, 120 pulses reduced fungal growth severity by approximately 80% compared to untreated controls.  The fungus here operates simultaneously as a spoilage threat demanding control and as a metabolic system whose stress responses reveal vulnerabilities that can be exploited through physical intervention. The pulsed light treatment does not simply kill; it destabilizes the organism's internal chemistry—forcing accumulation of damaging reactive molecules while simultaneously disrupting the enzymatic machinery meant to neutralize them. This creates a state of chemical imbalance where the fungus cannot maintain its own cellular integrity. The same genes suppressed by light exposure encode functions central to fungal survival and disease-causing ability, suggesting that pulsed light exploits fundamental dependencies in the organism's physiology. What emerges is not a simple pathogen-control outcome but a documented case of how material intervention—in this case, light energy delivered in specific pulses—can be calibrated to expose and amplify the internal contradictions within a fungal cell.",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:19:18.781922"
+  },
+  {
+    "title": "Blue light treatment enhances fruit wound repair and inhibits blue mold in destemmed grapes",
+    "source": "ScienceDirect Publication: Food Research International",
+    "excerpt": "Publication date: 31 October 2026Source: Food Research International, Volume 242, Part 4Author(s): Shahrabani Zarbaliyeva, Xianfeng Peng, Sunjie Yan, Changxi Li, Shuzhen Yang, Xin Zhou",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926017904?dgcid=rss_sd_all",
+    "pubDate": "2026-07-27T12:15:15Z",
+    "category": "health",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:19:19.824007"
+  },
+  {
+    "title": "Antifungal activity of Hanseniaspora uvarum VOCs against Alternaria alternata and Botrytis cinerea in blueberry by disrupting growth metabolism",
+    "source": "ScienceDirect Publication: Food Research International",
+    "excerpt": "Publication date: 31 October 2026Source: Food Research International, Volume 242, Part 3Author(s): Xinyue Lv, Ting Yang, Yicai Jiang, Furong Yuan, Longwei Li, Yahan Zhou",
+    "url": "https://www.sciencedirect.com/science/article/pii/S096399692601745X?dgcid=rss_sd_all",
+    "pubDate": "2026-07-27T12:15:15Z",
+    "category": "health",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:19:22.907686"
+  },
+  {
+    "title": "The peroxisome RING-type E3 ubiquitin ligase-mediated peroxisome function is essential for Alternaria alternata pathogenicity: coordinated regulation of lipid metabolism homeostasis and redox balance",
+    "source": "ScienceDirect Publication: Fungal Biology",
+    "excerpt": "Peroxisomes, as single-membrane-bound organelles in eukaryotes, are essential for the growth and development of filamentous fungi. The peroxisome RING-type E3 ubiquitin ligases PEX2, PEX10, and PEX12 are crucial for peroxisome biogenesis. In this study, targeted gene knockout technology was employed to investigate the biological functions of AaPex2, AaPex10, and AaPex12 in Alternaria alternata. Phenotypic analysis demonstrated that the deletion of AaPex2, AaPex10, and AaPex12 significantly inhibited growth, sporulation, and infection structure formation. Transmission electron microscopy (TEM) and qRT-PCR analyses indicated that the absence of these genes disrupted peroxisome structure and impaired the metabolic functions of the organelles. Further investigations revealed that fatty acid utilization was impaired in ΔAaPex2, ΔAaPex10, and ΔAaPex12 mutants, leading to the accumulation of lipid droplets. Additionally, these mutants exhibited reduced hydrogen peroxide levels, impaired superoxide anion scavenging capacity, and dysregulation of reactive oxygen species (ROS) related genes. Disruptions in lipid metabolism and redox homeostasis resulted in elevated malondialdehyde levels, enhanced membrane permeability, and downregulation of ergosterol synthesis genes, ultimately compromising cell membrane integrity. Furthermore, the pathogenicity of all three mutant strains was significantly reduced. This study elucidates the mechanisms by which AaPex2, AaPex10, and AaPex12 influence fungal development and pathogenicity through the modulation of peroxisome structure and metabolic functions in A. alternata. These findings provide a theoretical foundation for developing novel control strategies against postharvest pear black spot disease by targeting peroxisomes.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000747?dgcid=rss_sd_all",
+    "pubDate": "2026-07-27T12:15:05Z",
+    "category": "science",
+    "abstract_source": "semantic_scholar",
+    "summary": "Alternaria alternata, a fungal pathogen of postharvest pear fruit, depends on three peroxisomal proteins—AaPex2, AaPex10, and AaPex12—to sustain its capacity for infection. This paper used targeted gene deletion to show that removal of any of these three proteins severely impaired fungal growth, spore production, and the formation of infection structures, with transmission electron microscopy confirming that peroxisome architecture itself was disrupted. The mutant strains exhibited a cascade of metabolic failures: fatty acids accumulated as lipid droplets rather than being broken down for energy; levels of hydrogen peroxide fell while the capacity to neutralize superoxide anion was compromised; and genes governing the synthesis of ergosterol, a critical component of fungal cell membranes, were suppressed. These combined disruptions—in lipid processing and in the management of oxidative stress—led to increased membrane damage, measured by elevated malondialdehyde, and ultimately rendered all three mutant strains substantially less able to infect plant tissue.  The findings reveal how a single cellular compartment orchestrates the material conditions necessary for fungal disease-causing ability. Peroxisomes here function not merely as waste-disposal sites but as metabolic hubs whose failure cascades outward: blocked lipid metabolism forces accumulation of storage compounds; dysregulated oxidative chemistry destabilizes the cell boundary itself. The pathogen's capacity to cause disease emerges from this finely tuned coordination between energy processing and chemical defense. This locates the postharvest disease problem not in the fungus alone but in a specific material entanglement—the dependency of a plant pathogen on organellar machinery that, if disrupted, collapses both its survival and its capacity to invade. The study thus identifies a potential intervention point, yet one that depends on understanding the fungus not as a discrete threat but as an organism whose pathogenicity is inseparable from its cellular infrastructure.",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:19:29.516986"
+  },
+  {
+    "title": "Uncovering the Fusarium community associated with Hemileia leaf rusts and coffee from Africa and South America",
+    "source": "ScienceDirect Publication: Fungal Biology",
+    "excerpt": "Publication date: October 2026Source: Fungal Biology, Volume 130, Issue 6Author(s): Thaisa F. Nóbrega, Caio M. Pereira, Adans A. Colmán, Lucas M. Abreu, Harry C. Evans, Miraine Kapeua-Ndacnou, Kifle Belachew-Bekele, Robert W. Barreto",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626001121?dgcid=rss_sd_all",
+    "pubDate": "2026-07-27T12:15:05Z",
+    "category": "science",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:19:30.569565"
+  },
+  {
+    "title": "Molecular characterization and aflatoxin biosynthetic gene profiles of Aspergillus flavus associated with maize and chili in Bangladesh",
+    "source": "ScienceDirect Publication: Fungal Biology",
+    "excerpt": "Publication date: October 2026Source: Fungal Biology, Volume 130, Issue 6Author(s): Sabiha Sultana, Md Rezve, Fabhiha Bushra, Farjana Yeasmin, Shamim Ahmed Kamal Uddin Khan, S.M. Abdullah Al Mamun",
+    "url": "https://www.sciencedirect.com/science/article/pii/S187861462600111X?dgcid=rss_sd_all",
+    "pubDate": "2026-07-27T12:15:05Z",
+    "category": "science",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:19:31.649885"
+  },
+  {
+    "title": "Consecutive melon monocropping is associated with microbial community homogenization and reduced bacterial network complexity",
+    "source": "Frontiers in Microbiology | New and Recent Articles",
+    "excerpt": "Soil microbiomes are critical for sustaining ecosystem functioning and soil health. Monocropping often disrupts soil microbial communities, leading to yield penalties and soil degradation. Although bio-organic fertilizers are widely used to alleviate the negative effects of monocropping, their long-term associations with microbial community structure and ecosystem functioning across monocropping durations remain insufficiently understood. Here, we collected 72 soil samples from Hami melon (Cucumis melo) fields at three sites in Turpan, northwestern China. All sampled fields received Bacillus subtilis–based bio-organic fertilizer and consisted of independently managed 1-year (M1), 3-year (M3), and 5-year (M5) monocropping systems sampled within the same year. Across fields with longer monocropping durations, key putative fungal pathogens, including Fusarium, Monosporascus, and Alternaria, showed lower relative abundances, whereas potentially beneficial bacterial taxa such as Bacillus, Paenibacillus, Sphingomonas, and Lysobacter were enriched. However, both bacterial and fungal communities exhibited reduced Bray–Curtis dissimilarity and β-dispersion, consistent with increasing microb",
+    "url": "https://www.frontiersin.org/articles/10.3389/fmicb.2026.1884506",
+    "pubDate": "2026-07-27T00:00:00Z",
+    "category": "science",
+    "summary": "Soil samples collected from Hami melon fields in Turpan, northwestern China over three consecutive monocropping durations (1, 3, and 5 years) revealed a counterintuitive pattern: fungal pathogens associated with melon disease—specifically Fusarium, Monosporascus, and Alternaria—declined in relative abundance as monocropping years increased, while potentially beneficial bacterial taxa including Bacillus, Paenibacillus, Sphingomonas, and Lysobacter became more abundant. All sampled fields had received Bacillus subtilis–based bio-organic fertilizer. Despite this apparent enrichment of beneficial microorganisms, both bacterial and fungal communities showed reduced Bray–Curtis dissimilarity and β-dispersion across longer monocropping durations, indicating that microbial diversity patterns were converging toward greater homogeneity rather than diverging.  The findings document a material entanglement in which the deliberate introduction of beneficial bacteria through bio-organic fertilizer simultaneously narrows the microbial landscape—a process that may stabilize yields in the short term while eroding the redundancy and adaptive capacity that sustains soil function across longer timescales. The enrichment of Bacillus and Paenibacillus taxa, organisms selected precisely for their ability to suppress fungal pathogens, appears coupled to a flattening of the broader microbial network, suggesting that interventions designed to manage pathogenic risk may paradoxically reduce the ecological complexity that buffers against future disturbances or emerging threats in intensively managed agricultural systems.",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:19:36.169161"
+  },
+  {
+    "title": "Physiological and image-based characterization of Botrytis cinerea infection progression in postharvest ‘Haegeum’ kiwifruit using interpretable deep learning",
+    "source": "Frontiers in Plant Science | New and Recent Articles",
+    "excerpt": "Gray mold caused by Botrytis cinerea severely limits the postharvest storage and marketability of kiwifruit, creating a need for accurate and non-destructive infection assessment. In this study, a symptom based, ROI-aware, and interpretable deep-learning framework was developed to classify infection levels in golden-fleshed ‘Haegeum’ kiwifruit. Infection severity was categorized into four levels based on external visual symptoms: Level 1: no lesions; Level 2: slight discoloration; Level 3: localized mycelial growth; Level 4: extensive mycelial growth and tissue breakdown. The associated physiological responses were subsequently characterized for each level. Disease progression induced fruit softening with firmness decreasing from 4.82 at Level 1 to 2.79 N at Level 4, while respiration rates increased from 0.05 to 0.24 µmol kg-1 s-1. Ethylene production began at Level 3 and sharply increased at Level 4, reaching 0.015 µmol kg-1 s-1. To quantify lesion severity, a region-of-interest-aware pipeline using RGB blue and LAB L* and a* channels was developed, enabling lesion-focused visualization of infection. Compared with the baseline model, the proposed approach improved classification ",
+    "url": "https://www.frontiersin.org/articles/10.3389/fpls.2026.1894572",
+    "pubDate": "2026-07-27T00:00:00Z",
+    "category": "health",
+    "summary": "This paper documents the progression of gray mold infection in golden-fleshed 'Haegeum' kiwifruit caused by Botrytis cinerea, tracking both visible symptoms and physiological changes across four defined infection levels. External visual symptoms ranged from no lesions at Level 1 to extensive mycelial growth and tissue breakdown at Level 4, with intermediate stages marked by slight discoloration and localized mycelial growth. Corresponding physiological responses showed measurable degradation: fruit firmness declined from 4.82 newtons at Level 1 to 2.79 newtons at Level 4, respiration rates increased from 0.05 to 0.24 micromoles per kilogram per second, and ethylene production emerged at Level 3 before sharply rising to 0.015 micromoles per kilogram per second at Level 4. To automate infection assessment, the researchers developed a deep learning framework using color channel analysis—specifically red-green-blue blue channel and LAB color space L* and a* channels—to focus lesion detection on affected regions of fruit skin, improving classification accuracy compared to baseline approaches.  The fungus here operates simultaneously as a spoilage agent and a measurable biological process. The same physiological markers that signal fruit deterioration—softening, accelerated respiration, ethylene surge—become legible data points through machine vision, transforming decay into quantifiable information. This technical capacity to classify and predict infection stages does not resolve the material problem of postharvest loss but rather creates new dependencies: the value of kiwifruit now hinges partly on whether detection systems can be deployed at scale within supply chains shaped by distance, temperature control, and labor constraints. The mold's ability to rapidly colonize fruit tissue and trigger cascading physiological collapse reflects broader vulnerabilities in global fruit trade, where fungal infection risk is distributed unevenly across regions, storage facilities, and market tiers.",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:19:42.170713"
+  },
+  {
+    "title": "Effects of maternal exposure to an adsorbed acellular diphtheria-tetanus-pertussis (reduced-dose) combined vaccine on prenatal and postnatal development in Sprague-Dawley rats: a preclinical study",
+    "source": "Frontiers in Immunology | New and Recent Articles",
+    "excerpt": "IntroductionThe resurgence of pertussis poses a severe threat to infants under 3 months of age due to an inherent early-life “immunity gap.” While maternal immunization with the tetanus, diphtheria, and acellular pertussis (Tdap/Tdacp) vaccine effectively mitigates this risk globally, no such vaccine is currently licensed for maternal use in China. This preclinical study aimed to systematically evaluate the reproductive and developmental toxicity, as well as the immunogenicity, of an independently developed Tdacp candidate vaccine in Sprague-Dawley (SD) rats.MethodsEighty-eight female SD rats were randomly assigned to four groups: negative control, adjuvant control, low-dose (0.25 ml/rat), and high-dose (0.5 ml/rat). The vaccine was administered via intramuscular injection at three time points to maximize exposure: one week prior to mating, on gestation day 6 (GD 6), and on lactation day 7 (LD 7). Systemic assessments included maternal general toxicity, reproductive performance, and embryo-fetal development. Additionally, postnatal survival, physical growth, and neuro-reflex developmental landmarks of F1 offspring were monitored. Antigen-specific antibody titers in both F0 dams and",
+    "url": "https://www.frontiersin.org/articles/10.3389/fimmu.2026.1884369",
+    "pubDate": "2026-07-27T00:00:00Z",
+    "category": "clinical",
+    "summary": "This paper documents a preclinical toxicity and immunogenicity assessment of a candidate tetanus-diphtheria-acellular pertussis vaccine in pregnant and lactating Sprague-Dawley rats. The study enrolled eighty-eight female rats across four treatment groups (negative control, adjuvant control, low-dose at 0.25 millilitres per rat, and high-dose at 0.5 millilitres per rat), with vaccine administration via intramuscular injection at three timepoints: one week before mating, on gestation day 6, and on lactation day 7. The researchers measured maternal general toxicity, reproductive performance, embryo-fetal development, postnatal survival and physical growth in offspring, neuro-reflex developmental landmarks, and antigen-specific antibody titers in both dams and offspring, though the abstract does not specify the final results of these measurements.  The vaccine candidate represents an attempt to address the documented \"immunity gap\" in infants under three months old during the resurgence of pertussis, a gap that maternal immunization could theoretically close. Yet the preclinical staging of this work—the deliberate, repeated exposure of pregnant and nursing animals to test whether the vaccine poses developmental hazards—reveals a material dependency: the protection of human infants from a bacterial disease depends first on establishing that a biological intervention does not disrupt fetal and postnatal development in laboratory animals, a staged verification that itself assumes the vaccine's eventual human use will follow a particular pathway of evidence accumulation and regulatory approval.",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:19:46.523582"
+  },
+  {
+    "title": "An emergent biofilm program from inactivation of Candida albicans master regulators Efg1 and Ndt80",
+    "source": "PLOS Pathogens",
+    "excerpt": "by Eunsoo Do, Robert Zarnowski, David R. Andes, Aaron P. Mitchell\n\nBiofilm formation by the fungus Candida albicans is a central virulence trait that enables colonization of implanted medical devices and mucosal surfaces. Biofilm formation reflects a complex regulatory network, and depends upon multiple master regulators that include transcription factors Efg1 and Ndt80. It is well established that efg1Δ/Δ and ndt80Δ/Δ single gene mutants are defective in biofilm formation. We report here that an efg1Δ/Δ ndt80Δ/Δ double mutant of reference strain SC5314 is able to form a robust biofilm in vitro and in vivo. We refer to the efg1Δ/Δ ndt80Δ/Δ biofilm as an emergent biofilm because this phenotype could not have been predicted from the phenotypes of efg1Δ/Δ or ndt80Δ/Δ single gene mutants. In four additional strain backgrounds, efg1Δ/Δ ndt80Δ/Δ mutants do not form biofilms, but in all strain backgrounds the efg1Δ/Δ ndt80Δ/Δ mutants can form filamentous cells, which are components of biofilms. Emergent biofilm formation is especially pronounced in YPD + FBS medium at 30°C, and RNA-seq under those conditions reveals altered expression in the efg1Δ/Δ ndt80Δ/Δ double mutant of biofilm-relat",
+    "url": "https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1014469",
+    "pubDate": "2026-07-20T14:00:00Z",
+    "category": "clinical",
+    "summary": "Candida albicans, a fungus that forms surface-bound microbial communities on implanted medical devices and mucosal surfaces, normally depends on two master regulatory proteins—Efg1 and Ndt80—to build these structured communities. This paper reports that when both genes are deleted simultaneously in the reference strain SC5314, the fungus unexpectedly regains the ability to form robust surface-bound microbial communities both in laboratory conditions and in living tissue, despite the fact that deletion of either gene alone prevents surface-colonising microbial communities. The researchers term this an \"emergent surface-bound microbial communities\" because the observable trait profile cannot be predicted from the single mutant defects. In four additional strain backgrounds, the double mutant does not form surface-bound microbial communities, though it retains the capacity to produce filamentous cells—elongated structures that are components of normal surface-bound microbial communities. The emergent surface-colonising microbial communities is most pronounced in nutrient-rich medium supplemented with fetal bovine serum at 30°C, and gene expression analysis under these conditions reveals altered activity of genes associated with surface-bound microbial communities development in the double mutant.  The finding documents a regulatory compensation mechanism whereby the loss of two major control points in the fungus's developmental program generates an alternative pathway to surface-bound microbial communities assembly. This reveals how pathogenic capacity—the ability to form protective surface communities—can persist through unexpected genetic routes, suggesting that targeting single regulatory nodes may be insufficient to prevent surface-bound microbial communities-dependent infection on medical devices. The strain-dependent variability in whether the double mutant can form surface-bound microbial communities indicates that such emergent observable traits are contingent on the specific genetic background and material conditions present, making surface-colonising microbial communities a distributed property across multiple regulatory states rather than a fixed outcome of particular genes.",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:19:51.348016"
+  },
+  {
+    "title": "Retraction: Genome-wide characterization of Src Homology-3 (SH3) domain-containing proteins in the development and pathogenicity of Fusarium graminearum",
+    "source": "PLOS Pathogens",
+    "excerpt": "by The PLOS Pathogens Editors",
+    "url": "https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1014445",
+    "pubDate": "2026-07-20T14:00:00Z",
+    "category": "clinical",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "enhanced": true,
+    "enhanced_at": "2026-07-27T12:19:55.140971"
+  },
+  {
     "title": "Triazole resistance in clinical Aspergillus fumigatus isolates in India, a multicenter surveillance study",
     "source": "ScienceDirect Publication: Diagnostic Microbiology and Infectious Disease",
     "excerpt": "BACKGROUND\nTriazole resistance in Aspergillus fumigatus is a global public health concern associated with treatment failure, notably in invasive aspergillosis. However, population-level data on triazole resistance from India remain limited, with most reports originating from single-center studies.\n\n\nMETHODS\nWe conducted a multicenter surveillance study to assess the prevalence of triazole resistance among clinical A. fumigatus isolates across India. Antifungal susceptibility testing was performed using the CLSI broth microdilution method (M38-Ed3), and molecular characterization was conducted on resistant isolates. A total of 518 isolates were analyzed: 115 prospectively collected from 13 tertiary-care hospitals from 2015-2020, and 403 archived isolates obtained from the National Culture Collection of Pathogenic Fungi (1994-2020).\n\n\nRESULTS\nThe overall pooled prevalence of non-wildtype isolates was 4.1% for itraconazole (95% CI: 2.54-6.17%), 3.9% for posaconazole (95% CI: 2.39-5.94%), while 1.4% were resistant to voriconazole (95% CI: 0.55-2.77%). One multi-azole-resistant isolate from an immunocompromised, mold-active triazole-naïve patient carried the TR34/L98H mutation, suggesting environmental acquisition. Prevalence of resistance did not differ significantly across geographic regions or between public and private sector hospitals. Linear regression analysis revealed a significant temporal increase in median MICs of all three licensed triazoles between 1994 and 2020. Approximately 29% of isolates exhibited amphotericin B MICs exceeding the epidemiological cutoff value; however, the clinical significance of this finding remains uncertain.\n\n\nCONCLUSIONS\nAzole resistance among clinical A. fumigatus isolates in India remains uncommon (<5%), supporting the continued use of triazoles as first-line therapy. However, the observed temporal increase in triazole MICs underscores the need for sustained national surveillance to detect emerging resistance trends.",
@@ -444,7 +694,7 @@
     "category": "health",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-07-20T11:44:21.643584"
+    "enhanced_at": "2026-07-27T12:19:56.132635"
   },
   {
     "title": "Aflatoxin B1 modulates mixture-induced neurotoxicity under multi-contaminant exposure: insights from combination modeling in SH-SY5Y cells",
@@ -524,7 +774,7 @@
     "abstract_source": "openalex",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-07-20T11:44:28.524595"
+    "enhanced_at": "2026-07-27T12:19:58.986340"
   },
   {
     "title": "Mucormycosis: A life-threatening invasive fungal infection",
@@ -630,7 +880,7 @@
     "category": "science",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-07-20T11:44:30.188511"
+    "enhanced_at": "2026-07-27T12:20:04.611813"
   },
   {
     "title": "Microbial-enzymatic coupling drives nitrogen stabilization during static pile composting of rice straw amended with contrasting nitrogen sources",
@@ -972,17 +1222,6 @@
     "enhanced_at": "2026-06-01T14:59:05.085956"
   },
   {
-    "title": "The peroxisome RING-type E3 ubiquitin ligase-mediated peroxisome function is essential for Alternaria alternata pathogenicity: coordinated regulation of lipid metabolism homeostasis and redox balance",
-    "source": "ScienceDirect Publication: Fungal Biology",
-    "excerpt": "Publication date: Available online 30 May 2026Source: Fungal BiologyAuthor(s): Qianqian Jiang, Yongcai Li, Yuanpin Nan, Rong Li, Yangyang Yang, Wenjuan Liu, Yang Bi",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626000747?dgcid=rss_sd_all",
-    "pubDate": "2026-06-01T14:55:16Z",
-    "category": "science",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
-    "enhanced": true,
-    "enhanced_at": "2026-06-01T14:59:06.079110"
-  },
-  {
     "title": "Biocontrol mechanisms of two Paenibacillus strains against Astragalus membranaceus root rot and their effects on soil microecological structure",
     "source": "Frontiers in Microbiology | New and Recent Articles",
     "excerpt": "Astragalus membranaceus is an important medicinal herb in China, yet its yield and quality are severely constrained by root rot disease. In this study, two efficient antagonistic strains, HQ-1 and HQT-2, were isolated and identified as Paenibacillus polymyxa and Paenibacillus terrae, respectively. Both strains exhibited multiple plant growth-promoting traits and strong inhibitory activity against Fusarium solani (syn. Neocosmospora solani) GF-3. In vitro assays confirmed that their sterile fermentation filtrates effectively inhibited pathogen growth and damaged fungal hyphae. GFP labeling further verified their colonization potential on plant roots, while greenhouse experiments indicated preventive efficacies of 86.046% for HQ-1 and 80.619% for HQT-2. In addition, they significantly promoted the growth of A. membranaceus. Metagenomic analysis showed that biocontrol bacterium-treated soils had significantly increased relative abundance of beneficial microorganisms, alongside a reduction in phytopathogenic taxa. Notably, despite the scarcity of biocontrol reports for P. terrae, our study introduces strains HQ-1 and HQT-2 as highly effective, multifunctional resources for sustainable ",
@@ -1033,9 +1272,9 @@
     "url": "https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(26)00290-2/fulltext?rss=yes",
     "pubDate": "2026-05-26T22:30:01Z",
     "category": "clinical",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!  ---  **Note on source material:** The text provided is a corrections notice documenting an affiliation update for one author (Chulwoo Park) in the original article. It contains no substantive findings, methodology, data, organisms studied, or materials examined. The original article itself—a systematic analysis of the global burden of lower respiratory infections and their causes from 1990 to 2023—is not included in the source material provided. The related research context describes a separate case report involving *Chlamydia psittaci* and *Aspergillus terreus* co-infection, but this is not part of the source document being analyzed and cannot be attributed to the corrections notice.  To produce a meaningful summary of the research findings on lower respiratory infections and antimicrobial resistance, the full abstract or substantive content of the original 2026 Lancet article would be required.",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-07-20T11:44:33.739699"
+    "enhanced_at": "2026-07-27T12:20:05.988108"
   },
   {
     "title": "Prevalence and clinical implications of Aspergillus infection among tuberculosis patients in Peru",
@@ -1802,7 +2041,7 @@
     "category": "clinical",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-07-20T11:44:34.829851"
+    "enhanced_at": "2026-07-27T12:20:07.511648"
   },
   {
     "title": "Kernel structure and varietal attributes determine aflatoxin production by Aspergillus flavus in maize (Zea mays L.)",
@@ -2201,9 +2440,9 @@
     "url": "https://phys.org/news/2026-03-cell-tool-enables-analysis-actin.html",
     "pubDate": "2026-03-30T21:50:06Z",
     "category": "media",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!  ---  **EXPLANATION**: The source text provided contains only metadata (title, author affiliation, journal name, and a brief descriptive summary) with no substantive research abstract detailing methods, findings, organisms studied, or materials used. The related research context describes filamentous fungi in industrial bioprocessing, but this is explicitly background material only and cannot substitute for missing source data. To produce an accurate analysis under the constraints of the Weak Signal Protocol and strict no-hallucination requirements, the source paper itself must be consulted.",
     "enhanced": true,
-    "enhanced_at": "2026-07-20T11:44:35.900387"
+    "enhanced_at": "2026-07-27T12:20:09.944624"
   },
   {
     "title": "Hygrothermal impact of water resistive barriers on mould growth in wood-frame wall assemblies",
@@ -4615,6 +4854,6 @@
     "category": "indoor",
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
-    "enhanced_at": "2026-07-20T11:44:37.185227"
+    "enhanced_at": "2026-07-27T12:20:12.197379"
   }
 ]
