@@ -1,6 +1,71 @@
 {
   "entries": [
     {
+      "date": "2026-08-24",
+      "type": "engine",
+      "event": "Inference engine updated to claude-haiku-4-5-20251001.",
+      "_meta": {
+        "model": "claude-haiku-4-5-20251001",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "type": "engine",
+      "event": "Summary structure updated to 5 to 7 sentences.",
+      "_meta": {
+        "model": "claude-haiku-4-5-20251001",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "type": "engine",
+      "event": "Readability layer added: specialist jargon mapped to plain language.",
+      "_meta": {
+        "model": "claude-haiku-4-5-20251001",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "type": "engine",
+      "event": "Acronym expansion dictionary updated (100 patterns).",
+      "_meta": {
+        "model": "claude-haiku-4-5-20251001",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "type": "engine",
+      "event": "Readability instructions embedded in inference prompt for non-specialist audiences.",
+      "_meta": {
+        "model": "claude-haiku-4-5-20251001",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "type": "daily",
+      "event": "50 new articles collected today."
+    },
+    {
       "date": "2026-08-17",
       "type": "engine",
       "event": "Inference engine updated to claude-haiku-4-5-20251001.",
@@ -4996,16 +5061,29 @@
         "openalex": 131,
         "none": 234
       }
+    },
+    {
+      "timestamp": "2026-08-24T09:43:44.953256+00:00",
+      "date": "2026-08-24",
+      "total_articles": 470,
+      "new_today": 50,
+      "total_enhanced": 470,
+      "new_enhanced": 31,
+      "enrichment_sources": {
+        "semantic_scholar": 98,
+        "openalex": 133,
+        "none": 239
+      }
     }
   ],
   "summary": {
-    "total_articles": 454,
-    "total_enhanced": 454,
-    "last_updated": "2026-08-17T09:39:08.365429+00:00",
+    "total_articles": 470,
+    "total_enhanced": 470,
+    "last_updated": "2026-08-24T09:43:44.942158+00:00",
     "enrichment_sources": {
-      "semantic_scholar": 89,
-      "openalex": 131,
-      "none": 234
+      "semantic_scholar": 98,
+      "openalex": 133,
+      "none": 239
     }
   }
 }
