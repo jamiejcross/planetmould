@@ -1,6 +1,76 @@
 {
   "entries": [
     {
+      "date": "2026-09-14",
+      "type": "engine",
+      "event": "Inference engine updated to claude-haiku-4-5-20251001.",
+      "_meta": {
+        "model": "claude-haiku-4-5-20251001",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "type": "engine",
+      "event": "Summary structure updated to 5 to 7 sentences.",
+      "_meta": {
+        "model": "claude-haiku-4-5-20251001",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "type": "engine",
+      "event": "Readability layer added: specialist jargon mapped to plain language.",
+      "_meta": {
+        "model": "claude-haiku-4-5-20251001",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "type": "engine",
+      "event": "Acronym expansion dictionary updated (100 patterns).",
+      "_meta": {
+        "model": "claude-haiku-4-5-20251001",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "type": "engine",
+      "event": "Readability instructions embedded in inference prompt for non-specialist audiences.",
+      "_meta": {
+        "model": "claude-haiku-4-5-20251001",
+        "sentence_spec": "5 to 7",
+        "has_jargon": true,
+        "has_readability": true,
+        "acronym_count": 100
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "type": "milestone",
+      "event": "Archive reached 500 articles."
+    },
+    {
+      "date": "2026-09-14",
+      "type": "daily",
+      "event": "31 new articles collected today."
+    },
+    {
       "date": "2026-09-07",
       "type": "engine",
       "event": "Inference engine updated to claude-haiku-4-5-20251001.",
@@ -5230,16 +5300,29 @@
         "openalex": 138,
         "none": 237
       }
+    },
+    {
+      "timestamp": "2026-09-14T15:38:00.504649+00:00",
+      "date": "2026-09-14",
+      "total_articles": 501,
+      "new_today": 31,
+      "total_enhanced": 501,
+      "new_enhanced": 8,
+      "enrichment_sources": {
+        "semantic_scholar": 125,
+        "openalex": 138,
+        "none": 238
+      }
     }
   ],
   "summary": {
-    "total_articles": 493,
-    "total_enhanced": 493,
-    "last_updated": "2026-09-07T14:50:44.945908+00:00",
+    "total_articles": 501,
+    "total_enhanced": 501,
+    "last_updated": "2026-09-14T15:38:00.495900+00:00",
     "enrichment_sources": {
-      "semantic_scholar": 118,
+      "semantic_scholar": 125,
       "openalex": 138,
-      "none": 237
+      "none": 238
     }
   }
 }

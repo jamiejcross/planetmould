@@ -1,5 +1,98 @@
 [
   {
+    "title": "Integrated functional, metabolomic, and biotransformation profiling of mycotoxin hepatotoxicity in 2D and 3D human hepatic models",
+    "source": "ScienceDirect Publication: Environmental Pollution",
+    "excerpt": "Mycotoxins pose a major risk to food safety and human health, yet their hepatotoxic mechanisms remain incompletely characterized due to limitations in conventional in vitro models. In this study, we systematically compared mycotoxin-induced hepatotoxicity and metabolomic profiling across two human hepatic models cultured under 2D monolayer and 3D spheroid conditions. The various mycotoxins (Aflatoxin B1, Citrinin, Deoxynivalenol, Ochratoxin A, Patulin, and Zearalenone) exhibit distinct metabolic signatures, thereby serving as an appropriate panel for comprehensively evaluating diverse hepatotoxic mechanisms. Mycotoxin exposure induced concentration-dependent hepatotoxicity accompanied by functional impairment and structural disruption in hepatic models. Metabolomic profiling revealed distinctive regulatory patterns between 2D and 3D hepatic models, with 3D spheroids showing consistent down-regulation across multiple intracellular metabolic pathways and altered extracellular metabolite release, whereas 2D monolayers predominantly exhibited global metabolic activation. In silico-assisted MS/MS analysis further demonstrated that Phase I biotransformation was largely conserved across models, whereas Phase II conjugation reactions were more frequently detected and exhibited greater model specificity in 3D spheroids. Overall, these findings indicate that 3D hepatic spheroids capture more integrated and coordinated hepatotoxic and metabolic responses to mycotoxins compared with 2D monolayer systems. These distinctive regulatory dynamics support their value as a physiologically relevant platform for toxicity assessment and mechanistic investigation.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0269749126013874?dgcid=rss_sd_all",
+    "pubDate": "2026-09-14T15:33:52Z",
+    "category": "indoor",
+    "abstract_source": "semantic_scholar",
+    "summary": "Observation of Integrated functional, metabolomic, and biotransformation profiling of mycotoxin hepatotoxicity in 2D and 3D human hepatic models. Mycotoxins pose a major risk to food safety and human health, yet their hepatotoxic mechanisms remain incompletely characterized due to limitations in conventional in vitro models. In this study, we s...",
+    "enhanced": true,
+    "enhanced_at": "2026-09-14T15:37:51.674364"
+  },
+  {
+    "title": "Explainable machine learning-assisted Raman spectroscopy-based fast Versicolorin A detection in maize for early aflatoxin warning and safety sorting",
+    "source": "ScienceDirect Publication: Journal of Hazardous Materials",
+    "excerpt": "Understanding Versicolorin A contamination levels in agricultural products is crucial for implementing preventive interventions before severe aflatoxin formation. However, traditional Versicolorin A detection methods cannot meet high-throughput, on-site screening requirements of grain supply chains. While near-infrared spectroscopy has been developed for rapid Versicolorin A detection recently, its accuracy is limited by moisture interference and matrix overlap absorption. This study developed a non-destructive Versicolorin A detection method integrating Raman spectroscopy with machine learning algorithms. Using 208 maize samples, the Random Forest model achieved optimal performance with a cross-validated R² of 0.862, root mean square error of 11.78 μg/kg, and residual predictive deviation of 2.69. SHAP analysis identified 681.67 cm⁻¹ as the most influential spectral feature, which may reflect contamination-associated changes in the maize matrix. For classification tasks, XGBoost achieved the highest average precision of 0.919 with a 50 μg/kg threshold. This method enables reliable quantitative detection without chemical pretreatment, providing technological support for food safety monitoring systems.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0304389426025483?dgcid=rss_sd_all",
+    "pubDate": "2026-09-14T15:33:52Z",
+    "category": "indoor",
+    "abstract_source": "semantic_scholar",
+    "summary": "Observation of Explainable machine learning-assisted Raman spectroscopy-based fast Versicolorin A detection in maize for early aflatoxin warning and safety sorting. Understanding Versicolorin A contamination levels in agricultural products is crucial for implementing preventive interventions before severe aflatoxin formation. However, traditional Versicolorin A d...",
+    "enhanced": true,
+    "enhanced_at": "2026-09-14T15:37:51.703225"
+  },
+  {
+    "title": "Poly(limonene) incorporation into poly(3-hydroxybutyrate-co-3-hydroxyvalerate) films via melt blending and compression molding: Enhancement of antioxidant, antimicrobial, and barrier properties",
+    "source": "ScienceDirect Publication: International Journal of Biological Macromolecules",
+    "excerpt": "Food packaging materials must combine barrier, mechanical, and functional properties to ensure product protection and extended shelf life, yet many biopolymer films suffer from poor water resistance and high bioactive additive volatility. In this study, poly(3-hydroxybutyrate-co-3-hydroxyvalerate) (PHBV) films incorporating oligomeric poly (limonene) (PL) at 5, 10, 12.5, and 15 wt% were prepared via melt blending followed by compression molding. Films were characterized for structural, mechanical, thermal, barrier, and functional properties. Scanning electron microscopy revealed increasing morphological heterogeneity and PL-rich domains at higher PL loadings. No new bands or clearly detectable band shifts were observed by FT-IR, while PL altered the thermal and crystallization behavior of PHBV, reducing melting temperature, crystallinity, and thermal stability. Mechanical performance also decreased with increasing PL content, as indicated by reductions in elastic modulus, tensile strength, and elongation at break. Oxygen permeability decreased by 46% at 10 wt% PL, representing, to the best of our knowledge, the first report of oxygen barrier enhancement using PL in polymer films. Water vapor permeability and moisture content increased with PL concentration, while water contact angle rose from 71 ± 3° to 84 ± 3°, consistent with PL's hydrophobicity. Films also exhibited darker, brown coloration and enhanced UV-barrier properties. Notably, when PL was incorporated, DPPH and ABTS radical-scavenging activities reached 36.1 ± 0.5% and 61.9 ± 0.4%, respectively, while maximum log reductions relative to neat PHBV reached 1.07, 0.80, and 0.98 for Staphylococcus aureus, Escherichia coli, and Aspergillus brasiliensis, respectively. These findings address a relevant literature gap regarding PL incorporation into PHBV films and provide new insights into oligomeric terpene-derived additives in materials with potential for active food packaging applications.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0141813026043874?dgcid=rss_sd_all",
+    "pubDate": "2026-09-14T15:33:29Z",
+    "category": "science",
+    "abstract_source": "semantic_scholar",
+    "summary": "Observation of Poly(limonene) incorporation into poly(3-hydroxybutyrate-co-3-hydroxyvalerate) films via melt blending and compression molding: Enhancement of antioxidant, antimicrobial, and barrier properties. Food packaging materials must combine barrier, mechanical, and functional properties to ensure product protection and extended shelf life, yet many biopolymer films suffer from poor water resistance a...",
+    "enhanced": true,
+    "enhanced_at": "2026-09-14T15:37:51.734715"
+  },
+  {
+    "title": "An enzyme from Fusarium incarnatum exhibiting diglycosidase and α-L-rhamnosidase activities catalyses the biotransformation of naringin to naringenin",
+    "source": "ScienceDirect Publication: International Journal of Biological Macromolecules",
+    "excerpt": "This study reports the purification, characterization and biotransformation potential of a unique enzyme from a newly isolated fungal strain, Fusarium incarnatum exhibit dual diglycosidase and α-L-rhamnosidase activities. The enzyme was purified to homogeneity using ion-exchange and gel filtration chromatography. It exhibited maximal enzyme activity at 70 °C and pH 10. Steady state kinetic analysis using both natural and synthetic substrates revealed high substrate affinity and catalytic efficiency, as evidenced by the calculated kcat/Km values of 11.0 mM-1 s-1 and 18.7 mM-1 s-1 for naringin and p-nitrophenyl-α-L-rhamnopyranoside (pNPR), respectively. The purified enzyme catalyzed one step hydrolysis of naringin to naringenin, accompanied by the release of neohesperidose. The formation of both products was confirmed by LC-MS analysis, and the formation of neohesperidose was further validated by (1D) 1H NMR analysis. This single step conversion indicates diglycosidase activity, distinguishing it from classical monoglycosidase activity of α-L-rhamnosidase. Such catalytic efficiency toward the α-L-rhamnosyl-(1 → 2)-β-d-glucose moiety in neohesperidose flavonoids highlights its potential for one-step biotransformation of naringin to naringenin.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0141813026043011?dgcid=rss_sd_all",
+    "pubDate": "2026-09-14T15:33:29Z",
+    "category": "science",
+    "abstract_source": "semantic_scholar",
+    "summary": "Observation of An enzyme from Fusarium incarnatum exhibiting diglycosidase and α-L-rhamnosidase activities catalyses the biotransformation of naringin to naringenin. This study reports the purification, characterization and biotransformation potential of a unique enzyme from a newly isolated fungal strain, Fusarium incarnatum exhibit dual diglycosidase and α-L-rha...",
+    "enhanced": true,
+    "enhanced_at": "2026-09-14T15:37:51.766127"
+  },
+  {
+    "title": "A review on clinical cases of rare mold infections and their antifungal treatment strategies",
+    "source": "Frontiers in Microbiology | New and Recent Articles",
+    "excerpt": "In recent years, with the growing population of immunocompromised individuals, infections caused by rare environmental molds have become increasingly prevalent and clinically significant. Due to frequent misdiagnosis and difficult clinical management, the overall disease burden of such infections poses a major challenge in clinical practice. This article aims to fill the knowledge gap by reviewing cases of rare mold infections from January 2020 to February 2026, analyzing the susceptible populations, identification techniques, antifungal susceptibility testing, and antifungal treatment strategies. By integrating clinical case data, we found that although most rare mold infections respond well to conventional antifungal therapy, a small number of cases still result in death. This phenomenon is attributed to the rarity of pathogens, the lack of recommended antifungal agents, or unrecognized intrinsic drug resistance, which poses a serious threat to clinical management and public health. Therefore, we further summarize research on natural products against these rare molds, aiming to provide new therapeutic insights for the management of these challenging infections. The significance o",
+    "url": "https://www.frontiersin.org/articles/10.3389/fmicb.2026.1903380",
+    "pubDate": "2026-09-11T00:00:00Z",
+    "category": "science",
+    "summary": "Observation of A review on clinical cases of rare mold infections and their antifungal treatment strategies. In recent years, with the growing population of immunocompromised individuals, infections caused by rare environmental molds have become increasingly prevalent and clinically significant. Due to frequ...",
+    "enhanced": true,
+    "enhanced_at": "2026-09-14T15:37:51.792199"
+  },
+  {
+    "title": "Hidden Mould in the Air: A Practical Narrative Mini‐Review of Invasive Mould Infection Prevention for High‐Risk Patients and Clinicians",
+    "source": "Wiley: Mycoses: Table of Contents",
+    "excerpt": "Airborne mould spores, including those of the Aspergillus species, are ubiquitous both indoors and outdoors. While they are generally harmless, inhaled spores can cause severe infections, particularly invasive pulmonary aspergillosis, in patients with impaired immune defences. Allergic manifestations such as asthma arise by different mechanisms and are not covered. This narrative mini-review summarises key evidence and guideline recommendations for healthcare teams and provides practical, patient-friendly advice by highlighting clinical and infection-prevention considerations. As there is no safe exposure threshold or minimum infectious dose for individual patients, prevention focuses on reducing avoidable exposure during high-risk periods. These high-risk periods typically refer to medical conditions such as prolonged neutropenia, the early post-transplant period, and high-dose corticosteroid therapy. Furthermore, prevention also focuses on optimising hospital environmental controls by implementing high-efficiency particulate air filter filtration, protective rooms and construction dust containment, alongside antifungal prophylaxis when indicated. The most impactful measures at home are preventing and rapidly remediating visible mould and dampness, avoiding high-spore activities such as composting, handling potting soil, and working with demolition or renovation dust, and maintaining simple hygiene practices that reduce dust reservoirs. This narrative mini-review also summarises what the literature can and cannot provide. Although Aspergillus species account for most of the available evidence, the same exposure-reduction principles apply to other environmentally acquired moulds, including Mucorales, Fusarium species and Scedosporium species.",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/myc.70224?af=R",
+    "pubDate": "2026-09-10T06:51:16Z",
+    "category": "clinical",
+    "abstract_source": "openalex",
+    "summary": "Observation of Hidden Mould in the Air: A Practical Narrative Mini‐Review of Invasive Mould Infection Prevention for High‐Risk Patients and Clinicians. Airborne mould spores, including those of the Aspergillus species, are ubiquitous both indoors and outdoors. While they are generally harmless, inhaled spores can cause severe infections, particularly...",
+    "enhanced": true,
+    "enhanced_at": "2026-09-14T15:37:51.818627"
+  },
+  {
+    "title": "Performance of the Sensititre YeastOne assay compared with EUCAST E.Def 9.4 against Fusarium clinical isolates: focus on voriconazole and amphotericin B",
+    "source": "JAC-Antimicrobial Resistance Current Issue",
+    "excerpt": "AbstractObjectivesDespite the global emergence of Fusarium infections, data validating commercial antifungal susceptibility testing against these moulds remain scarce. We evaluated the performance and optimal reading time of the Sensititre YeastOne (SYO) assay against Fusarium clinical isolates compared with the EUCAST reference method.MethodsThis two-centre study (2011–2023) analysed 123 Fusarium isolates identified via two-step molecular sequencing. In vitro susceptibilities to voriconazole and amphotericin B were evaluated using SYO (24 h and 48 h readouts) versus the EUCAST E.Def 9.4 broth microdilution reference method (48 h readout). Essential agreement (EA) was defined as a ±2 log2 dilution difference; &gt;90% was acceptable.ResultsFusarium solani species complex (FSSC) dominated the cohort (85.3%), predominantly F. keratoplasticum and F. pseudensiforme. EUCAST testing revealed high MIC50/MIC90 values of voriconazole (&gt;16/&gt;16 mg/L) and amphotericin B (2/16 mg/L). While 65% (80/123) of isolates displayed positivity by SYO at 24 h, median spectrophotometric growth was significantly greater at 48 h than at 24 h [0.37 (IQR 0.315–0.403) versus 0.18 (0.151–0.206)]. At 48 h, ",
+    "url": "https://academic.oup.com/jacamr/article/doi/10.1093/jacamr/dlag181/8788644?rss=1",
+    "pubDate": "2026-09-09T00:00:00Z",
+    "category": "science",
+    "summary": "Observation of Performance of the Sensititre YeastOne assay compared with EUCAST E.Def 9.4 against Fusarium clinical isolates: focus on voriconazole and amphotericin B. AbstractObjectivesDespite the global emergence of Fusarium infections, data validating commercial antifungal susceptibility testing against these moulds remain scarce. We evaluated the performance and...",
+    "enhanced": true,
+    "enhanced_at": "2026-09-14T15:37:51.848647"
+  },
+  {
+    "title": "Invasive pulmonary aspergillosis caused by a rare species of Aspergillus turcosus: case report and literature review",
+    "source": "JAC-Antimicrobial Resistance Current Issue",
+    "excerpt": "Ministry of Science and Technology, Taiwan10.13039/501100004663112-2314-B-002-143-MY3115-2314-B-002-206-MY3National Health Research Institutes, Taiwan10.13039/501100004737IV-114-SP-09",
+    "url": "https://academic.oup.com/jacamr/article/doi/10.1093/jacamr/dlag204/8787766?rss=1",
+    "pubDate": "2026-09-08T00:00:00Z",
+    "category": "science",
+    "summary": "Observation of Invasive pulmonary aspergillosis caused by a rare species of Aspergillus turcosus: case report and literature review. Ministry of Science and Technology, Taiwan10.13039/501100004663112-2314-B-002-143-MY3115-2314-B-002-206-MY3National Health Research Institutes, Taiwan10.13039/501100004737IV-114-SP-09...",
+    "enhanced": true,
+    "enhanced_at": "2026-09-14T15:37:51.875092"
+  },
+  {
     "title": "Surfactin suppresses postharvest gray mold in Actinidia arguta fruit via direct antifungal activity and induced host resistance",
     "source": "ScienceDirect Publication: Food Control",
     "excerpt": "Publication date: February 2027Source: Food Control, Volume 192Author(s): Feiyang Wang, Sen Dong, Hang Che, Baodong Wei, Dazhi Zhang, Bingxue Li, He Gao, Shunchang Cheng",
