@@ -1,5 +1,133 @@
 [
   {
+    "title": "Recombinant expression and functional characterization of Aspergillus niger β-glucosidase in Pichia pastoris for enhanced synergistic saccharification of lignocellulosic biomass toward biofuel applications",
+    "source": "ScienceDirect Publication: Biomass and Bioenergy",
+    "excerpt": "Efficient conversion of lignocellulosic biomass into fermentable sugars is crucial for sustainable biofuel production and the utilization of agricultural residues. In this study, the β-glucosidase gene ( bg1 ) from Aspergillus niger was heterologously expressed in Pichia pastoris X-33 under the AOX1 promoter to assess its potential for biomass saccharification. Successful cloning and genomic integration of the bg1 gene were confirmed through restriction digestion and PCR analysis. Enzyme expression and secretion were verified by SDS-PAGE and esculin agar assay, which revealed a prominent protein band at approximately 60 kDa, indicating successful production of recombinant Bg1. Optimization of methanol induction showed that 1% methanol supported maximum enzyme production, with the highest β-glucosidase activity on day 6. The recombinant enzyme exhibited optimal activity at pH 5.5 and 70 °C and showed high thermal stability, retaining over 96% residual activity after 72 h at 60-70 °C. Enzymatic saccharification using recombinant β-glucosidase combined with recombinant endoglucanase resulted in high saccharification efficiencies of 96%, 86%, and 94% for sugarcane bagasse, wheat straw, and rice straw, respectively, after 72 h. Structural and physicochemical analyses using SEM, FT-IR, and XRD confirmed significant morphological disruption, chemical modifications, and increased crystallinity of the treated biomass. Overall, the findings demonstrate the functional expression and biochemical properties of recombinant Bg1 and its contribution, in combination with recombinant endoglucanase, to the saccharification of physically processed agricultural residues under laboratory-scale conditions.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0961953426012079?dgcid=rss_sd_all",
+    "pubDate": "2026-10-05T17:42:06Z",
+    "category": "indoor",
+    "abstract_source": "openalex",
+    "summary": "Observation of Recombinant expression and functional characterization of Aspergillus niger β-glucosidase in Pichia pastoris for enhanced synergistic saccharification of lignocellulosic biomass toward biofuel applications. Efficient conversion of lignocellulosic biomass into fermentable sugars is crucial for sustainable biofuel production and the utilization of agricultural residues. In this study, the β-glucosidase gen...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.198294"
+  },
+  {
+    "title": "Substrate-specific synergism between CTec 2 and galactoglucomannan-hydrolysing enzymes from Penicillium rotoruae improves softwood saccharification",
+    "source": "ScienceDirect Publication: Bioresource Technology",
+    "excerpt": "The substrate-specific synergistic action of hemicellulolytic enzymes supplemented to the commercial cellulase cocktail CTec 2 was demonstrated using softwood galactoglucomannan (GGM) containing substrates. Submerged fermentation of the novel fungus Penicillium rotoruae produced three key GGM-hydrolysing enzymes, namely β-mannanase, β-mannosidase, and α-galactosidase, which were partially purified using sequential ultrafiltration and fast protein liquid chromatography (FPLC). A systematic enzyme combination screen was employed to evaluate dual and triple enzyme combinations supplemented to CTec 2 during the hydrolysis of fully characterized GGM-containing softwood substrates: (i) insoluble softwood pulp and (ii) purified soluble GGM. Supplementation of P. rotoruae enzymes to CTec 2 significantly enhanced total monomeric sugar yields by up to 50.7% and 104.4% for pulp and soluble GGM, respectively, compared with CTec 2 alone. The highest increases were observed for galactosyl (247% and 765%), mannosyl (147% and 130%), and glucosyl (44% and 94%) release compared to CTec 2 used alone, highlighting the importance of coordinated cellulose-hemicellulose deconstruction during softwood hydrolysis. Distinct substrate-dependent synergistic enzyme mechanisms were identified. For insoluble pulp, the combination of β-mannanase and β-mannosidase provided the greatest enhancement in hydrolysis efficiency, whereas β-mannosidase and α-galactosidase was most effective for soluble GGM hydrolysis. Molecular weight distribution analysis further confirmed synergistic enzyme mechanisms in depolymerisation of GGM-containing softwood substrates. These findings demonstrate that targeted supplementation of commercial cellulase systems with tailored combination of GGM-hydrolysing enzymes from P. rotoruae significantly improves softwood saccharification and provides a promising strategy for the development of efficient lignocellulosic biorefinery processes.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0960852426020110?dgcid=rss_sd_all",
+    "pubDate": "2026-10-05T17:42:05Z",
+    "category": "indoor",
+    "abstract_source": "semantic_scholar",
+    "summary": "Observation of Substrate-specific synergism between CTec 2 and galactoglucomannan-hydrolysing enzymes from Penicillium rotoruae improves softwood saccharification. The substrate-specific synergistic action of hemicellulolytic enzymes supplemented to the commercial cellulase cocktail CTec 2 was demonstrated using softwood galactoglucomannan (GGM) containing subst...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.224628"
+  },
+  {
+    "title": "Impact of low-saturated fat bigels on mycotoxin production in reformulated low-fat salami",
+    "source": "ScienceDirect Publication: Food Control",
+    "excerpt": "The development of healthier meat products with reduced saturated fatty acids and functional ingredients is a growing trend in the food industry. In this study, a novel formulation of cured salami was developed by replacing rigid pork fat with an oil-in-water (O/W) bigel, and its impact on fungal growth and mycotoxin production was evaluated. Two levels of fat substitution were tested: 65 % (FS1) and 100 % (FS2), alongside a traditional salami control (ST). Texture profile analysis revealed no significant differences between the reformulated and traditional products, indicating that the bigel effectively mimicked the functional properties of pork fat. While fungal growth remained unaffected across formulations, mycotoxin analysis showed a substantial reduction in toxin production. Aflatoxin production by the Aspergillus nomius strain was almost completely inhibited in FS2, (90 %) and reduced by up to 27 % in FS1. Similarly, ochratoxin A production by the Penicillium nordicum and Aspergillus westerdijkiae strains was reduced by approximately 30 % in FS2. Lipid analysis confirmed a fat reduction of 36 % in FS1 and 53 % in FS2. These findings suggest that lower fat content may contribute to reduced mycotoxin synthesis. This study highlights the potential of bigel-based fat replacers to improve the nutritional profile of fermented meat products and suggests a possible contribution to mycotoxin risk mitigation in a salami-derived model system.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526007218?dgcid=rss_sd_all",
+    "pubDate": "2026-10-05T17:40:56Z",
+    "category": "health",
+    "abstract_source": "openalex",
+    "summary": "Observation of Impact of low-saturated fat bigels on mycotoxin production in reformulated low-fat salami. The development of healthier meat products with reduced saturated fatty acids and functional ingredients is a growing trend in the food industry. In this study, a novel formulation of cured salami was...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.248176"
+  },
+  {
+    "title": "Pulsed electric field pre-treatment of sweet potato: cultivar-dependent effects on phytochemical stability and bioaccessibility",
+    "source": "ScienceDirect Publication: Food Chemistry",
+    "excerpt": "Pulsed electric field (PEF) pre-treatment is proposed to improve drying and phytochemical bioaccessibility, but its effect in starch-rich matrices is unclear. Three sweet potato cultivars differing in flesh pigmentation were processed into flour under the same nominal PEF treatment (3.1 kV cm −1 ; mean 10.4 kJ kg −1 ) in aqueous medium. PEF did not shorten drying at 75 °C and raised moisture and water activity. It reduced phenolics reaching the intestinal phase in two cultivars, and the purple-fleshed cultivar lost ≈83% of anthocyanins before digestion; without an immersion-only control, this loss most plausibly reflects combined aqueous immersion and electroporation, possibly with oxidative or pH-mediated contributions. Fractionation recovered 87–95% of carotenoids and anthocyanins in an insoluble fibre-, starch-associated fraction. Cultivar dominated colour, composition, and most digestion outcomes (η 2 ≥ 0.52), except anthocyanins, for which PEF and its interaction with cultivar exceeded cultivar; PEF dominated moisture and water activity (η 2 = 0.70–0.74).",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0308814626035703?dgcid=rss_sd_all",
+    "pubDate": "2026-10-05T17:40:54Z",
+    "category": "health",
+    "abstract_source": "openalex",
+    "summary": "Observation of Pulsed electric field pre-treatment of sweet potato: cultivar-dependent effects on phytochemical stability and bioaccessibility. Pulsed electric field (PEF) pre-treatment is proposed to improve drying and phytochemical bioaccessibility, but its effect in starch-rich matrices is unclear. Three sweet potato cultivars differing in...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.272344"
+  },
+  {
+    "title": "Ballpoint tip as an integrated tool for extraction and ionization: a dual-workflow for rapid screening and quantification of multiple mycotoxins in edible oils",
+    "source": "ScienceDirect Publication: Food Chemistry",
+    "excerpt": "This study developed a dual screening-quantification workflow based on ballpoint tip liquid-phase microextraction (BT-LPME) for the high-throughput analysis of multiple mycotoxins in edible oils. By integrating BT-LPME with ballpoint tip electrospray ionization (BP-ESI), the method enables the acquisition of high-resolution mass spectrometry data within 30 s per sample, achieving rapid broad-spectrum screening of 254 mycotoxins. For screen-positive samples, the extract from the tip can be retrieved for accurate quantification via LC-MS/MS. Systematic validation using 55 representative mycotoxins confirmed that the screening sensitivity meets regulatory requirements. The quantitative method demonstrated good linearity (r >0.9970) with limits of detection ranging from 0.01 to 10 μg/kg. In real edible oil samples, 78 mycotoxins were detected, most of which are not covered by current regulatory systems, highlighting potential food safety risks. This approach is green, rapid, and efficient, making it suitable for batch risk monitoring of edible oil safety.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0308814626035119?dgcid=rss_sd_all",
+    "pubDate": "2026-10-05T17:40:54Z",
+    "category": "health",
+    "abstract_source": "semantic_scholar",
+    "summary": "Observation of Ballpoint tip as an integrated tool for extraction and ionization: a dual-workflow for rapid screening and quantification of multiple mycotoxins in edible oils. This study developed a dual screening-quantification workflow based on ballpoint tip liquid-phase microextraction (BT-LPME) for the high-throughput analysis of multiple mycotoxins in edible oils. By i...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.295700"
+  },
+  {
+    "title": "Nitrogen-doped carbon quantum dots for turn-off fluorescence detection of Aflatoxin B1 and Fumonisin B1: FRET versus aggregation-caused quenching",
+    "source": "ScienceDirect Publication: Food Chemistry",
+    "excerpt": "Developing rapid and sensitive methods for monitoring of multiple mycotoxins is crucial for food safety. In this study, nitrogen-doped carbon quantum dots (N-CQDs) were synthesized via hydrothermal treatment of fumaronitrile and applied as a fluorescent \"turn-off\" probe for Aflatoxin B1 (AFB1) and Fumonisin B1 (FB1). For AFB1, the sensor shows high sensitivity through a Förster resonance energy transfer (FRET) mechanism, achieving a limit of detection (LOD) of 0.046 ng/mL and a linear range of 0.3-180 ng/mL. Meanwhile, the detection of FB1 follows an Aggregation-Caused Quenching (ACQ) mechanism with a working range of 40-250 ng/mL and a practical quantitation limit (PQL) of 50 ng/mL (RSD < 40%) for semi-quantitative screening. DFT calculations suggesting that N-CQDs may facilitate stronger π-π stacking and electrostatic interactions compared to O-CQDs. This work provides a promising analytical platform for ultra-trace mycotoxin detection and offers insights into tailoring carbon nanomaterials for sensing applications.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0308814626034618?dgcid=rss_sd_all",
+    "pubDate": "2026-10-05T17:40:54Z",
+    "category": "health",
+    "abstract_source": "semantic_scholar",
+    "summary": "Observation of Nitrogen-doped carbon quantum dots for turn-off fluorescence detection of Aflatoxin B1 and Fumonisin B1: FRET versus aggregation-caused quenching. Developing rapid and sensitive methods for monitoring of multiple mycotoxins is crucial for food safety. In this study, nitrogen-doped carbon quantum dots (N-CQDs) were synthesized via hydrothermal tr...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.320379"
+  },
+  {
+    "title": "Acid-induced conformational remodeling of arachin bidirectionally modulates aflatoxin B1 binding: a multi-spectroscopic and molecular simulation study",
+    "source": "ScienceDirect Publication: Food Research International",
+    "excerpt": "Publication date: Available online 3 October 2026Source: Food Research InternationalAuthor(s): Mohan Li, Jiahao Yuan, Dian Zhou, Kewei Chen, Muying Du, Zsolt Zalán, Sameh Awad, Jianquan Kan",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0963996926025895?dgcid=rss_sd_all",
+    "pubDate": "2026-10-05T17:40:54Z",
+    "category": "health",
+    "summary": "Observation of Acid-induced conformational remodeling of arachin bidirectionally modulates aflatoxin B1 binding: a multi-spectroscopic and molecular simulation study. Research focusing on the themes of the title....",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.341635"
+  },
+  {
+    "title": "Comparative genomics of Fusarium acuminatum reveals correlated evolution of carbohydrate-active enzymes (CAZymes) and diverse effectors",
+    "source": "ScienceDirect Publication: Fungal Biology",
+    "excerpt": "Publication date: Available online 28 September 2026Source: Fungal BiologyAuthor(s): Bo Lan, Renyi Ma, Xiaoyan Zhao, Jian Yang, Yuqing Jing, Siyang Li, Fang K. Du, Kangquan Yin",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626001558?dgcid=rss_sd_all",
+    "pubDate": "2026-10-05T17:40:44Z",
+    "category": "science",
+    "summary": "Observation of Comparative genomics of Fusarium acuminatum reveals correlated evolution of carbohydrate-active enzymes (CAZymes) and diverse effectors. Research focusing on the themes of the title....",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.361890"
+  },
+  {
+    "title": "Effects of exogenous microbial fertilizer and in situ green manure management on soil microbial community structure and predicted functional potential in Korla fragrant pear orchards",
+    "source": "Frontiers in Microbiology | New and Recent Articles",
+    "excerpt": "Long-term chemical fertilizer overuse has degraded soil quality in Korla fragrant pear orchards of Xinjiang, causing reduced organic matter accumulation, nutrient imbalance, and microbial community shifts. However, the effects of exogenous microbial fertilizers and endogenous green manure, particularly under different planting densities, on soil microbiome regulation in sandy orchards of southern Xinjiang remain unclear. Here, a 7–8-year-old Korla fragrant pear orchard was subjected to six fertilization treatments: conventional fertilization (CK), microbial fertilizer (JF), low- and high-density *Melilotus officinalis* (CM1 and CM2), and low- and high-density sunflower (*Helianthus annuus*) (DK1 and DK2). Soil physicochemical properties, 16S rRNA and ITS amplicon sequencing, and PICRUSt2-based functional prediction were integrated to evaluate treatment effects on soil properties, microbial communities, and predicted functional potential. Organic fertilization generally reduced electrical conductivity (EC) and improved organic matter and available nutrients. Among treatments, CM1 showed relatively favorable soil improvement, reducing EC by 19.20% and increasing alkali-hydrolyzable n",
+    "url": "https://www.frontiersin.org/articles/10.3389/fmicb.2026.1941612",
+    "pubDate": "2026-10-05T00:00:00Z",
+    "category": "science",
+    "summary": "Observation of Effects of exogenous microbial fertilizer and in situ green manure management on soil microbial community structure and predicted functional potential in Korla fragrant pear orchards. Long-term chemical fertilizer overuse has degraded soil quality in Korla fragrant pear orchards of Xinjiang, causing reduced organic matter accumulation, nutrient imbalance, and microbial community sh...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.383712"
+  },
+  {
+    "title": "Assembly processes and network structure of rhizosphere fungal communities in healthy and Ralstonia solanacearum-infected tomato plants",
+    "source": "Frontiers in Plant Science | New and Recent Articles",
+    "excerpt": "IntroductionBacterial wilt caused by Ralstonia solanacearum is a major constraint to tomato production worldwide. Rhizosphere microbial community is closely linked to plant health. However, how R. solanacearum invasion alters the assembly processes and co-occurrence network in tomato rhizosphere fungal communities remains largely unclear.MethodsHere, we collected rhizosphere soil samples from three major tomato-producing regions in China to investigate how R. solanacearum invasion affects fungal community composition, network topology, and assembly processes in tomato rhizosphere.Results and discussionIn this study, fungal community structure differed significantly between healthy and diseased rhizosphere soils, driven significantly by soil pH (P < 0.05). The density of pathogen R. solanacearum in the diseased rhizosphere soil was significantly higher than that in the healthy tomato rhizosphere (P < 0.05). Genera Trichoderma, Talaromyces, Mortierella, and Penicillium were significantly enriched in healthy soils (P < 0.05). Network analysis revealed diseased soils had simpler and less stable fungal networks, with decreased node and edge numbers, reduced natural connectivity, and a s",
+    "url": "https://www.frontiersin.org/articles/10.3389/fpls.2026.1956668",
+    "pubDate": "2026-10-05T00:00:00Z",
+    "category": "health",
+    "summary": "Observation of Assembly processes and network structure of rhizosphere fungal communities in healthy and Ralstonia solanacearum-infected tomato plants. IntroductionBacterial wilt caused by Ralstonia solanacearum is a major constraint to tomato production worldwide. Rhizosphere microbial community is closely linked to plant health. However, how R. sol...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.405850"
+  },
+  {
+    "title": "Virulence determinants of Fusarium oxysporum for clinical infections",
+    "source": "PLOS Pathogens",
+    "excerpt": "caspase-1-dependent pyroptosis and modulated inflammatory signaling by inducing pro-inflammatory cytokines while suppressing chemokine production, resulting in impaired neutrophil recruitment. These findings suggest that fungal sterol metabolism may contribute to virulence not only through its role in membrane biology but also by directly influencing host immune responses",
+    "url": "https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1014630",
+    "pubDate": "2026-10-01T14:00:00Z",
+    "category": "clinical",
+    "abstract_source": "semantic_scholar",
+    "summary": "Observation of Virulence determinants of Fusarium oxysporum for clinical infections. caspase-1-dependent pyroptosis and modulated inflammatory signaling by inducing pro-inflammatory cytokines while suppressing chemokine production, resulting in impaired neutrophil recruitment. These f...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.426160"
+  },
+  {
     "title": "A multi-year comparison of tritordeum with wheat and minor cereals: Mycotoxin occurrence, free asparagine content, and acrylamide formation",
     "source": "ScienceDirect Publication: Food Control",
     "excerpt": "Introducing minor and novel cereal species into cropping and food systems requires the evaluation of their safety traits, including grain contamination with mycotoxins and acrylamide (AA) formation potential. This study has examined commercial varieties of tritordeum, bread wheat, spelt, emmer, durum wheat, barley, triticale, and rye grown under similar agronomic conditions over three consecutive growing seasons at one location in Northern Italy. Whole-meal and refined biscuits of sixteen genotypes were investigated for their grain contamination with Fusarium spp. mycotoxins, free asparagine (ASN) content, and AA formation. Deoxynivalenol (DON) was the predominant mycotoxin, with contamination being significantly influenced by the growing season. Tritordeum consistently accumulated DON at comparable levels with those of durum wheat and susceptible bread wheat genotypes. ASN accumulation was influenced by the genotype and the growing season, with rye genotypes showing the highest concentrations and high-protein bread wheat the lowest. ASN was significantly associated with AA formation in the whole-meal and refined biscuits, although differences in the AA/ASN molar ratio among and within the cereal species indicated that the flour composition also affected AA formation. Refining reduced ASN by around 70% and decreased AA formation. GGE analysis revealed that genotype effects predominated over genotype × year-location environment interactions for DON and ASN. Overall, tritordeum showed comparable food safety characteristics with durum wheat for DON contamination and an intermediate ASN accumulation and AA formation potential. These findings highlight the importance of integrating field and processing contaminants when evaluating novel cereals and of including food safety traits in breeding and cultivar selection programs.",
@@ -69,6 +197,17 @@
     "summary": "Observation of Inoculation of Aspergillus strain OA3 enhances aflatoxin B1 and ochratoxin a degradation and improves quality of Fu tea. This study compared Aspergillus strain OA3 inoculated fermentation and natural fermentation of Fu tea for safety, composition, flavor and metabolism. The OA3-inoculated group exhibited superior safety...",
     "enhanced": true,
     "enhanced_at": "2026-09-28T17:19:37.515536"
+  },
+  {
+    "title": "PfATG18 links V-ATPase assembly to endocytic membrane dynamics in malaria parasites",
+    "source": "PLOS Pathogens",
+    "excerpt": "by Yasmin Schmitz, Moumita Sengupta, Carola Schneider, Tanja Ziesmann, Franziska Hellmold, Ute Distler, Rudolph Reimer, Joachim Michael Matz\n\nMalaria parasites replicate inside red blood cells, degrading hemoglobin within a specialized digestive vacuole. Efficient hemoglobin processing is essential for parasite survival and influences antimalarial drug susceptibility. The vacuole constantly fuses with incoming hemoglobin-filled vesicles, yet the mechanisms that balance cargo influx with membrane homeostasis remain unclear. Here, using conditional reverse genetics, quantitative live-cell imaging, and 3D electron microscopy, we characterize the autophagy-related protein 18 of Plasmodium falciparum (PfATG18) as a key regulator of vacuolar membrane dynamics. Loss of PfATG18 caused vacuole fragmentation, accumulation of hemoglobin-filled vesicles, and parasite death. These defects were preceded by broad architectural destabilization of the parasite’s V-ATPase, a proton pump controlling organelle acidification and the vacuole’s fusion–fission equilibrium. Direct interference with its membrane sector phenocopied PfATG18 deficiency. We found that PfATG18 does not interact directly with the",
+    "url": "https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1014608",
+    "pubDate": "2026-09-28T14:00:00Z",
+    "category": "clinical",
+    "summary": "Observation of PfATG18 links V-ATPase assembly to endocytic membrane dynamics in malaria parasites. by Yasmin Schmitz, Moumita Sengupta, Carola Schneider, Tanja Ziesmann, Franziska Hellmold, Ute Distler, Rudolph Reimer, Joachim Michael Matz\n\nMalaria parasites replicate inside red blood cells, degrad...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.450673"
   },
   {
     "title": "Plasma pre-treatment and peroxynitric acid soaking as a novel oxidative seed disinfection strategy against seed-borne fungal pathogens in maize",
@@ -196,6 +335,30 @@
     "enhanced_at": "2026-09-21T15:37:35.448950"
   },
   {
+    "title": "Climate-associated variation in fungal communities and mycotoxin contamination in corn silage across temperature zones of China",
+    "source": "tandf: Food Additives & Contaminants: Part A: Table of Contents",
+    "excerpt": "Mycotoxin contamination in silage is globally prevalent but regionally variable. In this study, fungal diversity and 53 mycotoxins were analysed in 120 corn silage samples collected from three temperature zones of China: subtropical (SZ), warm temperate (WTZ), and mid-temperate (MTZ), High-throughput sequencing revealed significant differences in fungal diversity and abundance among silages from different temperature zones, with Penicillium (9.0%), Diutina (8.4%), and Aspergillus (5.8%) among the dominant genera. Zearalenone, deoxynivalenol, beauvericin, fumonisins, and alternariol were the most frequently detected mycotoxins, with detection rates of 53% to 91%. Interestingly, although in WTZ silages fewer potentially toxigenic genera exhibited the highest relative abundances, these samples contained higher concentrations of multiple mycotoxins compared with SZ and MTZ silages. Network analysis indicated that fungal communities in WTZ silages displayed stronger interaction complexity. No strong linear relationship was detected between potentially toxigenic fungi (genus level) and mycotoxin concentrations, while non-toxigenic fungi showed complex associations with mycotoxins, suggesting that microbial interactions under specific climatic conditions may contribute to mycotoxin accumulation. These findings highlight the importance of fungal community interactions in predicting and managing mycotoxin contamination under different climatic conditions.",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/19440049.2026.2724369?af=R",
+    "pubDate": "2026-09-18T03:50:45Z",
+    "category": "health",
+    "abstract_source": "openalex",
+    "summary": "Observation of Climate-associated variation in fungal communities and mycotoxin contamination in corn silage across temperature zones of China. Mycotoxin contamination in silage is globally prevalent but regionally variable. In this study, fungal diversity and 53 mycotoxins were analysed in 120 corn silage samples collected from three tempera...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.472655"
+  },
+  {
+    "title": "New informative molecular markers for Alternaria sections Infectoriae and Pseudoalternaria reveal the diversity of lineages infecting wheat and tomato",
+    "source": "tandf: Mycologia: Table of Contents",
+    "excerpt": "Fungi in Alternaria sections Infectoriae and Pseudoalternaria are commonly associated with commercially important crops, yet their biosystematics remains difficult to resolve because standard molecular markers often lack sufficient phylogenetic resolution. In this study, we used candidate loci identified in previous phylogenomic analyses to develop four new molecular markers (SIP-03, SIP-04, SIP-06, and SIP-08) that were specifically designed to be highly informative for these two sections. The performance of these new markers was evaluated using 237 strains collected primarily from wheat in Canada and tomatoes in the Baltic states, representing the largest data set analyzed to date. The four markers showed high amplification success and contained strong phylogenetic signal. Combined phylogenetic analyses recovered all of the previously recognized lineages within sections Infectoriae (Inf1, Inf3, Inf3) and Pseudoalternaria (Pse1, Pse2) and revealed a novel lineage, designated Inf4, associated with wheat in western Canada. Concordance of lineage assignment was high, with 94.1% of strains being placed consistently across all four markers and an overall marker conflict frequency of less than 3%. Our expanded sampling identified some lineage-specific patterns in regard to host association and geographic distribution. For example, the Inf1 lineage showed high molecular diversity and was dominant among tomato-associated strains from Baltic Europe, whereas Inf2 and Pse2 were the primary lineages infecting western Canadian wheat. Our study provides robust new tools for identification and classification of taxa within sections Infectoriae and Pseudoalternaria, refines their phylogenetic framework, and facilitates future studies on the pathology, epidemiology, and mycotoxin production of these agriculturally important fungi.",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/00275514.2026.2713971?af=R",
+    "pubDate": "2026-09-17T06:21:29Z",
+    "category": "science",
+    "abstract_source": "openalex",
+    "summary": "Observation of New informative molecular markers for Alternaria sections Infectoriae and Pseudoalternaria reveal the diversity of lineages infecting wheat and tomato. Fungi in Alternaria sections Infectoriae and Pseudoalternaria are commonly associated with commercially important crops, yet their biosystematics remains difficult to resolve because standard molecula...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.493657"
+  },
+  {
     "title": "FgNup2 regulates nuclear import of the histone H2B monoubiquitination enzyme by stabilizing the FgImpα-FgBre1 complex to mediate pathogenicity in Fusarium graminearum",
     "source": "PLOS Pathogens",
     "excerpt": "by Yaxuan Wang, Zhe Li, Xiaoyan Wang, Bin Xiong, Chengqi Zhang, Xiaozhen Zhao, Shentao Wang, Li Chen\n\nFusarium head blight caused by Fusarium graminearum threatens global wheat production. The pathogenicity of this fungus depends on histone H2B monoubiquitination (H2Bub1), yet the nuclear import mechanism of its key enzyme, FgBre1, remains unclear. In this study, we identified 24 nucleoporins in F. graminearum and found that FgNup2 is essential for fungal growth, toxin biosynthesis, and virulence. FgNup2 positively regulates H2Bub1 levels by facilitating the nuclear import of FgBre1, thereby influencing pathogenic development. The nuclear import of FgBre1 relies on the importin receptor FgImpα, and these two proteins interact. FgNup2, through a critical phenylalanine residue (F981) within its FG-repeat domain, promotes and stabilizes the FgImpα–FgBre1 complex, driving the assembly of the tripartite FgNup2–FgImpα–FgBre1 complex. This ultimately mediates the rapid nuclear translocation of FgBre1 under induction by the trichothecene biosynthesis-inducing medium. Our findings reveal a mechanism by which a nucleoporin regulates the nuclear entry of a histone-modifying enzyme via stabili",
@@ -287,6 +450,18 @@
     "summary": "Observation of Performance of the Sensititre YeastOne assay compared with EUCAST E.Def 9.4 against Fusarium clinical isolates: focus on voriconazole and amphotericin B. AbstractObjectivesDespite the global emergence of Fusarium infections, data validating commercial antifungal susceptibility testing against these moulds remain scarce. We evaluated the performance and...",
     "enhanced": true,
     "enhanced_at": "2026-09-14T15:37:51.848647"
+  },
+  {
+    "title": "Contamination status of Alternaria toxins in commercially available wheat flour and products from Chongqing (2025) and dietary exposure risk assessment",
+    "source": "tandf: Food Additives & Contaminants: Part A: Table of Contents",
+    "excerpt": "This study investigated the contamination levels of four Alternaria toxins, in wheat flour and its products marketed in Chongqing (2025), using isotope dilution-liquid chromatography-tandem mass spectrometry. Based on dietary consumption data and body weight parameters stratified by gender and age groups from the 2015–2017 China National Nutrition and Health Surveillance Report, the estimated daily intake (EDI) for the population was calculated using a point assessment model. Risk characterisation was performed by comparing EDI values with the threshold of toxicological concern (TTC) established by the European Food Safety Authority (EFSA). Among the 105 samples analysed, tenuazonic acid (TeA) and tentoxin (TEN) were detected in 100% and 98.1% of samples, with mean concentrations of 27.3 µg/kg and 4.0 µg/kg, respectively. Alternariol monomethyl ether (AME) and alternariol (AOH) were less frequent, with detection rates of 43.8% and 2.9%. TeA and TEN levels were highest in raw wheat flour and generally lower in processed products. Geographically, the contamination levels in southeastern Chongqing were significantly higher than those in other surveyed areas. Dietary exposure assessment indicated that the EDI of TeA and TEN were far below the TTC, suggesting acceptable health risks. However, the EDI of AME at the 95th percentile (P95) exceeded the TTC by a factor of 4.4–8.2. The detection rates of AME and AOH are relatively low while the widespread occurrence of TeA and TEN in wheat flour and its products sold from Chongqing poses a manageable risk at present. Nevertheless, given the high detection rates, thermal stability, and the genotoxic potential of certain toxins, attention should still be paid to the risks associated with long-term low-dose co-exposure. It is recommended that national maximum residue limits be established as soon as possible.",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/19440049.2026.2711389?af=R",
+    "pubDate": "2026-09-08T02:15:17Z",
+    "category": "health",
+    "abstract_source": "openalex",
+    "summary": "Observation of Contamination status of Alternaria toxins in commercially available wheat flour and products from Chongqing (2025) and dietary exposure risk assessment. This study investigated the contamination levels of four Alternaria toxins, in wheat flour and its products marketed in Chongqing (2025), using isotope dilution-liquid chromatography-tandem mass spect...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.515669"
   },
   {
     "title": "Invasive pulmonary aspergillosis caused by a rare species of Aspergillus turcosus: case report and literature review",
@@ -436,6 +611,18 @@
     "enhanced_at": "2026-09-07T14:50:38.188902"
   },
   {
+    "title": "bZIP transcription factor AflHapX coordinates iron homeostasis and aflatoxin biosynthesis in Aspergillus flavus",
+    "source": "tandf: Mycology: Table of Contents",
+    "excerpt": "Iron homeostasis and secondary metabolism are controlled by the basic leucine zipper (bZIP) transcription factor HapX in many fungi. In this study, AflHapX was identified through homology research of the Aspergillus flavus genome with the bZIP protein HapX in Aspergillus fumigatus and subsequent gene deletion. We established that AflHapX functions as a regulator for adaptation to iron-excess and iron-starvation conditions. The AflhapX deletion strain (ΔAflhapX) produces less aflatoxin B1 (AFB1) compared to the wild type (WT) and complementary strain (ΔAflhapXC) on YES medium. While iron typically represses AFB1 biosynthesis in A. flavus, the deletion of AflhapX restores iron’s inhibition of AFB1 production. Furthermore, compared to WT and ΔAflhapXC, ΔAflhapX produced more sclerotia and displayed greater sensitivity to the oxidative reagents H2O2, menadione sodium bisulfite (MSB), and diamide. On peanuts, the ΔAflhapX strain produced fewer conidia and less AFB1 than WT and ΔAflhapXC. Transcriptome analysis data provided evidence that AflHapX globally regulates genes involved in aflatoxin biosynthesis, oxidative stress response, and iron homeostasis. Our results suggest that AflHapX may regulate the effect of iron on aflatoxin production.",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/21501203.2026.2720999?af=R",
+    "pubDate": "2026-09-02T10:00:13Z",
+    "category": "science",
+    "abstract_source": "openalex",
+    "summary": "Observation of bZIP transcription factor AflHapX coordinates iron homeostasis and aflatoxin biosynthesis in Aspergillus flavus. Iron homeostasis and secondary metabolism are controlled by the basic leucine zipper (bZIP) transcription factor HapX in many fungi. In this study, AflHapX was identified through homology research of ...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.540673"
+  },
+  {
     "title": "Unpredicted synergistic genotoxic effects of co-occurring Alternaria mycotoxins at ratios representative of the European diet",
     "source": "ScienceDirect Publication: Environmental Pollution",
     "excerpt": "Alternaria species are phytopathogenic fungi that contaminate a wide range of food commodities, including tomatoes, cereals and oilseeds. They simultaneously produce multiple mycotoxins, among which the most prevalent are alternariol (AOH), alternariol monomethyl ether (AME), tenuazonic acid (TeA), altenuene (ALT), and tentoxin (TEN). Their individual toxicological properties are well documented: AOH and AME are genotoxic, TeA is ribotoxic, whereas ALT and TEN exhibit low toxicity. Despite their frequent co-occurrence in food, the Thresholds of Toxicological Concern (TTC) established by the European Food Safety Authority (EFSA) do not take into account their combined effects which remain largely unexplored. This study provides the first evaluation of the genotoxic effects of these five co-occurring toxins in combination using rat intestinal IEC-6 cells exposed to mixtures reflecting European dietary ratios (AOH:AME:TeA:ALT:TEN = 1:1:15:1:1). AOH:AME mixtures exhibited synergistic genotoxicity, particularly at low concentrations. TeA, although non-genotoxic alone, markedly amplified DNA damage induced by AOH and AME, consistent with a mechanism involving impairment of protein synthesis due to ribotoxicity. ALT and TEN showed no intrinsic effect and did not modulate mixture genotoxicity. Cytotoxicity was mainly additive for AOH:AME mixtures but became synergistic in the presence of TeA. Overall, this study demonstrates for the first time that co-occurring Alternaria mycotoxins interact synergistically, revealing effects that cannot be predicted from individual compounds. These findings highlight the critical need to incorporate mixture effects into risk assessment frameworks.",
@@ -518,6 +705,18 @@
     "summary": "Observation of Occurrence of aflatoxins in maize, groundnuts, and cassava from retail markets in Kinshasa, Democratic Republic of the Congo. Aflatoxin contamination of staple food commodities is one of the most critical food safety threats in sub-Saharan Africa. Yet, systematic surveillance data from the Democratic Republic of the Congo (D...",
     "enhanced": true,
     "enhanced_at": "2026-09-21T15:37:35.525543"
+  },
+  {
+    "title": "Integrated analysis of volatile profiles and mycotoxins for the early-stage detection of Alternaria alternata in tomatoes",
+    "source": "ScienceDirect Publication: Food Control",
+    "excerpt": "This study evaluated the changes in the production of volatile organic compounds (VOCs) associated with the early fungal deterioration of tomatoes and their relationship with mycotoxin production. Tomatoes were inoculated with Alternaria alternata , creating two batches: (i) inoculated with A. alternata and (ii) a control group inoculated with sterile water. VOCs were identified and quantified using headspace solid-phase microextraction coupled with gas chromatography/mass spectrometry (HS-SPME-GC/MS), while mycotoxin production was analysed using ultra-high performance liquid chromatography-tandem mass spectrometry (UHPLC-MS/MS). Analyses were performed on days 0, 4, 7, 10, and 11 to monitor the effect of the pathogen during storage at 25 °C. A total of 65 VOCs were identified, with alcohols being the most abundant family (20), followed by aldehydes (15). Principal component analysis revealed that the volatile profile allowed for the clear discrimination of infected samples as early as day 4 (10 mm lesion diameter), with octanal and oct-1-en-3-one serving as potential early markers (associated with a 10 mm lesion diameter). In contrast, advanced stages were characterized by the increase of branched-chain alcohols such as 3-methylbutan-1-ol, 4-methylpentan-1-ol, and 3-methylpentan-1-ol. Regarding mycotoxins, the highest production of alternariol (AOH) and alternariol monomethyl ether (AME) occurred later, on day 7, reaching 32.7 ppb and 1.26 ppb, respectively, followed by a decrease. Altertoxin I (ATX-I) was only detected at the end of the storage period (day 11, 2.04 ppb). These findings demonstrate that VOC profiling allows for the detection of the infection at an early stage, preceding significant mycotoxin accumulation, highlighting the potential of specific volatile markers as a robust and preventive analytical strategy for the management of fungal contamination in tomatoes.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526005517?dgcid=rss_sd_all",
+    "pubDate": "2026-08-31T16:36:33Z",
+    "category": "health",
+    "abstract_source": "openalex",
+    "summary": "Observation of Integrated analysis of volatile profiles and mycotoxins for the early-stage detection of Alternaria alternata in tomatoes. This study evaluated the changes in the production of volatile organic compounds (VOCs) associated with the early fungal deterioration of tomatoes and their relationship with mycotoxin production. Tom...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.563176"
   },
   {
     "title": "Functional analysis of Sec14-family proteins in the filamentous fungus aspergillus nidulans",
@@ -657,6 +856,18 @@
     "summary": "Observation of Mixture of traditional edible plants inhibits fungus growth in corn, study shows. Fungal contamination in stored grain across sub-Saharan Africa causes major post-harvest losses and severe public health risks, costing billions of dollars annually, according to the Food and Agricult...",
     "enhanced": true,
     "enhanced_at": "2026-08-31T16:40:01.012229"
+  },
+  {
+    "title": "Effect of household cooking on aflatoxin B1 migration in black beans: insights from bio-accessibility and intestinal transport",
+    "source": "tandf: Food Additives & Contaminants: Part A: Table of Contents",
+    "excerpt": "Household cooking is widely considered an effective strategy to reduce mycotoxin contamination in legumes; however, its impact on gastro-intestinal fate and actual dietary exposure remains unclear. This study evaluated the impact of domestic cooking on aflatoxin B1 (AFB1) levels in black beans (a cultivar of the common bean, Phaseolus vulgaris L.), integrating bio-accessibility and intestinal transport to assess potential exposure. Naturally contaminated beans were subjected to soaking and pressure cooking under conditions defined by a 22 Central Composite Rotational Design. Cooking reduced AFB1 levels by 80-93% with optimal conditions for 50 g beans soaked for 8 h and then cooked with 841 mL water. Estimated daily exposure ranged from 0.186 to 0.541 ng kg−1 body weight day−1, based on consumption of cooked grain. Bio-accessibility was low when calculated relative to raw beans (6.9–35.1%) but exceeded 100% relative to cooked samples, indicating the release of matrix-associated or previously non-extractable toxin during digestion. However, only 30.4% of the bio-accessible fraction permeated the membrane, indicating limited potential for absorption. These findings demonstrate that reductions observed after processing may not reflect actual exposure, highlighting the importance of integrating gastrointestinal fate into mycotoxin risk assessment.",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/19440049.2026.2717744?af=R",
+    "pubDate": "2026-08-27T02:22:52Z",
+    "category": "health",
+    "abstract_source": "openalex",
+    "summary": "Observation of Effect of household cooking on aflatoxin B1 migration in black beans: insights from bio-accessibility and intestinal transport. Household cooking is widely considered an effective strategy to reduce mycotoxin contamination in legumes; however, its impact on gastro-intestinal fate and actual dietary exposure remains unclear. Th...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.585130"
   },
   {
     "title": "From Fleming to Lifeline: theatre, narrative and public engagement in antimicrobial stewardship",
@@ -819,6 +1030,18 @@
     "enhanced_at": "2026-08-24T09:43:36.497635"
   },
   {
+    "title": "Identification of patulin-producing Penicillium isolates from decayed apples, their patulin production profiles, and the feasibility of high-purity patulin preparation",
+    "source": "tandf: Food Additives & Contaminants: Part A: Table of Contents",
+    "excerpt": "This study presents a combined evaluation of patulin contamination by integrating fungal identification, assessment of toxin production, and the feasibility of obtaining high-purity patulin from biological sources. Fungal isolates recovered from naturally decayed apples collected from different agricultural environments in Türkiye were identified using MALDI-TOF MS and morphological characteristics, and were assigned to Penicillium expansum at a probable species level. The patulin production potential of the isolates was evaluated by inoculating them onto red, yellow, and green apple matrices under controlled laboratory conditions over an extended incubation period. Quantitative analysis using HPLC–UV, supported by LC–MS/MS confirmation, revealed substantial variability in patulin levels (7.58–49.80 mg/kg) depending on both isolate and apple matrix. Higher patulin levels were generally observed in yellow apple tissues, whereas lower levels were detected in red apples, suggesting a possible influence of matrix-related compositional factors. In addition, patulin was isolated and enriched using column chromatography with TLC-guided fractionation, yielding a high-purity compound (98.8%) with low moisture content (0.21%). Structural identity was confirmed by LC–MS/MS analysis. Overall, the findings indicate that patulin production is influenced by strain-level variability and matrix-related factors. Furthermore, the study demonstrates the feasibility of producing high-purity patulin suitable for in-house analytical applications. However, the produced material should not be considered a certified reference material, and further validation would be required for broader analytical use.",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/19440049.2026.2717760?af=R",
+    "pubDate": "2026-08-21T01:36:59Z",
+    "category": "health",
+    "abstract_source": "openalex",
+    "summary": "Observation of Identification of patulin-producing Penicillium isolates from decayed apples, their patulin production profiles, and the feasibility of high-purity patulin preparation. This study presents a combined evaluation of patulin contamination by integrating fungal identification, assessment of toxin production, and the feasibility of obtaining high-purity patulin from biolo...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.611511"
+  },
+  {
     "title": "Decoding the functional diversity of plant growth-promoting bacterial communities in the soils of Western Ghats, Tamil Nadu, India",
     "source": "Frontiers in Microbiology | New and Recent Articles",
     "excerpt": "Western ghats in India, one of the world’s biodiversity hot spots is the reservoirs of microbial resources having agricultural and industrial significance. However, the diversity of plant growth-promoting microbial communities associated with the plants and soil in the Western Ghats is untapped vault. The current emphasis on natural farming is more depending on the indigenous microbial communities and their metabolic functions towards sustainable one -health. With this background, the present study examines the bacterial diversity of soils from the Western Ghats of Nilgiris, Coimbatore and Dindigul regions. Among the 10 soil samples collected (S1 to S10), three soil samples (S2, S4 and S6) representing respective three regions were subjected for metagenomic studies based on their distinct soil chemical and biological properties. The computational analysis of the metagenome revealed the core genus Bradhyrhizobium in all soil samples, while Trebonia, Arthrobacter, Streptomyces, and Pseudomonas are the next most abundant genera, which varied substantially. The results collectively demonstrate that soil sample from Dindigul harbours the richest and most diverse microbial community amon",
@@ -863,6 +1086,18 @@
     "enhanced_at": "2026-08-24T09:43:36.636661"
   },
   {
+    "title": "Occurrence of tropane alkaloids, pyrrolizidine alkaloids and mycotoxins in rooibos: a comprehensive safety assessment",
+    "source": "tandf: Food Additives & Contaminants: Part A: Table of Contents",
+    "excerpt": "Rooibos is a naturally caffeine-free herbal tea, widely consumed in Europe and perceived as a safe drink. However, contamination by natural toxins can pose a potential food safety concern for regular consumers. This study investigated the presence of 32 pyrrolizidine alkaloids (PAs), 16 tropane alkaloids (TAs), and 56 mycotoxins in 203 rooibos samples purchased from 18 European countries, using UHPLC-MS/MS. PAs were detected in 98% of the samples and were dominated by Senecio-type alkaloids, particularly senecionine N-oxide, senecionine, and retrorsine N-oxide. The mean and median total PA concentrations were 47 and 33 μg/kg, respectively, and all 2024 samples were below the EU maximum level of 400 μg/kg. TAs were rarely detected, with atropine present in only two samples and at low concentrations. Mycotoxin analysis revealed widespread contamination by Alternaria toxins, especially tenuazonic acid, detected in all samples, followed by alternariol monomethyl ether, alternariol, and tentoxin. Transfer experiments showed significant migration of PAs and Alternaria toxins into infusions. Preliminary exposure estimates have suggested a limited risk at mean contamination levels, although highly contaminated samples may contribute significantly to cumulative exposure to PAs. A comparison of results obtained between 2020 and 2026 suggested lower median PA contamination after implementation of the EU limit, despite sporadic exceedances.",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/19440049.2026.2711941?af=R",
+    "pubDate": "2026-08-19T01:39:53Z",
+    "category": "health",
+    "abstract_source": "openalex",
+    "summary": "Observation of Occurrence of tropane alkaloids, pyrrolizidine alkaloids and mycotoxins in rooibos: a comprehensive safety assessment. Rooibos is a naturally caffeine-free herbal tea, widely consumed in Europe and perceived as a safe drink. However, contamination by natural toxins can pose a potential food safety concern for regular ...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.636336"
+  },
+  {
     "title": "Rupture and dissemination of a mycotic aneurysm caused by the Aspergillus fumigatus complex: A diagnostic challenge posed by a non‑sporulating isolate",
     "source": "ScienceDirect Publication: Diagnostic Microbiology and Infectious Disease",
     "excerpt": "A 45-year-old male with a history of lumbar tuberculosis presented with a ruptured mycotic iliac artery aneurysm as the initial manifestation. Imaging demonstrated aneurysm rupture with pseudoaneurysm formation and concurrent disseminated lesions involving the vertebrae and soft tissues. Intraoperative specimens grew an Aspergillus fumigatus strain that exhibited highly atypical morphology: the colonies were albino‑like, slow‑growing, and non‑sporulating, differing markedly from the classic A. fumigatus phenotype. Peripheral blood metagenomic sequencing detected A. fumigatus, and the serum galactomannan antigen was markedly elevated. Molecular sequencing confirmed the isolate as A. fumigatus sequence type ST26 and identified the multidrug resistance‑associated gene ABCA. The final diagnosis was disseminated aspergillosis presenting as a ruptured mycotic iliac artery aneurysm, complicated by prosthetic graft infection and multiorgan dissemination. The patient received systemic antifungal therapy with voriconazole, along with adequate surgical drainage and debridement. Subsequently, his inflammatory markers declined gradually, and he was discharged on hospital day 58.",
@@ -884,6 +1119,18 @@
     "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
     "enhanced_at": "2026-08-17T09:38:17.594148"
+  },
+  {
+    "title": "Co-occurrence of acrylamide and mycotoxins in biscuits: Insights into dietary exposure and risk characterization",
+    "source": "ScienceDirect Publication: Food Control",
+    "excerpt": "Wheat-based products like biscuits, a food that is highly consumed for its sensory qualities, can be contaminated by acrylamide (AA) or mycotoxins, substances with negative human health effects like genotoxicity or neurotoxicity. In this study, market samples of biscuits from different brands from Italy were analyzed using UHPLC-Q-Orbitrap HRMS, and the Italian population risk assessment was performed using the most recent anthropometric and consumption data available. AA concentration was found to be <LOQ and up to 167.7 μg/kg, with deoxynivalenol (DON) co-occurrence in 68% of samples (levels between < LOQ and 101.49 μg/kg), zearalenone (ZEA) in 6% (between 4.98 and 6.13 μg/kg), beauvericin (BEA) in 38% (between < LOQ and 2.14 μg/kg), and enniatins (ENNs) in all except one sample (between < LOQ and 100.75 μg/kg), with great variability, observing an association among whole-type samples and a higher contaminant occurrence. 97% of samples showed co-occurrence of at least two mycotoxins, which can modify their single toxic effects. Even though no sample exceeded the maximum limits or benchmark levels for contaminants, the risk characterization identified a potential health concern for cancer-related effects with median biscuit consumption and average AA levels detected for all age groups between 1 and 17 years for both sexes, as well as a 100% exceedance of the threshold of toxicological concern for BEA in children of both sexes (aged 1 to 9 years) with the highest recorded consumption. This is the first study to determine the co-occurrence of AA and mycotoxins in samples of biscuits and to assess the risk for Italian population.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526004731?dgcid=rss_sd_all",
+    "pubDate": "2026-08-17T09:34:49Z",
+    "category": "health",
+    "abstract_source": "openalex",
+    "summary": "Observation of Co-occurrence of acrylamide and mycotoxins in biscuits: Insights into dietary exposure and risk characterization. Wheat-based products like biscuits, a food that is highly consumed for its sensory qualities, can be contaminated by acrylamide (AA) or mycotoxins, substances with negative human health effects like g...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.659184"
   },
   {
     "title": "Nanozyme-based biosensing strategies for aflatoxin detection: Recent advances and perspectives",
@@ -1023,6 +1270,18 @@
     "summary": "This study evaluated a mixture of essential oils from rosemary, lavender, and lemongrass against Penicillium digitatum, the fungus responsible for green mold on citrus fruit during storage and distribution. In laboratory conditions, all three oils individually reduced fungal growth, but the combined mixture proved more potent, requiring only 0.0452 microliters per milliliter to inhibit half the fungal population. When applied to infected citrus fruit, the oil mixture reduced lesion diameter from 64.29 millimeters in untreated fruit to 36.05 millimeters in treated fruit, demonstrating substantial suppression of the mold's spread across the fruit surface.  The tension embedded in this finding reflects a broader pattern in agricultural management: the same economic pressures that drive reliance on synthetic fungicides—the need to preserve commodity crops through storage and transport networks—now generate demand for plant-derived alternatives framed as sustainable. Yet this substitution does not resolve the underlying dependency on chemical intervention to maintain postharvest commodity chains. The essential oils function here as a resource extracted from cultivated plants to manage a fungal pathogen that itself thrives within the material conditions of industrial fruit storage. The efficacy of the mixture suggests that what appears as a shift toward ecological alternatives may instead represent a reconfiguration of control strategies within the same system of agricultural intensification.",
     "enhanced": true,
     "enhanced_at": "2026-08-17T09:38:50.188900"
+  },
+  {
+    "title": "PAMP: an automated high-resolution image analysis pipeline for life cycle quantitative morphological profiling in filamentous fungi",
+    "source": "tandf: Mycology: Table of Contents",
+    "excerpt": "Morphological development in filamentous fungi critically impacts nutrient and oxygen transfer, broth rheology, and metabolite production during submerged fermentation. However, life-cycle-resolved quantitative analysis remains technically challenging because fungal morphology dynamically spans multiple spatial scales from germinating spores and branching hyphae to mycelial pellets. Here, we developed PAMP, Python-based Automated Morphology analysis Pipeline, integrating skeletonization with quantitative image analysis for high-resolution morphological profiling throughout the fungal life cycle. Using two Aspergillus niger strains, MA70.15 and D353.8, PAMP accurately captures distinct morphogenetic trajectories associated with protein secretion and citric acid production. Application to pkaC conditional-expression mutant further reveals that graded PkaC activity modulates hyphal extension, branching frequency and pellet porosity, thereby improving citric acid production. Correlation analysis identifies peripheral hyphae and pellet porosity as major morphology determinants of productivity, which were not detectable by conventional pellet-analysis tools due to their limited resolution of peripheral hyphae. PAMP aslo demonstrates robust performance across multiple filamentous fungi, including Fusarium venenatum and Acremonium chrysogenum. Overall, PAMP provides a robust platform for morphology-guided strain engineering and fermentation optimization in fungal biotechnology.",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/21501203.2026.2710468?af=R",
+    "pubDate": "2026-08-13T05:48:41Z",
+    "category": "science",
+    "abstract_source": "openalex",
+    "summary": "Observation of PAMP: an automated high-resolution image analysis pipeline for life cycle quantitative morphological profiling in filamentous fungi. Morphological development in filamentous fungi critically impacts nutrient and oxygen transfer, broth rheology, and metabolite production during submerged fermentation. However, life-cycle-resolved qu...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.680088"
   },
   {
     "title": "Angioinvasion severity and admission GCS predict outcomes in invasive central nervous system fungal infections",
@@ -1188,15 +1447,16 @@
     "enhanced_at": "2026-08-10T10:18:50.401915"
   },
   {
-    "title": "Integrated analysis of volatile profiles and mycotoxins for the early-stage detection of Alternaria alternata in tomatoes",
-    "source": "ScienceDirect Publication: Food Control",
-    "excerpt": "Publication date: January 2027Source: Food Control, Volume 191Author(s): Ana Martínez, Guillem Campmajó, Raquel Torrijos, Chiara Dall’Asta, Paula Tejero, Alberto Martín, Alejandro Hernández, Alicia Rodríguez, María de Guía Córdoba",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526005517?dgcid=rss_sd_all",
-    "pubDate": "2026-08-03T12:16:12Z",
-    "category": "health",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
+    "title": "Reassessing evidence and policy claims in Coulburn et al. (2026) on Mould, Insurance and regulation",
+    "source": "ScienceDirect Publication: Building and Environment",
+    "excerpt": "Coulburn et al. (2026), “Field practitioners’ perspectives of challenges and practices that hinder effective mould assessment and remediation in Australian residential buildings,” present qualitative findings from 18 “mould testing professionals” and cite an external dataset of 211 insurance‑managed dwellings to argue that Australia’s mould assessment and remediation industries are “unregulated” and “failing,” with only 5% of homes passing pre‑occupancy clearance testing. These claims are likely to inform litigation, regulatory submissions, and public health messaging. This Letter raises concerns about the methodological robustness and policy interpretation of the paper. First, the interview cohort is small, advocacy‑adjacent, and vocationally heterogeneous, and the inclusion criteria do not require participants to meet the Indoor Environmental Professional (IEP) education, training, and experience expectations set out in AS‑IICRC S500 and S520, while omitting insurers, loss adjusters and major restorers. Second, the headline “5% pass rate” and the assertion that “all companies failed to fully apply their respective recommended remediation methodologies” derive from a single proprietary dataset and a self‑authored guideline ecosystem published in relatively low‑rigour venues. Third, the paper mischaracterises the international regulatory landscape, under‑acknowledging that most jurisdictions, including the United States and United Kingdom, rely on consensus standards and general housing law rather than mould‑specific statute. Finally, it conflates insurance service failures identified by the Australian flood inquiry with technical failures in remediation practice. Clarifying these limitations is essential if the paper is to inform, rather than distort, policy and legal debate.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0360132326006700?dgcid=rss_sd_all",
+    "pubDate": "2026-08-03T12:16:16Z",
+    "category": "indoor",
+    "abstract_source": "openalex",
+    "summary": "Observation of Reassessing evidence and policy claims in Coulburn et al. (2026) on Mould, Insurance and regulation. Coulburn et al. (2026), “Field practitioners’ perspectives of challenges and practices that hinder effective mould assessment and remediation in Australian residential buildings,” present qualitative ...",
     "enhanced": true,
-    "enhanced_at": "2026-08-03T12:19:42.935880"
+    "enhanced_at": "2026-10-05T17:45:34.703171"
   },
   {
     "title": "Imidazolium polymerized ionic liquid-based membranes for the early warning detection of aflatoxins in fermented foods",
@@ -1233,6 +1493,18 @@
     "summary": "Observation of Blue light treatment enhances fruit wound repair and inhibits blue mold in destemmed grapes. Destemmed grapes are gaining popularity as a convenient fresh-cut fruit. However, they are highly susceptible to mechanical damage during processing, which accelerates berry decay. In this study, we i...",
     "enhanced": true,
     "enhanced_at": "2026-08-31T16:40:01.115644"
+  },
+  {
+    "title": "Rapid determination of potential mycotoxin-producing fungi contamination in post-harvest blueberries based on near infra-red spectroscopy and enhanced prototypical network",
+    "source": "tandf: Food Additives & Contaminants: Part A: Table of Contents",
+    "excerpt": "Blueberries are susceptible to fungal infection that may lead to mycotoxin contamination. Accurate identification of mycotoxin-producing fungi in blueberries is critical, as processed products derived from mould-contaminated fruits pose significant health risks due to the persistence of mycotoxins. However, classifying fungal diseases in blueberries remains challenging because infections beneath the dark-coloured epidermis are often visually undetectable. Near-infra-red (NIR) spectroscopy presents a promising alternative, as it exhibits distinct absorption characteristics for different fungal pathogens and enables non-contact measurement. This study investigates the use of NIR spectra to classify diseases caused by three mycotoxin-producing fungi: Alternaria alternata, Fusarium fujikuroi, and Penicillium expansum. Blueberry samples were individually inoculated with one of these pathogens or maintained as non-inoculated controls. NIR spectra collected from fruits across two independent harvests were analysed 1–6 days post-inoculation. To address the classification challenge with limited data, this study proposes an enhanced prototypical network to classify blueberry fungal infections, training on the first harvest and validating on the second harvest. A customised convolutional neural network with spatial attention improves feature extraction, while data normalisation and MetaMix augmentation enhance model performance. Through stratified cross-validation, the five-class classifier with 18-shot prototypes achieved an average accuracy of 97.9%, sensitivity of 97.9%, specificity of 99.5%, precision of 98.1% and F1-score of 97.9%. These findings highlight the potential of NIR spectroscopy combined with prototype-based learning for early detection of mycotoxin risks in blueberries.",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/19440049.2026.2711948?af=R",
+    "pubDate": "2026-08-03T01:47:52Z",
+    "category": "health",
+    "abstract_source": "openalex",
+    "summary": "Observation of Rapid determination of potential mycotoxin-producing fungi contamination in post-harvest blueberries based on near infra-red spectroscopy and enhanced prototypical network. Blueberries are susceptible to fungal infection that may lead to mycotoxin contamination. Accurate identification of mycotoxin-producing fungi in blueberries is critical, as processed products derived...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.723821"
   },
   {
     "title": "Effect of apple fermentation liquid on rice growth and stress responses in saline-alkali soil under pot conditions",
@@ -1608,6 +1880,18 @@
     "enhanced_at": "2026-07-20T11:44:14.533376"
   },
   {
+    "title": "Peroxidase-mediated degradation of deoxynivalenol in bread made from wheat flour spiked with the mycotoxin",
+    "source": "tandf: Food Additives & Contaminants: Part A: Table of Contents",
+    "excerpt": "Wheat and wheat-derived products are frequently contaminated with deoxynivalenol (DON), a trichothecene mycotoxin that poses significant risks to human and animal health. Traditional food processing methods often fail to eliminate DON due to its thermal stability. This study aimed to investigate the usefulness of soybean bran peroxidase (SBP), an agricultural by-product, in reducing deoxynivalenol (DON) in bread prepared with contaminated wheat flour. Dough was formulated with flour naturally contaminated with DON, and half of the samples were spiked with additional DON (0.4 µg/g). SBP (1.2 U/mg) was applied to both spiked and unspiked samples to assess the effects of the peroxidase across all treatment combinations. SBP treatment reduced detectable DON concentrations to below the analytical detection limit in bread produced from spiked flour. In addition to reducing DON levels, SBP treatment improved bread volume and crumb characteristics compared with untreated DON-spiked samples. These findings indicate that SBP treatment has potential as a downstream strategy for reducing DON contamination while maintaining desirable bread quality attributes, warranting further investigation of its applicability in cereal-based products.",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/19440049.2026.2690611?af=R",
+    "pubDate": "2026-07-17T02:57:53Z",
+    "category": "health",
+    "abstract_source": "openalex",
+    "summary": "Observation of Peroxidase-mediated degradation of deoxynivalenol in bread made from wheat flour spiked with the mycotoxin. Wheat and wheat-derived products are frequently contaminated with deoxynivalenol (DON), a trichothecene mycotoxin that poses significant risks to human and animal health. Traditional food processing m...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.746945"
+  },
+  {
     "title": "Disseminated Mucormycosis and monoclonal gammopathy in a young sarcoidosis patient following COVID-19: A rare case report",
     "source": "ScienceDirect Publication: Diagnostic Microbiology and Infectious Disease",
     "excerpt": "Disseminated mucormycosis is a rare but highly fatal invasive fungal infection, typically occurring in immunocompromised hosts. We report a case of culture- and PCR-confirmed disseminated mucormycosis in a previously healthy 25-year-old male who developed sarcoidosis and IgG-kappa monoclonal gammopathy of undetermined significance after contracting COVID-19. The patient presented with progressive respiratory symptoms and later developed multi-organ involvement, including the lungs, brain, kidneys, eyes, heart, lymph nodes, prostate, and vocal cords. Histopathological examination of renal biopsy and bronchoalveolar lavage specimens demonstrated broad, ribbon-like aseptate hyphae with right-angle branching, consistent with Mucorales. Fungal cultures yielded characteristic colonies, and Mucorales-specific PCR confirmed the diagnosis. Despite treatment with amphotericin B and adjunctive antifungal therapy, the patient developed septic shock, multiorgan failure and passed away. This rare case highlights the diagnostic and therapeutic challenges encountered when treating patients with concurrent granulomatous disease, opportunistic fungal infection, and underlying hematological abnormalities. It also underlines the importance of early detection, a high index of suspicion and initiation of prompt aggressive treatment in these patients.",
@@ -1644,17 +1928,6 @@
     "enhanced_at": "2026-07-13T12:00:04.664799"
   },
   {
-    "title": "Reassessing evidence and policy claims in Coulburn et al. (2026) on Mould, Insurance and regulation",
-    "source": "ScienceDirect Publication: Building and Environment",
-    "excerpt": "Publication date: 1 September 2026Source: Building and Environment, Volume 303Author(s): Tim Law",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0360132326006700?dgcid=rss_sd_all",
-    "pubDate": "2026-07-13T11:56:45Z",
-    "category": "indoor",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
-    "enhanced": true,
-    "enhanced_at": "2026-07-13T12:00:05.558546"
-  },
-  {
     "title": "Indoor relative humidity and air mycobiome in eastern Taiwan residences: associations with Aspergillus and Wallemia",
     "source": "ScienceDirect Publication: Building and Environment",
     "excerpt": "Publication date: 1 September 2026Source: Building and Environment, Volume 303Author(s): Nicholas T. Minahan, Chi-Hsien Chen, Chih-Cheng Hsu, Yu-Chen Chuang, Xiang-Ting Ma, Yue Leon Guo",
@@ -1687,17 +1960,6 @@
     "summary": "**WEAK SIGNAL PROTOCOL ACTIVATED**  This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
     "enhanced": true,
     "enhanced_at": "2026-07-13T12:00:13.935179"
-  },
-  {
-    "title": "Co-occurrence of acrylamide and mycotoxins in biscuits: Insights into dietary exposure and risk characterization",
-    "source": "ScienceDirect Publication: Food Control",
-    "excerpt": "Publication date: January 2027Source: Food Control, Volume 191Author(s): Abel Navarré, Yelko Rodríguez-Carrasco, Houda Berrada, Luana Izzo",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526004731?dgcid=rss_sd_all",
-    "pubDate": "2026-07-13T11:56:39Z",
-    "category": "health",
-    "summary": "This publication is still hot off the press. That means the paper is not yet indexed by global databases like CrossRef, Semantic Scholar or OpenAlex. If you want to learn what the research might have to say about life on Planet Mould you'll just have to read it yourself!",
-    "enhanced": true,
-    "enhanced_at": "2026-07-13T12:00:14.808341"
   },
   {
     "title": "Alternaria and Fusarium across malting barley process: a comprehensive study of mycotoxins and quality effects",
@@ -1828,6 +2090,30 @@
     "enhanced_at": "2026-07-13T12:01:05.876138"
   },
   {
+    "title": "New findings on ascus structure reveal forcible spore discharge mechanism in the fungal wheat pathogen Fusarium graminearum",
+    "source": "tandf: Mycologia: Table of Contents",
+    "excerpt": "Fungi in the phylum Ascomycota disperse their sexual spores primarily by forcible discharge from the spore sac, the ascus, in which they develop. These fungi cause some of the most devastating diseases of agricultural crops worldwide. The mechanism of spore discharge is not well understood, despite its primary role in disease spread. Using confocal microscopy, we have elucidated the ascus structure and development as related to function for spore dispersal in Fusarium graminearum, a pathogen of small grains and corn. To determine the mechanism of spore discharge in this species, we examined ascus structure in both wild-type and spore discharge mutant strains and revealed the presence of two chambers within the ascus: a stiff-walled lower chamber that supports the developing spores and an upper chamber, extendable due to the presence of a chitin network across the surface that maintains the integrity of the sac as it is pressurized. The upper chamber includes an internal chute to confine and align the spores, while pressure builds up, with a minimum amount of fluid. Elucidation of the basis of spore dispersal for a member of this major group of fungi provides a solid beginning for exploring forcible discharge throughout this phylum. Previous studies have shown that the requirement for turgor is conserved, although the osmoticum may differ. This information will likely facilitate the development of new approaches to managing the spread of pathogenic species by targeting the very processes that allow them to efficiently colonize new environments.",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/00275514.2026.2678062?af=R",
+    "pubDate": "2026-07-13T07:03:38Z",
+    "category": "science",
+    "abstract_source": "openalex",
+    "summary": "Observation of New findings on ascus structure reveal forcible spore discharge mechanism in the fungal wheat pathogen Fusarium graminearum. Fungi in the phylum Ascomycota disperse their sexual spores primarily by forcible discharge from the spore sac, the ascus, in which they develop. These fungi cause some of the most devastating disease...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.768798"
+  },
+  {
+    "title": "Menadione (2-methyl-1,4-naphthoquinone) induces oxidative stress to regulate growth and ochratoxin A biosynthesis in Aspergillus westerdijkiae fc-1",
+    "source": "tandf: Mycologia: Table of Contents",
+    "excerpt": "Aspergillus westerdijkiae fc-1 is a foodborne fungus that produces ochratoxin A (OTA), a toxic and potentially carcinogenic mycotoxin posing serious food safety and health risks. This study investigated the impact of the oxidative stress–inducing agent menadione (2-methyl-1,4-naphthoquinone) on A. westerdijkiae fc-1 growth and OTA biosynthesis. Wild-type (WT) and ΔOTAbZIP (OTAbZIP knockout) mutant strains of A. westerdijkiae fc-1 were exposed to varying concentrations of menadione (0, 0.05, 0.25, 0.50, and 0.75 mmol/L) to evaluate their oxidative stress responses. High-performance liquid chromatography (HPLC) was used to quantify OTA production, and quantitative real-time polymerase chain reaction (qRT-PCR) was performed to determine the relative expression levels of the OTA biosynthetic genes (otaA–D) and the HOG1 gene. Increasing menadione concentrations significantly inhibited both fungal growth and OTA production. At 0.75 mmol/L, fungal growth inhibition reached 88.91% (WT) and 88.89% (ΔOTAbZIP) at 6 dpi. OTA production in the WT strain decreased significantly with increasing menadione concentrations and was undetectable at ≥ 0.50 mmol/L. qRT-PCR analysis showed up-regulation of the HOG1 gene at higher menadione levels. In the WT strain, HOG1 expression increased at 0.25 mmol/L, whereas in the ΔOTAbZIP mutant it was elevated at both 0.25 and 0.50 mmol/L, indicating activation of the HOG-MAPK (high-osmolarity glycerol–mitogen-activated protein kinase) pathway under oxidative stress. These results demonstrate that menadione inhibits both fungal growth and OTA biosynthesis in A. westerdijkiae fc-1 and implicate oxidative stress signaling in the regulation of OTA production. The ΔOTAbZIP mutant of A. westerdijkiae fc-1, which lacks the OTAbZIP transcription factor, showed restricted growth and failed to produce OTA. Compared with the wild type, the mutant exhibited higher HOG1 expression, whereas the OTA biosynthetic genes (otaA–D) were significantly down-regulated.",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/00275514.2026.2683310?af=R",
+    "pubDate": "2026-07-09T02:47:56Z",
+    "category": "science",
+    "abstract_source": "openalex",
+    "summary": "Observation of Menadione (2-methyl-1,4-naphthoquinone) induces oxidative stress to regulate growth and ochratoxin A biosynthesis in Aspergillus westerdijkiae fc-1. Aspergillus westerdijkiae fc-1 is a foodborne fungus that produces ochratoxin A (OTA), a toxic and potentially carcinogenic mycotoxin posing serious food safety and health risks. This study investigat...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.796679"
+  },
+  {
     "title": "Reduced Activity of Triazole Antifungal Agents Against Aspergillus tubingensis From a Global Collection of Genomically‐Characterized Aspergillus Section Nigri Clinical Isolates (2020–2023)",
     "source": "Wiley: Mycoses: Table of Contents",
     "excerpt": "BACKGROUND: The black moulds comprising Aspergillus section Nigri are clinically important organisms causing aspergillosis and otomycosis; triazole (azole) antifungal agents represent the primary prophylaxis and treatment option for these infections. The cryptic nature of species within section Nigri presents challenges for routine identification methods, yet accurate speciation may reveal important and overlooked trends in species distribution and azole antifungal activity. METHOD: We used whole genome sequencing and comparative genomics to speciate 135 clinical A. section Nigri isolates collected worldwide from 2020 to 2023 and broth microdilution susceptibility testing to assess antifungal agent activity. RESULTS: A. welwitschiae (n = 61; 45.2%) and A. tubingensis (n = 51; 37.8%) were the primary species identified. A. tubingensis accounted for 87.9% (n = 29/33) of isolates producing azole MIC values above the CLSI-established A. niger epidemiological cutoff values (ECV). All azoles displayed high activity (≥ 93.7% wildtype [WT]) against A. welwitschiae and A. niger isolates; A. tubingensis isolates were broadly inhibited by posaconazole (100% WT). The frequency of A. tubingensis isolates with NWT phenotypes against ≥ 2 azoles and the modal MIC values for most agents increased over time; azole-NWT isolates were present across all regions. Comparisons of protein sequences of CYP51A and CYP51B, the molecular target of azole activity, revealed unique residues in A. tubingensis. However, most azole-NWT isolates across species lacked unique CYP51A/B alterations, suggesting mechanisms outside target site modification influence elevated azole MIC values in this section. CONCLUSIONS: Our results demonstrate the utility of speciating clinically relevant organism groups to better understand the dynamics of antifungal agent activity and species distributions.",
@@ -1838,6 +2124,18 @@
     "summary": "This paper documents reduced susceptibility to triazole antifungal agents among clinical isolates of *Aspergillus tubingensis*, a black mould within section Nigri collected globally between 2020 and 2023. Whole genome sequencing identified 135 isolates as either *A. welwitschiae* (45.2%) or *A. tubingensis* (37.8%), with the latter accounting for 87.9% of isolates showing elevated minimum inhibitory concentration values above established clinical breakpoints for *A. niger*. While posaconazole retained full activity against *A. tubingensis* (100% wildtype), other azole agents showed reduced effectiveness, with the frequency of non-wildtype isolates against multiple azoles increasing over the study period and present across all geographic regions. Genetic analysis of the two primary azole target proteins revealed unique residues in *A. tubingensis*, yet most non-wildtype isolates lacked alterations in these target sites, indicating that resistance mechanisms operate through pathways other than direct modification of the drug's molecular binding site.  Within the material entanglement of clinical mycology, *A. tubingensis* emerges as both a cryptic organism—difficult to distinguish from related species using routine laboratory methods—and an increasingly resistant one, with its rising frequency of non-wildtype observable traits suggesting selective pressures operating within clinical treatment environments. The finding that resistance persists despite the absence of expected genetic markers in the primary drug targets points to a distributed system of adaptation: the mould's capacity to accumulate reduced susceptibility through multiple, unmapped genetic pathways mirrors the distributed nature of clinical exposure itself, where antifungal pressure operates unevenly across geographic regions and patient populations, selecting for strains that can metabolize or evade treatment through mechanisms that remain, for now, uncharacterized.",
     "enhanced": true,
     "enhanced_at": "2026-07-20T11:44:20.380086"
+  },
+  {
+    "title": "Occurrence and risk assessment of pesticide residues, heavy metals, and mycotoxins in green and roasted coffee beans distributed in the Republic of Korea",
+    "source": "tandf: Food Additives & Contaminants: Part A: Table of Contents",
+    "excerpt": "Coffee is one of the most widely consumed beverages globally, raising concerns regarding chronic dietary exposure to chemical contaminants. This study provides a comprehensive and simultaneous assessment of pesticide residues, mycotoxins, and heavy metals in coffee products distributed in the Republic of Korea, along with an evaluation of potential health risks. In 2025, a total of 88 samples (green coffee beans, n = 45; roasted coffee beans, n = 43) were collected from online markets, supermarkets, and local coffee shops in Busan. A multi-residue analytical approach targeting 480 pesticides was employed using GC–MS/MS and LC–MS/MS, while mycotoxins were determined by LC–MS/MS and heavy metals were quantified by ICP–MS and a direct mercury analyser. Pesticide residues were detected in 14 samples (15.9%), exclusively in green coffee beans, whereas no residues were detected in roasted coffee. Mycotoxins were identified at trace levels in a limited number of green coffee samples but were absent in roasted products. Pb and Cd were frequently detected, with Cd concentrations significantly higher in roasted coffee beans (p < 0.001), likely due to concentration effects during roasting. Mean total As concentrations were comparable to those of Cd, whereas Hg concentrations were substantially lower than those of the other heavy metals and showed no significant differences between sample types. Dietary exposure was estimated using a screening-level approach (ND = 0). Under a conservative worst-case scenario assuming that 100% of total arsenic was present as inorganic arsenic, the margin of exposure (MOE) was approximately 56. Despite this, exposure levels for all analytes remained substantially below relevant health-based guidance values. Principal component analysis revealed no distinct clustering by origin or processing stage, indicating that contamination patterns are influenced by multiple factors. Overall, these findings demonstrate that coffee distributed in Korea is unl",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/19440049.2026.2697296?af=R",
+    "pubDate": "2026-07-08T01:08:12Z",
+    "category": "health",
+    "abstract_source": "openalex",
+    "summary": "Observation of Occurrence and risk assessment of pesticide residues, heavy metals, and mycotoxins in green and roasted coffee beans distributed in the Republic of Korea. Coffee is one of the most widely consumed beverages globally, raising concerns regarding chronic dietary exposure to chemical contaminants. This study provides a comprehensive and simultaneous assessm...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.817305"
   },
   {
     "title": "Effect of fermented feed material on growth performance and health parameters of Yorkshire/Norwegian Landrace/Duroc (J/NL/D) F2 crossbred fattening piglets",
@@ -1860,6 +2158,18 @@
     "summary": "This paper documents a systematic discrepancy between laboratory culture conditions and infection conditions in the fungus Fusarium graminearum. The researchers compared genetic activity patterns—specifically histone modifications that regulate which genes are turned on or off—in two settings: cultures grown on media treated with deoxynivalenol (a mycotoxin produced by the fungus itself) and wheat spikes infected with living fungal cells. The histone modifications examined were H3K4me3, which marks genes typically active in cells, and H3K27me3, which marks genes typically silenced. The study found striking differences between these two conditions: the genes marked by these histone modifications showed limited overlap, and their distribution across the genome differed substantially. This indicates that chemically induced laboratory cultures only partially replicate the actual signals the fungus encounters during infection of its wheat host.  The findings reveal a material entanglement between experimental design and pathogenic capacity. The fungus does not simply carry a fixed set of pathogenicity mechanisms that laboratory conditions can reliably trigger; rather, the living plant tissue itself—its physical structure, chemistry, and cellular responses—generates signals that reshape fungal gene regulation in ways that chemical additives alone cannot reproduce. This gap between culture and infection suggests that studies relying on simplified media may mischaracterize which fungal genes and mechanisms actually drive disease, potentially directing research and intervention efforts toward targets that matter less in the field than in the petri dish.",
     "enhanced": true,
     "enhanced_at": "2026-07-13T12:01:16.359192"
+  },
+  {
+    "title": "Shikonin potentiates amphotericin B activity against Aspergillus fumigatus through membrane homeostasis disruption",
+    "source": "tandf: Mycology: Table of Contents",
+    "excerpt": "The escalating challenge of antifungal resistance in Aspergillus fumigatus underscores the critical need for novel therapeutic combinations. This study identifies the natural naphthoquinone shikonin (SHK) as a potent synergist of amphotericin B (AMB) against A. fumigatus. Checkerboard assays revealed a significant synergistic interaction (FICI ≤ 0.5), reducing the AMB MIC by up to 8-fold. Mechanistic investigations demonstrated that SHK exerts a multi-target effect: it effectively inhibites biofilm formation and disrupts key components of cell wall biosynthesis. Crucially, real-time imaging and propidium iodide uptake assays confirmed rapid and profound perturbation of membrane integrity. Molecular dynamics simulations provided a structural basis for this effect, indicating that SHK interacts directly with membrane ergosterol, promoting its disorganization and compromising membrane homeostasis. In vivo experiments showed that the combination of SHK and AMB could significantly improve the survival rate (65.2%) compared with any single drug. Our findings elucidate a unique multimodal mechanism by which SHK potentiates AMB, positioning it as a promising adjunctive therapy to combat AMB resistance and improve outcomes in invasive fungal infections.",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/21501203.2026.2688585?af=R",
+    "pubDate": "2026-07-07T09:42:36Z",
+    "category": "science",
+    "abstract_source": "openalex",
+    "summary": "Observation of Shikonin potentiates amphotericin B activity against Aspergillus fumigatus through membrane homeostasis disruption. The escalating challenge of antifungal resistance in Aspergillus fumigatus underscores the critical need for novel therapeutic combinations. This study identifies the natural naphthoquinone shikonin (...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.842318"
   },
   {
     "title": "White spots and gaps of microbial single cell proteins for food applications: yeasts, bacteria and filamentous fungi",
@@ -2049,6 +2359,18 @@
     "enhanced_at": "2026-08-24T09:43:37.002859"
   },
   {
+    "title": "Prevalence and phenotypic features of voriconazole persistence in Aspergillus fumigatus",
+    "source": "tandf: Mycology: Table of Contents",
+    "excerpt": "Antifungal persistence has emerged as an important survival strategy that may contribute to treatment failure, yet its prevalence and phenotypic characteristics in Aspergillus fumigatus populations remain incompletely defined. Here, we systematically assessed voriconazole persistence in a collection of 225 azole-susceptible A. fumigatus isolates derived from clinical (n = 208) and environmental (n = 17) sources in China. Persistence-associated behavior was evaluated using complementary broth microdilution-based germination assays, agar disk diffusion assays, and time-kill analyses. Approximately 10% of azole-susceptible isolates reproducibly exhibited persistence-associated phenotypes. Environmental conditions strongly influenced persistence-associated growth, as iron chelation selectively suppressed persistence. Importantly, persistent isolates showed an increased tendency to acquire azole resistance during prolonged antifungal exposure. Together, this study provides an isolate-based assessment of antifungal persistence in A. fumigatus, highlighting its phenotypic diversity and potential role in resistance evolution. These findings underscore the persistence of antifungal susceptibility as an additional dimension, with important implications for therapy and resistance development.",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/21501203.2026.2679240?af=R",
+    "pubDate": "2026-06-19T12:58:22Z",
+    "category": "science",
+    "abstract_source": "openalex",
+    "summary": "Observation of Prevalence and phenotypic features of voriconazole persistence in Aspergillus fumigatus. Antifungal persistence has emerged as an important survival strategy that may contribute to treatment failure, yet its prevalence and phenotypic characteristics in Aspergillus fumigatus populations re...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.865221"
+  },
+  {
     "title": "Microbial-enzymatic coupling drives nitrogen stabilization during static pile composting of rice straw amended with contrasting nitrogen sources",
     "source": "Frontiers in Microbiology | New and Recent Articles",
     "excerpt": "Nitrogen loss during straw composting substantially undermines nutrient recycling efficiency and the agronomic value of finished compost products. Clarifying how different nitrogen sources mediate nitrogen transformation and nitrogen retention in organic fractions is therefore essential for improving compost maturity and nitrogen retention. This study evaluated how three nitrogen-rich amendments with divergent chemical characteristics (chicken manure, fish meal, and soybean powder) influenced nitrogen transformation, organic nitrogen fractionation, enzyme dynamics, and microbial succession during static pile composting of rice straw. Compost maturity varied significantly among treatments (P < 0.05), with germination indices of 100% for soybean powder, 90.1% for fish meal, and 84.9% for chicken manure. Chicken manure primarily promoted a mineralization-oriented nitrogen transformation pattern characterized by rapid ammonium accumulation and subsequent nitrification, accompanied by elevated urease activity and enrichment of Firmicutes. In contrast, fish meal and soybean powder were associated with nitrogen transformation patterns involving stronger proteolytic and oxidative enzyme ac",
@@ -2175,6 +2497,18 @@
     "summary": "This paper reports the development and testing of a composite microbial formulation combining metabolites from three organisms—Trichoderma asperellum, Metarhizium anisopliae, and Bacillus subtilis—to control rice diseases and insect pests while reducing chemical pesticide use. Laboratory tests showed that the three-strain mixture at equal volumes inhibited two rice pathogens, Curvularia plantarum and Fusarium fujikuroi, at rates of 85.3% and 67.4% respectively, substantially outperforming single-strain metabolites. When formulated as a biochar-based seed coating, the TMB suppressed Rhizoctonia solani-induced rice sheath blight by 75.56% and improved seed germination when plants were exposed to both Curvularia plantarum and Fusarium fujikuroi simultaneously. Field trials demonstrated that TMB combined with chemical pesticide applied at 30–40% of standard dosage achieved disease control equivalent to full-dose chemical pesticide alone.  The formulation operates at the intersection of two competing logics: metabolites from fungi and bacteria that would otherwise be classified as disease agents or minor agricultural inputs become the basis for reducing dependence on synthetic chemicals. The synergy between microbial metabolites and reduced chemical dosages reveals a material entanglement—the biochar carrier, the three microbial strains, and the fungicide trifloxystrobin tebuconazole together constitute a hybrid intervention that neither metabolites nor chemicals alone can achieve. This arrangement consolidates agricultural control through biological-chemical assemblages that distribute risk across multiple agents rather than concentrating it in a single chemical input, while simultaneously creating new dependencies on the maintenance and stability of microbial populations in seed coatings and field conditions.",
     "enhanced": true,
     "enhanced_at": "2026-06-15T15:04:10.760751"
+  },
+  {
+    "title": "Fusarium xyrophilum facilitates its dispersal by exploiting sensory biases of generalist insects through pseudoflowers",
+    "source": "tandf: Mycologia: Table of Contents",
+    "excerpt": "The fungus Fusarium xyrophilum produces flower-like structures (i.e. pseudoflowers) composed entirely of mycelia on yellow-eyed grasses (Xyris spp.), including X. surinamensis in Guyana. Whether these pseudoflowers function as true mimics that attract insects for fungal propagule dispersal remains unknown. We evaluated the potential of F. xyrophilum to influence insect visitation patterns by (i) documenting insect visits to real flowers and pseudoflowers on X. surinamensis in the field in Guyana, (ii) assessing the presence of F. xyrophilum DNA on insect bodies, and (iii) analyzing volatile emissions from flowers and pseudoflowers. During our field work, a broad range of generalist insects (i.e. Vespidae, Formicidae, Salticidae, Acrididae, and Tetrigidae) visited the flowers and pseudoflowers, which notably shared some insect visitors (i.e. meadow katydids, carpenter ants, and geometer moths). Some of these insects were observed chewing on the flowers and pseudoflowers. Fusarium xyrophilum DNA was detected on the bodies of captured insects using conventional and quantitative polymerase chain reaction (PCR). Volatile profiles of pseudoflowers and flowers were largely similar, except for a sesquiterpene, putatively identified as α-gurjunene, which was emitted by pseudoflowers and pure cultures of F. xyrophilum but not Xyris flowers. These findings support the role of insect visitors as vectors of F. xyrophilum propagules and suggest that the fungus may attract and use generalist insects by exploiting their preexisting sensory biases for Xyris floral signals rather than true mimicry.",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/00275514.2026.2668460?af=R",
+    "pubDate": "2026-06-09T05:15:00Z",
+    "category": "science",
+    "abstract_source": "openalex",
+    "summary": "Observation of Fusarium xyrophilum facilitates its dispersal by exploiting sensory biases of generalist insects through pseudoflowers. The fungus Fusarium xyrophilum produces flower-like structures (i.e. pseudoflowers) composed entirely of mycelia on yellow-eyed grasses (Xyris spp.), including X. surinamensis in Guyana. Whether these...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.888535"
   },
   {
     "title": "Itaconic acid production from kitchen food waste with Aspergillus terreus",
@@ -2386,6 +2720,18 @@
     "summary": "Cladosporium pseudochalastosporoides was cultured with polyethylene glycol-8000 and pectin (at equal proportions) to induce maximum enzyme production, yielding 95.6 units per millilitre of β-glucosidase and 1.85 filter paper units per millilitre of cellulase. Following acetone precipitation, these enzyme activities increased to 375.3 units per millilitre and 6.11 filter paper units per millilitre respectively, with recovery rates of 60 and 66 percent. The enzymes were then attached to mesoporous silica nanoparticles with an immobilization efficiency of 83.3 percent, confirmed through infrared spectroscopy, scanning electron microscopy with energy-dispersive X-ray analysis, X-ray photoelectron spectroscopy, nitrogen adsorption-desorption analysis, and X-ray diffraction. When immobilized, the Cladosporium enzyme retained approximately 90 percent of its activity after four hours at 50 degrees Celsius and 95 percent activity after 30 days of storage, though it produced 46 milligrams per millilitre of glucose during the hydrolysis of Avicel cellulose compared to 75 milligrams per millilitre from the immobilized commercial reference enzyme from Trichoderma reesei.  Across repeated use cycles, the immobilized Cladosporium enzyme retained only 63.22 percent of its original activity after four cycles, whereas the commercial benchmark retained 85.32 percent—a gap that correlates with substantially lower residual protein concentrations in the Cladosporium preparation (0.48 milligrams per millilitre versus 61 milligrams per millilitre). This paper reveals a characteristic tension in fungal enzyme development: the same immobilization strategy that stabilizes the enzyme for storage and thermal stress simultaneously accelerates its depletion during repeated industrial use, suggesting that enhanced durability under static conditions does not translate into sustained catalytic capacity under conditions of labour. The material scaffolding that enables the Cladosporium enzyme to perform—the mesoporous silica matrix—appears to distribute enzyme loss unevenly across cycles, raising questions about whether the enzyme itself is being depleted, whether the attachment chemistry is failing differentially, or whether the enzyme-carrier interface is simply incompatible with the wear patterns of continuous operation.",
     "enhanced": true,
     "enhanced_at": "2026-06-01T14:59:05.085956"
+  },
+  {
+    "title": "First fossil evidence of sooty molds from India and their significance",
+    "source": "tandf: Mycologia: Table of Contents",
+    "excerpt": "Sooty molds are produced by complex species mixtures of epifoliar, saprotrophic Pezizomycotina. While amber deposits dominate their fossil record, direct evidence on fossilized angiosperm leaves has remained elusive. This study describes seven distinct morphotypes of sooty molds, including moniliform hyphae, setae, pycnidia, and setose sporocarps, preserved in situ on angiosperm leaf cuticles from the Late Miocene Siwalik deposits (ca. 12-8 Ma) of Himachal Pradesh, India. These specimens provide the first direct evidence of multispecies sooty mold communities associated with angiosperm surfaces in the fossil record. This discovery confirms that the saprotrophic epiphyllous habit was well established in Siwalik Miocene forests, offering significant insights into the evolutionary history and paleoecological interactions of these fungal communities.",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/00275514.2026.2665546?af=R",
+    "pubDate": "2026-06-01T08:07:59Z",
+    "category": "science",
+    "abstract_source": "openalex",
+    "summary": "Observation of First fossil evidence of sooty molds from India and their significance. Sooty molds are produced by complex species mixtures of epifoliar, saprotrophic Pezizomycotina. While amber deposits dominate their fossil record, direct evidence on fossilized angiosperm leaves has r...",
+    "enhanced": true,
+    "enhanced_at": "2026-10-05T17:45:34.912219"
   },
   {
     "title": "Biocontrol mechanisms of two Paenibacillus strains against Astragalus membranaceus root rot and their effects on soil microecological structure",
