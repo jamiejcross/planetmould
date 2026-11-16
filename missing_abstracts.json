@@ -1,10 +1,80 @@
 [
   {
     "doi": "",
-    "title": "Effects of the nutrient C/N ratio on Aspergillus niger growth and spore release under high temperature and humidity",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0304389426031493?dgcid=rss_sd_all",
+    "title": "Mechanism Insights into Synergistic Inactivation of Pathogenic Aspergillus niger via UV-LED-Activated Electrochemical Chlorination",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0304389426031882?dgcid=rss_sd_all",
     "category": "indoor",
-    "pubDate": "2026-11-09T19:25:21Z"
+    "pubDate": "2026-11-16T19:09:18Z"
+  },
+  {
+    "doi": "",
+    "title": "Condensation and Mould Risk in Unconditioned Roofs: Influence of Design Features Across Cool, Temperate and Hot Climates",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0360132326013909?dgcid=rss_sd_all",
+    "category": "indoor",
+    "pubDate": "2026-11-16T19:09:18Z"
+  },
+  {
+    "doi": "",
+    "title": "Targeted green strategies to control mycotoxin-producing fungi and mycotoxins in grains",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2214799326000950?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-11-16T19:08:50Z"
+  },
+  {
+    "doi": "",
+    "title": "Volatile organic compounds from Pichia membranifaciens JQ-10 control postharvest blue mold and reduce patulin contamination in apples",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526007292?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-11-16T19:08:49Z"
+  },
+  {
+    "doi": "",
+    "title": "Early-stage moldiness detection in Hami melons via HSI-E-nose multimodal fusion based on a heterogeneous dual-path Mamba-DASTNet",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526006948?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-11-16T19:08:49Z"
+  },
+  {
+    "doi": "",
+    "title": "Trans-2-hexenal alleviates the postharvest gray mold and induces resistance in strawberry fruit",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526007802?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-11-16T19:08:49Z"
+  },
+  {
+    "doi": "",
+    "title": "Rapid detection of Aspergillus flavus infection and aflatoxin B1 concentrations in pecans using hyperspectral imaging and lightweight convolutional neural networks",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526008005?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-11-16T19:08:49Z"
+  },
+  {
+    "doi": "",
+    "title": "Risk ranking of mycotoxins in plant-based meat alternatives and established food categories: a dietary exposure assessment across Italian consumer groups",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526007929?dgcid=rss_sd_all",
+    "category": "health",
+    "pubDate": "2026-11-16T19:08:49Z"
+  },
+  {
+    "doi": "",
+    "title": "Comparative genomics of Fusarium acuminatum reveals correlated evolution of carbohydrate-active enzymes (CAZymes) and diverse effectors",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626001558?dgcid=rss_sd_all",
+    "category": "science",
+    "pubDate": "2026-11-16T19:08:31Z"
+  },
+  {
+    "doi": "",
+    "title": "Comparative production and physicochemical characterization of niobium oxide-based materials produced using cell-free filtrates of Aspergillus fijiensis and Aspergillus niger",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626001595?dgcid=rss_sd_all",
+    "category": "science",
+    "pubDate": "2026-11-16T19:08:31Z"
+  },
+  {
+    "doi": "",
+    "title": "Corrigendum to “Exploring the impact of apocarotenoids on pathogenic Fusarium oxysporum f. sp. lini and endophytic Fo47 strains” [Fungal Biol. 129, (2025), 101591]",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626001741?dgcid=rss_sd_all",
+    "category": "science",
+    "pubDate": "2026-11-16T19:08:31Z"
   },
   {
     "doi": "",
@@ -12,62 +82,6 @@
     "url": "https://www.sciencedirect.com/science/article/pii/S138589472610970X?dgcid=rss_sd_all",
     "category": "indoor",
     "pubDate": "2026-11-09T19:25:21Z"
-  },
-  {
-    "doi": "",
-    "title": "Targeted green strategies to control mycotoxin-producing fungi and mycotoxins in grains",
-    "url": "https://www.sciencedirect.com/science/article/pii/S2214799326000950?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-11-09T19:25:18Z"
-  },
-  {
-    "doi": "",
-    "title": "Volatile organic compounds from Pichia membranifaciens JQ-10 control postharvest blue mold and reduce patulin contamination in apples",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526007292?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-11-09T19:25:18Z"
-  },
-  {
-    "doi": "",
-    "title": "Early-stage moldiness detection in Hami melons via HSI-E-nose multimodal fusion based on a heterogeneous dual-path Mamba-DASTNet",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526006948?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-11-09T19:25:18Z"
-  },
-  {
-    "doi": "",
-    "title": "Trans-2-hexenal alleviates the postharvest gray mold and induces resistance in strawberry fruit",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0956713526007802?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-11-09T19:25:18Z"
-  },
-  {
-    "doi": "",
-    "title": "Alternaria toxins in black-point wheat: strain-specific toxigenic profiles, processing-related concentration changes and combined cytotoxicity",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0308814626041683?dgcid=rss_sd_all",
-    "category": "health",
-    "pubDate": "2026-11-09T19:25:16Z"
-  },
-  {
-    "doi": "",
-    "title": "Comparative genomics of Fusarium acuminatum reveals correlated evolution of carbohydrate-active enzymes (CAZymes) and diverse effectors",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626001558?dgcid=rss_sd_all",
-    "category": "science",
-    "pubDate": "2026-11-09T19:25:02Z"
-  },
-  {
-    "doi": "",
-    "title": "Comparative production and physicochemical characterization of niobium oxide-based materials produced using cell-free filtrates of Aspergillus fijiensis and Aspergillus niger",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626001595?dgcid=rss_sd_all",
-    "category": "science",
-    "pubDate": "2026-11-09T19:25:02Z"
-  },
-  {
-    "doi": "",
-    "title": "Corrigendum to “Exploring the impact of apocarotenoids on pathogenic Fusarium oxysporum f. sp. lini and endophytic Fo47 strains” [Fungal Biol. 129, (2025), 101591]",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1878614626001741?dgcid=rss_sd_all",
-    "category": "science",
-    "pubDate": "2026-11-09T19:25:02Z"
   },
   {
     "doi": "",
